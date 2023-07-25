@@ -4,4 +4,4 @@
   	...
       
   ```
-- This validation does not run with the current
+- This validation does not run with the current implementation,
