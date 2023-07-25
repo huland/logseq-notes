@@ -1,5 +1,8 @@
-- Book Notes
-	- Title
-	- Author
-	- Keywords
-	- Date
+- # Journal
+	- ## Daily TODOs
+	- -
+	- -
+	- -
+- sd
+	-
+	-
