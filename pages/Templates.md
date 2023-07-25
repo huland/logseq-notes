@@ -1,5 +1,5 @@
+- # Journal
 - ## Daily Todo
-  template:: Journal
 - -
 - -
 -
