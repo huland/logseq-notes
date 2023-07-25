@@ -1,5 +1,4 @@
 - ## Daily ToDo
-  template:: JournalTemplate
 - -
 - -
 - -
