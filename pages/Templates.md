@@ -1,4 +1,2 @@
-- ## Daily ToDo
-- -
-- -
-- -
+- ## Daily Todo
+-
