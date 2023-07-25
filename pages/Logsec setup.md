@@ -1,4 +1,4 @@
-- pre-commit file
+- ### pre-commit file
 - ```bash
   #!/bin/sh
   #
@@ -25,5 +25,11 @@
   fi
   
   git add -A
+  ```
+- ### post-commit file
+- ```bash
+  #!/bin/sh
+  
+  git push origin main
   ```
 -
