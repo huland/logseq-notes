@@ -1,4 +1,13 @@
-- ## Daily ToDo
+- # Journal
+  template:: journal
+- ## Daily Todo
 - -
+- -
+-
+- ## Check
+- -
+- -
+-
+- ## Reminders
 - -
 - -
