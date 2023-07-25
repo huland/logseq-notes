@@ -1,5 +1,9 @@
 - ## TODO
-- - [ ] asd
+- -
+- -
 - ## Investigate
--
+- -
+- -
 - ## Notes
+- -
+- -
