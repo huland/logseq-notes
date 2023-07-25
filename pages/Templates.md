@@ -1,0 +1,5 @@
+- Book Notes
+	- Title
+	- Author
+	- Keywords
+	- Date
