@@ -22,7 +22,7 @@
 - ## Review
 	- ## Review details
 		- issue ticker: [issue link](link.to.the.issue.ticket)
-		- pull request ticket: [pull request link]
+		- pull request ticket: [pull request link](link.to.the.pull.request)
 		- author:
 		- started on date:
 		- finished on date:
