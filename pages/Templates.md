@@ -21,6 +21,12 @@
 -
 - ## Review
 	- ## Review details
-		- ticker:
+		- issue ticker: [issue link](link.to.the.issue.ticket)
+		- pull request ticket: [pull request link]
 		- author:
-		- started:
+		- started on date:
+		- finished on date:
+		- time spent:
+		- summary:
+			- -
+			- -
