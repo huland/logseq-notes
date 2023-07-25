@@ -1,13 +1,18 @@
 - ## Journal
-	-
+	- ### Previous Day's summary
+		-
 	- ### Daily TODOs
 		- -
 		- -
 		- -
-	- Adhoc
+	- ### Adhoc
 		- -
 		- -
 		- -
-	- d
+	- ### Reminders
+		- -
+		- -
+		- -
+		-
 		-
 		-
