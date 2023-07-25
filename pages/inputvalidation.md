@@ -4,4 +4,5 @@
   	...
       
   ```
-- This validation does not run with the current implementation,
+- This validation does not run with this implementation, the ets_offer is a `serializers.SerializerMethodField()`
+-
