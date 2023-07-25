@@ -1,8 +1,13 @@
-- # Journal
-	- ## Daily TODOs
-	- -
-	- -
-	- -
-- sd
+- ## Journal
 	-
-	-
+	- ### Daily TODOs
+		- -
+		- -
+		- -
+	- Adhoc
+		- -
+		- -
+		- -
+	- d
+		-
+		-
