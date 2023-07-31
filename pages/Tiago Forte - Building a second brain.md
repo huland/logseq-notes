@@ -304,15 +304,14 @@ collapsed:: true
 	- The maintenance of your Second Brain is very forgiving.
 		- knowledge is now our most important asset and the ability to deploy our attention
 		- viewing the world through the lens of scarcity to seeing it through the lens of abundance
-## CODE summary
-
-CODE: Keep what resonates (Capture) Save for actionability (Organize) Find the essence (Distill) Show your work (Express)
-- Are you hoping to remember more?
-	- Focus on developing the practice of capturing and organizing your notes according to your projects, commitments, and interests using PARA
-- Are you hoping to connect ideas and develop your ability to plan, influence, and grow in your personal and professional life?
-	- Experiment with consistently distilling and refining your notes using Progressive Summarization and revisiting them during weekly reviews
-- Are you committed to producing more and better output with less frustration and stress?
-	- Focus on creating one Intermediate Packet at a time and looking for opportunities to share them in ever more bold ways
+- ## CODE summary
+	- CODE: Keep what resonates (Capture) Save for actionability (Organize) Find the essence (Distill) Show your work (Express)
+		- Are you hoping to remember more?
+			- Focus on developing the practice of capturing and organizing your notes according to your projects, commitments, and interests using PARA
+		- Are you hoping to connect ideas and develop your ability to plan, influence, and grow in your personal and professional life?
+			- Experiment with consistently distilling and refining your notes using Progressive Summarization and revisiting them during weekly reviews
+		- Are you committed to producing more and better output with less frustration and stress?
+			- Focus on creating one Intermediate Packet at a time and looking for opportunities to share them in ever more bold ways
 ### Summary
 
 1. Decide what you want to capture
