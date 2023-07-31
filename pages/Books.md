@@ -8,3 +8,5 @@
 - Robert C. Martin - Agile Software Develpment: Principles, Patterns, and Practices
 - Michael Feathers - Working Effectively with Legacy Code
 - # Book notes
+- [[Tiago Forte - Building a second brain]]
+-
