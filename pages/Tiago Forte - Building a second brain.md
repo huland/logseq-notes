@@ -171,7 +171,7 @@ collapsed:: true
 				- The goal of an archipelago is that instead of sitting down to a blank page or screen and stressing out about where to begin
 					- you start with a series of small stepping-stones to guide your efforts
 			- 2. The Hemingway Bridge: Use Yesterday’s Momentum Today
-			- 1. Dial Down the Scope: Ship Something Small and Concrete
+			- 3. Dial Down the Scope: Ship Something Small and Concrete
 		- When the full complexity of a project starts to reveal itself, most people choose to delay it. This is true of projects at work, and even more true of side projects we take on in our spare time.
 			- We tell ourselves we just need more time, but the delay ends up creating more problems than it solves.
 			- We start to lose motivation as the time horizon stretches out longer and longer. Things get lost or go out of date.
