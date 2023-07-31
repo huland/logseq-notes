@@ -219,20 +219,19 @@ collapsed:: true
 	  
 	  1. Mark project as complete in task manager or project management app
 		- keeping an inventory of your victories and successes is a wonderful use for your Second Brain
-		  1.  Cross out the associated project goal and move to “Completed” section
+	- 2. Cross out the associated project goal and move to “Completed” section
 		- cross out the goal and move it to a different section
 		- need some motivation, I can look through this list and be reminded of all the meaningful goals I’ve achieved in the past
-		  1.  Review Intermediate Packets and move them to other folders.
+	- 3.  Review Intermediate Packets and move them to other folders.
 		- look through the folder for the completed project to identify any Intermediate Packets
 		- any IPs I decide could be relevant to another project, I move to that project’s folder, the same goes for notes relevant to areas or resources
-		  1.  Move project to archives across all platforms.
+	- 4.  Move project to archives across all platforms.
 		- move the project folder to the archives in my notes app, as well as any other platforms I used during the project
 		- If project is becoming inactive: add a current status note to the project folder before archiving
 			- add a new note to the project folder titled “Current status,” and jot down a few comments so I can pick it back up in the future.
-			  
-			  1. If project is becoming inactive: add a current status note to the project folder before archiving
-			  
-			  If all the tasks I find there are done, I can mark it as complete and move on to the following steps.
+	- 5. If project is becoming inactive: add a current status note to the project folder before archiving
+	  
+	  If all the tasks I find there are done, I can mark it as complete and move on to the following steps.
 #### Extra items to do at completion check
 
 Here are some other items you can include on your Project Completion Checklist. I encourage you to personalize it for your own needs:
