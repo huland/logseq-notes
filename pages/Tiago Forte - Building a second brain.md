@@ -273,10 +273,10 @@ collapsed:: true
 				- batch process them all at once, making quick, intuitive decisions about which of the PARA folders each note might be relevant to, and creating new folders as needed
 			- 5. Choose my tasks for the week
 	- ### Monthly Review Template: Reflect for Clarity and Control
-	  
-	  1. Review and update my goals
-		- take some time to cross off any completed goals, add any new ones that have emerged, or change the scope of goals that no longer make sense
-		  1. Review and update my project list
+		- 1. Review and update my goals
+			- take some time to cross off any completed goals, add any new ones that have emerged, or change the scope of goals that no longer make sense
+		- 2.Review and update my project list
+	- 2.
 		- includes archiving any completed or canceled projects, adding any new ones, or updating active projects to reflect how they’ve changed
 		- important that the project list remains a current, timely, and accurate reflection of your real-life goals and priorities
 		  1. Review my areas of responsibility
