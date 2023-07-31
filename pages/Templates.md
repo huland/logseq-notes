@@ -1,17 +1,17 @@
 - ## Journal
   template:: journal
   template-including-parent:: false
-	- # Previous Day's summary
+	- ## Previous Day's summary
 		-
-	- ### Daily TODOs
+	- ## Daily TODOs
 		- -
 		- -
 		- -
-	- ### Adhoc
+	- ## Adhoc
 		- -
 		- -
 		- -
-	- ### Reminders
+	- ## Reminders
 		- -
 		- -
 		- -
