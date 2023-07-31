@@ -334,6 +334,7 @@ collapsed:: true
 	- 11. Assess your notetaking proficiency
 		- Evaluate your current notetaking practices and areas for potential improvement using our free assessment tool at Buildingasecondbrain.com/quiz.
 	- 12. Join the PKM community
+	-
 	- While building a Second Brain is a project - something you can commit to and achieve within a reasonable period of time - using your Second Brain is a lifelong practice.
 		- I recommend you revisit Building a Second Brain at various points over time. I guarantee you’ll notice things you missed the first time.
 	- The practice begins and ends with notetaking:
