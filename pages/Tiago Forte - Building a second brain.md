@@ -132,9 +132,9 @@
 				- graphics
 				- agendas
 				- plans you produced during past projects
-				  1. Final deliverables: Concrete pieces of work you’ve delivered as part of past projects, which could become components of something new.
-				  1. Documents created by others:
-		- Knowledge assets created by people on your team, contractors or consultants, or even clients or customers, that you can reference and incorporate into your work.
+			- 4. Final deliverables: Concrete pieces of work you’ve delivered as part of past projects, which could become components of something new.
+			- 5. Documents created by others:
+				- Knowledge assets created by people on your team, contractors or consultants, or even clients or customers, that you can reference and incorporate into your work.
 ### Making the shift
 
 Making the shift to working in terms of Intermediate Packets unlocks several very powerful benefits
