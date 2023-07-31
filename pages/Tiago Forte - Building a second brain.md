@@ -152,25 +152,19 @@ collapsed:: true
 		- They help us shut the door to new ideas and begin constructing something new out of the knowledge building blocks we’ve assembled.
 	- ### Forward progress
 		- When in fact they are divergent acts that postpone the moment of completion
-	- Should you do more research, or start organizing the research you’ve already done?
-	- Should you widen your horizons, or narrow your focus?
-	- Should you start something new, or finish something you’ve already started?
-- When you distinguish between the two modes of divergence and convergence, you can decide each time you begin to work which mode you want to be in.
-  
-  The two stages of this process, convergence is where most people struggle:
-- the more imaginative and curious you are
-- the more diverse your interests
-- the higher your standards and commitment to perfection
-  
-  the more difficult you will likely find it to switch from divergence mode into convergence mode.
-  
-  It’s painful to cut off options and choose one path over another. There is a kind of creative grief in watching an idea that you know is full of potential get axed from a script or a story. This is what makes creative work challenging.
-  
-  When you sit down to finish something — whether it’s an explanatory email, a new product design, a research report, or a fundraising strategy — it can be so tempting to do more research.
-  
-  It’s so easy to open up dozens of browser tabs, order more books, or go off in completely new directions.
-  
-  Those actions are tempting because they feel like productivity. They feel like forward progress, when in fact they are divergent acts that postpone the moment of completion.
+			- Should you do more research, or start organizing the research you’ve already done?
+			- Should you widen your horizons, or narrow your focus?
+			- Should you start something new, or finish something you’ve already started?
+			- When you distinguish between the two modes of divergence and convergence, you can decide each time you begin to work which mode you want to be in.
+		- The two stages of this process, convergence is where most people struggle:
+			- the more imaginative and curious you are
+			- the more diverse your interests
+			- the higher your standards and commitment to perfection
+		- the more difficult you will likely find it to switch from divergence mode into convergence mode.
+		- It’s painful to cut off options and choose one path over another. There is a kind of creative grief in watching an idea that you know is full of potential get axed from a script or a story. This is what makes creative work challenging.
+		- When you sit down to finish something — whether it’s an explanatory email, a new product design, a research report, or a fundraising strategy — it can be so tempting to do more research.
+		- It’s so easy to open up dozens of browser tabs, order more books, or go off in completely new directions.
+		- Those actions are tempting because they feel like productivity. They feel like forward progress, when in fact they are divergent acts that postpone the moment of completion.
 ### Completing creative projects
 
 There are three powerful strategies for completing creative projects I recommend to help you through the pitfalls of convergence
