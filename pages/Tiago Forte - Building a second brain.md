@@ -231,23 +231,22 @@ collapsed:: true
 					- add a new note to the project folder titled “Current status,” and jot down a few comments so I can pick it back up in the future.
 			- 5. If project is becoming inactive: add a current status note to the project folder before archiving
 		- If all the tasks I find there are done, I can mark it as complete and move on to the following steps.
-#### Extra items to do at completion check
-
-Here are some other items you can include on your Project Completion Checklist. I encourage you to personalize it for your own needs:
-- Answer postmortem questions:
-	- What did you learn?
-	- What did you do well?
-	- What could you have done better?
-	- What can you improve for next time?
-- Communicate with stakeholders:
-	- Notify your manager, colleagues, clients, customers, shareholders, contractors, etc.,
-	- that the project is complete and what the outcomes were.
-- Evaluate success criteria:
-	- Were the objectives of the project achieved?
-	- Why or why not?
-	- What was the return on investment?
-- Officially close out the project and celebrate:
-	- Send any last emails, invoices, receipts, feedback forms, or documents, and celebrate your accomplishments with your team or collaborators so you receive the feeling of fulfillment for all the effort you put in
+		- #### Extra items to do at completion check
+			- Here are some other items you can include on your Project Completion Checklist. I encourage you to personalize it for your own needs:
+				- Answer postmortem questions:
+					- What did you learn?
+					- What did you do well?
+					- What could you have done better?
+					- What can you improve for next time?
+				- Communicate with stakeholders:
+					- Notify your manager, colleagues, clients, customers, shareholders, contractors, etc.,
+					- that the project is complete and what the outcomes were.
+				- Evaluate success criteria:
+					- Were the objectives of the project achieved?
+					- Why or why not?
+					- What was the return on investment?
+				- Officially close out the project and celebrate:
+					- Send any last emails, invoices, receipts, feedback forms, or documents, and celebrate your accomplishments with your team or collaborators so you receive the feeling of fulfillment for all the effort you put in
 ## Reviews
 ### A Weekly Review Template
 
