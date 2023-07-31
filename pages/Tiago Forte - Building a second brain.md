@@ -255,23 +255,23 @@ collapsed:: true
 				- I don’t usually have time to do this during the week in the rush of my other priorities, but I’ve found that
 					- if I let messages accumulate from one week to the next, it makes it hard to figure out what’s new and requires action and what’s left over from the past
 					- Any action items I find get saved in my task manager, and any notes I capture get saved in my notes app
-					  1. Check my calendar
-			- 2. I check my calendar.
-		- This is the landscape of my week, showing me the meetings and appointments I need to make room for.
-		- I typically look at the:
-			- last couple of weeks
-			  in case there’s anything I need to follow up on
-			- upcoming couple of weeks
-			  in case there’s anything I need to prepare for
-		- Once again, anything I need to act on gets saved in my task manager, and any notes get captured in my notes app.
-		  1. Clear my computer desktop
-		- I clear the files that have accumulated on my computer desktop
-		- I’ve found that if I let them accumulate week after week, eventually my digital environment gets so cluttered that I can’t think straight.
-		- Any files potentially relevant to my projects, areas, or resources get moved to the appropriate PARA folders in my computer’s file system
-		  1. Clear my notes inbox
-		- The inbox in my notes app is chock-full of interesting tidbits from the previous three steps
-		- batch process them all at once, making quick, intuitive decisions about which of the PARA folders each note might be relevant to, and creating new folders as needed
-		  1. Choose my tasks for the week
+			- 2. Check my calendar
+				- I check my calendar.
+				- This is the landscape of my week, showing me the meetings and appointments I need to make room for.
+				- I typically look at the:
+					- last couple of weeks
+					  in case there’s anything I need to follow up on
+					- upcoming couple of weeks
+					  in case there’s anything I need to prepare for
+					- Once again, anything I need to act on gets saved in my task manager, and any notes get captured in my notes app.
+			- 3. Clear my computer desktop
+				- I clear the files that have accumulated on my computer desktop
+				- I’ve found that if I let them accumulate week after week, eventually my digital environment gets so cluttered that I can’t think straight.
+				- Any files potentially relevant to my projects, areas, or resources get moved to the appropriate PARA folders in my computer’s file system
+			- 4. Clear my notes inbox
+				- The inbox in my notes app is chock-full of interesting tidbits from the previous three steps
+				- batch process them all at once, making quick, intuitive decisions about which of the PARA folders each note might be relevant to, and creating new folders as needed
+			- 5. Choose my tasks for the week
 ### Monthly Review Template: Reflect for Clarity and Control
 
 1. Review and update my goals
