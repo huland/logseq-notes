@@ -165,29 +165,25 @@ collapsed:: true
 		- When you sit down to finish something — whether it’s an explanatory email, a new product design, a research report, or a fundraising strategy — it can be so tempting to do more research.
 		- It’s so easy to open up dozens of browser tabs, order more books, or go off in completely new directions.
 		- Those actions are tempting because they feel like productivity. They feel like forward progress, when in fact they are divergent acts that postpone the moment of completion.
-### Completing creative projects
-
-There are three powerful strategies for completing creative projects I recommend to help you through the pitfalls of convergence
-
-1. The Archipelago of Ideas: Give Yourself Stepping-Stones
-	- The goal of an archipelago is that instead of sitting down to a blank page or screen and stressing out about where to begin
-		- you start with a series of small stepping-stones to guide your efforts
-		  
-		  1. The Hemingway Bridge: Use Yesterday’s Momentum Today
-		  
-		  1. Dial Down the Scope: Ship Something Small and Concrete
-	- When the full complexity of a project starts to reveal itself, most people choose to delay it. This is true of projects at work, and even more true of side projects we take on in our spare time.
-		- We tell ourselves we just need more time, but the delay ends up creating more problems than it solves.
-		- We start to lose motivation as the time horizon stretches out longer and longer. Things get lost or go out of date.
-		- Postponing our goals and desires to “later” often ends up depriving us of the very experiences we need to grow.
-		  
-		  The problem isn’t a lack of time. It is that we forget that we have control over the scope of the project.
-		  
-		  We can “dial it down” to a more manageable size, and we must if we ever want to see it finished.
-		  
-		  Dialing Down the Scope recognizes that not all the parts of a given project are equally important.
-		  
-		  Your Second Brain is a crucial part of this strategy, because you need a place to save the parts that get postponed or removed
+	- ### Completing creative projects
+		- There are three powerful strategies for completing creative projects I recommend to help you through the pitfalls of convergence
+			- 1. The Archipelago of Ideas: Give Yourself Stepping-Stones
+				- The goal of an archipelago is that instead of sitting down to a blank page or screen and stressing out about where to begin
+					- you start with a series of small stepping-stones to guide your efforts
+			- 2. The Hemingway Bridge: Use Yesterday’s Momentum Today
+			- 1. Dial Down the Scope: Ship Something Small and Concrete
+		- When the full complexity of a project starts to reveal itself, most people choose to delay it. This is true of projects at work, and even more true of side projects we take on in our spare time.
+			- We tell ourselves we just need more time, but the delay ends up creating more problems than it solves.
+			- We start to lose motivation as the time horizon stretches out longer and longer. Things get lost or go out of date.
+			- Postponing our goals and desires to “later” often ends up depriving us of the very experiences we need to grow.
+			  
+			  The problem isn’t a lack of time. It is that we forget that we have control over the scope of the project.
+			  
+			  We can “dial it down” to a more manageable size, and we must if we ever want to see it finished.
+			  
+			  Dialing Down the Scope recognizes that not all the parts of a given project are equally important.
+			  
+			  Your Second Brain is a crucial part of this strategy, because you need a place to save the parts that get postponed or removed
 ## Project kickoff/completion checklists
 ### Project Kickoff checklist
 
