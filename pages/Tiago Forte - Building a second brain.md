@@ -7,10 +7,10 @@ What are the questions I’ve always been interested in?
 		- How can we make society fairer and more equitable?
 	- practical ones like:
 		- How can I make it a habit to exercise every day?
-- it might include questions about relationships, such as:
-	- How can I have closer relationships with the people I love?
-- productivity, like:
-	- How can I spend more of my time doing high-value work?
+	- it might include questions about relationships, such as:
+		- How can I have closer relationships with the people I love?
+	- productivity, like:
+		- How can I spend more of my time doing high-value work?
 ### Reason of a questions
 
 The goal isn’t to definitively answer the question once and for all, but to use the question as a North Star for my learning.
