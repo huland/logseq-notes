@@ -22,7 +22,7 @@
 - ## Review
   template:: review
   template-including-parent:: false
-	- ## Review details
+	- Review details
 		- issue title:
 		- issue ticker: [issue link](link.to.the.issue.ticket)
 		- pull request ticket: [pull request link](link.to.the.pull.request)
