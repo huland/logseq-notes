@@ -37,13 +37,13 @@ What are the questions I’ve always been interested in?
 			- they take place during a specific period of time and then they finish
 	- they have a specific, clear outcome that needs to happen in order for them to be checked off as complete,
 		- such as “finalize,” “green-light,” “launch,” or “publish.
-#### Example projects
-- Projects at work:
-	- Complete web-page design, Create slide deck for conference, Develop project schedule, Plan recruitment drive
-- Personal projects:
-	- Finish Spanish language course, Plan vacation, Buy new living room furniture, Find local volunteer opportunity
-- Side projects:
-	- Publish blog post, Launch crowdfunding campaign, Research best podcast microphone, Complete online course
+	- #### Example projects
+		- Projects at work:
+			- Complete web-page design, Create slide deck for conference, Develop project schedule, Plan recruitment drive
+		- Personal projects:
+			- Finish Spanish language course, Plan vacation, Buy new living room furniture, Find local volunteer opportunity
+		- Side projects:
+			- Publish blog post, Launch crowdfunding campaign, Research best podcast microphone, Complete online course
 ### Areas: What I’m Committed to Over Time
 #### Example areas
 - In our work lives, we have various ongoing areas we’re responsible for, such as
