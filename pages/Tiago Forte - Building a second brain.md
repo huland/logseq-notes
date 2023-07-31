@@ -99,10 +99,10 @@
 	- Capturing passages from ebooks
 - ### Progressive Summarization
 	- I recommend using bullet points to encourage yourself to make this executive summary succinct.
-	- use your own words
-	- define any unusual terms you’re using
-	- think about how your future self
-		- who may not remember anything about this source, might interpret what you’re writing
+		- use your own words
+		- define any unusual terms you’re using
+		- think about how your future self
+			- who may not remember anything about this source, might interpret what you’re writing
 #### Highlighting can sometimes feel risky.
 
 You may wonder,
