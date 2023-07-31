@@ -1,8 +1,7 @@
 # Tiago Forte - Building a second brain
 ## Question of interest
-### Ask yourself:
-
-What are the questions I’ve always been interested in?
+- ### Ask yourself:
+  What are the questions I’ve always been interested in?
 	- this could include grand, sweeping questions like:
 		- How can we make society fairer and more equitable?
 	- practical ones like:
@@ -24,7 +23,7 @@ What are the questions I’ve always been interested in?
 	    (this is just a first pass, and it will always be evolving).
 	- Phrase them as open-ended questions that could have multiple answers (in contrast to “yes/no” questions with only one answer)
 - ## P.A.R.A system
-  With the PARA system, every piece of information you want to save can be placed into one of just four categories:
+- With the PARA system, every piece of information you want to save can be placed into one of just four categories:
 - 1. Projects: Short-term efforts in your work or life that you’re working on now.
   2. Areas: Long-term responsibilities you want to manage over time.
   3. Resources: Topics or interests that may be useful in the future.
