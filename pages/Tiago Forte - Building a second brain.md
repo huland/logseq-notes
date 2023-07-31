@@ -150,12 +150,11 @@ collapsed:: true
 		- This is where you research, explore, and add ideas.
 	- The final two steps, Distill and Express, are about convergence.
 		- They help us shut the door to new ideas and begin constructing something new out of the knowledge building blocks we’ve assembled.
-### Forward progress
-
-When in fact they are divergent acts that postpone the moment of completion
-- Should you do more research, or start organizing the research you’ve already done?
-- Should you widen your horizons, or narrow your focus?
-- Should you start something new, or finish something you’ve already started?
+	- ### Forward progress
+		- When in fact they are divergent acts that postpone the moment of completion
+	- Should you do more research, or start organizing the research you’ve already done?
+	- Should you widen your horizons, or narrow your focus?
+	- Should you start something new, or finish something you’ve already started?
 - When you distinguish between the two modes of divergence and convergence, you can decide each time you begin to work which mode you want to be in.
   
   The two stages of this process, convergence is where most people struggle:
