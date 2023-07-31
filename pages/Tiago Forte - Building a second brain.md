@@ -109,20 +109,18 @@
 		- the multiple layers of Progressive Summarization are like a safety net;
 			- if you go in the wrong direction, or make a mistake, you can always just go back to the original version and try again as nothing gets forgotten or deleted.
 #### Highlighting hints
-- a helpful rule of thumb is that each layer of highlighting should include no more than 10–20 percent of the previous layer
-	- if you save a series of excerpts from a book amounting to five hundred words,
-	- the bolded second layer should include no more than one hundred words
-	- highlighted third layer no more than twenty
-	  
-	  This isn’t an exact science, but if you find yourself highlighting everything, this rule should give you pause
-#### Continouos note handling
-
-The rule of thumb to follow is that every time you “touch” a note, you should make it a little more discoverable for your future self by
-- adding a highlight
-- a heading, some bullets
-- commentary
-- this is the “campsite rule” applied to information:
-	- leave it better than you found it
+	- a helpful rule of thumb is that each layer of highlighting should include no more than 10–20 percent of the previous layer
+		- if you save a series of excerpts from a book amounting to five hundred words,
+		- the bolded second layer should include no more than one hundred words
+		- highlighted third layer no more than twenty
+- This isn’t an exact science, but if you find yourself highlighting everything, this rule should give you pause
+- #### Continouos note handling
+	- The rule of thumb to follow is that every time you “touch” a note, you should make it a little more discoverable for your future self by
+		- adding a highlight
+		- a heading, some bullets
+		- commentary
+		- this is the “campsite rule” applied to information:
+			- leave it better than you found it
 ## Intermediate Packets: The Power of Thinking Small
 
 Small pieces of work-in-process it contains I call Intermediate Packets.
