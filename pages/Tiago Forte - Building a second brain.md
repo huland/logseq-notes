@@ -30,13 +30,13 @@ What are the questions I’ve always been interested in?
   2. Areas: Long-term responsibilities you want to manage over time.
   3. Resources: Topics or interests that may be useful in the future.
   4. Archives: Inactive items from the other three categories.
-### Projects: What I’m Working on Right Now
-
-Projects have a couple of features that make them an ideal way to organize modern work.
-- they have a beginning and an end
-	- they take place during a specific period of time and then they finish
-- they have a specific, clear outcome that needs to happen in order for them to be checked off as complete,
-	- such as “finalize,” “green-light,” “launch,” or “publish.
+-
+- ### Projects: What I’m Working on Right Now
+	- Projects have a couple of features that make them an ideal way to organize modern work.
+		- they have a beginning and an end
+			- they take place during a specific period of time and then they finish
+	- they have a specific, clear outcome that needs to happen in order for them to be checked off as complete,
+		- such as “finalize,” “green-light,” “launch,” or “publish.
 #### Example projects
 - Projects at work:
 	- Complete web-page design, Create slide deck for conference, Develop project schedule, Plan recruitment drive
