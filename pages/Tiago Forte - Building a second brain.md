@@ -11,9 +11,8 @@ What are the questions I’ve always been interested in?
 		- How can I have closer relationships with the people I love?
 	- productivity, like:
 		- How can I spend more of my time doing high-value work?
-### Reason of a questions
-
-The goal isn’t to definitively answer the question once and for all, but to use the question as a North Star for my learning.
+- ### Reason of a questions
+  The goal isn’t to definitively answer the question once and for all, but to use the question as a North Star for my learning.
 ### How to create a question
 - Take a moment now to write down some of your own favorite problems.
 - Here are my recommendations to guide you:
