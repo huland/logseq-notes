@@ -121,23 +121,20 @@
 		- commentary
 		- this is the “campsite rule” applied to information:
 			- leave it better than you found it
-## Intermediate Packets: The Power of Thinking Small
-
-Small pieces of work-in-process it contains I call Intermediate Packets.
-### Intermediate Packets types
-
-There are five kinds of Intermediate Packets you can create and reuse in your work:
-
-1. Distilled notes: Books or articles you’ve read and distilled so it’s easy to get the gist of what they contain (using the Progressive Summarization).
-1. Outtakes: The material or ideas that didn’t make it into a past project but could be used in future ones
-1. Work-in-process:
-	- documents
-	- graphics
-	- agendas
-	- plans you produced during past projects
-	  1. Final deliverables: Concrete pieces of work you’ve delivered as part of past projects, which could become components of something new.
-	  1. Documents created by others:
-	- Knowledge assets created by people on your team, contractors or consultants, or even clients or customers, that you can reference and incorporate into your work.
+- ## Intermediate Packets: The Power of Thinking Small
+	- Small pieces of work-in-process it contains I call Intermediate Packets.
+	- ### Intermediate Packets types
+		- There are five kinds of Intermediate Packets you can create and reuse in your work:
+			- 1. Distilled notes: Books or articles you’ve read and distilled so it’s easy to get the gist of what they contain (using the Progressive Summarization).
+			- 2. Outtakes: The material or ideas that didn’t make it into a past project but could be used in future ones
+			- 3. Work-in-process:
+				- documents
+				- graphics
+				- agendas
+				- plans you produced during past projects
+				  1. Final deliverables: Concrete pieces of work you’ve delivered as part of past projects, which could become components of something new.
+				  1. Documents created by others:
+		- Knowledge assets created by people on your team, contractors or consultants, or even clients or customers, that you can reference and incorporate into your work.
 ### Making the shift
 
 Making the shift to working in terms of Intermediate Packets unlocks several very powerful benefits
