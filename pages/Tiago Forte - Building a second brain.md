@@ -97,30 +97,30 @@
 		- the author or publisher
 		- and the date it was published
 	- Capturing passages from ebooks
-- ### Progressive Summarization
-	- I recommend using bullet points to encourage yourself to make this executive summary succinct.
-		- use your own words
-		- define any unusual terms you’re using
-		- think about how your future self
-			- who may not remember anything about this source, might interpret what you’re writing
-- #### Highlighting can sometimes feel risky.
-	- You may wonder,
-		- am I making the right decision about which points are most important, or what this source means?
-		- the multiple layers of Progressive Summarization are like a safety net;
-			- if you go in the wrong direction, or make a mistake, you can always just go back to the original version and try again as nothing gets forgotten or deleted.
-#### Highlighting hints
-	- a helpful rule of thumb is that each layer of highlighting should include no more than 10–20 percent of the previous layer
-		- if you save a series of excerpts from a book amounting to five hundred words,
-		- the bolded second layer should include no more than one hundred words
-		- highlighted third layer no more than twenty
-- This isn’t an exact science, but if you find yourself highlighting everything, this rule should give you pause
-- #### Continouos note handling
-	- The rule of thumb to follow is that every time you “touch” a note, you should make it a little more discoverable for your future self by
-		- adding a highlight
-		- a heading, some bullets
-		- commentary
-		- this is the “campsite rule” applied to information:
-			- leave it better than you found it
+	- ### Progressive Summarization
+		- I recommend using bullet points to encourage yourself to make this executive summary succinct.
+			- use your own words
+			- define any unusual terms you’re using
+			- think about how your future self
+				- who may not remember anything about this source, might interpret what you’re writing
+		- #### Highlighting can sometimes feel risky.
+			- You may wonder,
+				- am I making the right decision about which points are most important, or what this source means?
+				- the multiple layers of Progressive Summarization are like a safety net;
+					- if you go in the wrong direction, or make a mistake, you can always just go back to the original version and try again as nothing gets forgotten or deleted.
+		- #### Highlighting hints
+			- a helpful rule of thumb is that each layer of highlighting should include no more than 10–20 percent of the previous layer
+				- if you save a series of excerpts from a book amounting to five hundred words,
+				- the bolded second layer should include no more than one hundred words
+				- highlighted third layer no more than twenty
+		- This isn’t an exact science, but if you find yourself highlighting everything, this rule should give you pause
+		- #### Continouos note handling
+			- The rule of thumb to follow is that every time you “touch” a note, you should make it a little more discoverable for your future self by
+				- adding a highlight
+				- a heading, some bullets
+				- commentary
+				- this is the “campsite rule” applied to information:
+					- leave it better than you found it
 - ## Intermediate Packets: The Power of Thinking Small
 	- Small pieces of work-in-process it contains I call Intermediate Packets.
 	- ### Intermediate Packets types
