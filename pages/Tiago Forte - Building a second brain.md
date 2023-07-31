@@ -300,9 +300,8 @@ collapsed:: true
 			- 1. Project Kickoff and Completion Checklists
 			- 2. Weekly and Monthly Reviews
 			- 3. Noticing Habits
-## Maintenance
-
-The maintenance of your Second Brain is very forgiving.
+- ## Maintenance
+	- The maintenance of your Second Brain is very forgiving.
 - knowledge is now our most important asset and the ability to deploy our attention
 - viewing the world through the lens of scarcity to seeing it through the lens of abundance
 ## CODE summary
