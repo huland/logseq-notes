@@ -1,5 +1,4 @@
 - ## Question of interest
-  collapsed:: true
 	- ### Ask yourself:
 		- What are the questions I’ve always been interested in?
 			- this could include grand, sweeping questions like:
@@ -23,7 +22,6 @@
 			    (this is just a first pass, and it will always be evolving).
 			- Phrase them as open-ended questions that could have multiple answers (in contrast to “yes/no” questions with only one answer)
 - ## P.A.R.A system
-  collapsed:: true
 	- With the PARA system, every piece of information you want to save can be placed into one of just four categories:
 		- 1.  Projects: Short-term efforts in your work or life that you’re working on now.
 		- 2.  Areas: Long-term responsibilities you want to manage over time.
@@ -86,7 +84,6 @@
 			- Resources that are no longer relevant
 				- hobbies you lose interest in or subjects you no longer care about
 - ## Notetaking
-  collapsed:: true
 	- Do not save everything, the best curators are picky about what they allow into their collections, and you should be too.
 	- ### Using institution as base of notes
 		- I can’t think of anything more important for your creative life - and your life in general - than learning to listen to the voice of intuition inside.
@@ -123,7 +120,6 @@
 				- this is the “campsite rule” applied to information:
 					- leave it better than you found it
 - ## Intermediate Packets: The Power of Thinking Small
-  collapsed:: true
 	- Small pieces of work-in-process it contains I call Intermediate Packets.
 	- ### Intermediate Packets types
 		- There are five kinds of Intermediate Packets you can create and reuse in your work:
@@ -145,7 +141,6 @@
 			- you’ll be able to make progress in any span of time.
 				- instead of waiting until you have multiple uninterrupted hours - which, let’s face it, is rare and getting rarer - you can look at how many minutes you have free and choose to work on an IP that you can get done within that time, even if it’s tiny.
 - ## CODE described
-  collapsed:: true
 	- The first two steps of CODE Capture and Organize, make up divergence.
 		- They are about gathering seeds of imagination carried on the wind and storing them in a secure place.
 		- This is where you research, explore, and add ideas.
@@ -182,7 +177,6 @@
 				- Dialing Down the Scope recognizes that not all the parts of a given project are equally important.
 				- Your Second Brain is a crucial part of this strategy, because you need a place to save the parts that get postponed or removed
 ## Project kickoff/completion checklists
-collapsed:: true
 	- ### Project Kickoff checklist
 		- Every goal, collaboration, or assignment we take on can be defined as a project, which gives it shape, focus, and a sense of direction
 		- This is where the Project Kickoff Checklist comes in.
@@ -250,7 +244,6 @@ collapsed:: true
 				- Officially close out the project and celebrate:
 					- Send any last emails, invoices, receipts, feedback forms, or documents, and celebrate your accomplishments with your team or collaborators so you receive the feeling of fulfillment for all the effort you put in
 ## Reviews
-collapsed:: true
 	- ### A Weekly Review Template
 		- This weekly sorting process serves as a light reminder of the knowledge I’ve accumulated over the past week
 			- 1. Clear my email inbox
@@ -289,7 +282,6 @@ collapsed:: true
 		- 5. Reprioritize tasks
 			- completed all the previous steps and have a holistic picture of my goals and projec
 - ## Habits
-  collapsed:: true
 	- ### The Noticing Habits: Using Your Second Brain to Engineer Luck
 		- Taking advantage of small opportunities you notice to capture something you might otherwise skip
 			- Noticing that an idea you have in mind could potentially be valuable and capturing it instead of thinking, “Oh, it’s nothing.”
@@ -305,12 +297,10 @@ collapsed:: true
 			- 2. Weekly and Monthly Reviews
 			- 3. Noticing Habits
 - ## Maintenance
-  collapsed:: true
 	- The maintenance of your Second Brain is very forgiving.
 		- knowledge is now our most important asset and the ability to deploy our attention
 		- viewing the world through the lens of scarcity to seeing it through the lens of abundance
 - ## CODE summary
-  collapsed:: true
 	- CODE: Keep what resonates (Capture) Save for actionability (Organize) Find the essence (Distill) Show your work (Express)
 		- Are you hoping to remember more?
 			- Focus on developing the practice of capturing and organizing your notes according to your projects, commitments, and interests using PARA
@@ -319,7 +309,6 @@ collapsed:: true
 		- Are you committed to producing more and better output with less frustration and stress?
 			- Focus on creating one Intermediate Packet at a time and looking for opportunities to share them in ever more bold ways
 - ## Summary
-  collapsed:: true
 	- 1. Decide what you want to capture
 	- 2. Choose your notes app
 	- 3. Choose a capture tool
