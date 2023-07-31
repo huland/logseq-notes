@@ -172,18 +172,14 @@ collapsed:: true
 					- you start with a series of small stepping-stones to guide your efforts
 			- 2. The Hemingway Bridge: Use Yesterday’s Momentum Today
 			- 3. Dial Down the Scope: Ship Something Small and Concrete
-		- When the full complexity of a project starts to reveal itself, most people choose to delay it. This is true of projects at work, and even more true of side projects we take on in our spare time.
-			- We tell ourselves we just need more time, but the delay ends up creating more problems than it solves.
-			- We start to lose motivation as the time horizon stretches out longer and longer. Things get lost or go out of date.
-			- Postponing our goals and desires to “later” often ends up depriving us of the very experiences we need to grow.
-			  
-			  The problem isn’t a lack of time. It is that we forget that we have control over the scope of the project.
-			  
-			  We can “dial it down” to a more manageable size, and we must if we ever want to see it finished.
-			  
-			  Dialing Down the Scope recognizes that not all the parts of a given project are equally important.
-			  
-			  Your Second Brain is a crucial part of this strategy, because you need a place to save the parts that get postponed or removed
+				- When the full complexity of a project starts to reveal itself, most people choose to delay it. This is true of projects at work, and even more true of side projects we take on in our spare time.
+					- We tell ourselves we just need more time, but the delay ends up creating more problems than it solves.
+					- We start to lose motivation as the time horizon stretches out longer and longer. Things get lost or go out of date.
+					- Postponing our goals and desires to “later” often ends up depriving us of the very experiences we need to grow.
+					- The problem isn’t a lack of time. It is that we forget that we have control over the scope of the project.
+					- We can “dial it down” to a more manageable size, and we must if we ever want to see it finished.
+					- Dialing Down the Scope recognizes that not all the parts of a given project are equally important.
+					- Your Second Brain is a crucial part of this strategy, because you need a place to save the parts that get postponed or removed
 ## Project kickoff/completion checklists
 ### Project Kickoff checklist
 
