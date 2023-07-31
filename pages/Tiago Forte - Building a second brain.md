@@ -103,12 +103,11 @@
 		- define any unusual terms you’re using
 		- think about how your future self
 			- who may not remember anything about this source, might interpret what you’re writing
-#### Highlighting can sometimes feel risky.
-
-You may wonder,
-- am I making the right decision about which points are most important, or what this source means?
-- the multiple layers of Progressive Summarization are like a safety net;
-	- if you go in the wrong direction, or make a mistake, you can always just go back to the original version and try again as nothing gets forgotten or deleted.
+- #### Highlighting can sometimes feel risky.
+	- You may wonder,
+		- am I making the right decision about which points are most important, or what this source means?
+		- the multiple layers of Progressive Summarization are like a safety net;
+			- if you go in the wrong direction, or make a mistake, you can always just go back to the original version and try again as nothing gets forgotten or deleted.
 #### Highlighting hints
 - a helpful rule of thumb is that each layer of highlighting should include no more than 10–20 percent of the previous layer
 	- if you save a series of excerpts from a book amounting to five hundred words,
