@@ -135,12 +135,11 @@
 			- 4. Final deliverables: Concrete pieces of work you’ve delivered as part of past projects, which could become components of something new.
 			- 5. Documents created by others:
 				- Knowledge assets created by people on your team, contractors or consultants, or even clients or customers, that you can reference and incorporate into your work.
-### Making the shift
-
-Making the shift to working in terms of Intermediate Packets unlocks several very powerful benefits
-- you’ll become interruption-proof
-	- you are focusing only on one small packet at a time, instead of trying to load up the entire project into your mind at once
-	- you become less vulnerable to interruptions, because you’re not trying to manage all the work-in-process in your head
+	- ### Making the shift
+		- Making the shift to working in terms of Intermediate Packets unlocks several very powerful benefits
+		- you’ll become interruption-proof
+			- you are focusing only on one small packet at a time, instead of trying to load up the entire project into your mind at once
+			- you become less vulnerable to interruptions, because you’re not trying to manage all the work-in-process in your head
 - you’ll be able to make progress in any span of time.
 	- instead of waiting until you have multiple uninterrupted hours - which, let’s face it, is rare and getting rarer - you can look at how many minutes you have free and choose to work on an IP that you can get done within that time, even if it’s tiny.
 ## CODE described
