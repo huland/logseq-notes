@@ -4,17 +4,17 @@
 	- ## Previous Day's summary
 		-
 	- ## Daily TODOs
-		- -
-		- -
-		- -
+		-
+		-
+		-
 	- ## Adhoc
-		- -
-		- -
-		- -
+		-
+		-
+		-
 	- ## Reminders
-		- -
-		- -
-		- -
+		-
+		-
+		-
 		-
 		-
 		-
@@ -30,5 +30,5 @@
 		- review finished on date:
 		- time spent:
 		- summary:
-			- -
-			- -
+			-
+			-
