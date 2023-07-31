@@ -144,14 +144,12 @@ collapsed:: true
 				- you become less vulnerable to interruptions, because you’re not trying to manage all the work-in-process in your head
 			- you’ll be able to make progress in any span of time.
 				- instead of waiting until you have multiple uninterrupted hours - which, let’s face it, is rare and getting rarer - you can look at how many minutes you have free and choose to work on an IP that you can get done within that time, even if it’s tiny.
-## CODE described
-
-The first two steps of CODE Capture and Organize, make up divergence.
-- They are about gathering seeds of imagination carried on the wind and storing them in a secure place.
-- This is where you research, explore, and add ideas.
-  
-  The final two steps, Distill and Express, are about convergence.
-- They help us shut the door to new ideas and begin constructing something new out of the knowledge building blocks we’ve assembled.
+- ## CODE described
+	- The first two steps of CODE Capture and Organize, make up divergence.
+		- They are about gathering seeds of imagination carried on the wind and storing them in a secure place.
+		- This is where you research, explore, and add ideas.
+	- The final two steps, Distill and Express, are about convergence.
+		- They help us shut the door to new ideas and begin constructing something new out of the knowledge building blocks we’ve assembled.
 ### Forward progress
 
 When in fact they are divergent acts that postpone the moment of completion
