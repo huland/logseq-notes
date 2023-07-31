@@ -77,17 +77,16 @@ What are the questions I’ve always been interested in?
 			- Vacation itineraries, Life goals, Stock photos, Product testimonials
 		- Which hobbies or passions do you have?
 			- Coffee, Classic movies, Hiphop music, Japanese anime
-### Archives: Things I’ve Completed or Put on Hold
-
-This includes any item from the previous three categories that is no longer active
-#### Example archive
-- Projects that are:
-	- completed
-	- canceled
-- Areas of responsibility that you are no longer committed to maintaining
-	- such as when a relationship ends or after moving out of your apartment)
-- Resources that are no longer relevant
-	- hobbies you lose interest in or subjects you no longer care about
+- ### Archives: Things I’ve Completed or Put on Hold
+	- This includes any item from the previous three categories that is no longer active
+	- #### Example archive
+		- Projects that are:
+			- completed
+			- canceled
+		- Areas of responsibility that you are no longer committed to maintaining
+			- such as when a relationship ends or after moving out of your apartment)
+		- Resources that are no longer relevant
+			- hobbies you lose interest in or subjects you no longer care about
 ## Notetaking
 
 Do not save everything, the best curators are picky about what they allow into their collections, and you should be too.
