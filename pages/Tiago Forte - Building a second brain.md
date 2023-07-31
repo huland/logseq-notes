@@ -272,20 +272,20 @@ collapsed:: true
 				- The inbox in my notes app is chock-full of interesting tidbits from the previous three steps
 				- batch process them all at once, making quick, intuitive decisions about which of the PARA folders each note might be relevant to, and creating new folders as needed
 			- 5. Choose my tasks for the week
-### Monthly Review Template: Reflect for Clarity and Control
-
-1. Review and update my goals
-	- take some time to cross off any completed goals, add any new ones that have emerged, or change the scope of goals that no longer make sense
-	  1. Review and update my project list
-	- includes archiving any completed or canceled projects, adding any new ones, or updating active projects to reflect how they’ve changed
-	- important that the project list remains a current, timely, and accurate reflection of your real-life goals and priorities
-	  1. Review my areas of responsibility
-	  1. Review someday/maybe tasks
-	- go through my “someday/maybe” tasks just in case any of them have become actionable
-	- someday, but not in the near future, things like “Learn Mandarin” and “Plant an orchard.”
-	- these kinds of future dreams are important to keep track of, but you don’t want them cluttering your priorities today
-	  1. Reprioritize tasks
-	- completed all the previous steps and have a holistic picture of my goals and projec
+	- ### Monthly Review Template: Reflect for Clarity and Control
+	  
+	  1. Review and update my goals
+		- take some time to cross off any completed goals, add any new ones that have emerged, or change the scope of goals that no longer make sense
+		  1. Review and update my project list
+		- includes archiving any completed or canceled projects, adding any new ones, or updating active projects to reflect how they’ve changed
+		- important that the project list remains a current, timely, and accurate reflection of your real-life goals and priorities
+		  1. Review my areas of responsibility
+		  1. Review someday/maybe tasks
+		- go through my “someday/maybe” tasks just in case any of them have become actionable
+		- someday, but not in the near future, things like “Learn Mandarin” and “Plant an orchard.”
+		- these kinds of future dreams are important to keep track of, but you don’t want them cluttering your priorities today
+		  1. Reprioritize tasks
+		- completed all the previous steps and have a holistic picture of my goals and projec
 ## Habits
 ### The Noticing Habits: Using Your Second Brain to Engineer Luck
 
