@@ -190,22 +190,20 @@ collapsed:: true
 			- 3. Search for related terms across all folders.
 			- 4. Move (or tag) relevant notes to the project folder.
 			- 5. Create an outline of collected notes and plan the project
-#### Capture my current thinking on the project
-
-Here are some questions I use to prompt this initial brainstorm:
-- What do I already know about this project?
-- What don’t I know that I need to find out?
-- What is my goal or intention?
-- Who can I talk to who might provide insights?
-- What can I read or listen to for relevant ideas?
-  
-  Answer premortem. I questions:
-- What do you want to learn?
-- What is the greatest source of uncertainty or most important question you want to answer?
-- What is most likely to fail?
-  
-  Communicate with stakeholders: Explain to your manager, colleagues, clients, customers, shareholders, contractors, etc., what the project is about and why it matters.
-  Define success criteria:
+	- #### Capture my current thinking on the project
+		- Here are some questions I use to prompt this initial brainstorm:
+			- What do I already know about this project?
+			- What don’t I know that I need to find out?
+			- What is my goal or intention?
+			- Who can I talk to who might provide insights?
+			- What can I read or listen to for relevant ideas?
+		- Answer premortem. I questions:
+			- What do you want to learn?
+			- What is the greatest source of uncertainty or most important question you want to answer?
+			- What is most likely to fail?
+			  
+			  Communicate with stakeholders: Explain to your manager, colleagues, clients, customers, shareholders, contractors, etc., what the project is about and why it matters.
+			  Define success criteria:
 - What needs to happen for this project to be considered successful?
 - What are the minimum results you need to achieve, or the “stretch goals” you’re striving for?
 - Have an official kickoff:
