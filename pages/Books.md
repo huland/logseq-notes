@@ -4,9 +4,9 @@
 - Martin Fowler - Refactoring: Improving the Design of Existing Code (2nd Edition)
 - Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides - Design Patterns: Elements of Reusable Object-Oriented Software
 - Matthias Noback - Principles of Package Design: Creating Reusable Software Components
-- Robert C. Martin - Clean Code: A Handbook of Agile Software Craftsmanship
+-
 - Robert C. Martin - Agile Software Develpment: Principles, Patterns, and Practices
 - Michael Feathers - Working Effectively with Legacy Code
 - # Book notes
 - [[Tiago Forte - Building a second brain]]
--
+- [[Robert C. Martin - Clean Code: A Handbook of Agile Software Craftsmanship]]
