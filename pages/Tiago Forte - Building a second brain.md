@@ -45,39 +45,38 @@ What are the questions I’ve always been interested in?
 		- Side projects:
 			- Publish blog post, Launch crowdfunding campaign, Research best podcast microphone, Complete online course
 ### Areas: What I’m Committed to Over Time
-#### Example areas
-- In our work lives, we have various ongoing areas we’re responsible for, such as
-	- product development
-	- quality control
-	- human resources
-		- these are the job responsibilities that we were hired to take on
-	- sometimes there are others that we officially or unofficially have taken ownership of over time
-- personal life could include:
-	- activities or places you are responsible for:
-		- home/apartment, cooking, travel, car
-	- people you are responsible for or accountable to:
-		- friends, kids, spouse, pets
-	- standards of performance you are responsible for:
-		- health, personal growth, friendships, finances
-	- in your job or business:
-		- departments or functions you are responsible for:
-			- account management, marketing, operations, product development
-		- people or teams you are responsible for or accountable to:
-			- direct reports, manager, board of directors, suppliers
-		- standards of performance you are responsible for:
-			- professional development, sales and marketing, relationships and networking, recruiting and hiring
-### Resources: Things I Want to Reference in the Future
-
-This is basically a catchall for anything that doesn’t belong to a project or an area and could include any topic you’re interested in gathering information about.
-#### Example resources
-- What topics are you interested in?
-	- Architecture, Interior design, English literature, Beer brewing
-- What subjects are you researching?
-	- Habit formation, Notetaking, Project management, Nutrition
-- What useful information do you want to be able to reference?
-	- Vacation itineraries, Life goals, Stock photos, Product testimonials
-- Which hobbies or passions do you have?
-	- Coffee, Classic movies, Hiphop music, Japanese anime
+	- #### Example areas
+		- In our work lives, we have various ongoing areas we’re responsible for, such as
+			- product development
+			- quality control
+			- human resources
+				- these are the job responsibilities that we were hired to take on
+			- sometimes there are others that we officially or unofficially have taken ownership of over time
+		- personal life could include:
+			- activities or places you are responsible for:
+				- home/apartment, cooking, travel, car
+			- people you are responsible for or accountable to:
+				- friends, kids, spouse, pets
+			- standards of performance you are responsible for:
+				- health, personal growth, friendships, finances
+			- in your job or business:
+				- departments or functions you are responsible for:
+					- account management, marketing, operations, product development
+				- people or teams you are responsible for or accountable to:
+					- direct reports, manager, board of directors, suppliers
+				- standards of performance you are responsible for:
+					- professional development, sales and marketing, relationships and networking, recruiting and hiring
+- ### Resources: Things I Want to Reference in the Future
+	- This is basically a catchall for anything that doesn’t belong to a project or an area and could include any topic you’re interested in gathering information about.
+	- #### Example resources
+		- What topics are you interested in?
+			- Architecture, Interior design, English literature, Beer brewing
+		- What subjects are you researching?
+			- Habit formation, Notetaking, Project management, Nutrition
+		- What useful information do you want to be able to reference?
+			- Vacation itineraries, Life goals, Stock photos, Product testimonials
+		- Which hobbies or passions do you have?
+			- Coffee, Classic movies, Hiphop music, Japanese anime
 ### Archives: Things I’ve Completed or Put on Hold
 
 This includes any item from the previous three categories that is no longer active
