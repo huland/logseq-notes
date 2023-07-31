@@ -1,7 +1,7 @@
 # Tiago Forte - Building a second brain
 ## Question of interest
 - ### Ask yourself:
-  What are the questions I’ve always been interested in?
+	- What are the questions I’ve always been interested in?
 	- this could include grand, sweeping questions like:
 		- How can we make society fairer and more equitable?
 	- practical ones like:
