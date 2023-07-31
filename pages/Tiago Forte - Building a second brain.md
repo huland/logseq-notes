@@ -87,6 +87,7 @@ collapsed:: true
 			- Resources that are no longer relevant
 				- hobbies you lose interest in or subjects you no longer care about
 - ## Notetaking
+  collapsed:: true
 	- Do not save everything, the best curators are picky about what they allow into their collections, and you should be too.
 	- ### Using institution as base of notes
 		- I can’t think of anything more important for your creative life - and your life in general - than learning to listen to the voice of intuition inside.
