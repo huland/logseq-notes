@@ -23,75 +23,74 @@
 		    (this is just a first pass, and it will always be evolving).
 		- Phrase them as open-ended questions that could have multiple answers (in contrast to “yes/no” questions with only one answer)
 - ## P.A.R.A system
-- With the PARA system, every piece of information you want to save can be placed into one of just four categories:
-- 1. Projects: Short-term efforts in your work or life that you’re working on now.
-  2. Areas: Long-term responsibilities you want to manage over time.
-  3. Resources: Topics or interests that may be useful in the future.
-  4. Archives: Inactive items from the other three categories.
+	- With the PARA system, every piece of information you want to save can be placed into one of just four categories:
+	- 1. Projects: Short-term efforts in your work or life that you’re working on now.
+	  2. Areas: Long-term responsibilities you want to manage over time.
+	  3. Resources: Topics or interests that may be useful in the future.
+	  4. Archives: Inactive items from the other three categories.
 -
-- ### Projects: What I’m Working on Right Now
-	- Projects have a couple of features that make them an ideal way to organize modern work.
-		- they have a beginning and an end
-			- they take place during a specific period of time and then they finish
-	- they have a specific, clear outcome that needs to happen in order for them to be checked off as complete,
-		- such as “finalize,” “green-light,” “launch,” or “publish.
-	- #### Example projects
-		- Projects at work:
-			- Complete web-page design, Create slide deck for conference, Develop project schedule, Plan recruitment drive
-		- Personal projects:
-			- Finish Spanish language course, Plan vacation, Buy new living room furniture, Find local volunteer opportunity
-		- Side projects:
-			- Publish blog post, Launch crowdfunding campaign, Research best podcast microphone, Complete online course
-### Areas: What I’m Committed to Over Time
-	- #### Example areas
-		- In our work lives, we have various ongoing areas we’re responsible for, such as
-			- product development
-			- quality control
-			- human resources
-				- these are the job responsibilities that we were hired to take on
-			- sometimes there are others that we officially or unofficially have taken ownership of over time
-		- personal life could include:
-			- activities or places you are responsible for:
-				- home/apartment, cooking, travel, car
-			- people you are responsible for or accountable to:
-				- friends, kids, spouse, pets
-			- standards of performance you are responsible for:
-				- health, personal growth, friendships, finances
-			- in your job or business:
-				- departments or functions you are responsible for:
-					- account management, marketing, operations, product development
-				- people or teams you are responsible for or accountable to:
-					- direct reports, manager, board of directors, suppliers
+	- ### Projects: What I’m Working on Right Now
+		- Projects have a couple of features that make them an ideal way to organize modern work.
+			- they have a beginning and an end
+				- they take place during a specific period of time and then they finish
+		- they have a specific, clear outcome that needs to happen in order for them to be checked off as complete,
+			- such as “finalize,” “green-light,” “launch,” or “publish.
+		- #### Example projects
+			- Projects at work:
+				- Complete web-page design, Create slide deck for conference, Develop project schedule, Plan recruitment drive
+			- Personal projects:
+				- Finish Spanish language course, Plan vacation, Buy new living room furniture, Find local volunteer opportunity
+			- Side projects:
+				- Publish blog post, Launch crowdfunding campaign, Research best podcast microphone, Complete online course
+	- ### Areas: What I’m Committed to Over Time
+		- #### Example areas
+			- In our work lives, we have various ongoing areas we’re responsible for, such as
+				- product development
+				- quality control
+				- human resources
+					- these are the job responsibilities that we were hired to take on
+				- sometimes there are others that we officially or unofficially have taken ownership of over time
+			- personal life could include:
+				- activities or places you are responsible for:
+					- home/apartment, cooking, travel, car
+				- people you are responsible for or accountable to:
+					- friends, kids, spouse, pets
 				- standards of performance you are responsible for:
-					- professional development, sales and marketing, relationships and networking, recruiting and hiring
-- ### Resources: Things I Want to Reference in the Future
-	- This is basically a catchall for anything that doesn’t belong to a project or an area and could include any topic you’re interested in gathering information about.
-	- #### Example resources
-		- What topics are you interested in?
-			- Architecture, Interior design, English literature, Beer brewing
-		- What subjects are you researching?
-			- Habit formation, Notetaking, Project management, Nutrition
-		- What useful information do you want to be able to reference?
-			- Vacation itineraries, Life goals, Stock photos, Product testimonials
-		- Which hobbies or passions do you have?
-			- Coffee, Classic movies, Hiphop music, Japanese anime
-- ### Archives: Things I’ve Completed or Put on Hold
-	- This includes any item from the previous three categories that is no longer active
-	- #### Example archive
-		- Projects that are:
-			- completed
-			- canceled
-		- Areas of responsibility that you are no longer committed to maintaining
-			- such as when a relationship ends or after moving out of your apartment)
-		- Resources that are no longer relevant
-			- hobbies you lose interest in or subjects you no longer care about
+					- health, personal growth, friendships, finances
+				- in your job or business:
+					- departments or functions you are responsible for:
+						- account management, marketing, operations, product development
+					- people or teams you are responsible for or accountable to:
+						- direct reports, manager, board of directors, suppliers
+					- standards of performance you are responsible for:
+						- professional development, sales and marketing, relationships and networking, recruiting and hiring
+	- ### Resources: Things I Want to Reference in the Future
+		- This is basically a catchall for anything that doesn’t belong to a project or an area and could include any topic you’re interested in gathering information about.
+		- #### Example resources
+			- What topics are you interested in?
+				- Architecture, Interior design, English literature, Beer brewing
+			- What subjects are you researching?
+				- Habit formation, Notetaking, Project management, Nutrition
+			- What useful information do you want to be able to reference?
+				- Vacation itineraries, Life goals, Stock photos, Product testimonials
+			- Which hobbies or passions do you have?
+				- Coffee, Classic movies, Hiphop music, Japanese anime
+	- ### Archives: Things I’ve Completed or Put on Hold
+		- This includes any item from the previous three categories that is no longer active
+		- #### Example archive
+			- Projects that are:
+				- completed
+				- canceled
+			- Areas of responsibility that you are no longer committed to maintaining
+				- such as when a relationship ends or after moving out of your apartment)
+			- Resources that are no longer relevant
+				- hobbies you lose interest in or subjects you no longer care about
 - ## Notetaking
   Do not save everything, the best curators are picky about what they allow into their collections, and you should be too.
-### Using institution as base of notes
-
-I can’t think of anything more important for your creative life - and your life in general - than learning to listen to the voice of intuition inside.
-
-It is the source of your imagination, your confidence, and your spontaneity. You can intentionally train yourself to hear that voice of intuition every day by taking note of what it tells you.
+- ### Using institution as base of notes
+  I can’t think of anything more important for your creative life - and your life in general - than learning to listen to the voice of intuition inside.
+  
+  It is the source of your imagination, your confidence, and your spontaneity. You can intentionally train yourself to hear that voice of intuition every day by taking note of what it tells you.
 ### Metadata
 
 It’s a good idea to capture key information about the source of a note
