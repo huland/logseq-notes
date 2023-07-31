@@ -285,24 +285,21 @@ collapsed:: true
 			- these kinds of future dreams are important to keep track of, but you don’t want them cluttering your priorities today
 		- 5. Reprioritize tasks
 			- completed all the previous steps and have a holistic picture of my goals and projec
-## Habits
-### The Noticing Habits: Using Your Second Brain to Engineer Luck
-
-Taking advantage of small opportunities you notice to capture something you might otherwise skip
-- Noticing that an idea you have in mind could potentially be valuable and capturing it instead of thinking, “Oh, it’s nothing.”
-- Noticing when an idea you’re reading about resonates with you and taking those extra few seconds to highlight it.
-- Noticing that a note could use a better title—and changing it so it’s easier for your future self to find it.
-- Noticing you could move or link a note to another project or area where it will be more useful.
-- Noticing opportunities to combine two or more Intermediate Packets into a new, larger work so you don’t have to start it from scratch.
-- Noticing a chance to merge similar content from different notes into the same note so it’s not spread around too many places.
-- Noticing when an IP that you already have could help someone else solve a problem, and sharing it with them, even if it’s not perfect.
-### Three habits to do.
-
-Three kinds of habits I’ve introduced you to
-
-1. Project Kickoff and Completion Checklists
-1. Weekly and Monthly Reviews
-1. Noticing Habits
+- ## Habits
+	- ### The Noticing Habits: Using Your Second Brain to Engineer Luck
+		- Taking advantage of small opportunities you notice to capture something you might otherwise skip
+			- Noticing that an idea you have in mind could potentially be valuable and capturing it instead of thinking, “Oh, it’s nothing.”
+			- Noticing when an idea you’re reading about resonates with you and taking those extra few seconds to highlight it.
+			- Noticing that a note could use a better title—and changing it so it’s easier for your future self to find it.
+			- Noticing you could move or link a note to another project or area where it will be more useful.
+			- Noticing opportunities to combine two or more Intermediate Packets into a new, larger work so you don’t have to start it from scratch.
+			- Noticing a chance to merge similar content from different notes into the same note so it’s not spread around too many places.
+			- Noticing when an IP that you already have could help someone else solve a problem, and sharing it with them, even if it’s not perfect.
+	- ### Three habits to do.
+		- Three kinds of habits I’ve introduced you to
+			- 1. Project Kickoff and Completion Checklists
+			- 2. Weekly and Monthly Reviews
+			- 3. Noticing Habits
 ## Maintenance
 
 The maintenance of your Second Brain is very forgiving.
