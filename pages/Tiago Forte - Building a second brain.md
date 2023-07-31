@@ -182,17 +182,14 @@ collapsed:: true
 				- Your Second Brain is a crucial part of this strategy, because you need a place to save the parts that get postponed or removed
 ## Project kickoff/completion checklists
 	- ### Project Kickoff checklist
-	- Every goal, collaboration, or assignment we take on can be defined as a project, which gives it shape, focus, and a sense of direction
-	  
-	  This is where the Project Kickoff Checklist comes in.
-	  
-	  Checklist:
-	  
-	  1. Capture my current thinking on the project.
-	  1. Review folders (or tags) that might contain relevant notes.
-	  1. Search for related terms across all folders.
-	  1. Move (or tag) relevant notes to the project folder.
-	  1. Create an outline of collected notes and plan the project
+		- Every goal, collaboration, or assignment we take on can be defined as a project, which gives it shape, focus, and a sense of direction
+		- This is where the Project Kickoff Checklist comes in.
+		- Checklist:
+			- 1. Capture my current thinking on the project.
+			- 2. Review folders (or tags) that might contain relevant notes.
+			- 3. Search for related terms across all folders.
+			- 4. Move (or tag) relevant notes to the project folder.
+			- 5. Create an outline of collected notes and plan the project
 #### Capture my current thinking on the project
 
 Here are some questions I use to prompt this initial brainstorm:
