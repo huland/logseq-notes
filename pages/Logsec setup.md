@@ -37,7 +37,7 @@
   git push origin main
   ```
 - ## Plugins
-- - Git
-- - Tags
-- - Markdown Table Editor
-- - Bullet Threading
+	- - Git
+	- - Tags
+	- - Markdown Table Editor
+	- - Bullet Threading
