@@ -215,13 +215,13 @@ collapsed:: true
 		- This is where the Project Completion Checklist is essential.
 		- It’s a series of steps you can take to decide if there are any reusable knowledge assets worth keeping, before archiving the rest.
 		- The only way that the Kickoff Checklist we just looked at will be feasible is if you’ve previously taken the time to save and preserve material from past projects.
-	- Checklist:
-	  
-	  1. Mark project as complete in task manager or project management app
-		- keeping an inventory of your victories and successes is a wonderful use for your Second Brain
-	- 2. Cross out the associated project goal and move to “Completed” section
-		- cross out the goal and move it to a different section
-		- need some motivation, I can look through this list and be reminded of all the meaningful goals I’ve achieved in the past
+		- Checklist:
+		  
+		  1. Mark project as complete in task manager or project management app
+			- keeping an inventory of your victories and successes is a wonderful use for your Second Brain
+		- 2. Cross out the associated project goal and move to “Completed” section
+			- cross out the goal and move it to a different section
+			- need some motivation, I can look through this list and be reminded of all the meaningful goals I’ve achieved in the past
 	- 3.  Review Intermediate Packets and move them to other folders.
 		- look through the folder for the completed project to identify any Intermediate Packets
 		- any IPs I decide could be relevant to another project, I move to that project’s folder, the same goes for notes relevant to areas or resources
