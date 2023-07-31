@@ -190,31 +190,30 @@ collapsed:: true
 			- 3. Search for related terms across all folders.
 			- 4. Move (or tag) relevant notes to the project folder.
 			- 5. Create an outline of collected notes and plan the project
-	- #### Capture my current thinking on the project
-		- Here are some questions I use to prompt this initial brainstorm:
-			- What do I already know about this project?
-			- What don’t I know that I need to find out?
-			- What is my goal or intention?
-			- Who can I talk to who might provide insights?
-			- What can I read or listen to for relevant ideas?
-		- Answer premortem. I questions:
-			- What do you want to learn?
-			- What is the greatest source of uncertainty or most important question you want to answer?
-			- What is most likely to fail?
-			  
-			  Communicate with stakeholders: Explain to your manager, colleagues, clients, customers, shareholders, contractors, etc., what the project is about and why it matters.
+		- #### Capture my current thinking on the project
+			- Here are some questions I use to prompt this initial brainstorm:
+				- What do I already know about this project?
+				- What don’t I know that I need to find out?
+				- What is my goal or intention?
+				- Who can I talk to who might provide insights?
+				- What can I read or listen to for relevant ideas?
+			- Answer premortem. I questions:
+				- What do you want to learn?
+				- What is the greatest source of uncertainty or most important question you want to answer?
+				- What is most likely to fail?
+			- Communicate with stakeholders: Explain to your manager, colleagues, clients, customers, shareholders, contractors, etc., what the project is about and why it matters.
 			  Define success criteria:
-- What needs to happen for this project to be considered successful?
-- What are the minimum results you need to achieve, or the “stretch goals” you’re striving for?
-- Have an official kickoff:
-	- Schedule check-in calls
-	- make a budget and timeline
-	- write out the goals and objectives to make sure everyone is informed, aligned, and clear on what is expected of them
-	  I find that doing an official kickoff is useful even if it’s a solo project!
-### Project Completion checklist
-- Document any thinking that could add value in the future.
-- This is where the Project Completion Checklist is essential.
-- It’s a series of steps you can take to decide if there are any reusable knowledge assets worth keeping, before archiving the rest.
+				- What needs to happen for this project to be considered successful?
+				- What are the minimum results you need to achieve, or the “stretch goals” you’re striving for?
+				- Have an official kickoff:
+					- Schedule check-in calls
+					- make a budget and timeline
+					- write out the goals and objectives to make sure everyone is informed, aligned, and clear on what is expected of them
+					  I find that doing an official kickoff is useful even if it’s a solo project!
+	- ### Project Completion checklist
+	- Document any thinking that could add value in the future.
+	- This is where the Project Completion Checklist is essential.
+	- It’s a series of steps you can take to decide if there are any reusable knowledge assets worth keeping, before archiving the rest.
 - The only way that the Kickoff Checklist we just looked at will be feasible is if you’ve previously taken the time to save and preserve material from past projects.
   
   Checklist:
