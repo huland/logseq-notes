@@ -24,7 +24,6 @@ What are the questions I’ve always been interested in?
 	    (this is just a first pass, and it will always be evolving).
 	- Phrase them as open-ended questions that could have multiple answers (in contrast to “yes/no” questions with only one answer)
 - ## P.A.R.A system
-  
   With the PARA system, every piece of information you want to save can be placed into one of just four categories:
 - 1. Projects: Short-term efforts in your work or life that you’re working on now.
   2. Areas: Long-term responsibilities you want to manage over time.
@@ -87,9 +86,8 @@ What are the questions I’ve always been interested in?
 			- such as when a relationship ends or after moving out of your apartment)
 		- Resources that are no longer relevant
 			- hobbies you lose interest in or subjects you no longer care about
-## Notetaking
-
-Do not save everything, the best curators are picky about what they allow into their collections, and you should be too.
+- ## Notetaking
+  Do not save everything, the best curators are picky about what they allow into their collections, and you should be too.
 ### Using institution as base of notes
 
 I can’t think of anything more important for your creative life - and your life in general - than learning to listen to the voice of intuition inside.
