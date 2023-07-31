@@ -319,17 +319,25 @@ collapsed:: true
 	- 4. Get set up with PARA
 	- 5. Get inspired by identifying your twelve favorite problems
 	- 6. Automatically capture your ebook highlights
-		- What do you most want to capture, learn, explore, or share? Identify two to three kinds of content that you already value to get started with. - starting with a read later app - make a list of some of your favorite problems, save the list as a note, and revisit it any time you need ideas for what to capture 1. Practice Progressive Summarization 1. Experiment with just one Intermediate Packet 1. Make progress on one deliverable
-		  
-		  using the Express techniques of: - Archipelago of Ideas - Hemingway Bridge - Dial Down the Scope 1. Schedule a Weekly Review
-		  
-		  Put a weekly recurring meeting with yourself on your calendar to begin establishing the habit of conducting a Weekly Review. 1. Assess your notetaking proficiency
-		  
-		  Evaluate your current notetaking practices and areas for potential improvement using our free assessment tool at Buildingasecondbrain.com/quiz. 1. Join the PKM community
-		  
-		  While building a Second Brain is a project - something you can commit to and achieve within a reasonable period of time - using your Second Brain is a lifelong practice.
-		  
-		  I recommend you revisit Building a Second Brain at various points over time. I guarantee you’ll notice things you missed the first time.
+		- What do you most want to capture, learn, explore, or share? Identify two to three kinds of content that you already value to get started with.
+			- starting with a read later app
+			- make a list of some of your favorite problems, save the list as a note, and revisit it any time you need ideas for what to capture
+	- 7. Practice Progressive Summarization
+	- 8. Experiment with just one Intermediate Packet
+	- 9. Make progress on one deliverable
+		- using the Express techniques of:
+			- Archipelago of Ideas
+			- Hemingway Bridge
+			- Dial Down the Scope
+			- 1. Schedule a Weekly Review
+			  
+			  Put a weekly recurring meeting with yourself on your calendar to begin establishing the habit of conducting a Weekly Review. 1. Assess your notetaking proficiency
+			  
+			  Evaluate your current notetaking practices and areas for potential improvement using our free assessment tool at Buildingasecondbrain.com/quiz. 1. Join the PKM community
+			  
+			  While building a Second Brain is a project - something you can commit to and achieve within a reasonable period of time - using your Second Brain is a lifelong practice.
+			  
+			  I recommend you revisit Building a Second Brain at various points over time. I guarantee you’ll notice things you missed the first time.
 - The practice begins and ends with notetaking:
 	- including capturing
 	- organizing
