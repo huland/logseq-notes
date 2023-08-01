@@ -414,18 +414,14 @@
 	- ### Don’t Pass Null
 		- Returning null from methods is bad, but passing null into methods is worse. Unless you are working with an API which expects you to pass null, you should avoid passing null in your code whenever possible.
 	- ### Conclusion
-	  
-	  Clean code is readable, but it must also be robust.
-	  
-	  These are not conflicting goals.
-	  
-	  We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic.
-	  
-	  To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
+		- Clean code is readable, but it must also be robust.
+		- These are not conflicting goals.
+		- We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic.
+		- To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
 ## Boundaries
-### Using Third-Party Code
-
-<==========>
+	- ### Using Third-Party Code
+	  
+	  <==========>
 - Your Highlight on page 147-147 | Added on Sunday, June 18, 2023 11:19:24 PM
 ### Exploring and Learning Boundaries
 
