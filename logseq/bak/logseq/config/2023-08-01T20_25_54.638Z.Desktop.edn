@@ -412,4 +412,6 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :ui/show-brackets? false}
+ :ui/show-brackets? true
+ :journal/page-title-format "yyyy-MM-dd"
+ :graph/settings {:journal? true, :builtin-pages? false}}
