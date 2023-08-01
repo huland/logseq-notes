@@ -6,4 +6,4 @@
 	- Line coverage of all modified files reach the expectation
 	- Newly added line coverage reach the expectation
 - Approved Pull Request by 2 team members
-- Passed local and remote (eg.: AWS) tests
+- Passed local and remote (e.g.: AWS) tests
