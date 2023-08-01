@@ -46,8 +46,7 @@
 				    return flaggedCells;
 				  }
 				  ```
-				  
-				  Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. But the code has become much more explicit.
+				- Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. But the code has become much more explicit.
 ### Beware of using names which vary in small ways
 
 Spelling similar concepts similarly is information. Using inconsistent spellings is disinformation
