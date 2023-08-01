@@ -135,26 +135,20 @@
 		- "You know you are working on clean code when each routine turns out to be pretty much what you expected."
 			- Half the battle to achieving that principle is choosing good names for small functions that do one thing.
 		- The smaller and more focused a function is, the easier it is to choose a descriptive name.
+		- Don’t be afraid to make a name long.
+			- A long descriptive name is better than a short enigmatic name.
+			- A long descriptive name is better than a long descriptive comment.
+			- Use a naming convention that allows multiple words to be easily read in the function names, and then make use of those multiple words to give the function a name that says what it does.
+		- Don’t be afraid to spend time choosing a name.
+			- try several different names and read the code with each in place (modern IDEs make it trivial to change names)
+		- Choosing descriptive names will clarify the design of the module in your mind and help you to improve it. It is not at all uncommon that hunting for a good name results in a favorable restructuring of the code.
+		- Be consistent in your names. Use the same phrases, nouns, and verbs in the function names you choose for your modules.
+	- ### Function Arguments
+		- The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justifcation—and then shouldn’t be used anyway.
 		  
-		  Don’t be afraid to make a name long.
-- A long descriptive name is better than a short enigmatic name.
-- A long descriptive name is better than a long descriptive comment.
-- Use a naming convention that allows multiple words to be easily read in the function names, and then make use of those multiple words to give the function a name that says what it does.
-  
-  Don’t be afraid to spend time choosing a name.
-- try several different names and read the code with each in place (modern IDEs make it trivial to change names)
-  
-  Choosing descriptive names will clarify the design of the module in your mind and help you to improve it.
-  It is not at all uncommon that hunting for a good name results in a favorable restructuring of the code.
-  
-  Be consistent in your names. Use the same phrases, nouns, and verbs in the function names you choose for your modules.
-### Function Arguments
-
-The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justifcation—and then shouldn’t be used anyway.
-
-Arguments are even harder from a testing point of view. Imagine the difficulty of writing all the test cases to ensure that all the various combinations of arguments work properly. If there are no arguments, this is trivial. If there’s one argument, it’s not too hard. With two arguments the problem gets a bit more challenging. With more than two arguments, testing every combination of appropriate values can be daunting.
-
-Output arguments are harder to understand than input arguments. When we read a function, we are used to the idea of information going in to the function through arguments and out through the return value. We don’t usually expect information to be going out through the arguments. So output arguments often cause us to do a double-take.
+		  Arguments are even harder from a testing point of view. Imagine the difficulty of writing all the test cases to ensure that all the various combinations of arguments work properly. If there are no arguments, this is trivial. If there’s one argument, it’s not too hard. With two arguments the problem gets a bit more challenging. With more than two arguments, testing every combination of appropriate values can be daunting.
+		  
+		  Output arguments are harder to understand than input arguments. When we read a function, we are used to the idea of information going in to the function through arguments and out through the return value. We don’t usually expect information to be going out through the arguments. So output arguments often cause us to do a double-take.
 #### Common Monadic Forms
 
 There are two very common reasons to pass a single argument into a function:
