@@ -238,12 +238,12 @@
 		- #### Mumbling
 			- Plopping in a comment just because you feel you should or because the process requires it, is a hack. If you decide to write a comment, then spend the time necessary to make sure it is the best comment you can write.
 		- #### Noise Comments
-		- ```java
-		  /**
-		  * Default constructor.
-		  */
-		  protected AnnualDateRule() {}
-		  ```
+			- ```java
+			  /**
+			  * Default constructor.
+			  */
+			  protected AnnualDateRule() {}
+			  ```
 		- No, really? Or how about this:
 		- ```java
 		  /** The day of the month. */
