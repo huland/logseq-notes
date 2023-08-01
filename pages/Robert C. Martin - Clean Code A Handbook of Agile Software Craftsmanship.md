@@ -300,13 +300,12 @@
 	- ### Team Rules
 		- A team of developers should agree upon a single formatting style, and then every member of that team should use that style. We want the software to have a consistent style. We don’t want it to appear to have been written by a bunch of disagreeing individuals.
 ## Objects and Data Structures
-### Data/Object Anti-Symmetry
-
-The difference between objects and data structures:
-- Objects hide their data behind abstractions and expose functions that operate on that data.
-- Data structure expose their data and have no meaningful functions.
-  
-  Notice the complimentary nature of the two definitions. They are virtual opposites.
+	- ### Data/Object Anti-Symmetry
+		- The difference between objects and data structures:
+			- Objects hide their data behind abstractions and expose functions that operate on that data.
+			- Data structure expose their data and have no meaningful functions.
+			  
+			  Notice the complimentary nature of the two definitions. They are virtual opposites.
 ##### Procedural Shape
 
 ```java
