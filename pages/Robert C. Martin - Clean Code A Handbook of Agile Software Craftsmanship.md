@@ -11,21 +11,19 @@
 		- Choosing good names takes time but saves more than it takes.
 		- Take care with your names and change them when you fnd better ones.
 		- The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used. If a name requires a comment, then the name does not reveal its intent.
-#### Example
-
-What is the purpose of this code?
-
-```java
-public List<int[]> getThem() {
-  List<int[]> list1 = new ArrayList<int[]>();
-  for (int[] x : theList)
-      if (x[0] == 4)
-          list1.add(x);
-  return list1;
-}
-```
-
-Why is it hard to tell what this code is doing?
+		- #### Example
+			- What is the purpose of this code?
+			- ```java
+			  public List<int[]> getThem() {
+			    List<int[]> list1 = new ArrayList<int[]>();
+			    for (int[] x : theList)
+			        if (x[0] == 4)
+			            list1.add(x);
+			    return list1;
+			  }
+			  ```
+			  
+			  Why is it hard to tell what this code is doing?
 - There are no complex expressions.
 - Spacing and indentation are reasonable.
 - There are only three variables and two constants mentioned.
