@@ -82,24 +82,17 @@
 	- ### Use Solution Domain Names
 		- Go ahead and use computer science (CS) terms, algorithm names, pattern names, math terms, and so forth. It is not wise to draw every name from the problem domain because we don’t want our coworkers to have to run back and forth to the customer asking what every name means when they already know the concept by a different name.
 	- ### Use Problem Domain Names
-	  
-	  Separating solution and problem domain concepts is part of the job of a good programmer and designer.
-### Add Meaningful Context
-
-You need to place names in context for your reader by enclosing them in well-named classes, functions, or namespaces.
-### Don’t Add Gratuitous Context
-
-In an imaginary application called “Gas Station Deluxe,” it is a bad idea to prefx every class with GSD.
-
-The names `accountAddress` and `customerAddress` are fine names for instances of the class `Address` but could be poor names for classes.
-
-`Address` is a fine name for a class.
-
-If I need to differentiate between MAC addresses, port addresses, and Web addresses, I might consider `PostalAddress`, `MAC`, and `URI`.
-The resulting names are more precise, which is the point of all naming.
-### Final Words
-
-Follow some of these rules and see whether you don’t improve the readability of your code. If you are maintaining someone else’s code, use refactoring tools to help resolve these problems. It will pay off in the short term and continue to pay in the long run.
+		- Separating solution and problem domain concepts is part of the job of a good programmer and designer.
+	- ### Add Meaningful Context
+		- You need to place names in context for your reader by enclosing them in well-named classes, functions, or namespaces.
+	- ### Don’t Add Gratuitous Context
+		- In an imaginary application called “Gas Station Deluxe,” it is a bad idea to prefx every class with GSD.
+		- The names `accountAddress` and `customerAddress` are fine names for instances of the class `Address` but could be poor names for classes.
+		- `Address` is a fine name for a class.
+		- If I need to differentiate between MAC addresses, port addresses, and Web addresses, I might consider `PostalAddress`, `MAC`, and `URI`.
+		  The resulting names are more precise, which is the point of all naming.
+	- ### Final Words
+	- Follow some of these rules and see whether you don’t improve the readability of your code. If you are maintaining someone else’s code, use refactoring tools to help resolve these problems. It will pay off in the short term and continue to pay in the long run.
 ## Functions
 ### Small
 
