@@ -92,18 +92,16 @@
 		- If I need to differentiate between MAC addresses, port addresses, and Web addresses, I might consider `PostalAddress`, `MAC`, and `URI`.
 		  The resulting names are more precise, which is the point of all naming.
 	- ### Final Words
-	- Follow some of these rules and see whether you don’t improve the readability of your code. If you are maintaining someone else’s code, use refactoring tools to help resolve these problems. It will pay off in the short term and continue to pay in the long run.
+		- Follow some of these rules and see whether you don’t improve the readability of your code. If you are maintaining someone else’s code, use refactoring tools to help resolve these problems. It will pay off in the short term and continue to pay in the long run.
 ## Functions
-### Small
-
-The first rule of functions is that they should be small.
-
-The second rule of functions is that they should be smaller than that.
-- Every function just two, or three, or four lines long.
-- Each was transparently obvious.
-- Each told a story.
-- And each led you to the next in a compelling order.
-- That’s how short your functions should be!
+	- ### Small
+		- The first rule of functions is that they should be small.
+		- The second rule of functions is that they should be smaller than that.
+			- Every function just two, or three, or four lines long.
+			- Each was transparently obvious.
+			- Each told a story.
+			- And each led you to the next in a compelling order.
+			- That’s how short your functions should be!
 #### Blocks and Indenting
 
 This implies that the blocks within if statements, else statements, while statements, and so on should be one line long. Probably that line should be a function call. Not only does this keep the enclosing function small, but it also adds documentary value because the function called within the block can have a nicely descriptive name.
