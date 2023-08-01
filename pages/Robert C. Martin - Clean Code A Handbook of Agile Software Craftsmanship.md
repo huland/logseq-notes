@@ -430,12 +430,11 @@
 		- We manage third-party boundaries by having very few places in the code that refer to them.
 			- We may wrap them
 			- We may use an ADAPTER to convert from our perfect interface to the provided interface.
-			  
-			  Either way our code speaks to us better, promotes internally consistent usage across the boundary, and has fewer maintenance points when the third-party code changes.
+		- Either way our code speaks to us better, promotes internally consistent usage across the boundary, and has fewer maintenance points when the third-party code changes.
 ## Unit Tests
-### F.I.R.S.T.
-
-Clean tests follow five other rules that form the above acronym:
+	- ### F.I.R.S.T.
+	  
+	  Clean tests follow five other rules that form the above acronym:
 - Fast (Tests should be fast)
 - Independent (Tests should not depend on each other)
 - Repeatable (Tests should be repeatable in any environment)
