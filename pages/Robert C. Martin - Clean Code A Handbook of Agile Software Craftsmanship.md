@@ -145,25 +145,21 @@
 		- Be consistent in your names. Use the same phrases, nouns, and verbs in the function names you choose for your modules.
 	- ### Function Arguments
 		- The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justifcation—and then shouldn’t be used anyway.
-		  
-		  Arguments are even harder from a testing point of view. Imagine the difficulty of writing all the test cases to ensure that all the various combinations of arguments work properly. If there are no arguments, this is trivial. If there’s one argument, it’s not too hard. With two arguments the problem gets a bit more challenging. With more than two arguments, testing every combination of appropriate values can be daunting.
-		  
-		  Output arguments are harder to understand than input arguments. When we read a function, we are used to the idea of information going in to the function through arguments and out through the return value. We don’t usually expect information to be going out through the arguments. So output arguments often cause us to do a double-take.
-#### Common Monadic Forms
-
-There are two very common reasons to pass a single argument into a function:
-- question about that argument
-- operating on that argument, transforming it into something else and returning
-  
-  A somewhat less common, but still very useful form for a single argument function, is an event (in this form there is an input argument but no output argument).
-#### Flag Arguments
-- flag arguments are ugly
-- loudly proclaiming that this function does more than one thing
-### Have No Side Effects
-
-Side effects are lies.
-
-Your function promises to do one thing, but it also does other hidden things.
+		- Arguments are even harder from a testing point of view. Imagine the difficulty of writing all the test cases to ensure that all the various combinations of arguments work properly. If there are no arguments, this is trivial. If there’s one argument, it’s not too hard. With two arguments the problem gets a bit more challenging. With more than two arguments, testing every combination of appropriate values can be daunting.
+		- Output arguments are harder to understand than input arguments. When we read a function, we are used to the idea of information going in to the function through arguments and out through the return value. We don’t usually expect information to be going out through the arguments. So output arguments often cause us to do a double-take.
+		- #### Common Monadic Forms
+			- There are two very common reasons to pass a single argument into a function:
+				- question about that argument
+				- operating on that argument, transforming it into something else and returning
+		- A somewhat less common, but still very useful form for a single argument function, is an event (in this form there is an input argument but no output argument).
+		- #### Flag Arguments
+			- flag arguments are ugly
+			- loudly proclaiming that this function does more than one thing
+	- ### Have No Side Effects
+	  
+	  Side effects are lies.
+	  
+	  Your function promises to do one thing, but it also does other hidden things.
 - Sometimes it will make unexpected changes to the variables of its own class.
 - Sometimes it will make them to the parameters passed into the function or to system globals.
   
