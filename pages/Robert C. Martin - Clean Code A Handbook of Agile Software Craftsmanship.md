@@ -212,24 +212,20 @@
 	- Every time you write a comment, you should grimace and feel the failure of your ability of expression.
 	- Why am I so down on comments? Because they lie. Not always, and not intentionally, but too often. The older a comment is, and the farther away it is from the code it describes, the more likely it is to be just plain wrong. The reason is simple. Programmers can’t realistically maintain them.
 	- Too often the comments get separated from the code they describe and become orphaned blurbs of everdecreasing accuracy.
-	  
-	  Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend signifcant energy to minimize them.
-### Explain Yourself in Code
-
-Which would you rather see? This:
-
-```java
-// Check to see if the employee is eligible for full benefits
-if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
-```
-
-Or this?
-
-```java
-if (employee.isEligibleForFullBenefits())
-```
-
-It takes only a few seconds of thought to explain most of your intent in code. In many cases it’s simply a matter of creating a function that says the same thing as the comment you want to write.
+	- Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend signifcant energy to minimize them.
+	- ### Explain Yourself in Code
+	- Which would you rather see? This:
+		-
+		- ```java
+		  // Check to see if the employee is eligible for full benefits
+		  if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
+		  ```
+		  Or this?
+		  
+		  ```java
+		  if (employee.isEligibleForFullBenefits())
+		  ```
+		- It takes only a few seconds of thought to explain most of your intent in code. In many cases it’s simply a matter of creating a function that says the same thing as the comment you want to write.
 ### Good Comments
 #### Legal comments
 
