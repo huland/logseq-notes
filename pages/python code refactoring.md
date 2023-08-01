@@ -2,7 +2,7 @@
 	- no control over what is beeing imported
 	- later (when you'd refactor) hard to figure out where a particaular object, function, class etc is coming from
 - Use guard clauses
-	- Guard clasuses:
+	- Without guard
 	- ```python
 	  def my_dumy_checker():
 	      for my_obj in my_object:
@@ -13,6 +13,7 @@
 	                  return False
 	          return True
 	  ```
+	- With guard
 	- ```python
 	  def my_dumy_checker():
 	      for my_obj in my_object:
