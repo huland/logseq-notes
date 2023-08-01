@@ -347,9 +347,8 @@
 			- The **shape** classes would be unaffected! - Any other classes that depended upon the shapes would also be unaffected!
 			- On the other hand, if I add a **new** shape, I must change all the functions in Geometry to deal with it.
 			- Again, read that over. Notice that the two conditions are diametrically opposed.
-			- #### Polymorphic Shapes
-			  
-			  ```java
+		- #### Polymorphic Shapes
+			- ```java
 			  public class Square implements Shape {
 			    private Point topLeft;
 			    private double side;
@@ -376,12 +375,9 @@
 			    }
 			  }
 			  ```
-			  
-			  The `area()` method is polymorphic. No `Geometry` class is necessary.
-			  
-			  If I add a new shape, none of the existing functions are affected.
-			  
-			  If I add a new function all of the shapes must be changed!
+			- The `area()` method is polymorphic. No `Geometry` class is necessary.
+			- If I add a new shape, none of the existing functions are affected.
+			- If I add a new function all of the shapes must be changed!
 			  
 			  ---
 			  
