@@ -273,25 +273,25 @@
 			  String ourSubSystem = subSysMod.getSubSystem();
 			  if (moduleDependees.contains(ourSubSystem))
 			  ```
-#### Commented-Out Code
-
-Others who see that commented-out code won’t have the courage to delete it. They’ll think it is there for a reason and is too important to delete. So commented-out code gathers like dregs at the bottom of a bad bottle of wine.
-
-```java
-this.bytePos = writeBytes(pngIdBytes, 0);
-//hdrPos = bytePos;
-writeHeader();
-writeResolution();
-//dataPos = bytePos;
-if (writeImageData()) {
-  writeEnd();
-  this.pngBytes = resizeByteArray(this.pngBytes, this.maxPos);
-}
-else {
-  this.pngBytes = null;
-}
-return this.pngBytes;
-```
+		- #### Commented-Out Code
+		  
+		  Others who see that commented-out code won’t have the courage to delete it. They’ll think it is there for a reason and is too important to delete. So commented-out code gathers like dregs at the bottom of a bad bottle of wine.
+		  
+		  ```java
+		  this.bytePos = writeBytes(pngIdBytes, 0);
+		  //hdrPos = bytePos;
+		  writeHeader();
+		  writeResolution();
+		  //dataPos = bytePos;
+		  if (writeImageData()) {
+		    writeEnd();
+		    this.pngBytes = resizeByteArray(this.pngBytes, this.maxPos);
+		  }
+		  else {
+		    this.pngBytes = null;
+		  }
+		  return this.pngBytes;
+		  ```
 - Why are those two lines of code commented?
 - Are they important?
 - Were they left as reminders for some imminent change?
