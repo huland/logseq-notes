@@ -80,11 +80,10 @@
 		- Avoid using the same word for two purposes. Using the same term for two different ideas is essentially a pun.
 		- Our goal, as authors, is to make our code as easy as possible to understand. We want our code to be a quick skim, not an intense study.
 	- ### Use Solution Domain Names
+		- Go ahead and use computer science (CS) terms, algorithm names, pattern names, math terms, and so forth. It is not wise to draw every name from the problem domain because we don’t want our coworkers to have to run back and forth to the customer asking what every name means when they already know the concept by a different name.
+	- ### Use Problem Domain Names
 	  
-	  Go ahead and use computer science (CS) terms, algorithm names, pattern names, math terms, and so forth. It is not wise to draw every name from the problem domain because we don’t want our coworkers to have to run back and forth to the customer asking what every name means when they already know the concept by a different name.
-### Use Problem Domain Names
-
-Separating solution and problem domain concepts is part of the job of a good programmer and designer.
+	  Separating solution and problem domain concepts is part of the job of a good programmer and designer.
 ### Add Meaningful Context
 
 You need to place names in context for your reader by enclosing them in well-named classes, functions, or namespaces.
