@@ -1,10 +1,11 @@
-- ## The Boy Scout Rule
-	- If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot.
-	- The cleanup doesn’t have to be something big:
-		- change one variable name for the better
-		- break up one function that’s a little too large
-		- eliminate one small bit of duplication
-		- clean up one composite if statement
+## Clean Code
+	- ### The Boy Scout Rule
+		- If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot.
+		- The cleanup doesn’t have to be something big:
+			- change one variable name for the better
+			- break up one function that’s a little too large
+			- eliminate one small bit of duplication
+			- clean up one composite if statement
 ## Meaningful Names
 ### Use Intention-Revealing Names
 
