@@ -244,7 +244,7 @@
 			  */
 			  protected AnnualDateRule() {}
 			  ```
-		- No, really? Or how about this:
+			- No, really? Or how about this:
 			- ```java
 			  /** The day of the month. */
 			  private int dayOfMonth;
