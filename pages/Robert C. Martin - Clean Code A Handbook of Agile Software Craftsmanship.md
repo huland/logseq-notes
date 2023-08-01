@@ -433,20 +433,16 @@
 		- Either way our code speaks to us better, promotes internally consistent usage across the boundary, and has fewer maintenance points when the third-party code changes.
 ## Unit Tests
 	- ### F.I.R.S.T.
-	  
-	  Clean tests follow five other rules that form the above acronym:
-- Fast (Tests should be fast)
-- Independent (Tests should not depend on each other)
-- Repeatable (Tests should be repeatable in any environment)
-- Self-Validating (Either they pass or fail)
-- Timely
-  
-  The tests need to be written in a timely fashion. Unit tests should be written just before the production code that makes them pass. If you write tests after the production code, then you may find the production code to be hard to test. You may decide that some production code is too hard to test. You may not design the production code to be testable.
-### Conclusion
-
-Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the fexibility, maintainability, and reusability of the production code.
-
-If you let the tests rot, then your code will rot too. Keep your tests clean
+		- Clean tests follow five other rules that form the above acronym:
+			- Fast (Tests should be fast)
+			- Independent (Tests should not depend on each other)
+			- Repeatable (Tests should be repeatable in any environment)
+			- Self-Validating (Either they pass or fail)
+			- Timely
+		- The tests need to be written in a timely fashion. Unit tests should be written just before the production code that makes them pass. If you write tests after the production code, then you may find the production code to be hard to test. You may decide that some production code is too hard to test. You may not design the production code to be testable.
+	- ### Conclusion
+		- Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the fexibility, maintainability, and reusability of the production code.
+		- If you let the tests rot, then your code will rot too. Keep your tests clean
 ## Classes
 
 <==========>
