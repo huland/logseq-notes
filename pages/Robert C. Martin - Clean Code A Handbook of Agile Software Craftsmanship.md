@@ -231,42 +231,38 @@
 			- It is sometimes useful to provide basic information with a comment.
 		- #### Explanation of Intent
 			- Sometimes a comment goes beyond just useful information about the implementation and provides the intent behind a decision.
-		- #### TODO comments
+		- #### TO-DO comments
 			- It is sometimes reasonable to leave “To do” notes in the form of //TODO comments.
-### Bad Comments
-
-Most comments fall into this category. Usually they are crutches or excuses for poor code or justifications for insufficient decisions, amounting to little more than the programmer talking to himself.
-#### Mumbling
-
-Plopping in a comment just because you feel you should or because the process requires it, is a hack. If you decide to write a comment, then spend the time necessary to make sure it is the best comment you can write.
-#### Noise Comments
-
-```java
-/**
-* Default constructor.
-*/
-protected AnnualDateRule() {}
-```
-
-No, really? Or how about this:
-
-```java
-/** The day of the month. */
-private int dayOfMonth;
-```
-
-And then there’s this paragon of redundancy:
-
-```java
-/**
-* Returns the day of the month.
-*
-* @return the day of the month.
-*/
-public int getDayOfMonth() {
-  return dayOfMonth;
-}
-```
+	- ### Bad Comments
+		- Most comments fall into this category. Usually they are crutches or excuses for poor code or justifications for insufficient decisions, amounting to little more than the programmer talking to himself.
+		- #### Mumbling
+			- Plopping in a comment just because you feel you should or because the process requires it, is a hack. If you decide to write a comment, then spend the time necessary to make sure it is the best comment you can write.
+		- #### Noise Comments
+		- ```java
+		  /**
+		  * Default constructor.
+		  */
+		  protected AnnualDateRule() {}
+		  ```
+		  No, really? Or how about this:
+		  
+		  ```java
+		  /** The day of the month. */
+		  private int dayOfMonth;
+		  ```
+		  
+		  And then there’s this paragon of redundancy:
+		  
+		  ```java
+		  /**
+		  * Returns the day of the month.
+		  *
+		  * @return the day of the month.
+		  */
+		  public int getDayOfMonth() {
+		    return dayOfMonth;
+		  }
+		  ```
 #### Don’t Use a Comment When You Can Use a Function or a Variable
 
 Consider the following stretch of code:
