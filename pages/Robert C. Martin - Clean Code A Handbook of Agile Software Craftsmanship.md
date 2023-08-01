@@ -29,7 +29,7 @@
 				- There aren’t even any fancy classes or polymorphic methods, just a list of arrays (or so it seems).
 			- The problem isn’t the simplicity of the code but the implicity of the code (to coin a phrase): the degree to which the context is not explicit in the code itself.
 			- The code implicitly requires that we know the answers to questions such as:
-				- 1. What kinds of things are in `theList`?
+				- 1. What kinds of things are in theList?
 				- 2. What is the signifcance of the zeroth subscript of an item in theList?
 				- 3. What is the signifcance of the value 4?
 				- 4. How would I use the list being returned?
