@@ -110,16 +110,13 @@
 		- The problem with this statement is that it is hard to know what "one thing" is.
 		- If a function does only those steps that are one level below the stated name of the function, then the function is doing one thing. After all, the reason we write functions is to decompose a larger concept (in other words, the name of the function) into a set of steps at the next level of abstraction
 		- So, another way to know that a function is doing more than "one thing" is if you can extract another function from it with a name that is not merely a restatement of its implementation.
-#### Sections within Functions
-
-If a function is divided into sections such as
-- declarations
-- initializations
-- sieve
-  
-  That is an obvious symptom of doing more than one thing.
-  
-  Functions that do one thing cannot be reasonably divided into sections.
+		- #### Sections within Functions
+			- If a function is divided into sections such as
+				- declarations
+				- initializations
+				- sieve
+			- That is an obvious symptom of doing more than one thing.
+			- Functions that do one thing cannot be reasonably divided into sections.
 ### One Level of Abstraction per Function
 #### Reading Code from Top to Bottom: The Stepdown Rule (The Stepdown Rule)
 
