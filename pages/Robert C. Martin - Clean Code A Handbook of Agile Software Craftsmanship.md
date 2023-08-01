@@ -404,9 +404,9 @@
 		- Get a stack trace from any exception; however, a stack trace can’t tell you the intent of the operation that failed.
 		- If you are logging in your application, pass along enough information to be able to log the error in your catch.
 			- Your Highlight on page 140-140 | Added on Sunday, June 18, 2023 8:32:51 PM
-### Wrapping third-party APIs is a best practice
-
-When you wrap a third-party API, you minimize your dependencies upon it:
+	- ### Wrapping third-party APIs is a best practice
+	  
+	  When you wrap a third-party API, you minimize your dependencies upon it:
 - You can choose to move to a different library in the future without much penalty.
 - Wrapping also makes it easier to mock out third-party calls when you are testing your own code.
 ### Don’t Return Null
