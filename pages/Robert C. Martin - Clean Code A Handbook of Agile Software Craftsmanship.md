@@ -347,51 +347,51 @@
 			- The **shape** classes would be unaffected! - Any other classes that depended upon the shapes would also be unaffected!
 			- On the other hand, if I add a **new** shape, I must change all the functions in Geometry to deal with it.
 			- Again, read that over. Notice that the two conditions are diametrically opposed.
-##### Polymorphic Shapes
-
-```java
-public class Square implements Shape {
-  private Point topLeft;
-  private double side;
-  public double area() {
-      return side*side;
-  }
-}
-
-public class Rectangle implements Shape {
-  private Point topLeft;
-  private double height;
-  private double width;
-  public double area() {
-      return height * width;
-  }
-}
-
-public class Circle implements Shape {
-  private Point center;
-  private double radius;
-  public final double PI = 3.141592653589793;
-  public double area() {
-      return PI * radius * radius;
-  }
-}
-```
-
-The `area()` method is polymorphic. No `Geometry` class is necessary.
-
-If I add a new shape, none of the existing functions are affected.
-
-If I add a new function all of the shapes must be changed!
-
----
-
-> Procedural code (code using data structures) makes it easy to add new functions without changing the existing data structures. OO code, on the other hand, makes it easy to add new classes without changing existing functions.
-
-The complement is also true:
-
-> Procedural code makes it hard to add new data structures because all the functions must change. OO code makes it hard to add new functions because all the classes must change.
-
-So, the things that are hard for OO are easy for procedures, and the things that are hard for procedures are easy for OO!
+			- #### Polymorphic Shapes
+			  
+			  ```java
+			  public class Square implements Shape {
+			    private Point topLeft;
+			    private double side;
+			    public double area() {
+			        return side*side;
+			    }
+			  }
+			  
+			  public class Rectangle implements Shape {
+			    private Point topLeft;
+			    private double height;
+			    private double width;
+			    public double area() {
+			        return height * width;
+			    }
+			  }
+			  
+			  public class Circle implements Shape {
+			    private Point center;
+			    private double radius;
+			    public final double PI = 3.141592653589793;
+			    public double area() {
+			        return PI * radius * radius;
+			    }
+			  }
+			  ```
+			  
+			  The `area()` method is polymorphic. No `Geometry` class is necessary.
+			  
+			  If I add a new shape, none of the existing functions are affected.
+			  
+			  If I add a new function all of the shapes must be changed!
+			  
+			  ---
+			  
+			  > Procedural code (code using data structures) makes it easy to add new functions without changing the existing data structures. OO code, on the other hand, makes it easy to add new classes without changing existing functions.
+			  
+			  The complement is also true:
+			  
+			  > Procedural code makes it hard to add new data structures because all the functions must change. OO code makes it hard to add new functions because all the classes must change.
+			  
+			  So, the things that are hard for OO are easy for procedures, and the things that are hard for procedures are easy for OO!
 ### DTO - Data Transfer Objects
 
 DTOs are very useful structures, especially when communicating with databases or parsing messages from sockets, and so on.
