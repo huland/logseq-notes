@@ -117,13 +117,12 @@
 				- sieve
 			- That is an obvious symptom of doing more than one thing.
 			- Functions that do one thing cannot be reasonably divided into sections.
-### One Level of Abstraction per Function
-#### Reading Code from Top to Bottom: The Stepdown Rule (The Stepdown Rule)
-
-We want the code to read like a top-down narrative.
-We want every function to be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time as we read down the list of functions.
-
-To say this differently, we want to be able to read the program as though it were a set of `TO paragraphs`, each of which is describing the current level of abstraction and referencing subsequent `TO` paragraphs at the next level down.
+	- ### One Level of Abstraction per Function
+		- #### Reading Code from Top to Bottom: The Stepdown Rule (The Stepdown Rule)
+		  We want the code to read like a top-down narrative.
+		  We want every function to be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time as we read down the list of functions.
+		  
+		  To say this differently, we want to be able to read the program as though it were a set of `TO paragraphs`, each of which is describing the current level of abstraction and referencing subsequent `TO` paragraphs at the next level down.
 - To include the setups and teardowns, we include setups, then we include the test page content, and then we include the teardowns.
 	- To include the setups, we include the suite setup if this is a suite, then we include the regular setup.
 	- To include the suite setup, we search the parent hierarchy for the "SuiteSetUp" page and add an include statement with the path of that page.
