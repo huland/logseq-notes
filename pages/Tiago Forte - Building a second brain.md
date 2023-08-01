@@ -15,12 +15,13 @@
 		- Take a moment now to write down some of your own favorite problems.
 		- Here are my recommendations to guide you:
 			- Ask people close to you what you were obsessed with as a child
-			    (often you’ll continue to be fascinated with the same things as an adult).
+				- often you’ll continue to be fascinated with the same things as an adult
 			- Don’t worry about coming up with exactly twelve
-			    (the exact number doesn’t matter, but try to come up with at least a few).
-			  -Don’t worry about getting the list perfect
-			    (this is just a first pass, and it will always be evolving).
-			- Phrase them as open-ended questions that could have multiple answers (in contrast to “yes/no” questions with only one answer)
+				- the exact number doesn’t matter, but try to come up with at least a few
+			- Don’t worry about getting the list perfect
+				- this is just a first pass, and it will always be evolving
+			- Phrase them as open-ended questions that could have multiple answers
+				- in contrast to “yes/no” questions with only one answer
 - ## P.A.R.A system
 	- With the PARA system, every piece of information you want to save can be placed into one of just four categories:
 		- 1.  Projects: Short-term efforts in your work or life that you’re working on now.
