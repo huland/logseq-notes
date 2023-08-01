@@ -7,13 +7,10 @@
 			- eliminate one small bit of duplication
 			- clean up one composite if statement
 ## Meaningful Names
-### Use Intention-Revealing Names
-
-Choosing good names takes time but saves more than it takes.
-
-Take care with your names and change them when you fnd better ones.
-
-The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used. If a name requires a comment, then the name does not reveal its intent.
+	- ### Use Intention-Revealing Names
+		- Choosing good names takes time but saves more than it takes.
+		- Take care with your names and change them when you fnd better ones.
+		- The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used. If a name requires a comment, then the name does not reveal its intent.
 #### Example
 
 What is the purpose of this code?
