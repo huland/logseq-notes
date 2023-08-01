@@ -1,0 +1,2 @@
+- Install the launcher
+	- https://github.com/TheAssassin/AppImageLauncher/releases
