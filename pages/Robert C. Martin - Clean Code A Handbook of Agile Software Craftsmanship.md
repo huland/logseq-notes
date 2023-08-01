@@ -304,55 +304,54 @@
 		- The difference between objects and data structures:
 			- Objects hide their data behind abstractions and expose functions that operate on that data.
 			- Data structure expose their data and have no meaningful functions.
-			  
-			  Notice the complimentary nature of the two definitions. They are virtual opposites.
-##### Procedural Shape
-
-```java
-public class Square {
-  public Point topLeft;
-  public double side;
-}
-
-public class Rectangle {
-  public Point topLeft;
-  public double height;
-  public double width;
-}
-
-public class Circle {
-  public Point center;
-  public double radius;
-}
-
-public class Geometry {
-  public final double PI = 3.141592653589793;
-
-  public double area(Object shape) throws NoSuchShapeException {
-      if (shape instanceof Square) {
-          Square s = (Square)shape;
-          return s.side * s.side;
-      }
-      else if (shape instanceof Rectangle) {
-          Rectangle r = (Rectangle)shape;
-          return r.height * r.width;
-      }
-      else if (shape instanceof Circle) {
-          Circle c = (Circle)shape;
-          return PI * c.radius * c.radius;
-      }
-      throw new NoSuchShapeException();
-  }
-}
-```
-
-What would happen if a `perimeter()` function were added to `Geometry`.
-
-The **shape** classes would be unaffected! - Any other classes that depended upon the shapes would also be unaffected!
-
-On the other hand, if I add a **new** shape, I must change all the functions in Geometry to deal with it.
-
-Again, read that over. Notice that the two conditions are diametrically opposed.
+		- Notice the complimentary nature of the two definitions. They are virtual opposites.
+		- ##### Procedural Shape
+		  
+		  ```java
+		  public class Square {
+		    public Point topLeft;
+		    public double side;
+		  }
+		  
+		  public class Rectangle {
+		    public Point topLeft;
+		    public double height;
+		    public double width;
+		  }
+		  
+		  public class Circle {
+		    public Point center;
+		    public double radius;
+		  }
+		  
+		  public class Geometry {
+		    public final double PI = 3.141592653589793;
+		  
+		    public double area(Object shape) throws NoSuchShapeException {
+		        if (shape instanceof Square) {
+		            Square s = (Square)shape;
+		            return s.side * s.side;
+		        }
+		        else if (shape instanceof Rectangle) {
+		            Rectangle r = (Rectangle)shape;
+		            return r.height * r.width;
+		        }
+		        else if (shape instanceof Circle) {
+		            Circle c = (Circle)shape;
+		            return PI * c.radius * c.radius;
+		        }
+		        throw new NoSuchShapeException();
+		    }
+		  }
+		  ```
+		  
+		  What would happen if a `perimeter()` function were added to `Geometry`.
+		  
+		  The **shape** classes would be unaffected! - Any other classes that depended upon the shapes would also be unaffected!
+		  
+		  On the other hand, if I add a **new** shape, I must change all the functions in Geometry to deal with it.
+		  
+		  Again, read that over. Notice that the two conditions are diametrically opposed.
 ##### Polymorphic Shapes
 
 ```java
