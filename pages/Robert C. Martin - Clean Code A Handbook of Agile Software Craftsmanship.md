@@ -132,12 +132,9 @@
 		- Unfortunately we can’t always avoid switch statements, but we can make sure that each switch statement is buried in a low-level class and is never repeated.
 	- ### Use Descriptive Names
 		- Describe what the function does.
-		  
-		  "You know you are working on clean code when each routine turns out to be pretty much what you expected."
-		  
-		  Half the battle to achieving that principle is choosing good names for small functions that do one thing.
-		  
-		  The smaller and more focused a function is, the easier it is to choose a descriptive name.
+		- "You know you are working on clean code when each routine turns out to be pretty much what you expected."
+			- Half the battle to achieving that principle is choosing good names for small functions that do one thing.
+		- The smaller and more focused a function is, the easier it is to choose a descriptive name.
 		  
 		  Don’t be afraid to make a name long.
 - A long descriptive name is better than a short enigmatic name.
