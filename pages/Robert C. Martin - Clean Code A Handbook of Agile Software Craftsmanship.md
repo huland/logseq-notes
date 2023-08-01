@@ -70,23 +70,18 @@
 		- One difference between a smart programmer and a professional programmer is that the professional understands that clarity is king. Professionals use their powers for good and write code that others can understand.
 	- ### Don’t Be Cute
 		- If names are too clever, they will be memorable only to people who share the author’s sense of humor, and only as long as these people remember the joke. Will they know what the function named HolyHandGrenade is supposed to do? Sure, it’s cute, but maybe in this case DeleteItems might be a better name.
-- Choose clarity over entertainment value.
-- Say what you mean. Mean what you say
-### Pick One Word per Concept
-
-It’s confusing to have fetch, retrieve, and get as equivalent methods of different classes.
-
-The function names have to stand alone, and they have to be consistent in order for you to pick the correct method without any additional exploration.
-
-A consistent lexicon is a great boon to the programmers who must use your code.
-### Don’t Pun
-
-Avoid using the same word for two purposes. Using the same term for two different ideas is essentially a pun.
-
-Our goal, as authors, is to make our code as easy as possible to understand. We want our code to be a quick skim, not an intense study.
-### Use Solution Domain Names
-
-Go ahead and use computer science (CS) terms, algorithm names, pattern names, math terms, and so forth. It is not wise to draw every name from the problem domain because we don’t want our coworkers to have to run back and forth to the customer asking what every name means when they already know the concept by a different name.
+			- Choose clarity over entertainment value.
+			- Say what you mean. Mean what you say
+	- ### Pick One Word per Concept
+		- It’s confusing to have fetch, retrieve, and get as equivalent methods of different classes.
+		- The function names have to stand alone, and they have to be consistent in order for you to pick the correct method without any additional exploration.
+		- A consistent lexicon is a great boon to the programmers who must use your code.
+	- ### Don’t Pun
+		- Avoid using the same word for two purposes. Using the same term for two different ideas is essentially a pun.
+		- Our goal, as authors, is to make our code as easy as possible to understand. We want our code to be a quick skim, not an intense study.
+	- ### Use Solution Domain Names
+	  
+	  Go ahead and use computer science (CS) terms, algorithm names, pattern names, math terms, and so forth. It is not wise to draw every name from the problem domain because we don’t want our coworkers to have to run back and forth to the customer asking what every name means when they already know the concept by a different name.
 ### Use Problem Domain Names
 
 Separating solution and problem domain concepts is part of the job of a good programmer and designer.
