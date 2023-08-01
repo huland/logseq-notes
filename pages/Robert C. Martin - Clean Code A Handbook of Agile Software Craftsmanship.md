@@ -119,32 +119,27 @@
 			- Functions that do one thing cannot be reasonably divided into sections.
 	- ### One Level of Abstraction per Function
 		- #### Reading Code from Top to Bottom: The Stepdown Rule (The Stepdown Rule)
-		  We want the code to read like a top-down narrative.
-		  We want every function to be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time as we read down the list of functions.
+			- We want the code to read like a top-down narrative.
+			  We want every function to be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time as we read down the list of functions.
+			- To say this differently, we want to be able to read the program as though it were a set of `TO paragraphs`, each of which is describing the current level of abstraction and referencing subsequent `TO` paragraphs at the next level down.
+				- To include the setups and teardowns, we include setups, then we include the test page content, and then we include the teardowns.
+					- To include the setups, we include the suite setup if this is a suite, then we include the regular setup.
+					- To include the suite setup, we search the parent hierarchy for the "SuiteSetUp" page and add an include statement with the path of that page.
+					- To search the parent ...
+			- It turns out to be very diffcult for programmers to learn to follow this rule and write functions that stay at a single level of abstraction. But learning this trick is also very important. It is the key to keeping functions short and making sure they do "one thing".
+	- ### Switch Statements
+		- By their nature, switch statements always do N things.
+		- Unfortunately we can’t always avoid switch statements, but we can make sure that each switch statement is buried in a low-level class and is never repeated.
+	- ### Use Descriptive Names
+		- Describe what the function does.
 		  
-		  To say this differently, we want to be able to read the program as though it were a set of `TO paragraphs`, each of which is describing the current level of abstraction and referencing subsequent `TO` paragraphs at the next level down.
-- To include the setups and teardowns, we include setups, then we include the test page content, and then we include the teardowns.
-	- To include the setups, we include the suite setup if this is a suite, then we include the regular setup.
-	- To include the suite setup, we search the parent hierarchy for the "SuiteSetUp" page and add an include statement with the path of that page.
-	- To search the parent ...
-	  
-	  It turns out to be very diffcult for programmers to learn to follow this rule and write functions that stay at a single level of abstraction. But learning this trick is also very important. It is the key to keeping functions short and making sure they do "one thing".
-### Switch Statements
-
-By their nature, switch statements always do N things.
-
-Unfortunately we can’t always avoid switch statements, but we can make sure that each switch statement is buried in a low-level class and is never repeated.
-### Use Descriptive Names
-
-Describe what the function does.
-
-"You know you are working on clean code when each routine turns out to be pretty much what you expected."
-
-Half the battle to achieving that principle is choosing good names for small functions that do one thing.
-
-The smaller and more focused a function is, the easier it is to choose a descriptive name.
-
-Don’t be afraid to make a name long.
+		  "You know you are working on clean code when each routine turns out to be pretty much what you expected."
+		  
+		  Half the battle to achieving that principle is choosing good names for small functions that do one thing.
+		  
+		  The smaller and more focused a function is, the easier it is to choose a descriptive name.
+		  
+		  Don’t be afraid to make a name long.
 - A long descriptive name is better than a short enigmatic name.
 - A long descriptive name is better than a long descriptive comment.
 - Use a naming convention that allows multiple words to be easily read in the function names, and then make use of those multiple words to give the function a name that says what it does.
