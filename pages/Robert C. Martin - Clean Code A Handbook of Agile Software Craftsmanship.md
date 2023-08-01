@@ -294,14 +294,11 @@
 				- Are they important?
 				- Were they left as reminders for some imminent change?
 				  Or are they just cruft that someone commented-out years ago and has simply not bothered to clean up.
-				  
-				  We’ve had good source code control systems for a very long time now. Those systems will remember the code for us. We don’t have to comment it out any more. Just delete the code. We won’t lose it. Promise.
-## Formatting
-
-Code formatting is important. It is too important to ignore and it is too important to treat religiously. Code formatting is about communication, and communication is the professional developer’s first order of business.
-### Team Rules
-
-A team of developers should agree upon a single formatting style, and then every member of that team should use that style. We want the software to have a consistent style. We don’t want it to appear to have been written by a bunch of disagreeing individuals.
+			- We’ve had good source code control systems for a very long time now. Those systems will remember the code for us. We don’t have to comment it out any more. Just delete the code. We won’t lose it. Promise.
+- ## Formatting
+	- Code formatting is important. It is too important to ignore and it is too important to treat religiously. Code formatting is about communication, and communication is the professional developer’s first order of business.
+	- ### Team Rules
+		- A team of developers should agree upon a single formatting style, and then every member of that team should use that style. We want the software to have a consistent style. We don’t want it to appear to have been written by a bunch of disagreeing individuals.
 ## Objects and Data Structures
 ### Data/Object Anti-Symmetry
 
