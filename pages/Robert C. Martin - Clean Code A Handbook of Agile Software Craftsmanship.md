@@ -60,13 +60,11 @@
 	- ### Avoid Encodings
 		- Encoding type or scope information into names simply adds an extra burden of deciphering.
 	- ### Class Names
-	- Classes and objects should have noun or noun phrase names like Customer, WikiPage, Account, and AddressParser. Avoid words like Manager, Processor, Data, or Info in the name of a class. A class name should not be a verb.
-### Method Names
-
-Methods should have verb or verb phrase names like postPayment, deletePage, or save. Accessors, mutators, and predicates should be named for their value and prefxed with get, set, and is according to the javabean standard.
-### Avoid Mental Mapping
-
-Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
+		- Classes and objects should have noun or noun phrase names like Customer, WikiPage, Account, and AddressParser. Avoid words like Manager, Processor, Data, or Info in the name of a class. A class name should not be a verb.
+	- ### Method Names
+		- Methods should have verb or verb phrase names like postPayment, deletePage, or save. Accessors, mutators, and predicates should be named for their value and prefxed with get, set, and is according to the javabean standard.
+	- ### Avoid Mental Mapping
+		- Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
 - This is a problem with single-letter variable names
 - There can be no worse reason for using the name `c` than because `a` and `b` were already taken.
   
