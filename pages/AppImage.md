@@ -1,4 +1,4 @@
-- Installing AppImages as applications on linux:
+- Installing **AppImages** as applications on Linux:
 	- Install AppImage launcher
 		- https://github.com/TheAssassin/AppImageLauncher/releases
 	- Download the desired AppImage.
