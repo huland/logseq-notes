@@ -420,9 +420,7 @@
 		- To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
 ## Boundaries
 	- ### Using Third-Party Code
-	  
-	  <==========>
-- Your Highlight on page 147-147 | Added on Sunday, June 18, 2023 11:19:24 PM
+		- Your Highlight on page 147-147 | Added on Sunday, June 18, 2023 11:19:24 PM
 ### Exploring and Learning Boundaries
 
 It’s not our job to test the third-party code, but it may be in our best interest to write tests for the third-party code we use.
