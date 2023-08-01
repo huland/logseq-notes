@@ -244,13 +244,11 @@
 		  */
 		  protected AnnualDateRule() {}
 		  ```
-		  No, really? Or how about this:
-		  
-		  ```java
+		- No, really? Or how about this:
+		- ```java
 		  /** The day of the month. */
 		  private int dayOfMonth;
 		  ```
-		  
 		  And then there’s this paragon of redundancy:
 		  
 		  ```java
