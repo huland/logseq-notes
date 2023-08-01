@@ -1,2 +1,5 @@
-- Install the launcher
-	- https://github.com/TheAssassin/AppImageLauncher/releases
+- Installing AppImages as applications on linux:
+	- Install AppImage launcher
+		- https://github.com/TheAssassin/AppImageLauncher/releases
+	- Download the desired AppImage.
+	-
