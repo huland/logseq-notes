@@ -22,9 +22,8 @@
 			    return list1;
 			  }
 			  ```
-			  
-			  Why is it hard to tell what this code is doing?
-- There are no complex expressions.
+			- Why is it hard to tell what this code is doing?
+			- There are no complex expressions.
 - Spacing and indentation are reasonable.
 - There are only three variables and two constants mentioned.
 - There aren’t even any fancy classes or polymorphic methods, just a list of arrays (or so it seems).
