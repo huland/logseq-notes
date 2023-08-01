@@ -245,22 +245,21 @@
 			  protected AnnualDateRule() {}
 			  ```
 		- No, really? Or how about this:
-		- ```java
-		  /** The day of the month. */
-		  private int dayOfMonth;
-		  ```
-		  And then there’s this paragon of redundancy:
-		  
-		  ```java
-		  /**
-		  * Returns the day of the month.
-		  *
-		  * @return the day of the month.
-		  */
-		  public int getDayOfMonth() {
-		    return dayOfMonth;
-		  }
-		  ```
+			- ```java
+			  /** The day of the month. */
+			  private int dayOfMonth;
+			  ```
+			- And then there’s this paragon of redundancy:
+			- ```java
+			  /**
+			  * Returns the day of the month.
+			  *
+			  * @return the day of the month.
+			  */
+			  public int getDayOfMonth() {
+			    return dayOfMonth;
+			  }
+			  ```
 #### Don’t Use a Comment When You Can Use a Function or a Variable
 
 Consider the following stretch of code:
