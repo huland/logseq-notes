@@ -65,10 +65,9 @@
 		- Methods should have verb or verb phrase names like postPayment, deletePage, or save. Accessors, mutators, and predicates should be named for their value and prefxed with get, set, and is according to the javabean standard.
 	- ### Avoid Mental Mapping
 		- Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
-- This is a problem with single-letter variable names
-- There can be no worse reason for using the name `c` than because `a` and `b` were already taken.
-  
-  One difference between a smart programmer and a professional programmer is that the professional understands that clarity is king. Professionals use their powers for good and write code that others can understand.
+		- This is a problem with single-letter variable names
+			- There can be no worse reason for using the name `c` than because `a` and `b` were already taken.
+		- One difference between a smart programmer and a professional programmer is that the professional understands that clarity is king. Professionals use their powers for good and write code that others can understand.
 ### Don’t Be Cute
 
 If names are too clever, they will be memorable only to people who share the author’s sense of humor, and only as long as these people remember the joke. Will they know what the function named HolyHandGrenade is supposed to do? Sure, it’s cute, but maybe in this case DeleteItems might be a better name.
