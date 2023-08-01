@@ -378,23 +378,20 @@
 			- The `area()` method is polymorphic. No `Geometry` class is necessary.
 			- If I add a new shape, none of the existing functions are affected.
 			- If I add a new function all of the shapes must be changed!
-			-
 			- > Procedural code (code using data structures) makes it easy to add new functions without changing the existing data structures. OO code, on the other hand, makes it easy to add new classes without changing existing functions.
 			- The complement is also true:
 			- > Procedural code makes it hard to add new data structures because all the functions must change. OO code makes it hard to add new functions because all the classes must change.
 			- So, the things that are hard for OO are easy for procedures, and the things that are hard for procedures are easy for OO!
 	- ### DTO - Data Transfer Objects
 		- DTOs are very useful structures, especially when communicating with databases or parsing messages from sockets, and so on.
-#### Active Record
-
-Unfortunately we often find that developers try to treat these data structures as though they were objects by putting business rule methods in them. This is awkward because it creates a hybrid between a data structure and an object.
-
-The solution, of course, is to treat the Active Record as a data structure and to create separate objects that contain the business rules and that hide their internal data (which are probably just instances of the Active Record)
-### Conclusion
-
-Objects expose behavior and hide data.
-
-Hiding implementation is not just a matter of putting a layer of functions between the variables. Hiding implementation is about abstractions! A class does not simply push its variables out through getters and setters. Rather it exposes abstract interfaces that allow its users to manipulate the essence of the data, without having to know its implementation.
+		- #### Active Record
+			- Unfortunately we often find that developers try to treat these data structures as though they were objects by putting business rule methods in them. This is awkward because it creates a hybrid between a data structure and an object.
+			- The solution, of course, is to treat the Active Record as a data structure and to create separate objects that contain the business rules and that hide their internal data (which are probably just instances of the Active Record)
+	- ### Conclusion
+	  
+	  Objects expose behavior and hide data.
+	  
+	  Hiding implementation is not just a matter of putting a layer of functions between the variables. Hiding implementation is about abstractions! A class does not simply push its variables out through getters and setters. Rather it exposes abstract interfaces that allow its users to manipulate the essence of the data, without having to know its implementation.
 - This makes it easy to add new kinds of objects without changing existing behaviors.
 - It also makes it hard to add new behaviors to existing objects.
   
