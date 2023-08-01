@@ -102,11 +102,11 @@
 			- Each told a story.
 			- And each led you to the next in a compelling order.
 			- That’s how short your functions should be!
-#### Blocks and Indenting
-
-This implies that the blocks within if statements, else statements, while statements, and so on should be one line long. Probably that line should be a function call. Not only does this keep the enclosing function small, but it also adds documentary value because the function called within the block can have a nicely descriptive name.
-
-The indent level of a function should not be greater than one or two, this makes the functions easier to read and understand.
+		- #### Blocks and Indenting
+		  
+		  This implies that the blocks within if statements, else statements, while statements, and so on should be one line long. Probably that line should be a function call. Not only does this keep the enclosing function small, but it also adds documentary value because the function called within the block can have a nicely descriptive name.
+		  
+		  The indent level of a function should not be greater than one or two, this makes the functions easier to read and understand.
 ### Do One Thing
 
 FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.
