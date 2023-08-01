@@ -103,19 +103,13 @@
 			- And each led you to the next in a compelling order.
 			- That’s how short your functions should be!
 		- #### Blocks and Indenting
-		  
-		  This implies that the blocks within if statements, else statements, while statements, and so on should be one line long. Probably that line should be a function call. Not only does this keep the enclosing function small, but it also adds documentary value because the function called within the block can have a nicely descriptive name.
-		  
-		  The indent level of a function should not be greater than one or two, this makes the functions easier to read and understand.
-### Do One Thing
-
-FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.
-
-The problem with this statement is that it is hard to know what "one thing" is.
-
-If a function does only those steps that are one level below the stated name of the function, then the function is doing one thing. After all, the reason we write functions is to decompose a larger concept (in other words, the name of the function) into a set of steps at the next level of abstraction
-
-So, another way to know that a function is doing more than "one thing" is if you can extract another function from it with a name that is not merely a restatement of its implementation.
+			- This implies that the blocks within if statements, else statements, while statements, and so on should be one line long. Probably that line should be a function call. Not only does this keep the enclosing function small, but it also adds documentary value because the function called within the block can have a nicely descriptive name.
+			- The indent level of a function should not be greater than one or two, this makes the functions easier to read and understand.
+	- ### Do One Thing
+		- **FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.**
+		- The problem with this statement is that it is hard to know what "one thing" is.
+		- If a function does only those steps that are one level below the stated name of the function, then the function is doing one thing. After all, the reason we write functions is to decompose a larger concept (in other words, the name of the function) into a set of steps at the next level of abstraction
+		- So, another way to know that a function is doing more than "one thing" is if you can extract another function from it with a name that is not merely a restatement of its implementation.
 #### Sections within Functions
 
 If a function is divided into sections such as
