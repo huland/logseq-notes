@@ -274,30 +274,28 @@
 			  if (moduleDependees.contains(ourSubSystem))
 			  ```
 		- #### Commented-Out Code
-		  
-		  Others who see that commented-out code won’t have the courage to delete it. They’ll think it is there for a reason and is too important to delete. So commented-out code gathers like dregs at the bottom of a bad bottle of wine.
-		  
-		  ```java
-		  this.bytePos = writeBytes(pngIdBytes, 0);
-		  //hdrPos = bytePos;
-		  writeHeader();
-		  writeResolution();
-		  //dataPos = bytePos;
-		  if (writeImageData()) {
-		    writeEnd();
-		    this.pngBytes = resizeByteArray(this.pngBytes, this.maxPos);
-		  }
-		  else {
-		    this.pngBytes = null;
-		  }
-		  return this.pngBytes;
-		  ```
-- Why are those two lines of code commented?
-- Are they important?
-- Were they left as reminders for some imminent change?
-  Or are they just cruft that someone commented-out years ago and has simply not bothered to clean up.
-  
-  We’ve had good source code control systems for a very long time now. Those systems will remember the code for us. We don’t have to comment it out any more. Just delete the code. We won’t lose it. Promise.
+			- Others who see that commented-out code won’t have the courage to delete it. They’ll think it is there for a reason and is too important to delete. So commented-out code gathers like dregs at the bottom of a bad bottle of wine.
+			- ```java
+			  this.bytePos = writeBytes(pngIdBytes, 0);
+			  //hdrPos = bytePos;
+			  writeHeader();
+			  writeResolution();
+			  //dataPos = bytePos;
+			  if (writeImageData()) {
+			    writeEnd();
+			    this.pngBytes = resizeByteArray(this.pngBytes, this.maxPos);
+			  }
+			  else {
+			    this.pngBytes = null;
+			  }
+			  return this.pngBytes;
+			  ```
+				- Why are those two lines of code commented?
+				- Are they important?
+				- Were they left as reminders for some imminent change?
+				  Or are they just cruft that someone commented-out years ago and has simply not bothered to clean up.
+				  
+				  We’ve had good source code control systems for a very long time now. Those systems will remember the code for us. We don’t have to comment it out any more. Just delete the code. We won’t lose it. Promise.
 ## Formatting
 
 Code formatting is important. It is too important to ignore and it is too important to treat religiously. Code formatting is about communication, and communication is the professional developer’s first order of business.
