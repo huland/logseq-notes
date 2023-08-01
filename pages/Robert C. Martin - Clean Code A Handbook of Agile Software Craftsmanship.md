@@ -261,22 +261,18 @@
 			  }
 			  ```
 		- #### Don’t Use a Comment When You Can Use a Function or a Variable
-		- Consider the following stretch of code:
-		-
-		-
-		- ```java
-		  // does the module from the global list <mod> depend on the
-		  // subsystem we are part of?
-		  if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
-		  ```
-		  
-		  This could be rephrased without the comment as
-		  
-		  ```java
-		  ArrayList moduleDependees = smodule.getDependSubsystems();
-		  String ourSubSystem = subSysMod.getSubSystem();
-		  if (moduleDependees.contains(ourSubSystem))
-		  ```
+			- Consider the following stretch of code:
+			- ```java
+			  // does the module from the global list <mod> depend on the
+			  // subsystem we are part of?
+			  if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
+			  ```
+			- This could be rephrased without the comment as
+			- ```java
+			  ArrayList moduleDependees = smodule.getDependSubsystems();
+			  String ourSubSystem = subSysMod.getSubSystem();
+			  if (moduleDependees.contains(ourSubSystem))
+			  ```
 #### Commented-Out Code
 
 Others who see that commented-out code won’t have the courage to delete it. They’ll think it is there for a reason and is too important to delete. So commented-out code gathers like dregs at the bottom of a bad bottle of wine.
