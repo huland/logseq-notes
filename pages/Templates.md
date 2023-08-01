@@ -5,8 +5,6 @@
 		-
 	- ## Daily TODOs
 		-
-		-
-		-
 	- ## Adhoc
 		-
 	- ## Reminders
