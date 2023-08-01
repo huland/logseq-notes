@@ -1,0 +1,9 @@
+- A story can be considered as done if it fulfills all the elements below:
+- Before making any implementation the first thing is to understand the goal of the ticket and extend the ticket description if necessary
+- Feature implemented
+- Unit testing, expected coverage: 80%
+	- Overall unit test coverage reaches the expectation
+	- Line coverage of all modified files reach the expectation
+	- Newly added line coverage reach the expectation
+- Approved Pull Request by 2 team members
+- Passed local and AWS tests
