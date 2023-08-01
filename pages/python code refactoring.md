@@ -5,13 +5,13 @@
 	- Guard clasuses:
 	- ```python
 	  def my_dumy_checker():
-	  	for my_obj in my_object:
-	     		if my_obj.dummy == "something":
-	         		if check_something(my_obj):
-	             		return False
-	         		if not check_something_else(my_obj):
-	             		return False
-	  	return True
+	    for my_obj in my_object:
+	      if my_obj.dummy == "something":
+	        if check_something(my_obj):
+	          return False
+	        if not check_something_else(my_obj):
+	          return False
+	      return True
 	  ```
 	- ```python
 	  def my_dumy_checker():
@@ -22,7 +22,7 @@
 	        return False
 	      if not check_something_else(my_obj):
 	        return False
-	    return True
+	      return True
 	  ```
 - ## Code smells
   
