@@ -224,19 +224,15 @@
 		  if (employee.isEligibleForFullBenefits())
 		  ```
 		- It takes only a few seconds of thought to explain most of your intent in code. In many cases it’s simply a matter of creating a function that says the same thing as the comment you want to write.
-### Good Comments
-#### Legal comments
-
-Sometimes our corporate coding standards force us to write certain comments for legal reasons.
-#### Informative comments
-
-It is sometimes useful to provide basic information with a comment.
-#### Explanation of Intent
-
-Sometimes a comment goes beyond just useful information about the implementation and provides the intent behind a decision.
-#### TODO comments
-
-It is sometimes reasonable to leave “To do” notes in the form of //TODO comments.
+	- ### Good Comments
+		- #### Legal comments
+			- Sometimes our corporate coding standards force us to write certain comments for legal reasons.
+		- #### Informative comments
+			- It is sometimes useful to provide basic information with a comment.
+		- #### Explanation of Intent
+			- Sometimes a comment goes beyond just useful information about the implementation and provides the intent behind a decision.
+		- #### TODO comments
+			- It is sometimes reasonable to leave “To do” notes in the form of //TODO comments.
 ### Bad Comments
 
 Most comments fall into this category. Usually they are crutches or excuses for poor code or justifications for insufficient decisions, amounting to little more than the programmer talking to himself.
