@@ -1,13 +1,9 @@
-# Python code refactoring
-
-1. do not use wildcard imports (\*)
+- Do not use wildcard imports (\*)
 	- no control over what is beeing imported
 	- later (when you'd refactor) hard to figure out where a particaular object, function, class etc is coming from
-	- 1. use guard clauses
-	  
-	  Guard clasuses:
-	  
-	  ```python
+- Use guard clauses
+	- Guard clasuses:
+	- ```python
 	  def my_dumy_checker():
 	  for my_obj in my_object:
 	     if my_obj.dummy == "something":
@@ -17,7 +13,6 @@
 	             return False
 	  return True
 	  ```
-	  
 	  ```python
 	  def my_dumy_checker():
 	  for my_obj in my_object:
