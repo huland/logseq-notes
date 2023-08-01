@@ -196,31 +196,24 @@
 			- ```java
 			  public boolean set(String attribute, String value);
 			  ```
-				- This function sets the `value` of a named `attribute` and returns `true` if it is successful and `false` if no such attribute exists.
-			- This leads to odd statements like this:
-			  
-			  ```java
+		- This function sets the `value` of a named `attribute` and returns `true` if it is successful and `false` if no such attribute exists.
+		- This leads to odd statements like this:
+			- ```java
 			  if (set("username", "unclebob")) ...
 			  ```
-			  
-			  Imagine this from the point of view of the reader.
-- What does it mean?
-- Is it asking whether the "username" attribute was previously set to "unclebob"?
-- Or is it asking whether the "username" attribute was successfully set to "unclebob"?
-- It’s hard to infer the meaning from the call because it’s not clear whether the word "set" is a verb or an adjective.
-## Comments
-
-The proper use of comments is to compensate for our failure to express ourself in code
-
-Every time you express yourself in code, you should pat yourself on the back.
-
-Every time you write a comment, you should grimace and feel the failure of your ability of expression.
-
-Why am I so down on comments? Because they lie. Not always, and not intentionally, but too often. The older a comment is, and the farther away it is from the code it describes, the more likely it is to be just plain wrong. The reason is simple. Programmers can’t realistically maintain them.
-
-Too often the comments get separated from the code they describe and become orphaned blurbs of everdecreasing accuracy.
-
-Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend signifcant energy to minimize them.
+		- Imagine this from the point of view of the reader.
+			- What does it mean?
+			- Is it asking whether the "username" attribute was previously set to "unclebob"?
+			- Or is it asking whether the "username" attribute was successfully set to "unclebob"?
+			- It’s hard to infer the meaning from the call because it’s not clear whether the word "set" is a verb or an adjective.
+- ## Comments
+	- The proper use of comments is to compensate for our failure to express ourself in code
+	- Every time you express yourself in code, you should pat yourself on the back.
+	- Every time you write a comment, you should grimace and feel the failure of your ability of expression.
+	- Why am I so down on comments? Because they lie. Not always, and not intentionally, but too often. The older a comment is, and the farther away it is from the code it describes, the more likely it is to be just plain wrong. The reason is simple. Programmers can’t realistically maintain them.
+	- Too often the comments get separated from the code they describe and become orphaned blurbs of everdecreasing accuracy.
+	  
+	  Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend signifcant energy to minimize them.
 ### Explain Yourself in Code
 
 Which would you rather see? This:
