@@ -156,32 +156,28 @@
 			- flag arguments are ugly
 			- loudly proclaiming that this function does more than one thing
 	- ### Have No Side Effects
-	  
-	  Side effects are lies.
-	  
-	  Your function promises to do one thing, but it also does other hidden things.
-- Sometimes it will make unexpected changes to the variables of its own class.
-- Sometimes it will make them to the parameters passed into the function or to system globals.
-  
-  In either case they are devious and damaging mistruths that often result in strange temporal couplings and order dependencies.
-  
-  ```java
-  public class UserValidator {
-    private Cryptographer cryptographer;
-        public boolean checkPassword(String userName, String password) {
-        User user = UserGateway.findByName(userName);
-        if (user != User.NULL) {
-            String codedPhrase = user.getPhraseEncodedByPassword();
-            String phrase = cryptographer.decrypt(codedPhrase, password);
-            if ("Valid Password".equals(phrase)) {
-                Session.initialize();
-                return true;
-            }
-        }
-        return false;
-    }
-  }
-  ```
+		- Side effects are lies.
+		- Your function promises to do one thing, but it also does other hidden things.
+			- Sometimes it will make unexpected changes to the variables of its own class.
+			- Sometimes it will make them to the parameters passed into the function or to system globals.
+		- In either case they are devious and damaging mistruths that often result in strange temporal couplings and order dependencies.
+		- ```java
+		  public class UserValidator {
+		    private Cryptographer cryptographer;
+		        public boolean checkPassword(String userName, String password) {
+		        User user = UserGateway.findByName(userName);
+		        if (user != User.NULL) {
+		            String codedPhrase = user.getPhraseEncodedByPassword();
+		            String phrase = cryptographer.decrypt(codedPhrase, password);
+		            if ("Valid Password".equals(phrase)) {
+		                Session.initialize();
+		                return true;
+		            }
+		        }
+		        return false;
+		    }
+		  }
+		  ```
 - The side effect is the call to Session.initialize(), of course.
 - The `checkPassword` function, by its name, says that it checks the password.
 - The name does not imply that it initializes the session.
