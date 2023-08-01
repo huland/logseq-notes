@@ -196,10 +196,8 @@
 			- ```java
 			  public boolean set(String attribute, String value);
 			  ```
-			  
-			  This function sets the `value` of a named `attribute` and returns `true` if it is successful and `false` if no such attribute exists.
-			  
-			  This leads to odd statements like this:
+				- This function sets the `value` of a named `attribute` and returns `true` if it is successful and `false` if no such attribute exists.
+			- This leads to odd statements like this:
 			  
 			  ```java
 			  if (set("username", "unclebob")) ...
