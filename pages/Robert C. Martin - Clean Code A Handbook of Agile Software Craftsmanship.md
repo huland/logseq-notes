@@ -261,10 +261,10 @@
 			  }
 			  ```
 		- #### Don’t Use a Comment When You Can Use a Function or a Variable
-		  
-		  Consider the following stretch of code:
-		  
-		  ```java
+		- Consider the following stretch of code:
+		-
+		-
+		- ```java
 		  // does the module from the global list <mod> depend on the
 		  // subsystem we are part of?
 		  if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
