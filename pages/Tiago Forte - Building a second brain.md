@@ -12,7 +12,7 @@
 	- ### Reason of a questions
 		- The goal isn’t to definitively answer the question once and for all, but to use the question as a North Star for my learning.
 	- ### How to create a question
-		- Take a moment now to write down some of your own favorite problems.
+		- Take a moment now to write down some of your own favorite problems
 		- Here are my recommendations to guide you:
 			- Ask people close to you what you were obsessed with as a child
 				- often you’ll continue to be fascinated with the same things as an adult
