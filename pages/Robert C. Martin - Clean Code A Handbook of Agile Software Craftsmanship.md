@@ -186,30 +186,26 @@
 			- That is, `checkPassword` can only be called at certain times (in other words, when it is safe to initialize the session). If it is called out of order, session data may be inadvertently lost.
 		- Temporal couplings are confusing, especially when hidden as a side effect.
 			- If you must have a temporal coupling, you should make it clear in the name of the function. In this case we might rename the function `checkPasswordAndInitializeSession`, though that certainly violates **"Do onething."**
-#### Output Arguments
-
-Arguments are most naturally interpreted as inputs to a function.
-
-Anything that forces you to check the function signature is equivalent to a double-take. It’s a cognitive break and should be avoided.
-### Command Query Separation
-- Functions should either do something or answer something, but not both.
-- Doing both often leads to confusion
-  
-  Consider, for example, the following function:
-  
-  ```java
-  public boolean set(String attribute, String value);
-  ```
-  
-  This function sets the `value` of a named `attribute` and returns `true` if it is successful and `false` if no such attribute exists.
-  
-  This leads to odd statements like this:
-  
-  ```java
-  if (set("username", "unclebob")) ...
-  ```
-  
-  Imagine this from the point of view of the reader.
+		- #### Output Arguments
+			- Arguments are most naturally interpreted as inputs to a function.
+			- Anything that forces you to check the function signature is equivalent to a double-take. It’s a cognitive break and should be avoided.
+	- ### Command Query Separation
+		- Functions should either do something or answer something, but not both.
+		- Doing both often leads to confusion
+		- Consider, for example, the following function:
+			- ```java
+			  public boolean set(String attribute, String value);
+			  ```
+			  
+			  This function sets the `value` of a named `attribute` and returns `true` if it is successful and `false` if no such attribute exists.
+			  
+			  This leads to odd statements like this:
+			  
+			  ```java
+			  if (set("username", "unclebob")) ...
+			  ```
+			  
+			  Imagine this from the point of view of the reader.
 - What does it mean?
 - Is it asking whether the "username" attribute was previously set to "unclebob"?
 - Or is it asking whether the "username" attribute was successfully set to "unclebob"?
