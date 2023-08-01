@@ -405,27 +405,23 @@
 		- If you are logging in your application, pass along enough information to be able to log the error in your catch.
 			- Your Highlight on page 140-140 | Added on Sunday, June 18, 2023 8:32:51 PM
 	- ### Wrapping third-party APIs is a best practice
+		- When you wrap a third-party API, you minimize your dependencies upon it:
+			- You can choose to move to a different library in the future without much penalty.
+			- Wrapping also makes it easier to mock out third-party calls when you are testing your own code.
+	- ### Don’t Return Null
+		- Every other line was a check for null.
+		- When we return null, we are essentially creating work for ourselves and foisting problems upon our callers. All it takes is one missing null check to send an application spinning out of control.
+	- ### Don’t Pass Null
+		- Returning null from methods is bad, but passing null into methods is worse. Unless you are working with an API which expects you to pass null, you should avoid passing null in your code whenever possible.
+	- ### Conclusion
 	  
-	  When you wrap a third-party API, you minimize your dependencies upon it:
-- You can choose to move to a different library in the future without much penalty.
-- Wrapping also makes it easier to mock out third-party calls when you are testing your own code.
-### Don’t Return Null
-
-Every other line was a check for null.
-
-When we return null, we are essentially creating work for ourselves and foisting problems upon our callers. All it takes is one missing null check to send an application spinning out of control.
-### Don’t Pass Null
-
-Returning null from methods is bad, but passing null into methods is worse. Unless you are working with an API which expects you to pass null, you should avoid passing null in your code whenever possible.
-### Conclusion
-
-Clean code is readable, but it must also be robust.
-
-These are not conflicting goals.
-
-We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic.
-
-To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
+	  Clean code is readable, but it must also be robust.
+	  
+	  These are not conflicting goals.
+	  
+	  We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic.
+	  
+	  To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
 ## Boundaries
 ### Using Third-Party Code
 
