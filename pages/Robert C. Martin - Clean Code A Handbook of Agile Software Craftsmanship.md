@@ -378,14 +378,13 @@
 			- The `area()` method is polymorphic. No `Geometry` class is necessary.
 			- If I add a new shape, none of the existing functions are affected.
 			- If I add a new function all of the shapes must be changed!
-			- ---
+			-
 			- > Procedural code (code using data structures) makes it easy to add new functions without changing the existing data structures. OO code, on the other hand, makes it easy to add new classes without changing existing functions.
 			- The complement is also true:
 			- > Procedural code makes it hard to add new data structures because all the functions must change. OO code makes it hard to add new functions because all the classes must change.
 			- So, the things that are hard for OO are easy for procedures, and the things that are hard for procedures are easy for OO!
 	- ### DTO - Data Transfer Objects
-	  
-	  DTOs are very useful structures, especially when communicating with databases or parsing messages from sockets, and so on.
+		- DTOs are very useful structures, especially when communicating with databases or parsing messages from sockets, and so on.
 #### Active Record
 
 Unfortunately we often find that developers try to treat these data structures as though they were objects by putting business rule methods in them. This is awkward because it creates a hybrid between a data structure and an object.
