@@ -47,26 +47,20 @@
 				  }
 				  ```
 				- Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. But the code has become much more explicit.
-### Beware of using names which vary in small ways
-
-Spelling similar concepts similarly is information. Using inconsistent spellings is disinformation
-- XYZControllerForEfficientHandlingOfStrings
-- XYZControllerForEfficientStorageOfStrings
-### Use Pronounceable Names
-
-This matters because programming is a social activity.
-### Use Searchable Names
-
-Single-letter names and numeric constants have a particular problem in that they are not easy to locate across a body of text.
-
-One might easily grep for MAX_CLASSES_PER_STUDENT, but the number 7 could be more
-troublesome
-### Avoid Encodings
-
-Encoding type or scope information into names simply adds an extra burden of deciphering.
-### Class Names
-
-Classes and objects should have noun or noun phrase names like Customer, WikiPage, Account, and AddressParser. Avoid words like Manager, Processor, Data, or Info in the name of a class. A class name should not be a verb.
+	- ### Beware of using names which vary in small ways
+		- Spelling similar concepts similarly is information. Using inconsistent spellings is disinformation
+			- XYZControllerForEfficientHandlingOfStrings
+			- XYZControllerForEfficientStorageOfStrings
+	- ### Use Pronounceable Names
+		- This matters because programming is a social activity.
+	- ### Use Searchable Names
+		- Single-letter names and numeric constants have a particular problem in that they are not easy to locate across a body of text.
+		- One might easily grep for MAX_CLASSES_PER_STUDENT, but the number 7 could be more
+		  troublesome
+	- ### Avoid Encodings
+		- Encoding type or scope information into names simply adds an extra burden of deciphering.
+	- ### Class Names
+	- Classes and objects should have noun or noun phrase names like Customer, WikiPage, Account, and AddressParser. Avoid words like Manager, Processor, Data, or Info in the name of a class. A class name should not be a verb.
 ### Method Names
 
 Methods should have verb or verb phrase names like postPayment, deletePage, or save. Accessors, mutators, and predicates should be named for their value and prefxed with get, set, and is according to the javabean standard.
