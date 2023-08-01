@@ -419,20 +419,14 @@
 		- We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic.
 		- To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
 ## Boundaries
-	- ### Using Third-Party Code
 	- ### Exploring and Learning Boundaries
-	  
-	  It’s not our job to test the third-party code, but it may be in our best interest to write tests for the third-party code we use.
-	  
-	  Learning the third-party code is hard. Integrating the third-party code is hard too. Doing both at the same time is doubly hard.
-	  
-	  We could write some tests to explore our understanding of the third-party code, such tests are learning tests.
-	  
-	  In learning tests we call the third-party API, as we expect to use it in our application. We’re essentially doing controlled experiments that check our understanding of that API. The tests focus on what we want out of the API.
-	  
-	  Not only are learning tests free, they have a positive return on investment. When there are new releases of the third-party package, we run the learning tests to see whether there are behavioral differences.
-	  
-	  The learning tests end up costing nothing. We had to learn the API anyway, and writing those tests was an easy and isolated way to get that knowledge.
+		- It’s not our job to test the third-party code, but it may be in our best interest to write tests for the third-party code we use.
+		- Learning the third-party code is hard. Integrating the third-party code is hard too. Doing both at the same time is doubly hard.
+		- We could write some tests to explore our understanding of the third-party code, such tests are learning tests.
+		- In learning tests we call the third-party API, as we expect to use it in our application. We’re essentially doing controlled experiments that check our understanding of that API. The tests focus on what we want out of the API.
+		- Not only are learning tests free, they have a positive return on investment. When there are new releases of the third-party package, we run the learning tests to see whether there are behavioral differences.
+		  
+		  The learning tests end up costing nothing. We had to learn the API anyway, and writing those tests was an easy and isolated way to get that knowledge.
 ### Using Code That Does Not Yet Exist
 
 We manage third-party boundaries by having very few places in the code that refer to them.
