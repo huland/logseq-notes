@@ -33,24 +33,21 @@
 				- 2. What is the signifcance of the zeroth subscript of an item in theList?
 				- 3. What is the signifcance of the value 4?
 				- 4. How would I use the list being returned?
-				  
-				  The answers to these questions are not present in the code sample, but they could have been.
-- Say that we’re working in a mine sweeper game. We find that the board is a list of cells called theList. Let’s rename that to gameBoard.
-- Each cell on the board is represented by a simple array. We further find that the zeroth subscript is the location of a status value and that a status value of 4 means “flagged.”
-  
-  Just by giving these concepts names we can improve the code considerably:
-  
-  ```java
-  public List<int[]> getFlaggedCells() {
-    List<int[]> flaggedCells = new ArrayList<int[]>();
-    for (int[] cell : gameBoard)
-        if (cell[STATUS_VALUE] == FLAGGED)
-            flaggedCells.add(cell);
-    return flaggedCells;
-  }
-  ```
-  
-  Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. But the code has become much more explicit.
+			- The answers to these questions are not present in the code sample, but they could have been.
+				- Say that we’re working in a mine sweeper game. We find that the board is a list of cells called theList. Let’s rename that to gameBoard.
+				- Each cell on the board is represented by a simple array. We further find that the zeroth subscript is the location of a status value and that a status value of 4 means “flagged.”
+			- Just by giving these concepts names we can improve the code considerably:
+			- ```java
+			  public List<int[]> getFlaggedCells() {
+			    List<int[]> flaggedCells = new ArrayList<int[]>();
+			    for (int[] cell : gameBoard)
+			        if (cell[STATUS_VALUE] == FLAGGED)
+			            flaggedCells.add(cell);
+			    return flaggedCells;
+			  }
+			  ```
+			  
+			  Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. But the code has become much more explicit.
 ### Beware of using names which vary in small ways
 
 Spelling similar concepts similarly is information. Using inconsistent spellings is disinformation
