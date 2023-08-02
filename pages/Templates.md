@@ -23,11 +23,13 @@
 		- time spent:
 		- summary:
 			-
-			-
 - ## Ticket
   template:: ticket
   template-including-parent:: false
 	- Ticket details
-		- description:
-		- issue ticket
+		- Description:
+			- -
+		- Link to ticket:
+		- Discussions:
+			- -
 		-
