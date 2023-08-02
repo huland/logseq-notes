@@ -6,6 +6,6 @@
 - Matthias Noback - Principles of Package Design: Creating Reusable Software Components
 - Robert C. Martin - Agile Software Develpment: Principles, Patterns, and Practices
 - Michael Feathers - Working Effectively with Legacy Code
-- # Book notes
+- ## Book notes
 - [[Tiago Forte - Building a second brain]]
 - [[Robert C. Martin - Clean Code A Handbook of Agile Software Craftsmanship]]
