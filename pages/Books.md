@@ -9,4 +9,3 @@
 - # Book notes
 - [[Tiago Forte - Building a second brain]]
 - [[Robert C. Martin - Clean Code A Handbook of Agile Software Craftsmanship]]
--
