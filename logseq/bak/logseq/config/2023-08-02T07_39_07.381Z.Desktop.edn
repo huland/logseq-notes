@@ -414,4 +414,4 @@
  :file/name-format :triple-lowbar
  :ui/show-brackets? true
  :journal/page-title-format "yyyy-MM-dd"
- :graph/settings {:journal? true, :builtin-pages? true}}
+ :graph/settings {:journal? true, :builtin-pages? false}}
