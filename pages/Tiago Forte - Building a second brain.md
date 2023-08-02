@@ -119,7 +119,7 @@
 			- The rule of thumb to follow is that every time you “touch” a note, you should make it a little more discoverable for your future self by
 				- adding a highlight
 				- a heading, some bullets
-				- ==**commentary**==
+				- commentary
 				  id:: 64ca0364-abe3-4f26-bc46-d5b98c98d590
 				- this is the “campsite rule” applied to information:
 					- leave it better than you found it
