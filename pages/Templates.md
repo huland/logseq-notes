@@ -15,7 +15,7 @@
   template-including-parent:: false
 	- Review details
 		- issue title:
-		- issue ticker: [issue link](link.to.the.issue.ticket)
+		- issue ticket: [issue link](link.to.the.issue.ticket)
 		- pull request ticket: [pull request link](link.to.the.pull.request)
 		- author:
 		- review started on date:
