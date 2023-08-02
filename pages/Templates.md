@@ -24,10 +24,10 @@
 		- summary:
 			-
 			-
-- Issue
-  template:: issue
+- ## Ticket
+  template:: ticket
   template-including-parent:: false
-	- Issue details
-		- issue description:
+	- Ticket details
+		- description:
 		- issue ticket
 		-
