@@ -25,7 +25,7 @@
 			-
 			-
 - Issue
-  template:: Issue
+  template:: issue
   template-including-parent:: false
 	- Issue details
 		- issue description:
