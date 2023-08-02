@@ -1,5 +1,3 @@
-- > Layer 1 {{renderer :secondCut_zkojpvjpe}}
-	- commentary [*](64ca0364-abe3-4f26-bc46-d5b98c98d590)
 - ## Question of interest
 	- ### Ask yourself:
 		- What are the questions I’ve always been interested in?
