@@ -1,4 +1,4 @@
-- # To Read
+- ## To Read
 - Steven Johnson, the author of a series of fascinating books on creativity, innovation, and the history of ideas
 - David Allen in his influential book Getting Things Done
 - Martin Fowler - Refactoring: Improving the Design of Existing Code (2nd Edition)
