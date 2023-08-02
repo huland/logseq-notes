@@ -31,6 +31,5 @@
 			-
 		- Link to ticket: [issue link](link.to.the.issue.ticket)
 		- Link to pull request: [pull request link](link.to.the.pull.request)
-		- Discussions:
+		- Notes:
 			-
-		-
