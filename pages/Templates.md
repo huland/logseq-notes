@@ -22,6 +22,7 @@
 		- review started on date:
 		- review finished on date:
 		- time spent:
+		- tags: #vertis
 		- summary:
 			-
 - ## Ticket
@@ -32,5 +33,6 @@
 			-
 		- Link to ticket: [issue link](link.to.the.issue.ticket)
 		- Link to pull request: [pull request link](link.to.the.pull.request)
+		-
 		- Notes:
 			-
