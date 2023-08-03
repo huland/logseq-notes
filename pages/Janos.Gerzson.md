@@ -1,9 +1,10 @@
 - ## TODOs
-	- -
-	- -
+	-
+	-
 - ## Investigate
-	- -
-	- -
+	-
+	-
 - ## Notes
-	- -
-	- -
+	-
+	-
+- #vertis
