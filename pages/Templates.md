@@ -9,6 +9,7 @@
 		-
 	- ## Reminders
 		-
+	- ## Tags
 -
 - ## Review
   template:: review
