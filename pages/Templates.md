@@ -18,8 +18,6 @@
 		- issue ticket: [issue link](link.to.ticket)
 		- pull request ticket: [pull request link](link.to.pull.request)
 		- author:
-		- review started on date:
-		- review finished on date:
 		- time spent:
 		- summary:
 			-
