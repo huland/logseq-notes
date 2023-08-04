@@ -4,13 +4,13 @@
 			- Description:
 				- Expense: allow multiple attachments (Invoice File)
 			- Link to ticket: [issue link](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6821)
-			- Manual test:
+			- **Manual test:**
 				- I was able to upload multiple attachments
 		- Ticket details
 			- Description:
 				- Expense: file with Latin-2 characters (áéó... ) in the name can not be downloaded
 			- Link to ticket: [issue link](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6823)
-			- Manual test:
+			- **Manual test:**
 				- Uploaded a file called "számla.pdf"
 				- The system generated a name for the pdf which does not contain latin-2 characters
 				- I can download my uploaded pdf
@@ -18,10 +18,9 @@
 			- Description:
 				- Expense: Allow editing uploaded attachments on non-approved expenses
 			- Link to ticket: [issue link](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6857)
-			- Manual test:
+			- **Manual test:**
 				- I was able to upload files to a not approved expense
 				- I was not able to upload files to an approved expense
--
 - ## Review details
 	- issue title:
 	- issue ticket: [issue link](link.to.the.issue.ticket)
