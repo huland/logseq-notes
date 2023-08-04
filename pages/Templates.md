@@ -29,6 +29,8 @@
 	- ## Ticket details
 		- [Ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6821)
 		-
+	- ## Notes
+		-
 	- ## Review details
 		- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
 	- ## Time spent
