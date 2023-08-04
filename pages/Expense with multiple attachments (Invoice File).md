@@ -24,9 +24,12 @@
 - ## Review details
 	- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
 - ## Time spent
-	- 2023.08-03: 2h
+	- 2023.08.03: 2h
 	- 2023.08.04: 1h
 - ## Summary
-	- 02
+	- 2023.08.03
+		- I was reviewing the code.
+	- 2023.08.04
+		- I was manual testing the tickets.
 - ## Tags
 	- #vertis #Dezso.Diak
