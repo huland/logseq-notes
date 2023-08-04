@@ -33,8 +33,6 @@
 		-
 	- ## Review details
 		- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
-	- ## Time spent
-		-
 	- ## Activity Summary
 		-
 	- ## Tags
