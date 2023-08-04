@@ -28,7 +28,6 @@
   template-including-parent:: false
 	- ## Ticket details
 		- [Ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6821)
-		-
 	- ## Notes
 		-
 	- ## Review details
