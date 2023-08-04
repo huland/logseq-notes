@@ -23,13 +23,10 @@
 				- I was not able to upload files to an approved expense
 - ## Review details
 	- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
-- ## Time spent
-	- [[2023-08-03]] : 2h
-	- [[2023-08-04]] : 1h30m
 - ## Activity Summary
-	- [[2023-08-03]]
+	- [[2023-08-03]] (2h)
 		- I was reviewing the code.
-	- [[2023-08-04]]
+	- [[2023-08-04]] (1h30m)
 		- I was manual testing the tickets.
 - ## Tags
 	- #vertis #Dezso.Diak
