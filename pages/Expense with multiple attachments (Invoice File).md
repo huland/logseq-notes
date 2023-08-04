@@ -26,7 +26,7 @@
 - ## Time spent
 	- [[2023-08-03]] : 2h
 	- [[2023-08-04]] : 1h30m
-- ## Summary
+- ## Activity Summary
 	- [[2023-08-03]]
 		- I was reviewing the code.
 	- [[2023-08-04]]
