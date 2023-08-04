@@ -9,7 +9,6 @@
 		-
 	- ## Reminders
 		-
--
 - ## Ticket
   template:: ticket
   template-including-parent:: false
