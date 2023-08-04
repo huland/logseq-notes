@@ -45,3 +45,5 @@
 - ## Sources:
 	- [Arjan Codes - Python Code Smells](https://www.youtube.com/watch?v=LrtnLEkOwFE)
 	- [Arjan Codes - Even More Code Smells](https://www.youtube.com/watch?v=Kl3_Gmn4Ujg)
+- ## Tags
+- #knowledge
