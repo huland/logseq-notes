@@ -1,4 +1,4 @@
 - [[AppImage]]
 -
 - ## Tags
-- #self
+- #knowledge
