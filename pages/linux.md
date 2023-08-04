@@ -1,2 +1,4 @@
 - [[AppImage]]
 -
+- ## Tags
+- #self
