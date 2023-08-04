@@ -1,11 +1,11 @@
-- Ticket details
+- ## Ticket details
 	- Description:
 		-
 	- Link to ticket: [issue link](link.to.the.issue.ticket)
 	- Link to pull request: [pull request link](link.to.the.pull.request)
 	- Notes:
 		-
-- Review details
+- ## Review details
 	- issue title:
 	- issue ticket: [issue link](link.to.the.issue.ticket)
 	- pull request ticket: [pull request link](link.to.the.pull.request)
@@ -15,3 +15,8 @@
 	- time spent:
 	- summary:
 		-
+- ## Time spent
+	- 2023-08-03: 2h
+	-
+- ## Tags
+- #vertis #Dezso.Diak
