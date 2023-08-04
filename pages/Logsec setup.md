@@ -41,4 +41,6 @@
 	- Tags
 	- Markdown Table Editor
 	- Bullet Threading
-	-
+	- Journals calendar
+	- logseq-psummarise-plugin
+	- logseq-plantuml-plugin
