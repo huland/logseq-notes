@@ -38,5 +38,5 @@
 	- ## Activity Summary
 		-
 	- ## Tags
-		- #vertis
+		-
 -
