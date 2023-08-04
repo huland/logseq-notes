@@ -1,8 +1,8 @@
 - ## Git Hooks
-	- path: notes/.git/hooks
+	- path: `<notes>/.git/hooks`
 	- The two file should be executable
 		- `chmod +x pre-commit post-commit`
-	- ### pre-commit file
+	- ### `pre-commit` file
 		- ```bash
 		  #!/bin/sh
 		  #
@@ -30,7 +30,7 @@
 		  
 		  git add -A
 		  ```
-	- ### post-commit file
+	- ### `post-commit` file
 		- ```bash
 		  #!/bin/sh
 		  
