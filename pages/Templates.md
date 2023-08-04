@@ -26,10 +26,39 @@
 - ## Ticket
   template:: ticket
   template-including-parent:: false
-	- Ticket details
-		- Description:
-			-
-		- Link to ticket: [issue link](link.to.the.issue.ticket)
-		- Link to pull request: [pull request link](link.to.the.pull.request)
-		- Notes:
-			-
+	- ## Ticket details
+		- The ticket closes 3 other tickets
+			- Ticket details
+				- Description:
+					- Expense: allow multiple attachments (Invoice File)
+				- Link to ticket: [issue link](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6821)
+				- **Manual test:**
+					- I was able to upload multiple attachments
+			- Ticket details
+				- Description:
+					- Expense: file with Latin-2 characters (áéó... ) in the name can not be downloaded
+				- Link to ticket: [issue link](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6823)
+				- **Manual test:**
+					- Uploaded a file called "számla.pdf"
+					- The system generated a name for the pdf which does not contain latin-2 characters
+					- I can download my uploaded pdf
+			- Ticket details
+				- Description:
+					- Expense: Allow editing uploaded attachments on non-approved expenses
+				- Link to ticket: [issue link](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6857)
+				- **Manual test:**
+					- I was able to upload files to a not approved expense
+					- I was not able to upload files to an approved expense
+	- ## Review details
+		- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
+	- ## Time spent
+		- [[2023-08-03]] : 2h
+		- [[2023-08-04]] : 1h30m
+	- ## Activity Summary
+		- [[2023-08-03]]
+			- I was reviewing the code.
+		- [[2023-08-04]]
+			- I was manual testing the tickets.
+	- ## Tags
+		- #vertis
+-
