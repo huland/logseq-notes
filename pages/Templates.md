@@ -27,11 +27,11 @@
   template:: ticket
   template-including-parent:: false
 	- ## Ticket details
-		- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6821)
+		- [ticket](link.to.ticket)
 	- ## Notes
 		-
 	- ## Review details
-		- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
+		- [pull request](link.to.pull.request)
 	- ## Activity Summary
 		-
 	- ## Tags
