@@ -22,9 +22,7 @@
 				- I was able to upload files to a not approved expense
 				- I was not able to upload files to an approved expense
 - ## Review details
-	- issue title:
-	- issue ticket: [issue link](link.to.the.issue.ticket)
-	- pull request ticket: [pull request link](link.to.the.pull.request)
+	- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
 	- summary:
 		-
 - ## Time spent
