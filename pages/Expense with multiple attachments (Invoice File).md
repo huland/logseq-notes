@@ -21,14 +21,14 @@
 			- Manual test:
 				- I was able to upload files to a not approved expense
 				- I was not able to upload files to an approved expense
+-
 - ## Review details
 	- issue title:
 	- issue ticket: [issue link](link.to.the.issue.ticket)
 	- pull request ticket: [pull request link](link.to.the.pull.request)
-	- author:
-	- review started on date:
-	- review finished on date:
 	- time spent:
+		- 2023.08.03: 2h
+		- 2023.08.04: 2h
 	- summary:
 		-
 - ## Time spent
