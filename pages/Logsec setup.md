@@ -44,3 +44,5 @@
 	- Journals calendar
 	- logseq-psummarise-plugin
 	- logseq-plantuml-plugin
+- ## Tags
+	- #knowledge
