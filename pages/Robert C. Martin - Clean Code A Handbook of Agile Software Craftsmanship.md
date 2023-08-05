@@ -464,16 +464,9 @@
 		- In essence, the DIP says that our classes should depend upon abstractions, not on concrete details.
 - ## Systems
 	- We all know it is best to give responsibilities to the most qualifed persons. We often forget that it is also best to postpone decisions until the last possible moment.
-	- It lets us make informed choices with the best possible information
-	  <==========>
-- Your Highlight on page 200-200 | Added on Tuesday, June 20, 2023 6:48:24 PM
-  
-  Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work
-  <==========>
-- Your Highlight on page 202 | Added on Tuesday, June 20, 2023 6:48:58 PM
-  
-  Emergence
-  <==========>
+	- It lets us make informed choices with the best possible information.
+	- Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work.
+- ## Emergence
 - Your Highlight on page 203-203 | Added on Tuesday, June 20, 2023 6:49:54 PM
   
   Simple Design Rule 1: Runs All the Tests
