@@ -478,18 +478,9 @@
 		- Making sure our system is fully testable helps us create better designs.
 		- Tight coupling makes it difficult to write tests.
 		- The more tests we write, the more we use principles like DIP and tools like dependency injection, interfaces, and abstraction to minimize coupling.
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:06:46 AM
-  
-  Simple Design Rules 2–4: Refactoring
-  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:06:57 AM
-  
-  Once we have tests, we are empowered to keep our code and classes clean
-  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:07:12 AM
-  
-  by incrementally refactoring the code
-  <==========>
+	- Simple Design Rules 2–4: Refactoring
+		- Once we have tests, we are empowered to keep our code and classes clean by incrementally refactoring the code.
+		  <==========>
 - Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:07:40 AM
   
   The fact that we have these tests eliminates the fear that cleaning up the code will break
