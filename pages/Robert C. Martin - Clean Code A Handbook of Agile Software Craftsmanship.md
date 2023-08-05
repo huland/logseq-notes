@@ -467,14 +467,12 @@
 	- It lets us make informed choices with the best possible information.
 	- Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work.
 - ## Emergence
-- Your Highlight on page 203-203 | Added on Tuesday, June 20, 2023 6:49:54 PM
-  
-  Simple Design Rule 1: Runs All the Tests
-  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:03:11 AM
-  
-  design is “simple” if it follows these rules: • Runs all the tests • Contains no duplication • Expresses the intent of the programmer • Minimizes the number of classes and methods The rules are given in order of importance.
-  <==========>
+	- Simple Design Rule 1: Runs All the Tests
+		- design is “simple” if it follows these rules:
+			- Runs all the tests
+			- Contains no duplication
+			- Expresses the intent of the programmer
+			- Minimizes the number of classes and methods The rules are given in order of importance.
 - Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:03:28 AM
   
   Simple Design Rule 1: Runs All the Tests
