@@ -454,7 +454,7 @@
 				- Getting software to work and making software clean are two very different activities
 				- The problem is that too many of us think that we are done once the program works.
 				- We fail to switch to the other concern of organization and cleanliness. We move on to the next problem rather than going back and breaking the overstuffed classes into decoupled units with single responsibilities.
-	- Open-Closed Principle, or OCP:4 Classes should be open for extension but closed for modifcation
+	- Open-Closed Principle (OCP):4 Classes should be open for extension but closed for modifcation
 	  <==========>
 - Your Highlight on page 180-180 | Added on Tuesday, June 20, 2023 8:41:28 AM
   
