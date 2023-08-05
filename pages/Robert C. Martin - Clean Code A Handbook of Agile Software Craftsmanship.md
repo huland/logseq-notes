@@ -481,10 +481,9 @@
 	- Simple Design Rules 2–4: Refactoring
 		- Once we have tests, we are empowered to keep our code and classes clean by incrementally refactoring the code.
 		- The fact that we have these tests eliminates the fear that cleaning up the code will break it.
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:08:43 AM
-  
-  Eliminate duplication, ensure expressiveness, and minimize the number of classes and methods
-  <==========>
+	- No Duplication
+		- Eliminate duplication, ensure expressiveness, and minimize the number of classes and methods
+		  <==========>
 - Your Highlight on page 204-204 | Added on Wednesday, June 21, 2023 9:09:08 AM
   
   Duplication is the primary enemy of a well-designed system
