@@ -456,14 +456,9 @@
 				- We fail to switch to the other concern of organization and cleanliness. We move on to the next problem rather than going back and breaking the overstuffed classes into decoupled units with single responsibilities.
 	- Open-Closed Principle (OCP)
 		- Classes should be open for extension but closed for modifcation.
-- Your Highlight on page 180-180 | Added on Tuesday, June 20, 2023 8:41:28 AM
-  
-  open to allow new functionality via subclassing
-  <==========>
-- Your Highlight on page 180-180 | Added on Tuesday, June 20, 2023 8:41:47 AM
-  
-  make this change while keeping every other class closed
-  <==========>
+		- Open to allow new functionality via subclassing.
+		- Make this change while keeping every other class closed
+		  <==========>
 - Your Highlight on page 180-180 | Added on Tuesday, June 20, 2023 8:43:02 AM
   
   there are concrete classes, which contain implementation details (code), and abstract classes, which represent concepts only
