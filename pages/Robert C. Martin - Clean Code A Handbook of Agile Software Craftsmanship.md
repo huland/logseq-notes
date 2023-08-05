@@ -451,10 +451,7 @@
 		- Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code.
 		- SRP is one of the more important concept in OO design. It’s also one of the simpler concepts to understand and adhere to. Yet oddly, SRP is often the most abused class design principle.
 			- Why?
-- Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:19:24 PM
-  
-  Getting software to work and making software clean are two very different activities
-  <==========>
+				- Getting software to work and making software clean are two very different activities
 - Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:19:42 PM
   
   The problem is that too many of us think that we are done once the program works.
