@@ -462,9 +462,7 @@
 			- There are concrete classes, which contain implementation details (code), and abstract classes, which represent concepts only.
 	- Dependency Inversion Principle (DIP)
 		- In essence, the DIP says that our classes should depend upon abstractions, not on concrete details.
-- Your Highlight on page 184 | Added on Tuesday, June 20, 2023 8:48:53 AM
-  
-  Systems
+- ## Systems
   <==========>
 - Your Highlight on page 185-185 | Added on Tuesday, June 20, 2023 8:55:25 AM
   
