@@ -444,7 +444,7 @@
 		- Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the fexibility, maintainability, and reusability of the production code.
 		- If you let the tests rot, then your code will rot too. Keep your tests clean
 - ## Classes
-	- The Single Responsibility Principle
+	- The Single Responsibility Principle (SRP)
 		- states that a class or module should have one, and only one, reason to change
 		- This principle gives us both a defnition of responsibility, and a guidelines for class size.
 		- Classes should have one responsibility - one reason to change
@@ -452,18 +452,10 @@
 		- SRP is one of the more important concept in OO design. It’s also one of the simpler concepts to understand and adhere to. Yet oddly, SRP is often the most abused class design principle.
 			- Why?
 				- Getting software to work and making software clean are two very different activities
-- Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:19:42 PM
-  
-  The problem is that too many of us think that we are done once the program works.
-  <==========>
-- Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:19:53 PM
-  
-  We fail to switch to the other concern of organization and cleanliness. We move on to the next problem rather than going back and breaking the overstuffed classes into decoupled units with single responsibilities
-  <==========>
-- Your Highlight on page 180-180 | Added on Tuesday, June 20, 2023 8:39:33 AM
-  
-  Open-Closed Principle, or OCP:4 Classes should be open for extension but closed for modifcation
-  <==========>
+				- The problem is that too many of us think that we are done once the program works.
+				- We fail to switch to the other concern of organization and cleanliness. We move on to the next problem rather than going back and breaking the overstuffed classes into decoupled units with single responsibilities.
+	- Open-Closed Principle, or OCP:4 Classes should be open for extension but closed for modifcation
+	  <==========>
 - Your Highlight on page 180-180 | Added on Tuesday, June 20, 2023 8:41:28 AM
   
   open to allow new functionality via subclassing
