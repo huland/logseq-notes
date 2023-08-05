@@ -463,13 +463,9 @@
 	- Dependency Inversion Principle (DIP)
 		- In essence, the DIP says that our classes should depend upon abstractions, not on concrete details.
 - ## Systems
-	- Separate Constructing a System from Using It
-		- We all know it is best to give responsibilities to the most qualifed persons. We often forget that it is also best to postpone decisions until the last possible moment
-		  <==========>
-- Your Highlight on page 199-199 | Added on Tuesday, June 20, 2023 5:47:41 PM
-  
-  it lets us make informed choices with the best possible information
-  <==========>
+	- We all know it is best to give responsibilities to the most qualifed persons. We often forget that it is also best to postpone decisions until the last possible moment.
+	- It lets us make informed choices with the best possible information
+	  <==========>
 - Your Highlight on page 200-200 | Added on Tuesday, June 20, 2023 6:48:24 PM
   
   Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work
