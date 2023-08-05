@@ -449,7 +449,7 @@
 		- This principle gives us both a defnition of responsibility, and a guidelines for class size.
 		- Classes should have one responsibility - one reason to change
 		- Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code.
-		- SRP is one of the more important concept in OO design. It’s also one of the simpler concepts to understand and adhere to. Yet oddly, SRP is often the most abused class design principle
+		- SRP is one of the more important concept in OO design. It’s also one of the simpler concepts to understand and adhere to. Yet oddly, SRP is often the most abused class design principle.
 			- Why?
 - Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:19:24 PM
   
