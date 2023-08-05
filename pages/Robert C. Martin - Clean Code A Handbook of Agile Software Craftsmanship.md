@@ -518,24 +518,11 @@ collapsed:: true
 	- Mutual Exclusion
 		- Only one thread can access shared data or a shared resource at a time.
 	- Starvation
-		- One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through frst could starve out longer running threads if there is no end to the fast-running threads
-		  <==========>
-- Your Highlight on page 214 | Added on Thursday, June 22, 2023 11:58:09 AM
-  
-  Deadlock
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:58:13 AM
-  
-  Two or more threads waiting for each other to fnish. Each thread has a resource that the other thread requires and neither can fnish until it gets the other resource
-  <==========>
-- Your Highlight on page 214 | Added on Thursday, June 22, 2023 11:58:19 AM
-  
-  Livelock
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:58:23 AM
-  
-  Threads in lockstep, each trying to do work but fnding another “in the way. ” Due to resonance, threads continue trying to make progress
-  <==========>
+		- One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through first could starve out longer running threads if there is no end to the fast-running threads.
+	- Deadlock
+		- Two or more threads waiting for each other to finish. Each thread has a resource that the other thread requires and neither can finish until it gets the other resource.
+	- Livelock
+		- Threads in lockstep, each trying to do work but finding another “in the way. ” Due to resonance, threads continue trying to make progress.
 - Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:58:28 AM
   
   Threads in lockstep, each trying to do work but fnding another “in the way. ” Due to resonance, threads continue trying to make progress but are unable to for an excessively long time— or forever
