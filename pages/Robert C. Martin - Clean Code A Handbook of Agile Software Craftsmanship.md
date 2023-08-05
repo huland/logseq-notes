@@ -443,9 +443,7 @@
 	- ### Conclusion
 		- Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the fexibility, maintainability, and reusability of the production code.
 		- If you let the tests rot, then your code will rot too. Keep your tests clean
-## Classes
-
-<==========>
+- ## Classes
 - Your Highlight on page 169-169 | Added on Monday, June 19, 2023 10:13:22 PM
   
   The Single Responsibility Principle
