@@ -445,12 +445,8 @@
 		- If you let the tests rot, then your code will rot too. Keep your tests clean
 - ## Classes
 	- The Single Responsibility Principle
-- states that a class or module should have one, and only one, reason to change
-  <==========>
-- Your Highlight on page 169-169 | Added on Monday, June 19, 2023 10:13:57 PM
-  
-  This principle gives us both a defnition of responsibility, and a guidelines for class size. Classes should have one responsibility—one reason to change
-  <==========>
+		- states that a class or module should have one, and only one, reason to change
+		- This principle gives us both a defnition of responsibility, and a guidelines for class size. Classes should have one responsibility—one reason to change
 - Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:15:15 PM
   
   system. Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code
