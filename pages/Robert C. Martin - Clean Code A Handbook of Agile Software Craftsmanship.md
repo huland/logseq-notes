@@ -1,4 +1,5 @@
 ## Clean Code
+collapsed:: true
 	- ### The Boy Scout Rule
 		- If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot.
 		- The cleanup doesn’t have to be something big:
@@ -7,6 +8,7 @@
 			- eliminate one small bit of duplication
 			- clean up one composite if statement
 ## Meaningful Names
+collapsed:: true
 	- ### Use Intention-Revealing Names
 		- Choosing good names takes time but saves more than it takes.
 		- Take care with your names and change them when you fnd better ones.
@@ -94,6 +96,7 @@
 	- ### Final Words
 		- Follow some of these rules and see whether you don’t improve the readability of your code. If you are maintaining someone else’s code, use refactoring tools to help resolve these problems. It will pay off in the short term and continue to pay in the long run.
 ## Functions
+collapsed:: true
 	- ### Small
 		- The first rule of functions is that they should be small.
 		- The second rule of functions is that they should be smaller than that.
@@ -207,6 +210,7 @@
 			- Or is it asking whether the "username" attribute was successfully set to "unclebob"?
 			- It’s hard to infer the meaning from the call because it’s not clear whether the word "set" is a verb or an adjective.
 - ## Comments
+  collapsed:: true
 	- The proper use of comments is to compensate for our failure to express ourself in code
 	- Every time you express yourself in code, you should pat yourself on the back.
 	- Every time you write a comment, you should grimace and feel the failure of your ability of expression.
@@ -296,6 +300,7 @@
 				  Or are they just cruft that someone commented-out years ago and has simply not bothered to clean up.
 			- We’ve had good source code control systems for a very long time now. Those systems will remember the code for us. We don’t have to comment it out any more. Just delete the code. We won’t lose it. Promise.
 - ## Formatting
+  collapsed:: true
 	- Code formatting is important. It is too important to ignore and it is too important to treat religiously. Code formatting is about communication, and communication is the professional developer’s first order of business.
 	- ### Team Rules
 		- A team of developers should agree upon a single formatting style, and then every member of that team should use that style. We want the software to have a consistent style. We don’t want it to appear to have been written by a bunch of disagreeing individuals.
@@ -463,10 +468,12 @@
 	- Dependency Inversion Principle (DIP)
 		- In essence, the DIP says that our classes should depend upon abstractions, not on concrete details.
 - ## Systems
+  collapsed:: true
 	- We all know it is best to give responsibilities to the most qualifed persons. We often forget that it is also best to postpone decisions until the last possible moment.
 	- It lets us make informed choices with the best possible information.
 	- Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work.
 - ## Emergence
+  collapsed:: true
 	- A design is “simple” if it follows these rules:
 		- Runs all the tests
 		- Contains no duplication
@@ -500,8 +507,13 @@
 	- Minimal Classes and Methods
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
-- ## Concurrency
-- understand some basic defnitions
+- Your Highlight on page 208 | Added on Wednesday, June 21, 2023 9:09:43 PM
+  
+  Concurrency
+  <==========>
+- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:31 AM
+  
+  understand some basic defnitions
   <==========>
 - Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:37 AM
   
