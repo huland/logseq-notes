@@ -446,15 +446,9 @@
 - ## Classes
 	- The Single Responsibility Principle
 		- states that a class or module should have one, and only one, reason to change
-		- This principle gives us both a defnition of responsibility, and a guidelines for class size. Classes should have one responsibility—one reason to change
-- Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:15:15 PM
-  
-  system. Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code
-  <==========>
-- Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:15:21 PM
-  
-  Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code
-  <==========>
+		- This principle gives us both a defnition of responsibility, and a guidelines for class size.
+		- Classes should have one responsibility - one reason to change
+		- Trying to identify responsibilities (reasons to change) often helps us recognize and create better abstractions in our code.
 - Your Highlight on page 170-170 | Added on Monday, June 19, 2023 10:18:40 PM
   
   SRP is one of the more important concept in OO design. It’s also one of the simpler concepts to understand and adhere to. Yet oddly, SRP is often the most abused class design principle
