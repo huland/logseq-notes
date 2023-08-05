@@ -474,13 +474,9 @@
 		- Minimizes the number of classes and methods The rules are given in order of importance.
 	- Simple Design Rule 1: Runs All the Tests
 		- A system that is comprehensively tested and passes all of its tests all of the time is a testable system. That’s an obvious statement, but an important one. Systems that aren’t testable aren’t verifable. Arguably, a system that cannot be verifed should never be deployed.
-		- Making our systems testable pushes us toward a design where our classes are small and single purpose. It’s just easier to test classes that conform to the SRP
-		- Making sure our system is fully testable helps us create better designs
-		  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:05:51 AM
-  
-  Tight coupling makes it diffcult to write tests
-  <==========>
+		- Making our systems testable pushes us toward a design where our classes are small and single purpose. It’s just easier to test classes that conform to the SRP.
+		- Making sure our system is fully testable helps us create better designs.
+		- Tight coupling makes it diffcult to write tests
 - Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:06:21 AM
   
   the more tests we write, the more we use principles like DIP and tools like dependency injection, interfaces, and abstraction to minimize coupling
