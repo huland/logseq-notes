@@ -497,14 +497,8 @@
 			- split large functions into smaller functions,
 			- and generally just take care of what you’ve created.
 			- Care is a precious resource
-- Your Highlight on page 207-207 | Added on Wednesday, June 21, 2023 9:07:56 PM
-  
-  Minimal Classes and Methods
-  <==========>
-- Your Highlight on page 207-207 | Added on Wednesday, June 21, 2023 9:08:23 PM
-  
-  Our goal is to keep our overall system small while we are also keeping our functions and classes small
-  <==========>
+	- Minimal Classes and Methods
+		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 - Your Highlight on page 207-207 | Added on Wednesday, June 21, 2023 9:09:03 PM
   
   So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself
