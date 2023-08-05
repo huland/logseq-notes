@@ -492,10 +492,11 @@
 		- Design patterns, for example, are largely about communication and expressiveness
 		- Well-written unit tests are also expressive. A primary goal of tests is to act as documentation by example. Someone reading our tests should be able to get a quick understanding of what a class is all about.
 		- But the most important way to be expressive is to try. All too often we get our code working and then move on to the next problem without giving sufficient thought to making that code easy for the next person to read.
-- Your Highlight on page 207-207 | Added on Wednesday, June 21, 2023 9:07:47 PM
-  
-  So take a little pride in your workmanship. Spend a little time with each of your functions and classes. Choose better names, split large functions into smaller functions, and generally just take care of what you’ve created. Care is a precious resource
-  <==========>
+		- So take a little pride in your workmanship. Spend a little time with each of your functions and classes.
+			- choose better names,
+			- split large functions into smaller functions,
+			- and generally just take care of what you’ve created.
+			- Care is a precious resource
 - Your Highlight on page 207-207 | Added on Wednesday, June 21, 2023 9:07:56 PM
   
   Minimal Classes and Methods
