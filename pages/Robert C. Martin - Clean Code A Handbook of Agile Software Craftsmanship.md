@@ -480,19 +480,7 @@
 		- The more tests we write, the more we use principles like DIP and tools like dependency injection, interfaces, and abstraction to minimize coupling.
 	- Simple Design Rules 2–4: Refactoring
 		- Once we have tests, we are empowered to keep our code and classes clean by incrementally refactoring the code.
-		  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:07:40 AM
-  
-  The fact that we have these tests eliminates the fear that cleaning up the code will break
-  <==========>
-- Your Highlight on page 203 | Added on Wednesday, June 21, 2023 9:07:51 AM
-  
-  The
-  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:07:57 AM
-  
-  The fact that we have these tests eliminates the fear that cleaning up the code will break it
-  <==========>
+		- The fact that we have these tests eliminates the fear that cleaning up the code will break it.
 - Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:08:43 AM
   
   Eliminate duplication, ensure expressiveness, and minimize the number of classes and methods
