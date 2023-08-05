@@ -459,12 +459,9 @@
 		- Open to allow new functionality via subclassing.
 		- Make this change while keeping every other class closed.
 		  Isolating from change
-			- There are concrete classes, which contain implementation details (code), and abstract classes, which represent concepts only
-			  <==========>
-- Your Highlight on page 181-181 | Added on Tuesday, June 20, 2023 8:47:30 AM
-  
-  Dependency Inversion Principle (DIP).5 In essence, the DIP says that our classes should depend upon abstractions, not on concrete details
-  <==========>
+			- There are concrete classes, which contain implementation details (code), and abstract classes, which represent concepts only.
+	- Dependency Inversion Principle (DIP)
+		- In essence, the DIP says that our classes should depend upon abstractions, not on concrete details.
 - Your Highlight on page 184 | Added on Tuesday, June 20, 2023 8:48:53 AM
   
   Systems
