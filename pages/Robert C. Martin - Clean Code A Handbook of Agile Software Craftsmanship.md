@@ -305,6 +305,7 @@ collapsed:: true
 	- ### Team Rules
 		- A team of developers should agree upon a single formatting style, and then every member of that team should use that style. We want the software to have a consistent style. We don’t want it to appear to have been written by a bunch of disagreeing individuals.
 ## Objects and Data Structures
+collapsed:: true
 	- ### Data/Object Anti-Symmetry
 		- The difference between objects and data structures:
 			- Objects hide their data behind abstractions and expose functions that operate on that data.
@@ -401,6 +402,7 @@ collapsed:: true
 			- This makes it easy to add new behaviors to existing data structures.
 			- It makes it hard to add new data structures to existing functions.
 ## Error Handling
+collapsed:: true
 	- ### Use Exceptions Rather Than Return Codes
 		- The problem with returning error codes is that they clutter the caller. The caller must
 		  check for errors immediately after the call. Unfortunately, it’s easy to forget.
@@ -424,6 +426,7 @@ collapsed:: true
 		- We can write robust clean code if we see error handling as a separate concern, something that is viewable independently of our main logic.
 		- To the degree that we are able to do that, we can reason about it independently, and we can make great strides in the maintainability of our code.
 ## Boundaries
+collapsed:: true
 	- ### Exploring and Learning Boundaries
 		- It’s not our job to test the third-party code, but it may be in our best interest to write tests for the third-party code we use.
 		- Learning the third-party code is hard. Integrating the third-party code is hard too. Doing both at the same time is doubly hard.
@@ -437,6 +440,7 @@ collapsed:: true
 			- We may use an ADAPTER to convert from our perfect interface to the provided interface.
 		- Either way our code speaks to us better, promotes internally consistent usage across the boundary, and has fewer maintenance points when the third-party code changes.
 ## Unit Tests
+collapsed:: true
 	- ### F.I.R.S.T.
 		- Clean tests follow five other rules that form the above acronym:
 			- Fast (Tests should be fast)
@@ -449,6 +453,7 @@ collapsed:: true
 		- Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the fexibility, maintainability, and reusability of the production code.
 		- If you let the tests rot, then your code will rot too. Keep your tests clean
 - ## Classes
+  collapsed:: true
 	- The Single Responsibility Principle (SRP)
 		- States that a class or module should have one, and only one, reason to change.
 		- This principle gives us both a defnition of responsibility, and a guidelines for class size.
