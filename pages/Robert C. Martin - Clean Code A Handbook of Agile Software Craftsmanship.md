@@ -513,35 +513,13 @@ collapsed:: true
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
 - ## Concurrency
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:31 AM
-  
-  understand some basic definitions
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:37 AM
-  
-  Bound Resources
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:40 AM
-  
-  Resources of a fxed size or number used in a concurrent environment. Examples include database connections and fxed-size read/ write buffers
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:47 AM
-  
-  Mutual Exclusion
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:50 AM
-  
-  Only one thread can access shared data or a shared resource at a time
-  <==========>
-- Your Highlight on page 214 | Added on Thursday, June 22, 2023 11:57:57 AM
-  
-  Starvation
-  <==========>
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:58:02 AM
-  
-  One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through frst could starve out longer running threads if there is no end to the fast-running threads
-  <==========>
+	- Understand some basic definitions
+		- Bound Resources: Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
+	- Mutual Exclusion
+		- Only one thread can access shared data or a shared resource at a time.
+	- Starvation
+		- One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through frst could starve out longer running threads if there is no end to the fast-running threads
+		  <==========>
 - Your Highlight on page 214 | Added on Thursday, June 22, 2023 11:58:09 AM
   
   Deadlock
