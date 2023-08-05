@@ -486,11 +486,7 @@
 		- Duplication is the primary enemy of a well-designed system.
 		- It represents additional work, additional risk, and additional unnecessary complexity.
 	- Expressive
-	  <==========>
-- Your Highlight on page 206-206 | Added on Wednesday, June 21, 2023 9:05:59 PM
-  
-  You can express yourself by choosing good names
-  <==========>
+		- You can express yourself by choosing good names
 - Your Highlight on page 206-206 | Added on Wednesday, June 21, 2023 9:06:08 PM
   
   by keeping your functions and classes small
