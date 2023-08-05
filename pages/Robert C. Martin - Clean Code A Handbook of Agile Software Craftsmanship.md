@@ -486,15 +486,10 @@
 		- Duplication is the primary enemy of a well-designed system.
 		- It represents additional work, additional risk, and additional unnecessary complexity.
 	- Expressive
-		- You can express yourself by choosing good names
-- Your Highlight on page 206-206 | Added on Wednesday, June 21, 2023 9:06:08 PM
-  
-  by keeping your functions and classes small
-  <==========>
-- Your Highlight on page 206-206 | Added on Wednesday, June 21, 2023 9:06:27 PM
-  
-  yourself by using standard nomenclature. Design patterns, for example, are largely about communication and expressiveness
-  <==========>
+		- You can express yourself by choosing good names.
+		- Keep your functions and classes small.
+		- yourself by using standard nomenclature. Design patterns, for example, are largely about communication and expressiveness
+		  <==========>
 - Your Highlight on page 206-206 | Added on Wednesday, June 21, 2023 9:06:44 PM
   
   Well-written unit tests are also expressive. A primary goal of tests is to act as documentation by example. Someone reading our tests should be able to get a quick understanding of what a class is all about
