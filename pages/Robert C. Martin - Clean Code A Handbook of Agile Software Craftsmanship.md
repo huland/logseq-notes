@@ -518,7 +518,7 @@ collapsed:: true
   <==========>
 - Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:31 AM
   
-  understand some basic defnitions
+  understand some basic definitions
   <==========>
 - Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:37 AM
   
