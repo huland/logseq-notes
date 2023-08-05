@@ -467,20 +467,14 @@
 	- It lets us make informed choices with the best possible information.
 	- Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work.
 - ## Emergence
+	- A design is “simple” if it follows these rules:
+		- Runs all the tests
+		- Contains no duplication
+		- Expresses the intent of the programmer
+		- Minimizes the number of classes and methods The rules are given in order of importance.
 	- Simple Design Rule 1: Runs All the Tests
-		- design is “simple” if it follows these rules:
-			- Runs all the tests
-			- Contains no duplication
-			- Expresses the intent of the programmer
-			- Minimizes the number of classes and methods The rules are given in order of importance.
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:03:28 AM
-  
-  Simple Design Rule 1: Runs All the Tests
-  <==========>
-- Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:04:57 AM
-  
-  A system that is comprehensively tested and passes all of its tests all of the time is a testable system. That’s an obvious statement, but an important one. Systems that aren’t testable aren’t verifable. Arguably, a system that cannot be verifed should never be deployed
-  <==========>
+		- A system that is comprehensively tested and passes all of its tests all of the time is a testable system. That’s an obvious statement, but an important one. Systems that aren’t testable aren’t verifable. Arguably, a system that cannot be verifed should never be deployed
+		  <==========>
 - Your Highlight on page 203-203 | Added on Wednesday, June 21, 2023 9:05:21 AM
   
   making our systems testable pushes us toward a design where our classes are small and single purpose. It’s just easier to test classes that conform to the SRP
