@@ -482,20 +482,11 @@
 		- Once we have tests, we are empowered to keep our code and classes clean by incrementally refactoring the code.
 		- The fact that we have these tests eliminates the fear that cleaning up the code will break it.
 	- No Duplication
-		- Eliminate duplication, ensure expressiveness, and minimize the number of classes and methods
-		  <==========>
-- Your Highlight on page 204-204 | Added on Wednesday, June 21, 2023 9:09:08 AM
-  
-  Duplication is the primary enemy of a well-designed system
-  <==========>
-- Your Highlight on page 204-204 | Added on Wednesday, June 21, 2023 10:06:42 AM
-  
-  It represents additional work, additional risk, and additional unnecessary complexity
-  <==========>
-- Your Highlight on page 206 | Added on Wednesday, June 21, 2023 9:05:34 PM
-  
-  Expressive
-  <==========>
+		- Eliminate duplication, ensure expressiveness, and minimize the number of classes and methods.
+		- Duplication is the primary enemy of a well-designed system.
+		- It represents additional work, additional risk, and additional unnecessary complexity.
+	- Expressive
+	  <==========>
 - Your Highlight on page 206-206 | Added on Wednesday, June 21, 2023 9:05:54 PM
   
   cost of maintenance. You can express yourself by choosing good names
