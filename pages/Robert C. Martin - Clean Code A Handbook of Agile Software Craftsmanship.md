@@ -499,14 +499,8 @@
 			- Care is a precious resource
 	- Minimal Classes and Methods
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
-- Your Highlight on page 207-207 | Added on Wednesday, June 21, 2023 9:09:03 PM
-  
-  So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself
-  <==========>
-- Your Highlight on page 208 | Added on Wednesday, June 21, 2023 9:09:43 PM
-  
-  Concurrency
-  <==========>
+		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
+- Concurrency
 - Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:57:31 AM
   
   understand some basic defnitions
