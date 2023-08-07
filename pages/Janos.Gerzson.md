@@ -7,5 +7,4 @@
 - Notes
 	-
 	-
-- Tags
-	- #vertis
+- tags:: #vertis
