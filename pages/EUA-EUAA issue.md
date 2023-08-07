@@ -9,6 +9,9 @@
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
 	- [[2023-08-01]]
+		- [EUA/EUAA issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793)'s [remaining](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793#note_13405) UI updates
+			- Active Offers page have a separate section for strict products was challenging
+				- #Adam.Szucs helped a lot
 		- formatting tables
 		- displaying help text for strict product checkboxes
 		- rename "Strict Product" to "Strict EUA/EUAA"
