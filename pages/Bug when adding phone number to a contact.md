@@ -1,9 +1,10 @@
 - ## Ticket details
-	- [ticket](link.to.ticket)
+	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6879)
 ## Notes
 	-
 ## Review details
-	- [pull request](link.to.pull.request)
+	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/377)
 ## Activity Summary
-	-
-- tags::
+	- [[2023-07-25]]
+		- reviewed the code
+- tags:: #vertis #Sandor.Volgyi
