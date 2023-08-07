@@ -8,4 +8,4 @@
 ## Activity Summary
 	- [[2023-07-25]]
 		- review the code
-- tags:: #vertis #Adam.Szucs
+- tags:: #vertis #Adam.Szucs #ticket

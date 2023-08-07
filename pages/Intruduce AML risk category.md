@@ -11,4 +11,4 @@
 	- [[2023-08-08]]
 		- Meeting @11:00 with #Eszter.Toth and #Balazs.Szalma about the topic
 	-
-- tags:: #vertis
+- tags:: #vertis #ticket
