@@ -9,6 +9,6 @@
 		- I reviewed the ticket
 	- [[2023-08-07]]
 		- Dezső was asking help how it's possible to resolve my comments
-			- I was checking the code (1h)
+			- I was checking the code (30m)
 		- Discussed the possible solution
 - tags:: #vertis #Dezso.Diak
