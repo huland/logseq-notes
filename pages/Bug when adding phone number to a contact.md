@@ -4,5 +4,5 @@
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/377)
 ## Activity Summary
 	- [[2023-07-25]]
-		- reviewed the code
+		- review the code
 - tags:: #vertis #Sandor.Volgyi
