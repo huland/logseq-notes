@@ -28,5 +28,4 @@
 		- I was reviewing the code.
 	- [[2023-08-04]] (1h30m)
 		- I was manual testing the tickets.
-- ## Tags
-	- #vertis #Dezso.Diak
+- tags:: #vertis #Dezso.Diak
