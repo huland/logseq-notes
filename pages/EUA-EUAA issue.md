@@ -8,6 +8,8 @@
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
+	- [[2023-08-02]]
+		- #vertis [EUA/EUAA issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793)'s [remaining](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793#note_13405) UI updates
 	- [[2023-08-03]]
 		- #Zoltan.Egyed checked my pull request and he left many comments
 			- I fixed most of them
