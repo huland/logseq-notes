@@ -25,7 +25,7 @@
 	- pull request ticket: [pull request link](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
 - ## Activity Summary
 	- [[2023-08-03]] (2h)
-		- I was reviewing the code.
+		- review the code
 	- [[2023-08-04]] (1h30m)
 		- I was manual testing the tickets.
 - tags:: #vertis #Dezso.Diak
