@@ -8,5 +8,9 @@
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
-	-
+	- [[2023-08-04]]
+		- [remaining PR comments fixed](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319) (4h)
+			- fixed [Passing commodity id list instead of commodity name list](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319#note_14512)
+			- fixed [Using `quantity` instead of `unsettled_quantity`](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319#note_14508)
+			- fixed [FIFO should work without the commodities `EUA` or `EUAA`](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319#note_14587)
 - tags:: #vertis
