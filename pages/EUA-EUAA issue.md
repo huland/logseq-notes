@@ -8,6 +8,12 @@
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
+	- [[2023-08-01]]
+		- formatting tables
+		- displaying help text for strict product checkboxes
+		- rename "Strict Product" to "Strict EUA/EUAA"
+		- Don't show counterparty balance if it's 0
+		- set EUA's price ticker for EUAA
 	- [[2023-08-02]]
 		- #vertis [EUA/EUAA issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793)'s [remaining](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793#note_13405) UI updates
 	- [[2023-08-03]]
