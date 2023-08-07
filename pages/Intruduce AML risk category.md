@@ -5,5 +5,7 @@
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
-	- [[2023-08-08]] Meeting with #Balazs.Szalma
+	- [[2023-08-08]]
+		- Meeting with #Balazs.Szalma about the topic
+	-
 - tags:: #vertis
