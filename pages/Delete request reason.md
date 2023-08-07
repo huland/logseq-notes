@@ -8,5 +8,7 @@
 	- [[2023-07-25]]
 		- I reviewed the ticket
 	- [[2023-08-07]]
-		- Check Delete Request Reason CR comment with #Dezso.Diak (30m)
+		- Check code review comment with #Dezso.Diak (30m)
+			- checking the code (20m)
+			-
 - tags:: #vertis #Dezso.Diak
