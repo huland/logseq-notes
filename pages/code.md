@@ -1,4 +1,3 @@
 - [[python]]
 -
-- ## Tags
-	- #knowledge
+- tags:: #knowledge
