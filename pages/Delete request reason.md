@@ -1,7 +1,5 @@
 - ## Ticket details
 	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6162)
-## Notes
-	-
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/259)
 ## Activity Summary
@@ -9,6 +7,6 @@
 		- review the code
 	- [[2023-08-07]]
 		- Check my code review comment with #Dezso.Diak (30m)
-			- checking the code (20m)
+			- checking the code for the solution (20m)
 			- discussing it with #Dezso.Diak (10m)
 - tags:: #vertis #Dezso.Diak
