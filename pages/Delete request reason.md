@@ -8,5 +8,5 @@
 	- [[2023-07-25]]
 		- I reviewed the ticket
 	- [[2023-08-07]]
-		- Discussed the
+		- Discussed my comments with Dezso.
 - tags:: #vertis #Dezso.Diak
