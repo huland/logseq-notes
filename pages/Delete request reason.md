@@ -8,5 +8,7 @@
 	- [[2023-07-25]]
 		- I reviewed the ticket
 	- [[2023-08-07]]
+		- Dezső was asking help how it's possible to resolve my comments
+		-
 		- Discussed my comments with Dezso.
 - tags:: #vertis #Dezso.Diak
