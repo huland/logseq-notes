@@ -9,6 +9,6 @@
 		- Reading the ticket's description (30m)
 		-
 	- [[2023-08-08]]
-		- Meeting with #Balazs.Szalma about the topic
+		- Meeting @11:00 with #Balazs.Szalma about the topic
 	-
 - tags:: #vertis
