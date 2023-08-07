@@ -8,6 +8,8 @@
 	- [[2023-07-25]]
 		- I reviewed the ticket
 	- [[2023-08-07]]
+		- Check Delete Request Reason CR comment with #Dezso.Diak (30m)
+			- check the code for solution:  (30m)
 		- Dezső was asking help how it's possible to resolve my comments
 			- I was checking the code (30m)
 		- Discussed the possible solution
