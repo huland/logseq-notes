@@ -5,5 +5,4 @@
       
   ```
 - the validation does not run, the ets_offer is a `serializers.SerializerMethodField()`
-- ## Tags
-	- #vertis
+- tags:: #vertis
