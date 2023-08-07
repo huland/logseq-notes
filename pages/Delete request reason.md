@@ -10,5 +10,5 @@
 	- [[2023-08-07]]
 		- Check code review comment with #Dezso.Diak (30m)
 			- checking the code (20m)
-			-
+			- discussing it with #Dezso.Diak (10m)
 - tags:: #vertis #Dezso.Diak
