@@ -6,4 +6,4 @@
 	- [pull request](link.to.pull.request)
 ## Activity Summary
 	-
-- tags::
+- tags:: #vertis
