@@ -13,4 +13,11 @@
 			- fixed [Passing commodity id list instead of commodity name list](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319#note_14512)
 			- fixed [Using `quantity` instead of `unsettled_quantity`](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319#note_14508)
 			- fixed [FIFO should work without the commodities `EUA` or `EUAA`](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319#note_14587)
+	- [[2023-08-07]]
+		- fix table coloring (5m)
+		- fix table size (25m)
+		  :LOGBOOK:
+		  CLOCK: [2023-08-07 Mon 11:01:51]--[2023-08-07 Mon 11:01:56] =>  00:00:05
+		  CLOCK: [2023-08-07 Mon 11:02:28]--[2023-08-07 Mon 11:02:34] =>  00:00:06
+		  :END:
 - tags:: #vertis
