@@ -9,4 +9,4 @@
 		- Check my code review comment with #Dezso.Diak (30m)
 			- checking the code for the solution (20m)
 			- discussing it with #Dezso.Diak (10m)
-- tags:: #vertis #Dezso.Diak
+- tags:: #vertis #Dezso.Diak #ticket
