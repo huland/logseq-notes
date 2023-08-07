@@ -20,4 +20,4 @@
 		- [pull request](link.to.pull.request)
 	- ## Activity Summary
 		-
-	- ## Tags
+	- tags::
