@@ -5,5 +5,8 @@
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/259)
 ## Activity Summary
-	-
+	- [[2023-07-25]]
+		- I reviewed the ticket
+	- [[2023-08-07]]
+		- Discussed the
 - tags:: #vertis #Dezso.Diak
