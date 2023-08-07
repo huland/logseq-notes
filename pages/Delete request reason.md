@@ -3,7 +3,7 @@
 ## Notes
 	-
 ## Review details
-	- [pull request](link.to.pull.request)
+	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/259)
 ## Activity Summary
 	-
 - tags:: #vertis #Dezso.Diak
