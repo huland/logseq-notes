@@ -1,4 +1,3 @@
 - [[AppImage]]
 -
-- ## Tags
-- #knowledge
+- tags:: #knowledge
