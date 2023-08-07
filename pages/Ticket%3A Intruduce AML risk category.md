@@ -5,6 +5,9 @@
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
+	- [[2023-08-07]]
+		- Reading the ticket's description (30m)
+		-
 	- [[2023-08-08]]
 		- Meeting with #Balazs.Szalma about the topic
 	-
