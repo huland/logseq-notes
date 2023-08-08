@@ -22,5 +22,5 @@
 			- The `Strict EUA or EUAA` visible on ETS Offer Details page
 		- Active Offers
 			- ![6_ack_ets_offer_on_active_offers_page.png](../assets/6_ack_ets_offer_on_active_offers_page_1691498356074_0.png)
-			- In case of `Acknowledge`
-- ETS Offer List
+			- `Acknowledge` "Strict EUA or EUAA" offers visible in separate section
+	-
