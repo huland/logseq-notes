@@ -5,4 +5,4 @@
 ## Activity Summary
 	- [[2023-07-25]]
 		- review the code
-- tags:: #vertis #Sandor.Volgyi #ticket
+- tags:: #vertis #ticket #Sandor.Volgyi
