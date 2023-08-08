@@ -1,11 +1,12 @@
-- Contract
-	- Create view
-		- ![1_contract_strict_eua_euaa.png](../assets/1_contract_strict_eua_euaa_1691496156618_0.png)
-			- There is a `Strict EUA or EUAA` checkbox visible on the page
-			- Checkbox visible if `ETS Trading Contract` was selected
-	- Detail view
-		- ![2_contract_details_strict_eua_euaa.png](../assets/2_contract_details_strict_eua_euaa_1691496178835_0.png){:height 194, :width 718}
-		-
+- Changes
+	- Contract
+		- Create view
+			- ![1_contract_strict_eua_euaa.png](../assets/1_contract_strict_eua_euaa_1691496156618_0.png)
+				- There is a `Strict EUA or EUAA` checkbox visible on the page
+				- Checkbox visible if `ETS Trading Contract` was selected
+		- Detail view
+			- ![2_contract_details_strict_eua_euaa.png](../assets/2_contract_details_strict_eua_euaa_1691496178835_0.png){:height 194, :width 718}
+				- In the General section the
 - ETS Offer
 	- When EUA / EUAA product was choosen a checkbox appears next to the product
 		- the checkbox value is the same as the value on the contract but it can be modified
