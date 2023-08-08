@@ -11,8 +11,6 @@
 	- ETS Offer
 		- Add new ETS Offer
 		- ![3_ets_offer_strict_eua_euaa_checkbox.png](../assets/3_ets_offer_strict_eua_euaa_checkbox_1691496901575_0.png)
-			-
-			-
-		- When EUA / EUAA product was choosen a checkbox appears next to the product
-			- the checkbox value is the same as the value on the contract but it can be modified
+			- When EUA / EUAA product was choosen a checkbox appears next to the product
+				- the checkbox value is the same as the value on the contract but it can be modified
 - ETS Offer List
