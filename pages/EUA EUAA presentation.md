@@ -1,0 +1,9 @@
+- Contract
+	- Create view
+		- Set "Strict EUA or EUAA" checkbox on ETS Contract
+	- Detail view
+		- ETS Contract Detail view
+- ETS Offer
+	- When EUA / EUAA product was choosen a checkbox appears next to the product
+		- the checkbox value is the same as the value on the contract but it can be modified
+- ETS Offer List
