@@ -3,6 +3,12 @@
 ## Notes
 	- Rename mode:
 		- simplified -> e-mail
+	- Level
+		- Low
+			- mode: simplified
+		- Normal
+			-
+		- High
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
