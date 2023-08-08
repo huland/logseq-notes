@@ -8,8 +8,10 @@
 		- Account with strict EUA/EUAA contract set
 			- Contract number: 00008637
 			- Account code: 011448
-		- Set "Strict EUA/EUAA" checkbox on ETS Contract
-			-
+		- Set "Strict EUA or EUAA" checkbox on ETS Contract
+		- ETS Contract Detail view
+		- ETS Offer
+			- When EUA / EUAA product was choosen
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
