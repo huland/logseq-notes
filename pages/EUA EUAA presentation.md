@@ -5,6 +5,7 @@
 			- Checkbox visible if `ETS Trading Contract` was selected
 	- Detail view
 		- ![2_contract_details_strict_eua_euaa.png](../assets/2_contract_details_strict_eua_euaa_1691496178835_0.png){:height 194, :width 718}
+		-
 - ETS Offer
 	- When EUA / EUAA product was choosen a checkbox appears next to the product
 		- the checkbox value is the same as the value on the contract but it can be modified
