@@ -1,18 +1,18 @@
 - ## Ticket details
 	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6205)
 ## Notes
-	- Rename mode:
-		- simplified -> e-mail
-	- Risk Level
-		- Low
-			- mode: simplified
-		- Normal
-			-
-		- High
-	- Risk category
-		- undefined
-			- add this category to existing records BO will remove them
-			- cannot set this value
+	- AccountAML and ContactAML rules are the same
+		- Rename mode:
+			- simplified -> e-mail
+		- Risk Level
+			- Low
+				- mode: simplified
+			- Normal
+			- High
+		- Risk category
+			- undefined
+				- add this category to existing records BO will remove them
+				- cannot set this value
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
