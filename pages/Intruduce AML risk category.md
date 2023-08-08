@@ -3,7 +3,7 @@
 ## Notes
 	- Rename mode:
 		- simplified -> e-mail
-	- Level
+	- Risk Level
 		- Low
 			- mode: simplified
 		- Normal
