@@ -1,6 +1,8 @@
 - Contract
 	- Create view
 		- ![1_contract_strict_eua_euaa.png](../assets/1_contract_strict_eua_euaa_1691496156618_0.png)
+			- There is a `Strict EUA or EUAA`` checkbox visible on the page in case of `ETS Trading Contract`
+			-
 	- Detail view
 		- ![2_contract_details_strict_eua_euaa.png](../assets/2_contract_details_strict_eua_euaa_1691496178835_0.png){:height 194, :width 718}
 - ETS Offer
