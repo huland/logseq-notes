@@ -34,9 +34,9 @@
 		- Commodity is multichoice field
 		- Choosing the EUA and EUAA the system merges the balances
 		- ![9_counterparty_balance_eua_euaa.png](../assets/9_counterparty_balance_eua_euaa_1691498660661_0.png)
-			-
+		- One Account's balance
 		- ![9_counterparty_balance_eua.png](../assets/9_counterparty_balance_eua_1691498633642_0.png)
-			-
+			- If the EUA was selected as Commodity
 		- ![9_counterparty_balance_euaa.png](../assets/9_counterparty_balance_euaa_1691498651120_0.png)
-			-
+			- If the EUAA was selected as commodity
 			-
