@@ -13,7 +13,7 @@
 		- ETS Offer
 			- When EUA / EUAA product was choosen a checkbox appears next to the product
 				- the checkbox value is the same as the value on the contract but it can be modified
-		-
+		- ETS Offer List
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
