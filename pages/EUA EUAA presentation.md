@@ -17,4 +17,7 @@
 			- ![4_ets_offer_list.png](../assets/4_ets_offer_list_1691498038507_0.png){:height 215, :width 687}
 				-
 			- In case of a "Strict EUA or EUAA" offer the `ETS Offer List` page the `[strict]` string in red appears before the product
+		- ETS Offer Details
+			- ![5_ets_offer_details.png](../assets/5_ets_offer_details_1691498231167_0.png)
+			- The ETS Offer Details page
 - ETS Offer List
