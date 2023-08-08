@@ -9,12 +9,13 @@
 				- mode: simplified
 			- Normal
 			- High
-		- Risk category
+		- Risk Category
 			- undefined
 				- add this category to existing records BO will remove them
 				- cannot set this value
 		- Summary:
-			-
+			- From Risk Level, the Identification Type (mode) choices will be obvious
+			- Set the Risk Category,
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
