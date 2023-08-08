@@ -5,7 +5,7 @@
 		- [part 1](https://vertiszrt-my.sharepoint.com/personal/balazs_szalma_vertis_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbalazs_szalma_vertis_com%2FDocuments%2FRecordings%2FEUA_EUAA-20230518_102035-Meeting Recording%2Emp4&ga=1)
 		- [part 2](https://vertiszrt-my.sharepoint.com/personal/balazs_szalma_vertis_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbalazs_szalma_vertis_com%2FDocuments%2FRecordings%2FEUA_EUAA _2-20230525_100847-Meeting Recording%2Emp4&ga=1)
 	- Presentation
-		- [[EUA EUAA changes]]
+		- EUA EUAA summary
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
@@ -42,5 +42,5 @@
 		  CLOCK: [2023-08-07 Mon 11:02:28]--[2023-08-07 Mon 11:02:34] =>  00:00:06
 		  :END:
 	- [[2023-08-08]]
-		- prepare presentation (3h)
+		- prepare presentation (4h)
 - tags:: #vertis #ticket
