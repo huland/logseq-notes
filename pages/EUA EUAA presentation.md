@@ -7,12 +7,12 @@
 			- In case it's modified on an approved contract the approval will be revoked.
 		- Detail view
 			- ![2_contract_details_strict_eua_euaa.png](../assets/2_contract_details_strict_eua_euaa_1691496178835_0.png){:height 194, :width 718}
-			- In the General section the contract's `Strict EUA or EUAA` settings visible
+			- In the `General` section the contract's `Strict EUA or EUAA` settings visible
 	- ETS Offer
 		- Add new ETS Offer
 			- ![3_ets_offer_strict_eua_euaa_checkbox.png](../assets/3_ets_offer_strict_eua_euaa_checkbox_1691496901575_0.png)
-			- When EUA / EUAA product was choosen a `Strict EUA or EUAA`checkbox appears next to the product
-			- The checkbox's value is the same as the value on the contract but it can be modified during contract creation
+			- When EUA / EUAA product was choosen a `Strict EUA or EUAA` checkbox appears next to the product
+			- The checkbox's value by default coming from the contract but it can be modified during contract creation
 		- ETS Offer List
 			-
 		-
