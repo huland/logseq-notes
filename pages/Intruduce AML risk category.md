@@ -1,7 +1,8 @@
 - ## Ticket details
 	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6205)
 ## Notes
-	-
+	- Rename mode:
+		- simplified -> electronic online
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
