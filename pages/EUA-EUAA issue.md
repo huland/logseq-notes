@@ -7,7 +7,7 @@
 	- Presentation
 		- Account with strict EUA/EUAA contract set
 			- Contract id: 00007294
-			- Account code: 055553
+			- Account code: 011448
 		- Strict EUA/EUAA checkbox on ETS Contract
 			-
 ## Review details
