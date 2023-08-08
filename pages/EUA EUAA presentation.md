@@ -14,6 +14,7 @@
 			- When EUA / EUAA product was choosen a `Strict EUA or EUAA` checkbox appears next to the product
 			- The checkbox's value by default coming from the contract but it can be modified during contract creation
 		- ETS Offer List
-			-
-		-
+			- ![4_ets_offer_list.png](../assets/4_ets_offer_list_1691498038507_0.png){:height 215, :width 687}
+				-
+			- In case of a offer which was marked as `St`
 - ETS Offer List
