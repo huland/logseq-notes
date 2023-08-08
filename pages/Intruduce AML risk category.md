@@ -4,7 +4,7 @@
 	- AccountAML and ContactAML rules are the same
 		- Identification Type: (rename mode):
 			- simplified -> e-mail
-		- Risk Level -> Table will be created in BO.
+		- Risk Level -> Table will be created from the possible choices in BO.
 			- Low
 				- mode: simplified
 			- Normal
@@ -13,6 +13,8 @@
 			- undefined
 				- add this category to existing records BO will remove them
 				- cannot set this value
+		- Summary:
+			-
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
