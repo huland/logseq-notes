@@ -16,5 +16,5 @@
 		- ETS Offer List
 			- ![4_ets_offer_list.png](../assets/4_ets_offer_list_1691498038507_0.png){:height 215, :width 687}
 				-
-			- In case of a offer which was marked as `St`
+			- In case of a  offer  as `Strict EUA or EUAA` the ETS Offer list page the `[strict]` string added to the product
 - ETS Offer List
