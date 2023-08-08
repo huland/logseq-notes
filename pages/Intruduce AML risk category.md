@@ -10,15 +10,12 @@
 			- Normal
 			- High
 		- Risk Category
-			- undefined
-				- add this category to existing records BO will remove them
-				- cannot set this value
 		- Summary:
 			- From Risk Level, the Identification Type (mode) choices will be obvious
 			- Set the Risk Category, define possible choices
 				- There will be an `undefined` choice which we'll apply for all the current AMLs
 					- BO will set the AML with Risk Category undefined
-					- th
+					- The undefined category cannot be set manually
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
