@@ -41,4 +41,4 @@
 			- If the EUAA was selected as commodity
 	- Own Valuations
 		- ![10_own_valuations_stock_settlement_table.png](../assets/10_own_valuations_stock_settlement_table_1691498820739_0.png)
-		- `id` and `Client Code` removed from the table as the order's link will
+		- `id` and `Client Code` removed from the table as following the order's link show these details
