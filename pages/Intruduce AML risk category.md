@@ -4,7 +4,7 @@
 	- AccountAML and ContactAML rules are the same
 		- Rename mode:
 			- simplified -> e-mail
-		- Risk Level
+		- Risk Level -> Table will be created in BO.
 			- Low
 				- mode: simplified
 			- Normal
