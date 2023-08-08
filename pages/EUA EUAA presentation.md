@@ -31,7 +31,8 @@
 			- The "Buy" and "Sell" details colored so they are easier to recognize
 	- Counterparty Balance
 		- ![9_counterparty_balance.png](../assets/9_counterparty_balance_1691498620617_0.png)
-		- Counterparty balance
+		- Commodity is multichoice field
+		- Choosing the EUA and EUAA the system merges the balances
 		- ![9_counterparty_balance_eua_euaa.png](../assets/9_counterparty_balance_eua_euaa_1691498660661_0.png)
 			-
 		- ![9_counterparty_balance_eua.png](../assets/9_counterparty_balance_eua_1691498633642_0.png)
