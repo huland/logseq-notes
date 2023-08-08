@@ -19,5 +19,6 @@
 			- In case of a "Strict EUA or EUAA" offer the `ETS Offer List` page the `[strict]` string in red appears before the product
 		- ETS Offer Details
 			- ![5_ets_offer_details.png](../assets/5_ets_offer_details_1691498231167_0.png)
-			- The ETS Offer Details page
+			- The `Strict EUA or EUAA` visible on ETS Offer Details page
+		- Active ETS Offers
 - ETS Offer List
