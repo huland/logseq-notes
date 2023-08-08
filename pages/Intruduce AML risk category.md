@@ -9,6 +9,8 @@
 		- Normal
 			-
 		- High
+	- Risk category
+		- undefined -> add this category to existing records
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
