@@ -1,6 +1,7 @@
 - Contract
 	- Create view
 		- Set "Strict EUA or EUAA" checkbox on ETS Contract
+			- ![1_contract_strict_eua_euaa.png](../assets/1_contract_strict_eua_euaa_1691496156618_0.png)
 	- Detail view
 		- ETS Contract Detail view
 - ETS Offer
