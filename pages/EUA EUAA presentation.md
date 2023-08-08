@@ -39,4 +39,6 @@
 			- If the EUA was selected as Commodity
 		- ![9_counterparty_balance_euaa.png](../assets/9_counterparty_balance_euaa_1691498651120_0.png)
 			- If the EUAA was selected as commodity
-			-
+	- Own Valuations
+		- ![10_own_valuations_stock_settlement_table.png](../assets/10_own_valuations_stock_settlement_table_1691498820739_0.png)
+		- `id` and `Client Code` removed from the table as the order's link will
