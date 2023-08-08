@@ -42,5 +42,5 @@
 		  CLOCK: [2023-08-07 Mon 11:02:28]--[2023-08-07 Mon 11:02:34] =>  00:00:06
 		  :END:
 	- [[2023-08-08]]
-		- prepare presentation
+		- prepare presentation (3h)
 - tags:: #vertis #ticket
