@@ -2,7 +2,7 @@
 	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6205)
 ## Notes
 	- AccountAML and ContactAML rules are the same
-		- Rename mode:
+		- Identification Type: (rename mode):
 			- simplified -> e-mail
 		- Risk Level -> Table will be created in BO.
 			- Low
