@@ -29,4 +29,13 @@
 		- ![8_daily_reports_settlements_table.png](../assets/8_daily_reports_settlements_table_1691498511069_0.png)
 			- Commodity was added to `Settlements` table
 			- The "Buy" and "Sell" details colored so they are easier to recognize
-	- C
+	- Counterparty Balance
+		- ![9_counterparty_balance.png](../assets/9_counterparty_balance_1691498620617_0.png)
+		- Counterparty balance
+		- ![9_counterparty_balance_eua_euaa.png](../assets/9_counterparty_balance_eua_euaa_1691498660661_0.png)
+			-
+		- ![9_counterparty_balance_eua.png](../assets/9_counterparty_balance_eua_1691498633642_0.png)
+			-
+		- ![9_counterparty_balance_euaa.png](../assets/9_counterparty_balance_euaa_1691498651120_0.png)
+			-
+			-
