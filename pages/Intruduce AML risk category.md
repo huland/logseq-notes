@@ -10,7 +10,9 @@
 			-
 		- High
 	- Risk category
-		- undefined -> add this category to existing records
+		- undefined
+			- add this category to existing records BO will remove them
+			- cannot set this value
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
