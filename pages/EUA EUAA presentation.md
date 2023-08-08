@@ -28,4 +28,5 @@
 			- After `Close day` the EUA and EUAA offers will be merged under EUA
 		- ![8_daily_reports_settlements_table.png](../assets/8_daily_reports_settlements_table_1691498511069_0.png)
 			- Commodity was added to `Settlements` table
-			-
+			- The "Buy" and "Sell" details colored so they are easier to recognize
+	- C
