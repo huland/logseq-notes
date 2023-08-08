@@ -23,4 +23,7 @@
 		- Active Offers
 			- ![6_ack_ets_offer_on_active_offers_page.png](../assets/6_ack_ets_offer_on_active_offers_page_1691498356074_0.png)
 			- `Acknowledge` "Strict EUA or EUAA" offers visible in separate section
-	-
+	- Own Stock
+		- ![7_own_stock_eua_euaa_merged.png](../assets/7_own_stock_eua_euaa_merged_1691498455919_0.png){:height 216, :width 718}
+			- After `Close day` the EUA and EUAA offers will be merged under EUA
+			-
