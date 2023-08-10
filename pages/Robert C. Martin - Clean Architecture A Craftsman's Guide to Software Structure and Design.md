@@ -158,12 +158,15 @@
 				- and then organizing the dependencies between those things
 				  properly (the Dependency Inversion Principle).
 			- By applying the SRP, we might come up with the data-ﬂow view shown in
-			-
+			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  autonumber
-				  Bob -> Alice : Authentication Request
-				  Bob <- Alice : Authentication Response
+				  class Car
+				  
+				  Driver - Car : drives >
+				  Car *- Wheel : has 4 >
+				  Car -- Person : < owns
+				  
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
