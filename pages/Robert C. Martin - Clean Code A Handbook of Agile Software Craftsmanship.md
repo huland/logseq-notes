@@ -699,7 +699,7 @@ collapsed:: true
 		- N1: Choose Descriptive Names
 			- Don’t be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose
 			- This is not just a “feel-good” recommendation. Names in software are 90 percent of what make software readable
-			- “pretty much what you expected"
+			- "pretty much what you expected"
 - Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:46:06 PM
   
   N2: Choose Names at the Appropriate Level of Abstraction
