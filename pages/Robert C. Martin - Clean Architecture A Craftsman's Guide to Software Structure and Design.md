@@ -161,12 +161,25 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  class Car
-				  
-				  Driver - Car : drives >
-				  Car *- Wheel : has 4 >
-				  Car -- Person : < owns
-				  
+				  usecase usecase [
+				  This is a <b>usecase
+				  ----
+				  You can use separator
+				  ====
+				  of different kind
+				  ....
+				  and style
+				  ]
+				  card card [
+				  This is a <b>card
+				  ----
+				  You can use separator
+				  ====
+				  of different kind
+				  ....
+				  and style
+				  <i><color:blue>(add from V1.2020.7)</color></i>
+				  ]
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
