@@ -220,9 +220,11 @@
 				    class FinancialDatabase
 				  }
 				  package "Screen Presenter" as ScreenPres <<Rectangle>> {
-				    class ScreenPresenter
-				    object ScreenViewModel
-				    interface ScreenView
+				    together {
+				      class ScreenPresenter
+				      object ScreenViewModel
+				      interface ScreenView
+				    }
 				  }
 				  package "Print Presenter" as PrintPres <<Rectangle>> {
 				    class PrintPresenter
