@@ -87,6 +87,8 @@
 				  allowmixing
 				  left to right direction
 				  
+				  Title The three classes do not know about each other
+				  
 				  class PayCalculator {
 				    + calculatePay()
 				  }
@@ -114,6 +116,8 @@
 				  
 				  allowmixing
 				  left to right direction
+				  
+				  Title The <i>Facade</i> pattern
 				  
 				  class EmployeeFacade {
 				    + calculatePay()
@@ -160,9 +164,10 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  Title Applying the SRP
 				  
 				  left to right direction
+				  
+				  Title Applying the SRP
 				  
 				  card financial_data [ 
 				  	Financial Data 
@@ -184,6 +189,7 @@
 				  financial_analyzer --> financial_report_data
 				  financial_report_data --> web_reporter
 				  financial_report_data --> print_reporter
+				  
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
