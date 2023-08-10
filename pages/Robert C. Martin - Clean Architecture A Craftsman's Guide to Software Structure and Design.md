@@ -245,8 +245,7 @@
 				  PrintView --> PrintViewModel
 				  PrintPresenter --> PrintViewModel
 				  PrintPresenter --|> FinancialReportPresenter
-				  WebView --|> ScreenView
-				  PDFView --|> PrintView
+				  
 				  FinancialReportController --> FinancialReportPresenter
 				  FinancialReportPresenter --> FinancialReportResponse
 				  FinancialReportController --> FinancialReportRequest
@@ -260,6 +259,10 @@
 				  FinancialDataMapper --> FinancialDatabase
 				  FinancialDataMapper --> FinancialEntities
 				  FinancialDataMapper --|> FinancialDataGateway
+				  
+				  
+				  WebView --|> ScreenView
+				  PDFView --|> PrintView
 				  
 				  @enduml
 				  ```
