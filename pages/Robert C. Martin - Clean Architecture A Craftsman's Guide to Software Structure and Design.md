@@ -14,6 +14,8 @@
 			  logseq.order-list-type:: number
 			- `not urgent` and `important`
 			  logseq.order-list-type:: number
+			- | important / urgent |-|
+			-
 		- Note that the architecture of the code -the important stuﬀ- is in the top two positions of this list, whereas the behavior of the code occupies the ﬁrst and third positions.
 	- ### Fight for the Architecture
 		- Just remember: If architecture comes last, then the system will become ever more costly to develop, and eventually change will become practically impossible for part or all of the system. If that is allowed to happen, it means the software development team did not fight hard enough for what they knew was necessary.
