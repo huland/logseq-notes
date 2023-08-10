@@ -565,8 +565,7 @@ collapsed:: true
 				- Getting the right balance of threads typically requires trial an error. Early on, fnd ways to time the performance of your system under different confgurations.
 				- Consider allowing it to change while the system is running. Consider allowing self-tuning based on throughput and system utilization.
 			- ### Run with More Threads Than Processors
-				- Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you’ll encounter code that is missing a critical section or causes deadlock
-				  <==========>
+				- Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you’ll encounter code that is missing a critical section or causes deadlock.
 - Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:18:01 AM
   
   Multithreaded code behaves differently in different environments.16 You should run your tests in
@@ -579,10 +578,8 @@ collapsed:: true
   
   Run your threaded code on all target platforms early and often.
   <==========>
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:18:22 AM
-  
-  Instrument Your Code to Try and Force Failures
-  <==========>
+	-
+		- ### Instrument Your Code to Try and Force Failures
 - Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:19:46 AM
   
   There are two options for code instrumentation: • Hand-coded • Automated
