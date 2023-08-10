@@ -41,16 +41,19 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  ::
-				  :Another\nactor: as Man2
-				  actor Woman3
-				  actor :Last actor: as Person1
+				  :CFO: as cfo
+				  :COO: as coo
+				  :CTO: as cto
 				  
 				  class Employee {
-				  +calculatePay()
-				  +reportHours()
-				  +save()
+				    +calculatePay()
+				    +reportHours()
+				    +save()
 				  }
+				  
+				  cfo --> Employee
+				  coo --> Employee
+				  cto --> Employee
 				  
 				  @enduml
 				  ```
