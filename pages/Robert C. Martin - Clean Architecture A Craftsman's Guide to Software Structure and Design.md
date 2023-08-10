@@ -82,7 +82,13 @@
 				  class PayCalculator {
 				    + calculatePay()
 				  }
-				  class Hour
+				  class HourReporter {
+				    + reportHours()
+				  }
+				  class EmployeeSaver{
+				  
+				  }
+				  object E
 				  
 				  @enduml
 				  ```
