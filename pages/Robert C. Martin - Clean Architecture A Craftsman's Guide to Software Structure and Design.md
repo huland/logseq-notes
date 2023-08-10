@@ -105,21 +105,10 @@
 				  
 				  @enduml
 				  ```
-			- separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
+			- The most obvious way to solve the problem is to separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure
+			  with no methods. Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
 			- separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided. Figure 7.3 The three classes do not know about each other The
-- Your Highlight on Location 1141-1143 | Added on Monday, August 7, 2023 5:57:23 PM
-  
-  separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1141-1144 | Added on Monday, August 7, 2023 5:57:32 PM
-  
-  separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1146-1147 | Added on Monday, August 7, 2023 5:57:47 PM
-  
-  The downside of this solution is that the developers now have three classes that they have to instantiate and track. A common solution to this dilemma is to use the Facade
+- The downside of this solution is that the developers now have three classes that they have to instantiate and track. A common solution to this dilemma is to use the Facade
   =-=-=-=-=-=-=-=-=-=
   Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
 - Your Highlight on Location 1141-1146 | Added on Monday, August 7, 2023 5:58:01 PM
