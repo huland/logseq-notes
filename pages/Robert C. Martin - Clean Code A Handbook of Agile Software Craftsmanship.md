@@ -513,6 +513,7 @@ collapsed:: true
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
 - ## Concurrency
+  collapsed:: true
 	- ### Understand some basic definitions
 		- Bound Resources
 			- Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
@@ -537,7 +538,6 @@ collapsed:: true
 			- Big bowl of spaghetti in the center of the table
 			- Philosophers can eat with 2 forks only
 				- Replace philosophers with threads and forks with resources and this problem is similar to many enterprise applications in which processes compete for resources. Unless carefully designed, systems that compete in this way can experience deadlock, livelock, throughput, and effciency degradation.
--
 	- ### Testing Threaded Code
 		- Proving that code is correct is impractical. Testing does not guarantee correctness. However, good testing can minimize risk. This is all true in a single-threaded solution. As soon as there are two or more threads using the same code and working with shared data, things get substantially more complex.
 		- Recommendation: Write tests that have the potential to expose problems and then run them frequently, with different programatic confgurations and system confgurations and load. If tests ever fail, track down the failure.
@@ -574,8 +574,7 @@ collapsed:: true
 				- There are two options for code instrumentation:
 					- Hand-coded
 					- Automated
-- Successive Refinement
-  <==========>
+- ## Successive Refinement
 - Your Highlight on page 296-296 | Added on Friday, June 30, 2023 11:58:12 PM
   
   And so we have satisfed the Boy Scout Rule. We have left this module a bit cleaner than we found it. Not that it wasn’t clean already. The authors had done an excellent job with it. But no module is immune from improvement, and each of us has the responsibility to leave the code a little better than we found it.
