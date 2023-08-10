@@ -202,7 +202,7 @@
 				- ```plantuml
 				  @startuml
 				  
-				  rectangle Interactor {
+				  package Interactor <<Rectangle>> {
 				    object FinancialReportRequest
 				    interface FinancialReportRequester
 				    object FinancialReportResponse
@@ -210,30 +210,28 @@
 				    interface FinancialDataGateway
 				    object "Financial entities" as FinancialEntities
 				  }
-				  rectangle Controller {
+				  package Controller <<Rectangle>> {
 				    class FinancialReportController 
 				    interface FinancialReportPresenter
 				  }
-				  database Database {
+				  package Database <<Database>> {
 				    class FinancialDataMapper 
 				    class FinancialDatabase
 				  }
-				  rectangle "Screen Presenter" as ScreenPres {
+				  package "Screen Presenter" as ScreenPres <<Rectangle>> {
 				    class ScreenPresenter
 				    object ScreenViewModel
 				    interface ScreenView
 				  }
-				  rectangle "Print Presenter" as PrintPres {
+				  package "Print Presenter" as PrintPres <<Rectangle>> {
 				    class PrintPresenter
 				    object PrintViewModel
 				    interface PrintView
 				  } 
-				  
-				  rectangle "PDF View" as PDFV {
+				  package "PDF View" as PDFV <<Rectangle>> {
 				    class PDFView
 				  } 
-				  
-				  rectangle "Web View" as WebV {
+				  package "Web View" as WebV <<Rectangle>> {
 				    class WebView
 				  } 
 				  
