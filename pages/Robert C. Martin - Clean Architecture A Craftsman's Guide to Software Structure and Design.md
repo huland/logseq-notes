@@ -45,16 +45,15 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  package Restaurant {
-				    usecase "Eat Food" as UC1
-				    usecase "Pay for Food" as UC2
-				    usecase "Drink" as UC3
-				    usecase "Review" as UC4
+				  class Employee {
+				    +calculatePay()
+				    +reportHours()
+				    +save()
 				  }
 				  
-				  cfo ..> Restaurant
-				  coo ..> Restaurant
-				  cto ..> Restaurant
+				  cfo ..> Employee
+				  coo ..> Employee
+				  cto ..> Employee
 				  
 				  @enduml
 				  ```
