@@ -45,7 +45,7 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  package Employee {
+				  rectangle Employee {
 				    usecase "+ calculatePay()"
 				    usecase "+ reportHours()"
 				    usecase "+ save()"
