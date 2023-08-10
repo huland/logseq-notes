@@ -132,9 +132,9 @@
 				  }
 				  object "Employee Data" as emp_data
 				  
-				  EmployeeFacade -> PayCalculator
-				  EmployeeFacade -> HourReporter
-				  EmployeeFacade -> EmployeeSaver
+				  EmployeeFacade --> PayCalculator
+				  EmployeeFacade --> HourReporter
+				  EmployeeFacade --> EmployeeSaver
 				  PayCalculator --> emp_data
 				  HourReporter --> emp_data
 				  EmployeeSaver --> emp_data
