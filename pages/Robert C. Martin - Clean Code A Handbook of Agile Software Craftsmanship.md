@@ -646,50 +646,18 @@ collapsed:: true
 			- The methods of a class should be interested in the variables and functions of the class they belong to, and not the variables and functions of other classes.
 		- G15: Selector Arguments
 			- They can be enums, integers, or any other type of argument that is used to select the behavior of the function. In general it is better to have many functions than to pass some code into a function to select the behavior
-- Your Highlight on page 326-326 | Added on Tuesday, July 4, 2023 6:01:15 PM
-  
-  G16: Obscured Intent
-  <==========>
-- Your Highlight on page 326-326 | Added on Tuesday, July 4, 2023 6:02:13 PM
-  
-  We want code to be as expressive as possible
-  <==========>
-- Your Highlight on page 326-326 | Added on Tuesday, July 4, 2023 6:02:25 PM
-  
-  G17: Misplaced Responsibility
-  <==========>
-- Your Highlight on page 327-327 | Added on Tuesday, July 4, 2023 6:09:47 PM
-  
-  G18: Inappropriate Static
-  <==========>
-- Your Highlight on page 327-327 | Added on Tuesday, July 4, 2023 6:11:52 PM
-  
-  In general you should prefer nonstatic methods to static methods. When in doubt, make the function nonstatic. If you really want a function to be static, make sure that there is no chance that you’ll want it to behave polymorphically
-  <==========>
-- Your Highlight on page 327-327 | Added on Tuesday, July 4, 2023 6:11:57 PM
-  
-  G19: Use Explanatory Variables
-  <==========>
-- Your Highlight on page 327-327 | Added on Wednesday, July 5, 2023 8:52:34 AM
-  
-  to make a program readable is to break the calculations up into intermediate values that are held in variables with meaningful names
-  <==========>
-- Your Highlight on page 328-328 | Added on Wednesday, July 5, 2023 8:53:42 AM
-  
-  G20: Function Names Should Say What They Do
-  <==========>
-- Your Highlight on page 328-328 | Added on Wednesday, July 5, 2023 8:58:38 AM
-  
-  If you have to look at the implementation (or documentation) of the function to know what it does, then you should work to fnd a better name or rearrange the functionality so that it can be placed in functions with better names.
-  <==========>
-- Your Highlight on page 328-328 | Added on Wednesday, July 5, 2023 8:58:45 AM
-  
-  G21: Understand the Algorithm
-  <==========>
-- Your Highlight on page 329-329 | Added on Wednesday, July 5, 2023 3:22:08 PM
-  
-  G22: Make Logical Dependencies Physical
-  <==========>
+		- G16: Obscured Intent
+			- We want code to be as expressive as possible
+		- G17: Misplaced Responsibility
+		- G18: Inappropriate Static
+			- In general you should prefer nonstatic methods to static methods. When in doubt, make the function nonstatic. If you really want a function to be static, make sure that there is no chance that you’ll want it to behave polymorphically.
+		- G19: Use Explanatory Variables
+			- to make a program readable is to break the calculations up into intermediate values that are held in variables with meaningful names
+		- G20: Function Names Should Say What They Do
+			- If you have to look at the implementation (or documentation) of the function to know what it does, then you should work to fnd a better name or rearrange the functionality so that it can be placed in functions with better names.
+		- G21: Understand the Algorithm
+		- G22: Make Logical Dependencies Physical
+		  <==========>
 - Your Highlight on page 330-330 | Added on Wednesday, July 5, 2023 3:58:41 PM
   
   G23: Prefer Polymorphism to If/Else or Switch/Case
