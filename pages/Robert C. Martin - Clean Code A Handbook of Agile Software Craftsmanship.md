@@ -513,16 +513,17 @@ collapsed:: true
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
 - ## Concurrency
-	- Understand some basic definitions
-		- Bound Resources: Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
-	- Mutual Exclusion
-		- Only one thread can access shared data or a shared resource at a time.
-	- Starvation
-		- One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through first could starve out longer running threads if there is no end to the fast-running threads.
-	- Deadlock
-		- Two or more threads waiting for each other to finish. Each thread has a resource that the other thread requires and neither can finish until it gets the other resource.
-	- Livelock
-		- Threads in lockstep, each trying to do work but fnding another "in the way." Due to resonance, threads continue trying to make progress but are unable to for an excessively long time - or forever.
+	- ### Understand some basic definitions
+		- Bound Resources
+			- Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
+		- Mutual Exclusion
+			- Only one thread can access shared data or a shared resource at a time.
+		- Starvation
+			- One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through first could starve out longer running threads if there is no end to the fast-running threads.
+		- Deadlock
+			- Two or more threads waiting for each other to finish. Each thread has a resource that the other thread requires and neither can finish until it gets the other resource.
+		- Livelock
+			- Threads in lockstep, each trying to do work but fnding another "in the way." Due to resonance, threads continue trying to make progress but are unable to for an excessively long time - or forever.
 	- ### Know Your Execution Models
 		- Producer-Consumer
 			- One or more consumer threads acquire that work from the queue and complete it.
