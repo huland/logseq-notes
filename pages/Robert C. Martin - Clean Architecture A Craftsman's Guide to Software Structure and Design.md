@@ -15,6 +15,7 @@
 			- `not urgent` and `important`
 			  logseq.order-list-type:: number
 			- | important / urgent | important / not urgent |
+			- | unimportant / urgent | unimportant / not urgent |
 			-
 			-
 		- Note that the architecture of the code -the important stuﬀ- is in the top two positions of this list, whereas the behavior of the code occupies the ﬁrst and third positions.
