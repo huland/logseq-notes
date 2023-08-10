@@ -222,11 +222,23 @@
 				    class ScreenPresenter
 				    object ScreenViewModel
 				    interface ScreenView
+				  }
+				  rectangle "Print Presenter" as PrintPres {
+				    class PrintPresenter
+				    object PrintViewModel
+				    interface PrintView
 				  } 
 				  ScreenPresenter --> ScreenView
 				  ScreenView --> ScreenViewModel
 				  ScreenPresenter --> ScreenViewModel
 				  ScreenPresenter --|> FinancialReportPresenter
+				  
+				  PrintPresenter --> PrintView
+				  PrintView --> PrintViewModel
+				  PrintPresenter --> PrintViewModel
+				  PrintPresenter --|> FinancialReportPresenter
+				  
+				  
 				  FinancialReportController --> FinancialReportPresenter
 				  FinancialReportPresenter --> FinancialReportResponse
 				  FinancialReportController --> FinancialReportRequest
