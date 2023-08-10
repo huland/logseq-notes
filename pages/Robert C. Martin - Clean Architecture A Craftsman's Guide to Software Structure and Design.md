@@ -14,6 +14,7 @@
 			  logseq.order-list-type:: number
 			- `not urgent` and `important`
 			  logseq.order-list-type:: number
+			-
 			- | important / urgent | important / not urgent |
 			- | unimportant / urgent | unimportant / not urgent |
 			-
