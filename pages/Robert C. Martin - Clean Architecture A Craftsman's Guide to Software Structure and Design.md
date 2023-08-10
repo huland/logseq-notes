@@ -139,7 +139,6 @@
 				  HourReporter --> emp_data
 				  EmployeeSaver --> emp_data
 				  
-				  
 				  @enduml
 				  ```
 				- The `EmployeeFacade` contains very little code. It is responsible for instantiating and delegating to the classes with the functions.
@@ -161,6 +160,8 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  Title Applying the SRP
+				  
 				  left to right direction
 				  
 				  card financial_data [ 
