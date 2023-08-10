@@ -566,17 +566,10 @@ collapsed:: true
 				- Consider allowing it to change while the system is running. Consider allowing self-tuning based on throughput and system utilization.
 			- ### Run with More Threads Than Processors
 				- Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you’ll encounter code that is missing a critical section or causes deadlock.
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:18:01 AM
-  
-  Multithreaded code behaves differently in different environments.16 You should run your tests in
-  <==========>
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:18:09 AM
-  
-  in every potential deployment environment. Recommendation: Run your threaded code on all target platforms early and often.
-  <==========>
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:18:14 AM
-  
-  Run your threaded code on all target platforms early and often.
+			- ### Run on Different Platforms
+				- Multithreaded code behaves differently in different environments. You should run your tests in.
+- in every potential deployment environment. Recommendation: Run your threaded code on all target platforms early and often.
+- Run your threaded code on all target platforms early and often.
   <==========>
 	-
 		- ### Instrument Your Code to Try and Force Failures
