@@ -260,12 +260,6 @@
 				  WebView --|> ScreenView
 				  PDFView --|> PrintView
 				  
-				  WebV -[hidden]> ScreenPres
-				  PDFV -[hidden]> PrintPres
-				  PrintPres -[hidden]> Controller
-				  ScreenPres -[hidden]> Controller
-				  Controller -[hidden]> Interactor
-				  Interactor -[hidden]> Database
 				  @enduml
 				  ```
 			- {{renderer code_diagram,plantuml}}
