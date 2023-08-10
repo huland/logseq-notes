@@ -567,16 +567,13 @@ collapsed:: true
 			- ### Run with More Threads Than Processors
 				- Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you’ll encounter code that is missing a critical section or causes deadlock.
 			- ### Run on Different Platforms
-				- Multithreaded code behaves differently in different environments. You should run your tests in.
-- in every potential deployment environment. Recommendation: Run your threaded code on all target platforms early and often.
-- Run your threaded code on all target platforms early and often.
-  <==========>
-	-
-		- ### Instrument Your Code to Try and Force Failures
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:19:46 AM
-  
-  There are two options for code instrumentation: • Hand-coded • Automated
-  <==========>
+				- Multithreaded code behaves differently in different environments.
+				- You should run your tests in every potential deployment environment.
+				- Recommendation: Run your threaded code on all target platforms early and often.
+			- ### Instrument Your Code to Try and Force Failures
+				- There are two options for code instrumentation:
+					- Hand-coded
+					- Automated
 - Your Highlight on page 224-224 | Added on Friday, June 23, 2023 1:31:53 PM
   
   Successive Refnement
