@@ -256,8 +256,8 @@
 				  PrintView --> PrintViewModel
 				  PrintPresenter --> PrintViewModel
 				  PrintPresenter --|> FinancialReportPresenter
-				  WebView --|> ScreenView
-				  PDFView --|> PrintView
+				  WebView -u-|> ScreenView
+				  PDFView -u-|> PrintView
 				  
 				  WebV -[hidden]> ScreenPres
 				  PDFV -[hidden]> PrintPres
