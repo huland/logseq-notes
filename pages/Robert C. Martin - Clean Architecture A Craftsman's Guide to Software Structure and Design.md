@@ -210,7 +210,6 @@
 				    interface FinancialDataGateway
 				    object "Financial entities" as FinancialEntities
 				  }
-				  
 				  rectangle Controller {
 				    class FinancialReportController 
 				    interface FinancialReportPresenter
@@ -219,6 +218,10 @@
 				    class FinancialDataMapper 
 				    class FinancialDatabase
 				  }
+				  rectangle "Screen Presenter" {
+				    class FinancialReportController 
+				    interface FinancialReportPresenter
+				  } as ScreenPres
 				  
 				  
 				  FinancialReportController --> FinancialReportPresenter
