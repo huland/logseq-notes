@@ -202,11 +202,10 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  interface Car
+				  rectangle something {
+				    interface Car
+				  }
 				  
-				  Driver - Car : drives >
-				  Car *- Wheel : has 4 >
-				  Car -- Person : < owns
 				  
 				  @enduml
 				  ```
