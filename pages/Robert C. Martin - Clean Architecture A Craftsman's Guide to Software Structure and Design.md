@@ -42,9 +42,9 @@
 				- ```plantuml
 				  @startuml
 				  class Employee {
-				    calculatePay()
-				    reportHours()
-				  s
+				    +calculatePay()
+				    +reportHours()
+				    +save()
 				  }
 				  
 				  Driver - Car : drives >
