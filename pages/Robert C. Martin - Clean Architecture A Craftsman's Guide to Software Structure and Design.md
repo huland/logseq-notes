@@ -149,6 +149,8 @@
 		- A software artifact should be open for extension but closed for modification.
 		- In other words, the behavior of a software artifact ought to be extendible, without having to modify that artifact.
 		- ### A THOUGHT EXPERIMENT
+			- Imagine, for a moment, that we have a system that displays
+			  a ﬁnancial summary on a web page. The data on the page is scrollable, and negative numbers are rendered in red.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
