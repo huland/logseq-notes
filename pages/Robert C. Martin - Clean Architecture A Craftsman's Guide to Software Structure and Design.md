@@ -161,25 +161,24 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  usecase usecase [
-				  This is a <b>usecase
-				  ----
-				  You can use separator
-				  ====
-				  of different kind
-				  ....
-				  and style
+				  
+				  card financial_data [
+				  	Financial Data
 				  ]
-				  card card [
-				  This is a <b>card
-				  ----
-				  You can use separator
-				  ====
-				  of different kind
-				  ....
-				  and style
-				  <i><color:blue>(add from V1.2020.7)</color></i>
+				  
+				  usecase financial_analyzer[
+				  	Financial Analyzer
 				  ]
+				  card financial_report_data[
+				  	Financial Report Data
+				  ]
+				  usecase web_reporter[
+				  	Web Reporter
+				  ]
+				  usecase PrintReporter[
+				  	Print Reporter
+				  ]
+				  financial_data -> financial_analyzer
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
