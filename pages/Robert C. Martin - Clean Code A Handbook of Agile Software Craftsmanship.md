@@ -727,35 +727,13 @@ collapsed:: true
 			- Take special care to test boundary conditions
 		- T6: Exhaustively Test Near
 		- T6: Exhaustively Test Near Bugs
-		  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:36:31 PM
-  
-  T7: Patterns of Failure Are Revealing
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:38:18 PM
-  
-  T8: Test Coverage Patterns Can Be Revealing
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:38:45 PM
-  
-  Looking at the code that is or is not executed by the passing tests gives clues to why the failing tests fail
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:38:51 PM
-  
-  T9: Tests Should Be
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:39:16 PM
-  
-  T9: Tests Should Be Fast
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:39:46 PM
-  
-  A slow test is a test that won’t get run. When things get tight, it’s the slow tests that will be dropped from the suite. So do what you must to keep your tests fast
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:41:35 PM
-  
-  Conclusion This list of heuristics and smells could hardly be said to be complete. Indeed, I’m not sure that such a list can ever be complete. But perhaps completeness should not be the goal, because what this list does do is imply a value system. Indeed, that value system has been the goal, and the topic, of this book. Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines
-  <==========>
+		- T7: Patterns of Failure Are Revealing
+		- T8: Test Coverage Patterns Can Be Revealing
+			- Looking at the code that is or is not executed by the passing tests gives clues to why the failing tests fail
+		- T9: Tests Should Be
+			- A slow test is a test that won’t get run. When things get tight, it’s the slow tests that will be dropped from the suite. So do what you must to keep your tests fast
+	- ### Conclusion
+	- This list of heuristics and smells could hardly be said to be complete. Indeed, I’m not sure that such a list can ever be complete. But perhaps completeness should not be the goal, because what this list does do is imply a value system. Indeed, that value system has been the goal, and the topic, of this book. Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines
 - Your Highlight on page 372-372 | Added on Thursday, July 13, 2023 5:16:53 PM
   
   Monte Carlo Testing. Make tests fexible, so they can be tuned. Then run the test over and over—say on a test server—randomly changing the tuning values. If the tests ever fail, the code is broken. Make sure to start writing those tests early so a continuous integration server starts running them soon. By the way, make sure you carefully log the conditions under which the test failed
