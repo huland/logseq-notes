@@ -525,18 +525,10 @@ collapsed:: true
 		- Threads in lockstep, each trying to do work but fnding another "in the way." Due to resonance, threads continue trying to make progress but are unable to for an excessively long time - or forever.
 	- ### Know Your Execution Models
 		- Producer-Consumer
-			- One or more producer threads create some work and place it in a buffer or queue
-			  <==========>
-- One or more consumer threads acquire that work from the queue and complete it.
-  <==========>
-- Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 11:59:30 AM
-  
-  between the producers and consumers is a bound resource
-  <==========>
-- Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 12:00:07 PM
-  
-  producers must wait for free space in the queue before writing and consumers must wait until there is something in the queue to consume
-  <==========>
+			- One or more consumer threads acquire that work from the queue and complete it.
+			- The queue between the producers and consumers is a bound resource.
+				- Producers must wait for free space in the queue before writing and consumers must wait until there is something in the queue to consume
+				  <==========>
 - Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 12:01:38 PM
   
   Readers-Writers10
