@@ -204,9 +204,11 @@
 				  
 				  rectangle Interactor {
 				    object FinancialReportRequest
-				  
-				    class FinancialReportController 
-				    interface FinancialReportPresenter
+				    interface FinancialReportRequester
+				    object FinancialReportResponse
+				    class FinancialReportGenerator
+				    interface FinancialDataGateway
+				    object "Financial entities" as FinancialEntities
 				  }
 				  
 				  rectangle Controller {
