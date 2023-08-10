@@ -574,9 +574,7 @@ collapsed:: true
 				- There are two options for code instrumentation:
 					- Hand-coded
 					- Automated
-- Your Highlight on page 224-224 | Added on Friday, June 23, 2023 1:31:53 PM
-  
-  Successive Refnement
+- Successive Refinement
   <==========>
 - Your Highlight on page 296-296 | Added on Friday, June 30, 2023 11:58:12 PM
   
