@@ -223,8 +223,10 @@
 				    object ScreenViewModel
 				    interface ScreenView
 				  } 
-				  
-				  
+				  ScreenPresenter --> ScreenView
+				  ScreenView --> ScreenViewModel
+				  ScreenPresenter --> ScreenViewModel
+				  ScreenPresenter --|> FinancialReportPresenter
 				  FinancialReportController --> FinancialReportPresenter
 				  FinancialReportPresenter --> FinancialReportResponse
 				  FinancialReportController --> FinancialReportRequest
