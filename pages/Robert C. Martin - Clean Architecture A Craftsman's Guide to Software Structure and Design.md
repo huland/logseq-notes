@@ -237,6 +237,19 @@
 				    class WebView
 				  } 
 				  
+				  FinancialReportGenerator --> FinancialReportRequest
+				  FinancialReportGenerator --> FinancialEntities
+				  FinancialReportGenerator --> FinancialReportResponse
+				  FinancialReportGenerator --> FinancialDataGateway
+				  FinancialReportGenerator --|> FinancialReportRequester
+				  FinancialDataMapper --> FinancialDatabase
+				  FinancialDataMapper --> FinancialEntities
+				  FinancialDataMapper --|> FinancialDataGateway
+				  FinancialReportController --> FinancialReportPresenter
+				  FinancialReportPresenter --> FinancialReportResponse
+				  FinancialReportController --> FinancialReportRequest
+				  FinancialReportController --> FinancialReportRequester
+				  FinancialReportController --> FinancialReportResponse
 				  ScreenPresenter --> ScreenView
 				  ScreenView --> ScreenViewModel
 				  ScreenPresenter --> ScreenViewModel
@@ -245,22 +258,6 @@
 				  PrintView --> PrintViewModel
 				  PrintPresenter --> PrintViewModel
 				  PrintPresenter --|> FinancialReportPresenter
-				  
-				  FinancialReportController --> FinancialReportPresenter
-				  FinancialReportPresenter --> FinancialReportResponse
-				  FinancialReportController --> FinancialReportRequest
-				  FinancialReportController --> FinancialReportRequester
-				  FinancialReportGenerator --> FinancialReportRequest
-				  FinancialReportGenerator --> FinancialEntities
-				  FinancialReportGenerator --> FinancialReportResponse
-				  FinancialReportGenerator --> FinancialDataGateway
-				  FinancialReportGenerator --|> FinancialReportRequester
-				  FinancialReportController --> FinancialReportResponse
-				  FinancialDataMapper --> FinancialDatabase
-				  FinancialDataMapper --> FinancialEntities
-				  FinancialDataMapper --|> FinancialDataGateway
-				  
-				  
 				  WebView --|> ScreenView
 				  PDFView --|> PrintView
 				  
