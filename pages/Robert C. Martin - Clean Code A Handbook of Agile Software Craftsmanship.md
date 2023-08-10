@@ -529,7 +529,10 @@ collapsed:: true
 			- The queue between the producers and consumers is a bound resource.
 				- Producers must wait for free space in the queue before writing and consumers must wait until there is something in the queue to consume.
 		- Readers-Writers
-			- Big bowl
+			- Philosophers sitting around a table
+			- A fork is placed to the left of each philosopher
+			- Big bowl of spaghetti in the center of the table
+			-
 		- Dining Philosophers
 			- Replace philosophers with threads and forks with resources and this problem is similar to many enterprise applications in which processes compete for resources. Unless carefully designed, systems that compete in this way can experience deadlock, livelock, throughput, and effciency degradation.
 - Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 12:55:39 PM
