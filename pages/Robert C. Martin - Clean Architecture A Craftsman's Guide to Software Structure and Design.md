@@ -1,5 +1,6 @@
 - ## What is Design and Architecture?
 	- The measure of design quality is simply the measure of the effort required to meet the needs of the customer. If that effort is low, and stays low throughout the lifetime of the system, the design is good. If that effort grows with each new release, the design is bad. It’s as simple as that.
+	- ### Fight for the Architecture
 	- Just remember: If architecture comes last, then the system will become ever more costly to develop, and eventually change will become practically impossible for part or all of the system. If that is allowed to happen, it means the software development team did not fight hard enough for what they knew was necessary.
 - DESIGN PRINCIPLES
   =-=-=-=-=-=-=-=-=-=
