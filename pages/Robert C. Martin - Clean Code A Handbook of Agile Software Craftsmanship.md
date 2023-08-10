@@ -590,15 +590,9 @@ collapsed:: true
 					  ```
 			- Comments should say things that the code cannot say for itself.
 		- C4: Poorly Written Comment
+			- A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully.
+		- A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully. Use correct grammar and punctuation. Don’t ramble. Don’t state the obvious. Be brief.
 		  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:27 AM
-  
-  A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully.
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:36 AM
-  
-  A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully. Use correct grammar and punctuation. Don’t ramble. Don’t state the obvious. Be brief.
-  <==========>
 - Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:59 AM
   
   C4: Poorly Written Comment
