@@ -593,27 +593,14 @@ collapsed:: true
 			- A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully. Use correct grammar and punctuation. Don’t ramble. Don’t state the obvious. Be brief.
 		- C5: Commented-Out Code
 			- Who knows how old it is? Who knows whether or not it’s meaningful? Yet no one will delete it because everyone assumes someone else needs it or has plans for it.
-			  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:04:19 AM
-  
-  When you see commented-out code, delete it! Don’t worry, the source code control system still remembers it
-  <==========>
-- Your Highlight on page 318 | Added on Monday, July 3, 2023 9:05:06 AM
-  
-  Environment
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:05:14 AM
-  
-  E1: Build Requires More Than One Step
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 2:44:08 PM
-  
-  You should be able to check out the system with one simple command and then issue one other simple command to build it
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 2:44:14 PM
-  
-  E2: Tests Require More Than One Step
-  <==========>
+			- When you see commented-out code, delete it! Don’t worry, the source code control system still remembers it.
+	- ### Environment
+		- E1: Build Requires More Than One Step
+			- You should be able to check out the system with one simple command and then issue one other simple command to build it.
+		- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 2:44:14 PM
+		  
+		  E2: Tests Require More Than One Step
+		  <==========>
 - Your Highlight on page 318-318 | Added on Monday, July 3, 2023 2:44:52 PM
   
   In the best case you can run all the tests by clicking on one button in your IDE. In the worst case you should be able to issue a single simple command in a shell
