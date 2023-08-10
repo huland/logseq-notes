@@ -235,11 +235,11 @@
 				    class WebView
 				  } 
 				  
-				  FinancialReportGenerator --> FinancialReportRequest
-				  FinancialReportGenerator --> FinancialEntities
-				  FinancialReportGenerator --> FinancialReportResponse
-				  FinancialReportGenerator --> FinancialDataGateway
-				  FinancialReportGenerator --|> FinancialReportRequester
+				  FinancialReportGenerator -> FinancialReportRequest
+				  FinancialReportGenerator -> FinancialEntities
+				  FinancialReportGenerator -> FinancialReportResponse
+				  FinancialReportGenerator -> FinancialDataGateway
+				  FinancialReportGenerator -|> FinancialReportRequester
 				  FinancialDataMapper --> FinancialDatabase
 				  FinancialDataMapper --> FinancialEntities
 				  FinancialDataMapper --|> FinancialDataGateway
