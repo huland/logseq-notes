@@ -513,6 +513,7 @@ collapsed:: true
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
 - ## Concurrency
+  collapsed:: true
 	- ### Understand some basic definitions
 		- Bound Resources
 			- Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
@@ -574,8 +575,10 @@ collapsed:: true
 					- Hand-coded
 					- Automated
 - ## Successive Refinement
+  collapsed:: true
 	- We have satisfed the Boy Scout Rule. We have left this module a bit cleaner than we found it. Not that it wasn’t clean already. The authors had done an excellent job with it. But no module is immune from improvement, and each of us has the responsibility to leave the code a little better than we found it.
 - ## Smells and Heuristics
+  collapsed:: true
 	- ### Comments
 		- C1: Inappropriate Information
 			- Change histories
@@ -736,6 +739,7 @@ collapsed:: true
 		- This list of heuristics and smells could hardly be said to be complete. Indeed, I’m not sure that such a list can ever be complete. But perhaps completeness should not be the goal, because what this list does do is imply a value system.
 		- Indeed, that value system has been the goal, and the topic, of this book. Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines.
 - ## Testing multithreaded code
+  collapsed:: true
 	- Monte Carlo Testing
 		- Make tests fexible, so they can be tuned.
 		- Then run the test over and over -say on a test server- randomly changing the tuning values.
