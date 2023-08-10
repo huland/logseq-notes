@@ -41,6 +41,8 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  skinparam actorStyle Hollow 
+				  
 				  :CFO: as cfo
 				  :COO: as coo
 				  :CTO: as cto
