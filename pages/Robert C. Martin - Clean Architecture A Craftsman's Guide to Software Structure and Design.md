@@ -45,15 +45,11 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  class Employee {
-				    +calculatePay()
-				    +reportHours()
-				    +save()
-				  }
+				  usecase [Employee] as employee
 				  
-				  cfo --> Employee
-				  coo --> Employee
-				  cto --> Employee
+				  cfo --> employee
+				  coo --> employee
+				  cto --> employee
 				  
 				  @enduml
 				  ```
