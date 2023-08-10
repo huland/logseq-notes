@@ -203,6 +203,8 @@
 				  @startuml
 				  
 				  rectangle Interactor {
+				    object FinancialReportRequest
+				  
 				    class FinancialReportController 
 				    interface FinancialReportPresenter
 				  }
