@@ -218,10 +218,11 @@
 				    class FinancialDataMapper 
 				    class FinancialDatabase
 				  }
-				  rectangle "Screen Presenter" {
-				    class FinancialReportController 
-				    interface FinancialReportPresenter
-				  } as ScreenPres
+				  rectangle "Screen Presenter" as ScreenPres {
+				    class ScreenPresenter
+				    object ScreenViewModel
+				    interface ScreenView
+				  } 
 				  
 				  
 				  FinancialReportController --> FinancialReportPresenter
