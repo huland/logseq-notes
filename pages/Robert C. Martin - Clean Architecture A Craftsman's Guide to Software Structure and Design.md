@@ -43,12 +43,14 @@
 				  @startuml
 				  allowmixing
 				  
+				  actor cfo
+				  actor 
 				  class Employee {
 				    +calculatePay()
 				    +reportHours()
 				    +save()
 				  } 
-				  
+				  cfo -> Employee
 				  @enduml
 				  ```
 			- My favorite example is the `Employee` class from a payroll application. It has three methods: `calculatePay()`, `reportHours()`, and `save()`
