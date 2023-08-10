@@ -202,8 +202,6 @@
 				- ```plantuml
 				  @startuml
 				  
-				  left to right direction
-				  
 				  rectangle Interactor {
 				    object FinancialReportRequest
 				    interface FinancialReportRequester
@@ -223,10 +221,11 @@
 				  }
 				  
 				  
-				  FinancialReportController -> FinancialReportPresenter
-				  FinancialReportController -> FinancialReportRequest
-				  FinancialReportController -> FinancialReportRequester
-				  FinancialReportController -> FinancialReportResponse
+				  FinancialReportController --> FinancialReportPresenter
+				  FinancialReportController --> FinancialReportRequest
+				  FinancialReportController --> FinancialReportRequester
+				  FinancialReportGenerator --> FinancialReportRequest
+				  FinancialReportController --> FinancialReportResponse
 				  FinancialDataMapper --> FinancialDatabase
 				  @enduml
 				  ```
