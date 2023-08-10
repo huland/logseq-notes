@@ -42,19 +42,12 @@
 				- ```plantuml
 				  @startuml
 				  allowmixing
-				  :CFO: as cfo
-				  :COO: as coo
-				  :CTO: as cto
 				  
-				  class emp {
+				  class Employee {
 				    +calculatePay()
 				    +reportHours()
 				    +save()
 				  } 
-				  
-				  cfo ..> emp
-				  coo ..> emp
-				  cto ..> emp
 				  
 				  @enduml
 				  ```
