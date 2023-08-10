@@ -42,8 +42,10 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  
 				  allowmixing
 				  left to right direction
+				  
 				  actor CFO
 				  actor COO
 				  actor CTO
@@ -80,6 +82,8 @@
 		- ### SOLUTIONS
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
+				  @startuml
+				  
 				  allowmixing
 				  left to right direction
 				  
@@ -90,7 +94,7 @@
 				    + reportHours()
 				  }
 				  class EmployeeSaver{
-				  
+				    + saveEmployee()
 				  }
 				  object "Employee Data" as emp_data
 				  
