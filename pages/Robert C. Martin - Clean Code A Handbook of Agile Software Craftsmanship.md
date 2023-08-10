@@ -700,34 +700,13 @@ collapsed:: true
 			- Don’t be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose
 			- This is not just a “feel-good” recommendation. Names in software are 90 percent of what make software readable
 			- "pretty much what you expected"
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:46:06 PM
-  
-  N2: Choose Names at the Appropriate Level of Abstraction
-  <==========>
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:46:22 PM
-  
-  Don’t pick names that communicate implementation; choose names the refect the level of abstraction of the class or function you are working in
-  <==========>
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:47:04 PM
-  
-  Each time you make a pass over your code, you will likely fnd some variable that is named at too low a level. You should take the opportunity to change those names when you fnd them. Making code readable requires a dedication to continuous improvement
-  <==========>
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:49:16 PM
-  
-  N3: Use Standard Nomenclature Where Possible
-  <==========>
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:49:24 PM
-  
-  Names are easier to understand if they are based on existing convention or usage
-  <==========>
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:49:38 PM
-  
-  Patterns are just one kind of standard
-  <==========>
-- Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 6:13:52 PM
-  
-  It is better to follow conventions like these than to invent your own.
-  <==========>
+		- N2: Choose Names at the Appropriate Level of Abstraction
+			- Don’t pick names that communicate implementation; choose names the refect the level of abstraction of the class or function you are working in
+			- Each time you make a pass over your code, you will likely fnd some variable that is named at too low a level. You should take the opportunity to change those names when you fnd them. Making code readable requires a dedication to continuous improvement
+		- N3: Use Standard Nomenclature Where Possible
+			- Names are easier to understand if they are based on existing convention or usage
+			- Patterns are just one kind of standard
+			- It is better to follow conventions like these than to invent your own.
 - Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:15:04 PM
   
   N4: Unambiguous Names
