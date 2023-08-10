@@ -597,34 +597,14 @@ collapsed:: true
 	- ### Environment
 		- E1: Build Requires More Than One Step
 			- You should be able to check out the system with one simple command and then issue one other simple command to build it.
-		- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 2:44:14 PM
-		  
-		  E2: Tests Require More Than One Step
-		  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 2:44:52 PM
-  
-  In the best case you can run all the tests by clicking on one button in your IDE. In the worst case you should be able to issue a single simple command in a shell
-  <==========>
-- Your Highlight on page 319 | Added on Monday, July 3, 2023 2:45:00 PM
-  
-  Functions
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:45:02 PM
-  
-  F1: Too Many Arguments
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:45:28 PM
-  
-  More than three is very questionable and should be avoided with prejudice.
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:45:36 PM
-  
-  F2: Output Arguments
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:45:42 PM
-  
-  Output arguments are counterintuitive. Readers expect arguments to be inputs, not outputs
-  <==========>
+		- E2: Tests Require More Than One Step
+			- In the best case you can run all the tests by clicking on one button in your IDE. In the worst case you should be able to issue a single simple command in a shell.
+	- ### Functions
+		- F1: Too Many Arguments
+			- More than three is very questionable and should be avoided with prejudice.
+		- F2: Output Arguments
+			- Output arguments are counterintuitive. Readers expect arguments to be inputs, not outputs
+			  <==========>
 - Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:07 PM
   
   F3: Flag Arguments
