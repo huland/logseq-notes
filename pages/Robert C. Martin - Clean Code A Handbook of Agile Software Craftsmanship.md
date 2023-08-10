@@ -527,16 +527,9 @@ collapsed:: true
 		- Producer-Consumer
 			- One or more consumer threads acquire that work from the queue and complete it.
 			- The queue between the producers and consumers is a bound resource.
-				- Producers must wait for free space in the queue before writing and consumers must wait until there is something in the queue to consume
-				  <==========>
-- Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 12:01:38 PM
-  
-  Readers-Writers10
-  <==========>
-- Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 12:53:35 PM
-  
-  Dining Philosophers11
-  <==========>
+				- Producers must wait for free space in the queue before writing and consumers must wait until there is something in the queue to consume.
+		- Readers-Writers
+		- Dining Philosophers
 - Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 12:55:19 PM
   
   Replace philosophers with threads and forks with resources and this problem is similar to many enterprise applications in which processes compete for resources. Unless carefully designed, systems that compete in this way can experience deadlock, livelock, throughput, and effciency degradation
