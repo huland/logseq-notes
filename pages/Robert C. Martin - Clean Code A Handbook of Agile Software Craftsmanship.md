@@ -716,10 +716,9 @@ collapsed:: true
 		- N7: Names Should Describe Side-Effects
 			- Names should describe everything that a function, variable, or class is or does
 			- Don’t use a simple verb to describe a function that does more than just that simple action
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:25:27 PM
-  
-  T1: Insuffcient Tests
-  <==========>
+	- ### Tests
+		- T1: Insuffcient Tests
+		  <==========>
 - Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:25:59 PM
   
   ” A test suite should test everything that could possibly break. The tests are insuffcient so long as there are conditions that have not been explored by the tests or calculations that have not been validated
