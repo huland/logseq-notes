@@ -636,16 +636,10 @@ collapsed:: true
 			- When you find dead code, do the right thing. Give it a decent burial. Delete it from the system.
 		- G10: Vertical Separation
 		- G11: Inconsistency
-			- If within a particular function you use a variable named `response` to hold an `HttpServletResponse`, then use the same variable name consistently in the other functions that use `HttpServletResponse` objects.
-			- If you name a method processVerificationRequest, then use a similar name, such as processDeletionRequest, for the methods that process other kinds of requests
-- Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 9:15:38 AM
-  
-  G12: Clutter
-  <==========>
-- Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 9:17:24 AM
-  
-  Variables that aren’t used, functions that are never called, comments that add no information, and so forth. All these things are clutter and should be removed. Keep your source fles clean, well organized, and free of clutter.
-  <==========>
+			- if within a particular function you use a variable named `response` to hold an `HttpServletResponse`, then use the same variable name consistently in the other functions that use `HttpServletResponse` objects
+			- if you name a method `processVerificationRequest`, then use a similar name, such as `processDeletionRequest`, for the methods that process other kinds of requests
+		- G12: Clutter
+			- Variables that aren’t used, functions that are never called, comments that add no information, and so forth. All these things are clutter and should be removed. Keep your source fles clean, well organized, and free of clutter.
 - Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 9:17:30 AM
   
   G13: Artifcial Coupling
