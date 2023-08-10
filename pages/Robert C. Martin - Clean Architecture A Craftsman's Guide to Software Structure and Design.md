@@ -36,23 +36,9 @@
 		- DIP: The Dependency Inversion Principle
 			- The code that implements high-level policy should not depend on the code that implements low-level details. Rather, details should depend on policies.
 - ## SRP: THE SINGLE RESPONSIBILITY PRINCIPLE
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1095-1096 | Added on Monday, August 7, 2023 8:51:22 AM
-  
-  the best way to understand this principle is by looking at the symptoms of violating it.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1096-1097 | Added on Monday, August 7, 2023 8:51:32 AM
-  
-  SYMPTOM 1: ACCIDENTAL DUPLICATION
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1097-1099 | Added on Monday, August 7, 2023 8:52:09 AM
-  
-  My favorite example is the Employee class from a payroll application. It has three methods: calculatePay(), reportHours(), and save()
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+	- the best way to understand this principle is by looking at the symptoms of violating it
+		- SYMPTOM 1: ACCIDENTAL DUPLICATION
+			- My favorite example is the Employee class from a payroll application. It has three methods: calculatePay(), reportHours(), and save()
 - Your Highlight on Location 1102-1103 | Added on Monday, August 7, 2023 8:52:27 AM
   
   This class violates the SRP because those three methods are responsible to three very different actors.
