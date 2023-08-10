@@ -36,20 +36,21 @@
 		- DIP: The Dependency Inversion Principle
 			- The code that implements high-level policy should not depend on the code that implements low-level details. Rather, details should depend on policies.
 - ## SRP: THE SINGLE RESPONSIBILITY PRINCIPLE
-	- the best way to understand this principle is by looking at the symptoms of violating it
+	- The best way to understand this principle is by looking at the symptoms of violating it:
 		- ### SYMPTOM 1: ACCIDENTAL DUPLICATION
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  allowmixing
 				  :CFO: as cfo
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  rectangle Employee {
-				    usecase "calculatePay()"
-				    usecase "reportHours()"
-				    usecase "save()"
-				  } as emp
+				  class emp {
+				    +calculatePay()
+				    +reportHours()
+				    +save()
+				  } 
 				  
 				  cfo ..> emp
 				  coo ..> emp
