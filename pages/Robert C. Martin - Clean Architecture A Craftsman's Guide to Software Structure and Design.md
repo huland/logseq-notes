@@ -227,6 +227,7 @@
 				  FinancialReportGenerator --> FinancialReportRequest
 				  FinancialReportGenerator --> FinancialEntities
 				  FinancialReportGenerator --> FinancialReportResponse
+				  FinancialReportGenerator --> FinancialDataGateway
 				  FinancialReportGenerator --|> FinancialReportRequester
 				  FinancialReportController --> FinancialReportResponse
 				  FinancialDataMapper --> FinancialDatabase
