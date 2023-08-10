@@ -633,23 +633,10 @@ collapsed:: true
 			- A poorly defned interface provides lots of functions that you must call, so coupling is high.
 			- keep coupling low by limiting information
 		- G9: Dead Code
-		  <==========>
-- Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:10:39 AM
-  
-  When you fnd dead code, do the right thing. Give it a decent burial. Delete it from the system
-  <==========>
-- Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:10:45 AM
-  
-  G10: Vertical Separation
-  <==========>
-- Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:12:33 AM
-  
-  G11: Inconsistency
-  <==========>
-- Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:15:31 AM
-  
-  you use a variable named response to hold an HttpServletResponse, then use the same variable name consistently in the other functions that use HttpServletResponse objects. If you name a method processVerificationRequest, then use a similar name, such as processDeletionRequest, for the methods that process other kinds of requests
-  <==========>
+			- When you find dead code, do the right thing. Give it a decent burial. Delete it from the system.
+		- G10: Vertical Separation
+		- G11: Inconsistency
+			- you use a variable named response to hold an HttpServletResponse, then use the same variable name consistently in the other functions that use HttpServletResponse objects. If you name a method processVerificationRequest, then use a similar name, such as processDeletionRequest, for the methods that process other kinds of requests
 - Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 9:15:38 AM
   
   G12: Clutter
