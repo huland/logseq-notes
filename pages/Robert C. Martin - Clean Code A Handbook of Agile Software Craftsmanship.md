@@ -665,46 +665,16 @@ collapsed:: true
 			- This is probably one of the oldest rules in software development
 			- In general it is a bad idea to have raw numbers in your code. You should hide them behind well-named constants
 			- The term “Magic Number” does not apply only to numbers. It applies to any token that has a value that is not self-describing
-- Your Highlight on page 332-332 | Added on Wednesday, July 5, 2023 9:26:24 PM
-  
-  G26: Be Precise
-  <==========>
-- Your Highlight on page 332-332 | Added on Wednesday, July 5, 2023 11:05:02 PM
-  
-  G27: Structure over Convention
-  <==========>
-- Your Highlight on page 332-332 | Added on Wednesday, July 5, 2023 11:06:01 PM
-  
-  G28: Encapsulate Conditionals
-  <==========>
-- Your Highlight on page 333-333 | Added on Thursday, July 6, 2023 8:56:03 AM
-  
-  G29: Avoid Negative Conditionals
-  <==========>
-- Your Highlight on page 333-333 | Added on Thursday, July 6, 2023 8:56:40 AM
-  
-  Negatives are just a bit harder to understand than positives. So, when possible, conditionals should be expressed as positives
-  <==========>
-- Your Highlight on page 333-333 | Added on Thursday, July 6, 2023 8:56:48 AM
-  
-  G30: Functions Should Do One Thing
-  <==========>
-- Your Highlight on page 333-333 | Added on Thursday, July 6, 2023 8:57:35 AM
-  
-  It is often tempting to create functions that have multiple sections that perform a series of operations. Functions of this kind do more than one thing, and should be converted into many smaller functions, each of which does one thing
-  <==========>
-- Your Highlight on page 333-333 | Added on Thursday, July 6, 2023 8:58:47 AM
-  
-  G31: Hidden Temporal Couplings
-  <==========>
-- Your Highlight on page 334-334 | Added on Thursday, July 6, 2023 9:01:55 AM
-  
-  G32: Don’t Be Arbitrary
-  <==========>
-- Your Highlight on page 334-334 | Added on Thursday, July 6, 2023 9:03:28 AM
-  
-  Each function produces a result that the next function needs, so there is no reasonable way to call them out of order
-  <==========>
+		- G26: Be Precise
+		- G27: Structure over Convention
+		- G28: Encapsulate Conditionals
+		- G29: Avoid Negative Conditionals
+			- Negatives are just a bit harder to understand than positives. So, when possible, conditionals should be expressed as positives
+		- G30: Functions Should Do One Thing
+			- It is often tempting to create functions that have multiple sections that perform a series of operations. Functions of this kind do more than one thing, and should be converted into many smaller functions, each of which does one thing
+		- G31: Hidden Temporal Couplings
+		- G32: Don’t Be Arbitrary
+			- Each function produces a result that the next function needs, so there is no reasonable way to call them out of order
 - Your Highlight on page 334-334 | Added on Thursday, July 6, 2023 9:03:32 AM
   
   G32: Don’t Be Arbitrary
