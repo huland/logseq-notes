@@ -47,15 +47,16 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  rectangle Employee{
-				   usecase calculatePay()
-				   usecase reportHours()
-				   usecase save()
-				  } as employee
+				  package Restaurant {
+				    usecase "Eat Food" as UC1
+				    usecase "Pay for Food" as UC2
+				    usecase "Drink" as UC3
+				    usecase "Review" as UC4
+				  }
 				  
-				  cfo --> employee
-				  coo --> employee
-				  cto --> employee
+				  cfo --> Restaurant
+				  coo --> Restaurant
+				  cto --> Restaurant
 				  
 				  @enduml
 				  ```
