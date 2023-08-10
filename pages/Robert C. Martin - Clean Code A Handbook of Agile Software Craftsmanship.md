@@ -590,21 +590,10 @@ collapsed:: true
 					  ```
 			- Comments should say things that the code cannot say for itself.
 		- C4: Poorly Written Comment
-			- A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully.
-		- A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully. Use correct grammar and punctuation. Don’t ramble. Don’t state the obvious. Be brief.
-		  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:59 AM
-  
-  C4: Poorly Written Comment
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:03:03 AM
-  
-  C5: Commented-Out Code
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:03:42 AM
-  
-  Who knows how old it is? Who knows whether or not it’s meaningful? Yet no one will delete it because everyone assumes someone else needs it or has plans for it.
-  <==========>
+			- A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully. Use correct grammar and punctuation. Don’t ramble. Don’t state the obvious. Be brief.
+		- C5: Commented-Out Code
+			- Who knows how old it is? Who knows whether or not it’s meaningful? Yet no one will delete it because everyone assumes someone else needs it or has plans for it.
+			  <==========>
 - Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:04:19 AM
   
   When you see commented-out code, delete it! Don’t worry, the source code control system still remembers it
