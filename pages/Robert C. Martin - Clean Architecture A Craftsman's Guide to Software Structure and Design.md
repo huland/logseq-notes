@@ -17,19 +17,9 @@
 		- Note that the architecture of the code -the important stuﬀ- is in the top two positions of this list, whereas the behavior of the code occupies the ﬁrst and third positions.
 	- ### Fight for the Architecture
 		- Just remember: If architecture comes last, then the system will become ever more costly to develop, and eventually change will become practically impossible for part or all of the system. If that is allowed to happen, it means the software development team did not fight hard enough for what they knew was necessary.
-- DESIGN PRINCIPLES
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1035-1036 | Added on Monday, August 7, 2023 8:38:34 AM
-  
-  The SOLID principles tell us how to arrange our functions and data structures into classes, and how those classes should be interconnected.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1037-1037 | Added on Monday, August 7, 2023 8:38:49 AM
-  
-  software. A class is simply a coupled grouping of functions and data.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+- ## DESIGN PRINCIPLES
+	- The SOLID principles tell us how to arrange our functions and data structures into classes, and how those classes should be interconnected.
+		- A class is simply a coupled grouping of functions and data.
 - Your Highlight on Location 1037-1037 | Added on Monday, August 7, 2023 8:38:54 AM
   
   A class is simply a coupled grouping of functions and data.
