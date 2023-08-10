@@ -744,8 +744,12 @@ collapsed:: true
 		- By the way, make sure you carefully log the conditions under which the test failed
 	- Run the test on every one of the target deployment platforms.
 		- Repeatedly. Continuously.
-		- The longer the tests run without failure, the more likely that – The production code is correct or – The tests aren’t adequate to expose problems
-	- Run the tests on a machine with varying loads. If you can simulate loads close to a production environment
-	- Run the tests on a machine with varying loads. If you can simulate loads close to a production environment, do so
+		- The longer the tests run without failure, the more likely that
+			- The production code is correct or
+			- The tests aren’t adequate to expose problems
+	- Run the tests on a machine with varying loads.
+		- If you can simulate loads close to a production environment
+	- Run the tests on a machine with varying loads.
+		- If you can simulate loads close to a production environment, do so.
 	- Yet, even if you do all of these things, you still don’t stand a very good chance of fnding threading problems with your code. The most insidious problems are the ones that have such a small cross section that they only occur once in a billion opportunities. Such problems are the terror of complex systems
 	- Tool Support for Testing Thread-Based Code
