@@ -58,7 +58,7 @@
 				  
 				  @enduml
 				  ```
-			- My favorite example is the Employee class from a payroll application. It has three methods: calculatePay(), reportHours(), and save()
+			- My favorite example is the `Employee` class from a payroll application. It has three methods: calculatePay(), reportHours(), and save()
 			- This class violates the SRP because those three methods are responsible to three very different actors.
 			- The calculatePay() method is specified by the accounting department, which reports to the CFO.
 			- The reportHours() method is specified and used by the human resources department, which reports to the COO. • The save() method is specified by the database administrators (DBAs), who report to the CTO.
