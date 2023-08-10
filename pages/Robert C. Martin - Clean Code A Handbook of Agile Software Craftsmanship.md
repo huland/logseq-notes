@@ -532,6 +532,7 @@ collapsed:: true
 			- Philosophers sitting around a table
 			- A fork is placed to the left of each philosopher
 			- Big bowl of spaghetti in the center of the table
+			- Philosophers can eat with 2 forks
 			-
 		- Dining Philosophers
 			- Replace philosophers with threads and forks with resources and this problem is similar to many enterprise applications in which processes compete for resources. Unless carefully designed, systems that compete in this way can experience deadlock, livelock, throughput, and effciency degradation.
