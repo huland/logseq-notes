@@ -46,6 +46,7 @@
 				  allowmixing
 				  left to right direction
 				  
+				  Title Employee class from a payroll application
 				  actor CFO
 				  actor COO
 				  actor CTO
@@ -111,6 +112,7 @@
 			  with no methods. Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
 			- The downside of this solution is that the developers now have three classes that they have to instantiate and track. A common solution to this dilemma is to use the Facade pattern.
 			- {{renderer code_diagram,plantuml}}
+			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  
@@ -162,6 +164,7 @@
 				  properly (the Dependency Inversion Principle).
 			- By applying the SRP, we might come up with the data-ﬂow view shown in
 			- {{renderer code_diagram,plantuml}}
+			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  
