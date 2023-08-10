@@ -59,8 +59,9 @@
 				  ```
 				- My favorite example is the `Employee` class from a payroll application. It has three methods: `calculatePay()`, `reportHours()`, and `save()`
 				- This class violates the SRP because those three methods are responsible to three very different actors.
-				- The calculatePay() method is specified by the accounting department, which reports to the CFO.
-				- The reportHours() method is specified and used by the human resources department, which reports to the COO. • The save() method is specified by the database administrators (DBAs), who report to the CTO.
+					- The `calculatePay()` method is specified by the accounting department, which reports to the CFO.
+					- The `reportHours()` method is specified and used by the human resources department, which reports to the COO.
+					- The save() method is specified by the database administrators (DBAs), who report to the CTO.
 				- By putting the source code for these three methods into a single Employee class, the developers have coupled each of these actors to the others.
 				- For example, suppose that the calculatePay() function and the reportHours() function share a common algorithm for calculating non-overtime hours.
 				- into a function named regularHours()
