@@ -222,9 +222,9 @@
 				  
 				  
 				  FinancialReportController --> FinancialReportPresenter
-				  FinancialReportController --> 
-				  FinancialReportController --> 
-				  FinancialReportController --> 
+				  FinancialReportController --> FinancialReportRequest
+				  FinancialReportController --> FinancialReportRequester
+				  FinancialReportController --> FinancialReportResponse
 				  FinancialDataMapper --> FinancialDatabase
 				  @enduml
 				  ```
