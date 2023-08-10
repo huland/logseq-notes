@@ -693,10 +693,8 @@ collapsed:: true
 			- This is how architectures become rigid. Too many modules know too much about the architecture
 	- ### Constants versus Enums
 	  <==========>
-- Your Highlight on page 339-339 | Added on Thursday, July 6, 2023 11:26:47 AM
-  
-  Now that enums have been added to the language (Java 5), use them
-  <==========>
+		- Now that enums have been added to the language (Java 5), use them
+		  <==========>
 - Your Highlight on page 339-339 | Added on Thursday, July 6, 2023 11:27:02 AM
   
   The meaning of ints can get lost. The meaning of enums cannot, because they belong to an enumeration that is named
