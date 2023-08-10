@@ -225,6 +225,9 @@
 				  FinancialReportController --> FinancialReportRequest
 				  FinancialReportController --> FinancialReportRequester
 				  FinancialReportGenerator --> FinancialReportRequest
+				  FinancialReportGenerator --> FinancialEntities
+				  FinancialReportGenerator --> FinancialReportResponse
+				  FinancialReportGenerator --|> FinancialReportRequester
 				  FinancialReportController --> FinancialReportResponse
 				  FinancialDataMapper --> FinancialDatabase
 				  @enduml
