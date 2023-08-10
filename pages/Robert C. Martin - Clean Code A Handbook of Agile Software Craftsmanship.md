@@ -627,16 +627,13 @@ collapsed:: true
 		- G6: Code at Wrong Level of Abstraction
 		- G7: Base Classes Depending on Their Derivatives
 		- G8: Too Much Information
-			- Well-defned modules have very small interfaces that allow you to do a lot with a little. Poorly defned modules have wide and deep interfaces that force you to use many different gestures to get simple things done. A well-defned interface does not offer very many functions to depend upon, so coupling is low. A poorly defned interface provides lots of functions that you must call, so coupling is high
-			  <==========>
-- Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:09:10 AM
-  
-  keep coupling low by limiting information
-  <==========>
-- Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:09:17 AM
-  
-  G9: Dead Code
-  <==========>
+			- Well-defned modules have very small interfaces that allow you to do a lot with a little.
+			- A well-defned interface does not offer very many functions to depend upon, so coupling is low.
+			- Poorly defned modules have wide and deep interfaces that force you to use many different gestures to get simple things done.
+			- A poorly defned interface provides lots of functions that you must call, so coupling is high.
+			- keep coupling low by limiting information
+		- G9: Dead Code
+		  <==========>
 - Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:10:39 AM
   
   When you fnd dead code, do the right thing. Give it a decent burial. Delete it from the system
