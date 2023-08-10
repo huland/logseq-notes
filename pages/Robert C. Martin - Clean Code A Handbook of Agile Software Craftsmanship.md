@@ -581,18 +581,13 @@ collapsed:: true
 			- Change histories
 			- In general, meta-data such as authors, lastmodifed-date, SPR number, and so on should not appear in comments. Comments should be reserved for technical notes about the code and design.
 		- C2: Obsolete Comment
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:01:01 AM
-  
-  comment that has gotten old, irrelevant, and incorrect is obsolete
-  <==========>
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:01:07 AM
-  
-  C3: Redundant Comment
-  <==========>
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:01:22 AM
-  
-  A comment is redundant if it describes something that adequately describes itself. For example: i++; // increment i
-  <==========>
+			- comment that has gotten old, irrelevant, and incorrect is obsolete
+		- C3: Redundant Comment
+			- A comment is redundant if it describes something that adequately describes itself.
+				- For example:
+					-
+					- i++; // increment i
+					  <==========>
 - Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:01:54 AM
   
   Comments should say things that the code cannot say for itself
