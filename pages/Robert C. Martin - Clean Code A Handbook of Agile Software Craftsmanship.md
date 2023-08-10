@@ -525,8 +525,7 @@ collapsed:: true
 		- Threads in lockstep, each trying to do work but finding another “in the way. ” Due to resonance, threads continue trying to make progress.
 - Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:58:28 AM
   
-  Threads in lockstep, each trying to do work but fnding another “in the way. ” Due to resonance, threads continue trying to make progress but are unable to for an excessively long time— or forever
-  <==========>
+  Threads in lockstep, each trying to do work but fnding another "in the way." Due to resonance, threads continue trying to make progress but are unable to for an excessively long time - or forever.
 - Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 11:58:40 AM
   
   Producer-Consumer9
