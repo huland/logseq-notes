@@ -538,10 +538,8 @@ collapsed:: true
 			- Philosophers can eat with 2 forks only
 				- Replace philosophers with threads and forks with resources and this problem is similar to many enterprise applications in which processes compete for resources. Unless carefully designed, systems that compete in this way can experience deadlock, livelock, throughput, and effciency degradation.
 -
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:54:43 AM
-  
-  Testing Threaded Code
-  <==========>
+	- ### Testing Threaded Code
+	  <==========>
 - Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:55:04 AM
   
   Proving that code is correct is impractical
