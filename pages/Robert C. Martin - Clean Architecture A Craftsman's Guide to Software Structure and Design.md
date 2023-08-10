@@ -61,8 +61,9 @@
 				- This class violates the SRP because those three methods are responsible to three very different actors.
 					- The `calculatePay()` method is specified by the accounting department, which reports to the CFO.
 					- The `reportHours()` method is specified and used by the human resources department, which reports to the COO.
-					- The save() method is specified by the database administrators (DBAs), who report to the CTO.
-				- By putting the source code for these three methods into a single Employee class, the developers have coupled each of these actors to the others.
+					- The `save()` method is specified by the database administrators (DBAs), who report to the CTO.
+				- By putting the source code for these three methods into a single `Employee` class, the developers have coupled each of these actors to the others. This coupling can cause theactions of the CFO’s team to aﬀect something that the COO’s
+				  team depends on.
 				- For example, suppose that the calculatePay() function and the reportHours() function share a common algorithm for calculating non-overtime hours.
 				- into a function named regularHours()
 				- Now suppose that the CFO’s team decides that the way non-overtime hours are calculated needs to be tweaked. In contrast, the COO’s team in HR does not want that particular tweak because they use non-overtime hours for a different purpose.
