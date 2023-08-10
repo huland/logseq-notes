@@ -149,8 +149,6 @@
 		- A software artifact should be open for extension but closed for modification.
 		- In other words, the behavior of a software artifact ought to be extendible, without having to modify that artifact.
 		- ### A THOUGHT EXPERIMENT
-		  =-=-=-=-=-=-=-=-=-=
-		  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
