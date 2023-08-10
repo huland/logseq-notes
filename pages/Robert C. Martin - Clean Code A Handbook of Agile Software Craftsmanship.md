@@ -540,14 +540,9 @@ collapsed:: true
 -
 	- ### Testing Threaded Code
 		- Proving that code is correct is impractical. Testing does not guarantee correctness. However, good testing can minimize risk. This is all true in a single-threaded solution. As soon as there are two or more threads using the same code and working with shared data, things get substantially more complex.
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:55:49 AM
-  
-  Recommendation: Write tests that have the potential to expose problems and then run them frequently, with different programatic confgurations and system confgurations and load. If tests ever fail, track down the failure. Don’t ignore a failure just because the tests pass on a subsequent run
-  <==========>
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:56:07 AM
-  
-  Treat spurious failures as candidate threading issues
-  <==========>
+		- Recommendation: Write tests that have the potential to expose problems and then run them frequently, with different programatic confgurations and system confgurations and load. If tests ever fail, track down the failure.
+			- Don’t ignore a failure just because the tests pass on a subsequent run.
+				- Treat spurious failures as candidate threading issues
 - Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:56:13 AM
   
   Get your nonthreaded code working frst
