@@ -603,32 +603,12 @@ collapsed:: true
 		- F1: Too Many Arguments
 			- More than three is very questionable and should be avoided with prejudice.
 		- F2: Output Arguments
-			- Output arguments are counterintuitive. Readers expect arguments to be inputs, not outputs
-			  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:07 PM
-  
-  F3: Flag Arguments
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:13 PM
-  
-  Boolean arguments loudly declare that the function does more than one thing
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:24 PM
-  
-  F4: Dead Function
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:32 PM
-  
-  Methods that are never called should be discarded
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:39 PM
-  
-  Don’t be afraid to delete the function
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:46:50 PM
-  
-  source code control system still remembers it
-  <==========>
+			- Output arguments are counterintuitive. Readers expect arguments to be inputs, not outputs.
+		- F3: Flag Arguments
+			- Boolean arguments loudly declare that the function does more than one thing.
+		- F4: Dead Function
+			- Methods that are never called should be discarded
+			- Don’t be afraid to delete the function the source code control system still remembers it
 - Your Highlight on page 319 | Added on Monday, July 3, 2023 2:46:56 PM
   
   General
