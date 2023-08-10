@@ -689,18 +689,10 @@ collapsed:: true
 		- G36: Avoid Transitive Navigation
 			- In general we don’t want a single module to know much about its collaborators. More specifcally, if A collaborates with B, and B collaborates with C, we don’t want modules that use A to know about C. (For example, we don’t want a.getB().getC().doSomething()
 			- making sure that modules know only about their immediate collaborators and do not know the navigation map of the whole system.
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 11:23:35 AM
-  
-  If many modules used some form of the statement a.getB().getC(), then it would be diffcult to change the design and architecture to interpose a Q between B and C
-  <==========>
-- Your Highlight on page 338-338 | Added on Thursday, July 6, 2023 11:23:57 AM
-  
-  This is how architectures become rigid. Too many modules know too much about the architecture
-  <==========>
-- Your Highlight on page 339-339 | Added on Thursday, July 6, 2023 11:26:37 AM
-  
-  Constants versus Enums
-  <==========>
+			- If many modules used some form of the statement a.getB().getC(), then it would be diffcult to change the design and architecture to interpose a Q between B and C
+			- This is how architectures become rigid. Too many modules know too much about the architecture
+	- ### Constants versus Enums
+	  <==========>
 - Your Highlight on page 339-339 | Added on Thursday, July 6, 2023 11:26:47 AM
   
   Now that enums have been added to the language (Java 5), use them
