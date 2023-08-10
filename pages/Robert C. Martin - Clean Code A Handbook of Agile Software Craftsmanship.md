@@ -561,26 +561,12 @@ collapsed:: true
 					- Execute with test doubles that run quickly, slowly, variable.
 					- Confgure tests so they can run for a number of iterations.
 				- Make your thread-based code especially pluggable so that you can run it in various confgurations.
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:16:18 AM
-  
-  Make Your Threaded Code Tunable
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:16:27 AM
-  
-  Getting the right balance of threads typically requires trial an error. Early on, fnd ways to time the performance of your system under different confgurations
-  <==========>
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:16:56 AM
-  
-  Consider allowing it to change while the system is running. Consider allowing self-tuning based on throughput and system utilization
-  <==========>
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:17:10 AM
-  
-  Run with More Threads Than Processors
-  <==========>
-- Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:17:44 AM
-  
-  Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you’ll encounter code that is missing a critical section or causes deadlock
-  <==========>
+			- ### Make Your Threaded Code Tunable
+				- Getting the right balance of threads typically requires trial an error. Early on, fnd ways to time the performance of your system under different confgurations.
+				- Consider allowing it to change while the system is running. Consider allowing self-tuning based on throughput and system utilization.
+			- ### Run with More Threads Than Processors
+				- Things happen when the system switches between tasks. To encourage task swapping, run with more threads than processors or cores. The more frequently your tasks swap, the more likely you’ll encounter code that is missing a critical section or causes deadlock
+				  <==========>
 - Your Highlight on page 219-219 | Added on Friday, June 23, 2023 11:18:01 AM
   
   Multithreaded code behaves differently in different environments.16 You should run your tests in
