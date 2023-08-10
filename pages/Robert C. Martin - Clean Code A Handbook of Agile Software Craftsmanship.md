@@ -609,30 +609,11 @@ collapsed:: true
 		- F4: Dead Function
 			- Methods that are never called should be discarded
 			- Don’t be afraid to delete the function the source code control system still remembers it
-- Your Highlight on page 319 | Added on Monday, July 3, 2023 2:46:56 PM
-  
-  General
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:47:16 PM
-  
-  G1: Multiple Languages in One Source
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:47:20 PM
-  
-  G1: Multiple Languages in One Source File
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:47:58 PM
-  
-  The ideal is for a source fle to contain one, and only one, language
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:48:05 PM
-  
-  G2: Obvious Behavior Is Unimplemented
-  <==========>
-- Your Highlight on page 319-319 | Added on Monday, July 3, 2023 2:48:35 PM
-  
-  any function or class should implement the behaviors that another programmer could reasonably expect
-  <==========>
+	- ### General
+		- G1: Multiple Languages in One Source
+			- The ideal is for a source fle to contain one, and only one, language
+		- G2: Obvious Behavior Is Unimplemented
+			- any function or class should implement the behaviors that another programmer could reasonably expect
 - Your Highlight on page 320-320 | Added on Monday, July 3, 2023 2:49:26 PM
   
   When an obvious behavior is not implemented, readers and users of the code can no longer depend on their intuition about function names. They lose their trust in the original author and must fall back on reading the details of the code
