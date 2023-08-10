@@ -292,7 +292,7 @@
  ;;  :journal?        false} ; Default value: false
 
  ;; Favorites to list on the left sidebar
- :favorites []
+ :favorites ["robert c. martin - clean architecture a craftsman's guide to software structure and design"]
 
  ;; Set flashcards interval.
  ;; Expected value:
