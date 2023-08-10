@@ -43,5 +43,5 @@
 	- Bullet Threading
 	- Journals calendar
 	- logseq-psummarise-plugin
-	- logseq-plantuml-plugin
+	- logseq-diagrams-as-code
 - tags:: #knowledge
