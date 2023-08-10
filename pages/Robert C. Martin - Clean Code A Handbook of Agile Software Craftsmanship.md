@@ -636,7 +636,8 @@ collapsed:: true
 			- When you find dead code, do the right thing. Give it a decent burial. Delete it from the system.
 		- G10: Vertical Separation
 		- G11: Inconsistency
-			- you use a variable named response to hold an HttpServletResponse, then use the same variable name consistently in the other functions that use HttpServletResponse objects. If you name a method processVerificationRequest, then use a similar name, such as processDeletionRequest, for the methods that process other kinds of requests
+			- If within a particular function you use a variable named `response` to hold an `HttpServletResponse`, then use the same variable name consistently in the other functions that use `HttpServletResponse` objects.
+			- If you name a method processVerificationRequest, then use a similar name, such as processDeletionRequest, for the methods that process other kinds of requests
 - Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 9:15:38 AM
   
   G12: Clutter
