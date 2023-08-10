@@ -543,30 +543,13 @@ collapsed:: true
 		- Recommendation: Write tests that have the potential to expose problems and then run them frequently, with different programatic confgurations and system confgurations and load. If tests ever fail, track down the failure.
 			- Don’t ignore a failure just because the tests pass on a subsequent run.
 				- Treat spurious failures as candidate threading issues
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:56:13 AM
-  
-  Get your nonthreaded code working frst
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 8:56:26 AM
-  
-  Make your threaded code pluggable
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 8:56:31 AM
-  
-  Make your threaded code tunable
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 8:56:35 AM
-  
-  Run with more threads than processors
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 8:56:42 AM
-  
-  Run on different platforms
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 8:56:49 AM
-  
-  Instrument your code to try and force failures
-  <==========>
+				- Get your nonthreaded code working frst
+				- Make your threaded code pluggable
+				- Make your threaded code tunable
+				- Run with more threads than processors
+				- Run on different platforms
+				- Instrument your code to try and force failures
+-
 - Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:12:16 AM
   
   Treat Spurious Failures as Candidate Threading Issues
