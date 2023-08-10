@@ -73,7 +73,7 @@
 			- We’ve all seen things like this happen. These problems occur because we put code that different actors depend on into close proximity. The SRP says to separate the code that different actors depend on.
 		- ### SYMPTOM 2: MERGES
 			- Two different developers, possibly from two different teams, check out the Employee class and begin to make changes. Unfortunately their changes collide. The result is a merge.
-			- merges are risky affairs.
+			- merges are risky affairs
 			- Once again, the way to avoid this problem is to separate code that supports different actors.
 		- ### SOLUTIONS
 			- separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
