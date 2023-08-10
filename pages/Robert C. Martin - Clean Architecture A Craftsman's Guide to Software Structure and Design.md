@@ -222,6 +222,7 @@
 				  
 				  
 				  FinancialReportController --> FinancialReportPresenter
+				  FinancialReportPresenter --> FinancialReportResponse
 				  FinancialReportController --> FinancialReportRequest
 				  FinancialReportController --> FinancialReportRequester
 				  FinancialReportGenerator --> FinancialReportRequest
