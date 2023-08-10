@@ -513,7 +513,6 @@ collapsed:: true
 		- Our goal is to keep our overall system small while we are also keeping our functions and classes small.
 		- So, although it’s important to keep class and function count low, it’s more important to have tests, eliminate duplication, and express yourself.
 - ## Concurrency
-  collapsed:: true
 	- ### Understand some basic definitions
 		- Bound Resources
 			- Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
