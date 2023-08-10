@@ -574,10 +574,8 @@ collapsed:: true
 					- Hand-coded
 					- Automated
 - ## Successive Refinement
-- Your Highlight on page 296-296 | Added on Friday, June 30, 2023 11:58:12 PM
-  
-  And so we have satisfed the Boy Scout Rule. We have left this module a bit cleaner than we found it. Not that it wasn’t clean already. The authors had done an excellent job with it. But no module is immune from improvement, and each of us has the responsibility to leave the code a little better than we found it.
-  <==========>
+	- We have satisfed the Boy Scout Rule. We have left this module a bit cleaner than we found it. Not that it wasn’t clean already. The authors had done an excellent job with it. But no module is immune from improvement, and each of us has the responsibility to leave the code a little better than we found it.
+	  <==========>
 - Your Highlight on page 316-316 | Added on Monday, July 3, 2023 8:36:35 AM
   
   Smells and Heuristics
