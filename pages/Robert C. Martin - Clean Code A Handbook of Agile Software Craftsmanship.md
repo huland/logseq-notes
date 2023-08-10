@@ -555,14 +555,11 @@ collapsed:: true
 			- ### Get Your Nonthreaded Code Working First
 				- Do not try to chase down nonthreading bugs and threading bugs at the same time. Make sure your code works outside of threads.
 			- ### Make Your Threaded Code Pluggable
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:15:42 AM
-  
-  code such that it can be run in several confgurations
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:15:49 AM
-  
-  One thread, several threads, varied as it executes • Threaded code interacts with something that can be both real or a test double. • Execute with test doubles that run quickly, slowly, variable. • Confgure tests so they can run for a number of iterations
-  <==========>
+				- code can be run in several confgurations
+					- One thread, several threads, varied as it executes
+					- Threaded code interacts with something that can be both real or a test double.
+					- Execute with test doubles that run quickly, slowly, variable.
+					- Confgure tests so they can run for a number of iterations
 - Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:15:55 AM
   
   code such that it can be run in several confgurations: • One thread, several threads, varied as it executes • Threaded code interacts with something that can be both real or a test double. • Execute with test doubles that run quickly, slowly, variable. • Confgure tests so they can run for a number of iterations
