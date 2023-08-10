@@ -202,7 +202,7 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  class Car
+				  interface Car
 				  
 				  Driver - Car : drives >
 				  Car *- Wheel : has 4 >
