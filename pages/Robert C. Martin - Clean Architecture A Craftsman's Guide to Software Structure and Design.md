@@ -202,7 +202,6 @@
 				- ```plantuml
 				  @startuml
 				  skinparam linetype ortho
-				  !pragma ratio 2.1
 				  package Interactor <<Rectangle>> {
 				    object FinancialReportRequest
 				    interface FinancialReportRequester
