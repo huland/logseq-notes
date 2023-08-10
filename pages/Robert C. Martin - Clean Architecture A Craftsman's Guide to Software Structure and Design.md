@@ -47,9 +47,8 @@
 				    +save()
 				  }
 				  
-				  Driver - Car : drives >
-				  Car *- Wheel : has 4 >
-				  Car -- Person : < owns
+				  :First Actor:
+				  actor
 				  
 				  @enduml
 				  ```
