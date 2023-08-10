@@ -228,17 +228,25 @@
 				    object PrintViewModel
 				    interface PrintView
 				  } 
+				  
+				  rectangle "PDF View" as PDFV {
+				    class PDFView
+				  } 
+				  
+				  rectangle "Web View" as WebV {
+				    class WebView
+				  } 
+				  
 				  ScreenPresenter --> ScreenView
 				  ScreenView --> ScreenViewModel
 				  ScreenPresenter --> ScreenViewModel
 				  ScreenPresenter --|> FinancialReportPresenter
-				  
 				  PrintPresenter --> PrintView
 				  PrintView --> PrintViewModel
 				  PrintPresenter --> PrintViewModel
 				  PrintPresenter --|> FinancialReportPresenter
-				  
-				  
+				  WebView --|> ScreenView
+				  PDFView --|> PrintView
 				  FinancialReportController --> FinancialReportPresenter
 				  FinancialReportPresenter --> FinancialReportResponse
 				  FinancialReportController --> FinancialReportRequest
