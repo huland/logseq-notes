@@ -5,6 +5,7 @@
 			- I have two kinds of problems, the `urgent` and the `important`. The urgent are not important, and the important are never urgent.
 		- The ﬁrst value of software -behavior- is urgent but not always particularly important.
 		- The second value of software -architecture- is important but never particularly urgent.
+		-
 	- ### Fight for the Architecture
 		- Just remember: If architecture comes last, then the system will become ever more costly to develop, and eventually change will become practically impossible for part or all of the system. If that is allowed to happen, it means the software development team did not fight hard enough for what they knew was necessary.
 - DESIGN PRINCIPLES
