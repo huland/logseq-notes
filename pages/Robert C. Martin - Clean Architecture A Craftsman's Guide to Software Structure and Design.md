@@ -41,7 +41,11 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  class Employee
+				  class Employee {
+				    calculatePay()
+				    reportHours()
+				  s
+				  }
 				  
 				  Driver - Car : drives >
 				  Car *- Wheel : has 4 >
