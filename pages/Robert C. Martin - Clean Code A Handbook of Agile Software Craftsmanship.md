@@ -657,39 +657,14 @@ collapsed:: true
 			- If you have to look at the implementation (or documentation) of the function to know what it does, then you should work to fnd a better name or rearrange the functionality so that it can be placed in functions with better names.
 		- G21: Understand the Algorithm
 		- G22: Make Logical Dependencies Physical
-		  <==========>
-- Your Highlight on page 330-330 | Added on Wednesday, July 5, 2023 3:58:41 PM
-  
-  G23: Prefer Polymorphism to If/Else or Switch/Case
-  <==========>
-- Your Highlight on page 330-330 | Added on Wednesday, July 5, 2023 9:18:52 PM
-  
-  G24: Follow Standard Conventions
-  <==========>
-- Your Highlight on page 330-330 | Added on Wednesday, July 5, 2023 9:19:33 PM
-  
-  Every team should follow a coding standard based on common industry norms
-  <==========>
-- Your Highlight on page 330-330 | Added on Wednesday, July 5, 2023 9:19:39 PM
-  
-  The team should not need a document to describe these conventions because their code provides the examples
-  <==========>
-- Your Highlight on page 331-331 | Added on Wednesday, July 5, 2023 9:20:07 PM
-  
-  G25: Replace Magic Numbers with Named Constants
-  <==========>
-- Your Highlight on page 331-331 | Added on Wednesday, July 5, 2023 9:20:26 PM
-  
-  This is probably one of the oldest rules in software development
-  <==========>
-- Your Highlight on page 331-331 | Added on Wednesday, July 5, 2023 9:20:38 PM
-  
-  In general it is a bad idea to have raw numbers in your code. You should hide them behind well-named constants
-  <==========>
-- Your Highlight on page 331-331 | Added on Wednesday, July 5, 2023 9:24:51 PM
-  
-  The term “Magic Number” does not apply only to numbers. It applies to any token that has a value that is not self-describing
-  <==========>
+		- G23: Prefer Polymorphism to If/Else or Switch/Case
+		- G24: Follow Standard Conventions
+			- Every team should follow a coding standard based on common industry norms
+			- The team should not need a document to describe these conventions because their code provides the examples
+		- G25: Replace Magic Numbers with Named Constants
+			- This is probably one of the oldest rules in software development
+			- In general it is a bad idea to have raw numbers in your code. You should hide them behind well-named constants
+			- The term “Magic Number” does not apply only to numbers. It applies to any token that has a value that is not self-describing
 - Your Highlight on page 332-332 | Added on Wednesday, July 5, 2023 9:26:24 PM
   
   G26: Be Precise
