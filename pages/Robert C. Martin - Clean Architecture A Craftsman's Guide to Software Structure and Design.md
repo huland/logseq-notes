@@ -24,14 +24,13 @@
 		- Tolerate change,
 		- Are easy to understand, and
 		- Are the basis of components that can be used in many software systems.
-	- SRP: The Single Responsibility Principle An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.
-	  =-=-=-=-=-=-=-=-=-=
-	  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1056-1058 | Added on Monday, August 7, 2023 8:42:30 AM
-  
-  OCP: The Open-Closed Principle Bertrand Meyer made this principle famous in the 1980s. The gist is that for software systems to be easy to change, they must be designed to allow the behavior of those systems to be changed by adding new code, rather than changing existing code.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+	- Executive summary:
+		- SRP: The Single Responsibility Principle
+			- An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.
+		- OCP: The Open-Closed Principle
+			- Bertrand Meyer made this principle famous in the 1980s. The gist is that for software systems to be easy to change, they must be designed to allow the behavior of those systems to be changed by adding new code, rather than changing existing code.
+			  =-=-=-=-=-=-=-=-=-=
+			  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
 - Your Highlight on Location 1059-1061 | Added on Monday, August 7, 2023 8:42:38 AM
   
   LSP: The Liskov Substitution Principle Barbara Liskov’s famous definition of subtypes, from 1988. In short, this principle says that to build software systems from interchangeable parts, those parts must adhere to a contract that allows those parts to be substituted one for another.
