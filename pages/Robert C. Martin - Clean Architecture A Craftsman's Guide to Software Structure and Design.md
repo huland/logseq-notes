@@ -164,7 +164,6 @@
 				  properly (the Dependency Inversion Principle).
 			- By applying the SRP, we might come up with the data-ﬂow view shown in
 			- {{renderer code_diagram,plantuml}}
-			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  
@@ -201,6 +200,7 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  skinparam linetype ortho
 				  
 				  package Interactor <<Rectangle>> {
 				    object FinancialReportRequest
