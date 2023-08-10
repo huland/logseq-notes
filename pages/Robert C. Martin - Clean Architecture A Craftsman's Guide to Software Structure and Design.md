@@ -157,6 +157,15 @@
 				- By properly separating the things that change for diﬀerent reasons (the Single Responsibility Principle),
 				- and then organizing the dependencies between those things
 				  properly (the Dependency Inversion Principle).
+			- By applying the SRP, we might come up with the data-ﬂow view shown in
+			-
+				- ```plantuml
+				  @startuml
+				  autonumber
+				  Bob -> Alice : Authentication Request
+				  Bob <- Alice : Authentication Response
+				  @enduml
+				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
