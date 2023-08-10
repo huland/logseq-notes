@@ -82,6 +82,7 @@
 			- Once again, the way to avoid this problem is to separate code that supports different actors.
 		- ### SOLUTIONS
 			- {{renderer code_diagram,plantuml}}
+			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  
@@ -195,6 +196,7 @@
 				  
 				  @enduml
 				  ```
+			- asd
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
