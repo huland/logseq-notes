@@ -202,7 +202,7 @@
 				- ```plantuml
 				  @startuml
 				  skinparam linetype ortho
-				  
+				  !pragma ratio 1.0
 				  package Interactor <<Rectangle>> {
 				    object FinancialReportRequest
 				    interface FinancialReportRequester
@@ -220,11 +220,9 @@
 				    class FinancialDatabase
 				  }
 				  package "Screen Presenter" as ScreenPres <<Rectangle>> {
-				    together {
-				      class ScreenPresenter
-				      object ScreenViewModel
-				      interface ScreenView
-				    }
+				    class ScreenPresenter
+				    object ScreenViewModel
+				    interface ScreenView
 				  }
 				  package "Print Presenter" as PrintPres <<Rectangle>> {
 				    class PrintPresenter
