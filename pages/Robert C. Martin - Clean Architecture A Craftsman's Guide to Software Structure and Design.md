@@ -107,22 +107,18 @@
 				  ```
 			- The most obvious way to solve the problem is to separate the data from the functions. The three classes share access to `EmployeeData`, which is a simple data structure
 			  with no methods. Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
-			- The downside of this solution is that the developers now have three classes that they have to instantiate and track. A common solution to this dilemma is to use the Facade pattern
-- Your Highlight on Location 1141-1146 | Added on Monday, August 7, 2023 5:58:01 PM
-  
-  separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided. Figure 7.3 The three classes do not know about each other The
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1141-1144 | Added on Monday, August 7, 2023 5:58:10 PM
-  
-  separate the data from the functions. The three classes share access to EmployeeData, which is a simple data structure with no methods (Figure 7.3). Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus any accidental duplication is avoided.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1146-1147 | Added on Monday, August 7, 2023 5:58:58 PM
-  
-  The downside of this solution is that the developers now have three classes that they have to instantiate and track. A common solution to this dilemma is to use the Facade pattern
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+			- The downside of this solution is that the developers now have three classes that they have to instantiate and track. A common solution to this dilemma is to use the Facade pattern.
+			- {{renderer code_diagram,plantuml}}
+				- ```plantuml
+				  @startuml
+				  class Car
+				  
+				  Driver - Car : drives >
+				  Car *- Wheel : has 4 >
+				  Car -- Person : < owns
+				  
+				  @enduml
+				  ```
 - Your Highlight on Location 1150-1151 | Added on Monday, August 7, 2023 6:00:20 PM
   
   The EmployeeFacade contains very little code. It is responsible for instantiating and delegating to the classes with the functions.
