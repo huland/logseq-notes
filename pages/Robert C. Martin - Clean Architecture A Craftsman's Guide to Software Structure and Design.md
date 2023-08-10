@@ -45,15 +45,15 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  package Employee {
-				    usecase calculatePay()
-				    usecase reportHours()
-				    usecase save()
-				  }
+				  rectangle Employee {
+				    usecase "calculatePay()"
+				    usecase "reportHours()"
+				    usecase "save()"
+				  } as emp
 				  
-				  cfo ..> Employee
-				  coo ..> Employee
-				  cto ..> Employee
+				  cfo ..> emp
+				  coo ..> emp
+				  cto ..> emp
 				  
 				  @enduml
 				  ```
