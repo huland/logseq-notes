@@ -202,7 +202,7 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  rectangle something {
+				  rectangle Controller {
 				    class FinancialReportController 
 				    interface FinancialReportPresenter
 				  }
