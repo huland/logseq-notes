@@ -161,18 +161,28 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  left to right direction
 				  
 				  card financial_data [ 
-				  	Financial Data ]
-				  usecase financial_analyzer [ Financial Analyzer ]
-				  card financial_report_data [ Financial Report Data ]
-				  usecase web_reporter [ Web Reporter ]
-				  usecase print_reporter [ Print Reporter ]
+				  	Financial Data 
+				  ]
+				  usecase financial_analyzer [ 
+				  	Financial Analyzer 
+				  ]
+				  card financial_report_data [ 
+				  	Financial Report Data 
+				  ]
+				  usecase web_reporter [ 
+				  	Web Reporter
+				  ]
+				  usecase print_reporter [ 
+				  	Print Reporter
+				  ]
 				  
-				  financial_data -> financial_analyzer
-				  financial_analyzer -> financial_report_data
-				  financial_report_data -> web_reporter
-				  financial_report_data -> print_reporter
+				  financial_data --> financial_analyzer
+				  financial_analyzer --> financial_report_data
+				  financial_report_data --> web_reporter
+				  financial_report_data --> print_reporter
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
