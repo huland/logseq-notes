@@ -41,17 +41,10 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  class Employee {
-				    +calculatePay()
-				    +reportHours()
-				    +save()
-				  }
-				  
-				  :User: --> (Use)
-				  "Main Admin" as Admin
-				  "Use the application" as (Use)
-				  Admin --> (Admin the application)
-				  
+				  :First Actor:
+				  :Another\nactor: as Man2
+				  actor Woman3
+				  actor :Last actor: as Person1
 				  @enduml
 				  ```
 			- My favorite example is the Employee class from a payroll application. It has three methods: calculatePay(), reportHours(), and save()
