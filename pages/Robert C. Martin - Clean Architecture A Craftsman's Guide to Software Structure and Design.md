@@ -111,11 +111,34 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  class Car
 				  
-				  Driver - Car : drives >
-				  Car *- Wheel : has 4 >
-				  Car -- Person : < owns
+				  allowmixing
+				  left to right direction
+				  
+				  class EmployeeFacade {
+				    + calculatePay()
+				    + reportHours()
+				    + save()
+				  }
+				  
+				  class PayCalculator {
+				    + calculatePay()
+				  }
+				  class HourReporter {
+				    + reportHours()
+				  }
+				  class EmployeeSaver{
+				    + saveEmployee()
+				  }
+				  object "Employee Data" as emp_data
+				  
+				  EmployeeFacade -> PayCalculator
+				  EmployeeFacade -> HourReporter
+				  EmployeeFacade -> EmployeeSaver
+				  PayCalculator --> emp_data
+				  HourReporter --> emp_data
+				  EmployeeSaver --> emp_data
+				  
 				  
 				  @enduml
 				  ```
