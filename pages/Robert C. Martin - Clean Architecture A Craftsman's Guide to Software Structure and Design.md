@@ -45,10 +45,10 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  class Employee {
-				    +calculatePay()
-				    +reportHours()
-				    +save()
+				  package Employee {
+				    usecase calculatePay()
+				    usecase reportHours()
+				    usecase save()
 				  }
 				  
 				  cfo ..> Employee
