@@ -695,17 +695,11 @@ collapsed:: true
 		- Now that enums have been added to the language (Java 5), use them
 		- The meaning of ints can get lost. The meaning of enums cannot, because they belong to an enumeration that is named
 		- What’s more, study the syntax for enums carefully. They can have methods and felds. This makes them very powerful tools that allow much more expression and fexibility than ints
-	-
-	- N1: Choose Descriptive Names
-		- Don’t be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose
-- Your Highlight on page 340-340 | Added on Thursday, July 6, 2023 11:29:01 AM
-  
-  This is not just a “feel-good” recommendation. Names in software are 90 percent of what make software readable
-  <==========>
-- Your Highlight on page 341-341 | Added on Thursday, July 6, 2023 12:45:51 PM
-  
-  “pretty much what you expected.
-  <==========>
+	- ### Names
+		- N1: Choose Descriptive Names
+			- Don’t be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose
+			- This is not just a “feel-good” recommendation. Names in software are 90 percent of what make software readable
+			- “pretty much what you expected"
 - Your Highlight on page 342-342 | Added on Thursday, July 6, 2023 12:46:06 PM
   
   N2: Choose Names at the Appropriate Level of Abstraction
