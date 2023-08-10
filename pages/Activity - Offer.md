@@ -15,7 +15,7 @@
 ## Activity Summary
 	- [[2023-07-25]]
 		- review the code
-	- [[2023-08-10]] (3)
+	- [[2023-08-10]] (3h)
 		- fixing filtering on the frontend
 		- fixing modal size on the frontend
 - tags:: #vertis #ticket #Adam.Szucs
