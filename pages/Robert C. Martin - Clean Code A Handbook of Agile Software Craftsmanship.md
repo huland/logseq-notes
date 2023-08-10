@@ -559,7 +559,7 @@ collapsed:: true
 					- One thread, several threads, varied as it executes
 					- Threaded code interacts with something that can be both real or a test double.
 					- Execute with test doubles that run quickly, slowly, variable.
-					- Confgure tests so they can run for a number of iterations
+					- Confgure tests so they can run for a number of iterations.
 - Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:15:55 AM
   
   code such that it can be run in several confgurations: • One thread, several threads, varied as it executes • Threaded code interacts with something that can be both real or a test double. • Execute with test doubles that run quickly, slowly, variable. • Confgure tests so they can run for a number of iterations
