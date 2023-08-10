@@ -614,34 +614,14 @@ collapsed:: true
 			- The ideal is for a source fle to contain one, and only one, language
 		- G2: Obvious Behavior Is Unimplemented
 			- any function or class should implement the behaviors that another programmer could reasonably expect
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 2:49:26 PM
-  
-  When an obvious behavior is not implemented, readers and users of the code can no longer depend on their intuition about function names. They lose their trust in the original author and must fall back on reading the details of the code
-  <==========>
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 2:49:31 PM
-  
-  G3: Incorrect Behavior at the Boundaries
-  <==========>
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 4:44:43 PM
-  
-  Look for every boundary condition and write a test for it.
-  <==========>
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 4:45:01 PM
-  
-  G4: Overridden Safeties
-  <==========>
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 4:46:56 PM
-  
-  It is risky to override safeties
-  <==========>
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 4:47:04 PM
-  
-  Turning off failing tests and telling yourself you’ll get them to pass later is as bad as pretending your credit cards are free money.
-  <==========>
-- Your Highlight on page 320-320 | Added on Monday, July 3, 2023 4:47:15 PM
-  
-  G5: Duplication
-  <==========>
+			- When an obvious behavior is not implemented, readers and users of the code can no longer depend on their intuition about function names.
+			- They lose their trust in the original author and must fall back on reading the details of the code
+		- G3: Incorrect Behavior at the Boundaries
+			- Look for every boundary condition and write a test for it.
+		- G4: Overridden Safeties
+			- It is risky to override safeties
+			- Turning off failing tests and telling yourself you’ll get them to pass later is as bad as pretending your credit cards are free money.
+		- G5: Duplication
 - Your Highlight on page 320-320 | Added on Tuesday, July 4, 2023 8:56:22 AM
   
   Every time you see duplication in the code, it represents a missed opportunity for abstraction
