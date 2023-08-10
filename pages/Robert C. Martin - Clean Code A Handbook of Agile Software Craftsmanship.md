@@ -735,8 +735,8 @@ collapsed:: true
 	- ### Conclusion
 		- This list of heuristics and smells could hardly be said to be complete. Indeed, I’m not sure that such a list can ever be complete. But perhaps completeness should not be the goal, because what this list does do is imply a value system.
 		- Indeed, that value system has been the goal, and the topic, of this book. Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines.
-- Testing multithreaded code
-	- Monte Carlo Testing.
+- ## Testing multithreaded code
+	- Monte Carlo Testing
 		- Make tests fexible, so they can be tuned.
 		- Then run the test over and over -say on a test server- randomly changing the tuning values.
 			- If the tests ever fail, the code is broken.
@@ -752,4 +752,4 @@ collapsed:: true
 	- Run the tests on a machine with varying loads.
 		- If you can simulate loads close to a production environment, do so.
 	- Yet, even if you do all of these things, you still don’t stand a very good chance of fnding threading problems with your code. The most insidious problems are the ones that have such a small cross section that they only occur once in a billion opportunities. Such problems are the terror of complex systems
-	- Tool Support for Testing Thread-Based Code
+	- Find Tool Support for Testing Thread-Based Code
