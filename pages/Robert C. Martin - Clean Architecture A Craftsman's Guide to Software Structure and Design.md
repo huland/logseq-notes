@@ -57,6 +57,8 @@
 				  COO ..> Employee
 				  CTO ..> Employee
 				  @enduml
+				  yee
+				  @enduml
 				  ```
 				- This class violates the SRP because those three methods are responsible to three very different actors.
 					- The `calculatePay()` method is specified by the accounting department, which reports to the CFO.
@@ -78,6 +80,8 @@
 		- ### SOLUTIONS
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
+				  allowmixing
+				  left to right direction
 				  
 				  class PayCalculator {
 				    + calculatePay()
@@ -88,7 +92,12 @@
 				  class EmployeeSaver{
 				  
 				  }
-				  object E
+				  object "Employee Data" as emp_data
+				  
+				  PayCalculator --> emp_data
+				  HourReporter --> emp_data
+				  EmployeeSaver --> emp_data
+				  
 				  
 				  @enduml
 				  ```
