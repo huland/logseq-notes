@@ -549,15 +549,8 @@ collapsed:: true
 				- Run with more threads than processors
 				- Run on different platforms
 				- Instrument your code to try and force failures
--
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:12:16 AM
-  
-  Treat Spurious Failures as Candidate Threading Issues
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:12:22 AM
-  
-  Bugs in threaded code might exhibit their symptoms once in a thousand, or a million, executions
-  <==========>
+			- ### Treat Spurious Failures as Candidate Threading Issues
+				- Bugs in threaded code might exhibit their symptoms once in a thousand, or a million, executions.
 - Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:13:23 AM
   
   Do not ignore system failures as one-offs
