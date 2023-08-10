@@ -142,16 +142,8 @@
 				  
 				  @enduml
 				  ```
-- Your Highlight on Location 1150-1151 | Added on Monday, August 7, 2023 6:00:20 PM
-  
-  The EmployeeFacade contains very little code. It is responsible for instantiating and delegating to the classes with the functions.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1161-1161 | Added on Monday, August 7, 2023 6:19:35 PM
-  
-  CONCLUSION
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+				- The `EmployeeFacade` contains very little code. It is responsible for instantiating and delegating to the classes with the functions.
+- CONCLUSION
 - Your Highlight on Location 1162-1164 | Added on Monday, August 7, 2023 6:19:38 PM
   
   The Single Responsibility Principle is about functions and classes—but it reappears in a different form at two more levels. At the level of components, it becomes the Common Closure Principle. At the architectural level, it becomes the Axis of Change responsible for the creation of Architectural Boundaries.
