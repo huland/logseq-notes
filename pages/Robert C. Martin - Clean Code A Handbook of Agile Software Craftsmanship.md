@@ -539,19 +539,7 @@ collapsed:: true
 				- Replace philosophers with threads and forks with resources and this problem is similar to many enterprise applications in which processes compete for resources. Unless carefully designed, systems that compete in this way can experience deadlock, livelock, throughput, and effciency degradation.
 -
 	- ### Testing Threaded Code
-	  <==========>
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:55:04 AM
-  
-  Proving that code is correct is impractical
-  <==========>
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:55:11 AM
-  
-  Proving that code is correct is impractical. Testing does not guarantee correctness. However, good testing can minimize risk
-  <==========>
-- Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:55:27 AM
-  
-  Proving that code is correct is impractical. Testing does not guarantee correctness. However, good testing can minimize risk. This is all true in a single-threaded solution. As soon as there are two or more threads using the same code and working with shared data, things get substantially more complex
-  <==========>
+		- Proving that code is correct is impractical. Testing does not guarantee correctness. However, good testing can minimize risk. This is all true in a single-threaded solution. As soon as there are two or more threads using the same code and working with shared data, things get substantially more complex.
 - Your Highlight on page 217-217 | Added on Friday, June 23, 2023 8:55:49 AM
   
   Recommendation: Write tests that have the potential to expose problems and then run them frequently, with different programatic confgurations and system confgurations and load. If tests ever fail, track down the failure. Don’t ignore a failure just because the tests pass on a subsequent run
