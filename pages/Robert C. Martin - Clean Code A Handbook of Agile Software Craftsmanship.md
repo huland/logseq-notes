@@ -589,7 +589,7 @@ collapsed:: true
 					  i++; // increment i
 					  ```
 			- Comments should say things that the code cannot say for itself.
-		- Poorly Written Comment
+		- C4: Poorly Written Comment
 		  <==========>
 - Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:27 AM
   
