@@ -256,8 +256,8 @@
 				  PrintView --> PrintViewModel
 				  PrintPresenter --> PrintViewModel
 				  PrintPresenter --|> FinancialReportPresenter
-				  WebView -d-|> ScreenView
-				  PDFView -d-|> PrintView
+				  WebView --|> ScreenView
+				  PDFView --|> PrintView
 				  
 				  WebV -[hidden]> ScreenPres
 				  PDFV -[hidden]> PrintPres
@@ -265,6 +265,31 @@
 				  ScreenPres -[hidden]> Controller
 				  Controller -[hidden]> Interactor
 				  Interactor -[hidden]> Database
+				  @enduml
+				  ```
+			- {{renderer code_diagram,plantuml}}
+				- ```plantuml
+				  @startuml
+				  skinparam linetype polyline
+				  skinparam linetype ortho
+				  [a]
+				  [b]
+				  [c]
+				  [d]
+				  [e]
+				  
+				  a --> e
+				  b --> c
+				  c --> d
+				  c -l-> e
+				  
+				  [rdf]
+				  [qq]
+				  
+				  b -> rdf
+				  rdf -d-> a
+				  c - qq
+				  qq -d- rdf
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
