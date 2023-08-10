@@ -577,22 +577,10 @@ collapsed:: true
 	- We have satisfed the Boy Scout Rule. We have left this module a bit cleaner than we found it. Not that it wasn’t clean already. The authors had done an excellent job with it. But no module is immune from improvement, and each of us has the responsibility to leave the code a little better than we found it.
 - ## Smells and Heuristics
 	- ### Comments
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 8:59:55 AM
-  
-  C1: Inappropriate Information
-  <==========>
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:00:17 AM
-  
-  Change histories
-  <==========>
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:00:40 AM
-  
-  In general, meta-data such as authors, lastmodifed-date, SPR number, and so on should not appear in comments. Comments should be reserved for technical notes about the code and design
-  <==========>
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:00:47 AM
-  
-  C2: Obsolete Comment
-  <==========>
+		- C1: Inappropriate Information
+			- Change histories
+			- In general, meta-data such as authors, lastmodifed-date, SPR number, and so on should not appear in comments. Comments should be reserved for technical notes about the code and design.
+		- C2: Obsolete Comment
 - Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:01:01 AM
   
   comment that has gotten old, irrelevant, and incorrect is obsolete
