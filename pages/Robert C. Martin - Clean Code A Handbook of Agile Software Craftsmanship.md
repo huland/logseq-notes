@@ -719,46 +719,15 @@ collapsed:: true
 	- ### Tests
 		- T1: Insuffcient Tests
 			- A test suite should test everything that could possibly break. The tests are insuffcient so long as there are conditions that have not been explored by the tests or calculations that have not been validated.
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:26:07 PM
-  
-  A test suite should test everything that could possibly break. The tests are insuffcient so long as there are conditions that have not been explored by the tests or calculations that have not been validated
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:26:11 PM
-  
-  T2: Use a Coverage Tool
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:26:33 PM
-  
-  They make it easy to fnd modules, classes, and functions that are insuffciently tested
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:26:49 PM
-  
-  T3: Don’t Skip Trivial Tests
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:26:52 PM
-  
-  T3: Don’t Skip Trivial Tests
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:27:13 PM
-  
-  T4: An Ignored Test Is a Question about an Ambiguity
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:28:36 PM
-  
-  T5: Test Boundary Conditions
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:29:52 PM
-  
-  Take special care to test boundary conditions
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:30:05 PM
-  
-  T6: Exhaustively Test Near
-  <==========>
-- Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:30:09 PM
-  
-  T6: Exhaustively Test Near Bugs
-  <==========>
+		- T2: Use a Coverage Tool
+			- They make it easy to fnd modules, classes, and functions that are insuffciently tested
+		- T3: Don’t Skip Trivial Tests
+		- T4: An Ignored Test Is a Question about an Ambiguity
+		- T5: Test Boundary Conditions
+			- Take special care to test boundary conditions
+		- T6: Exhaustively Test Near
+		- T6: Exhaustively Test Near Bugs
+		  <==========>
 - Your Highlight on page 345-345 | Added on Thursday, July 6, 2023 6:36:31 PM
   
   T7: Patterns of Failure Are Revealing
