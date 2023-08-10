@@ -47,7 +47,11 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  usecase [Employee] as employee
+				  rectangle Employee{
+				   usecase calculatePay()
+				   usecase reportHours()
+				   usecase save()
+				  } as employee
 				  
 				  cfo --> employee
 				  coo --> employee
