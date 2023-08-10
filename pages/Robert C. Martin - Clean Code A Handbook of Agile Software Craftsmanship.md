@@ -735,27 +735,12 @@ collapsed:: true
 	- ### Conclusion
 		- This list of heuristics and smells could hardly be said to be complete. Indeed, I’m not sure that such a list can ever be complete. But perhaps completeness should not be the goal, because what this list does do is imply a value system.
 		- Indeed, that value system has been the goal, and the topic, of this book. Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines.
-- Your Highlight on page 372-372 | Added on Thursday, July 13, 2023 5:16:53 PM
-  
-  Monte Carlo Testing. Make tests fexible, so they can be tuned. Then run the test over and over—say on a test server—randomly changing the tuning values. If the tests ever fail, the code is broken. Make sure to start writing those tests early so a continuous integration server starts running them soon. By the way, make sure you carefully log the conditions under which the test failed
-  <==========>
-- Your Highlight on page 372-372 | Added on Thursday, July 13, 2023 5:18:20 PM
-  
-  Run the test on every one of the target deployment platforms.Repeatedly.Continuously. The longer the tests run without failure, the more likely that – The production code is correct or – The tests aren’t adequate to expose problems
-  <==========>
-- Your Highlight on page 372-372 | Added on Thursday, July 13, 2023 5:18:36 PM
-  
-  Run the tests on a machine with varying loads. If you can simulate loads close to a production environment
-  <==========>
-- Your Highlight on page 372-372 | Added on Thursday, July 13, 2023 5:18:46 PM
-  
-  Run the tests on a machine with varying loads. If you can simulate loads close to a production environment, do so
-  <==========>
-- Your Highlight on page 373-373 | Added on Thursday, July 13, 2023 5:20:01 PM
-  
-  Yet, even if you do all of these things, you still don’t stand a very good chance of fnding threading problems with your code. The most insidious problems are the ones that have such a small cross section that they only occur once in a billion opportunities. Such problems are the terror of complex systems
-  <==========>
-- Your Highlight on page 373-373 | Added on Thursday, July 13, 2023 5:20:33 PM
-  
-  Tool Support for Testing Thread-Based Code
-  <==========>
+- Testing multithreaded code
+	- Monte Carlo Testing.
+		- Make tests fexible, so they can be tuned.
+		- Then run the test over and over—say on a test server—randomly changing the tuning values. If the tests ever fail, the code is broken. Make sure to start writing those tests early so a continuous integration server starts running them soon. By the way, make sure you carefully log the conditions under which the test failed
+	- Run the test on every one of the target deployment platforms.Repeatedly.Continuously. The longer the tests run without failure, the more likely that – The production code is correct or – The tests aren’t adequate to expose problems
+	- Run the tests on a machine with varying loads. If you can simulate loads close to a production environment
+	- Run the tests on a machine with varying loads. If you can simulate loads close to a production environment, do so
+	- Yet, even if you do all of these things, you still don’t stand a very good chance of fnding threading problems with your code. The most insidious problems are the ones that have such a small cross section that they only occur once in a billion opportunities. Such problems are the terror of complex systems
+	- Tool Support for Testing Thread-Based Code
