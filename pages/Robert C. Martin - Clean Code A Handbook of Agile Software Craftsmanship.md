@@ -692,25 +692,12 @@ collapsed:: true
 			- If many modules used some form of the statement a.getB().getC(), then it would be diffcult to change the design and architecture to interpose a Q between B and C
 			- This is how architectures become rigid. Too many modules know too much about the architecture
 	- ### Constants versus Enums
-	  <==========>
 		- Now that enums have been added to the language (Java 5), use them
-		  <==========>
-- Your Highlight on page 339-339 | Added on Thursday, July 6, 2023 11:27:02 AM
-  
-  The meaning of ints can get lost. The meaning of enums cannot, because they belong to an enumeration that is named
-  <==========>
-- Your Highlight on page 339-339 | Added on Thursday, July 6, 2023 11:27:26 AM
-  
-  What’s more, study the syntax for enums carefully. They can have methods and felds. This makes them very powerful tools that allow much more expression and fexibility than ints
-  <==========>
-- Your Highlight on page 340-340 | Added on Thursday, July 6, 2023 11:28:13 AM
-  
-  N1: Choose Descriptive Names
-  <==========>
-- Your Highlight on page 340-340 | Added on Thursday, July 6, 2023 11:28:49 AM
-  
-  Don’t be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose
-  <==========>
+		- The meaning of ints can get lost. The meaning of enums cannot, because they belong to an enumeration that is named
+		- What’s more, study the syntax for enums carefully. They can have methods and felds. This makes them very powerful tools that allow much more expression and fexibility than ints
+	-
+	- N1: Choose Descriptive Names
+		- Don’t be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose
 - Your Highlight on page 340-340 | Added on Thursday, July 6, 2023 11:29:01 AM
   
   This is not just a “feel-good” recommendation. Names in software are 90 percent of what make software readable
