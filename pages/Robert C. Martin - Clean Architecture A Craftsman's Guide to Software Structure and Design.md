@@ -45,10 +45,10 @@
 				  :COO: as coo
 				  :CTO: as cto
 				  
-				  rectangle Employee {
-				    usecase "+ calculatePay()"
-				    usecase "+ reportHours()"
-				    usecase "+ save()"
+				  class Employee {
+				    +calculatePay()
+				    +reportHours()
+				    +save()
 				  }
 				  
 				  cfo ..> Employee
