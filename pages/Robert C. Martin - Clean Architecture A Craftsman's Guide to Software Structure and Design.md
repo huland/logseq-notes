@@ -20,21 +20,13 @@
 - ## DESIGN PRINCIPLES
 	- The SOLID principles tell us how to arrange our functions and data structures into classes, and how those classes should be interconnected.
 		- A class is simply a coupled grouping of functions and data.
-- Your Highlight on Location 1037-1037 | Added on Monday, August 7, 2023 8:38:54 AM
-  
-  A class is simply a coupled grouping of functions and data.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1038-1041 | Added on Monday, August 7, 2023 8:39:51 AM
-  
-  The goal of the principles is the creation of mid-level software structures that: • Tolerate change, • Are easy to understand, and • Are the basis of components that can be used in many software systems.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1053-1055 | Added on Monday, August 7, 2023 8:42:17 AM
-  
-  SRP: The Single Responsibility Principle An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+	- The goal of the principles is the creation of mid-level software structures that:
+		- Tolerate change,
+		- Are easy to understand, and
+		- Are the basis of components that can be used in many software systems.
+	- SRP: The Single Responsibility Principle An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.
+	  =-=-=-=-=-=-=-=-=-=
+	  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
 - Your Highlight on Location 1056-1058 | Added on Monday, August 7, 2023 8:42:30 AM
   
   OCP: The Open-Closed Principle Bertrand Meyer made this principle famous in the 1980s. The gist is that for software systems to be easy to change, they must be designed to allow the behavior of those systems to be changed by adding new code, rather than changing existing code.
