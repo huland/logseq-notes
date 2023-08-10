@@ -41,8 +41,6 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
-				  skinparam actorStyle Hollow 
-				  
 				  :CFO: as cfo
 				  :COO: as coo
 				  :CTO: as cto
@@ -54,9 +52,9 @@
 				    usecase "Review" as UC4
 				  }
 				  
-				  cfo --> Restaurant
-				  coo --> Restaurant
-				  cto --> Restaurant
+				  cfo ..> Restaurant
+				  coo ..> Restaurant
+				  cto ..> Restaurant
 				  
 				  @enduml
 				  ```
