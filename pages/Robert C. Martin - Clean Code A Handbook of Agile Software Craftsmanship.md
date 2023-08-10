@@ -522,18 +522,11 @@ collapsed:: true
 	- Deadlock
 		- Two or more threads waiting for each other to finish. Each thread has a resource that the other thread requires and neither can finish until it gets the other resource.
 	- Livelock
-		- Threads in lockstep, each trying to do work but finding another “in the way. ” Due to resonance, threads continue trying to make progress.
-- Your Highlight on page 214-214 | Added on Thursday, June 22, 2023 11:58:28 AM
-  
-  Threads in lockstep, each trying to do work but fnding another "in the way." Due to resonance, threads continue trying to make progress but are unable to for an excessively long time - or forever.
-- Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 11:58:40 AM
-  
-  Producer-Consumer9
-  <==========>
-- Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 11:58:52 AM
-  
-  One or more producer threads create some work and place it in a buffer or queue
-  <==========>
+		- Threads in lockstep, each trying to do work but fnding another "in the way." Due to resonance, threads continue trying to make progress but are unable to for an excessively long time - or forever.
+	-
+	- Producer-Consumer
+		- One or more producer threads create some work and place it in a buffer or queue
+		  <==========>
 - Your Highlight on page 215-215 | Added on Thursday, June 22, 2023 11:59:17 AM
   
   One or more consumer threads acquire that work from the queue and complete it
