@@ -640,30 +640,12 @@ collapsed:: true
 			- if you name a method `processVerificationRequest`, then use a similar name, such as `processDeletionRequest`, for the methods that process other kinds of requests
 		- G12: Clutter
 			- Variables that aren’t used, functions that are never called, comments that add no information, and so forth. All these things are clutter and should be removed. Keep your source fles clean, well organized, and free of clutter.
-- Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 9:17:30 AM
-  
-  G13: Artifcial Coupling
-  <==========>
-- Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 5:47:35 PM
-  
-  Take the time to fgure out where functions, constants, and variables ought to be declared. Don’t just toss them in the most convenient place at hand and then leave them there.
-  <==========>
-- Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 5:48:26 PM
-  
-  G14: Feature Envy
-  <==========>
-- Your Highlight on page 324-324 | Added on Tuesday, July 4, 2023 5:50:51 PM
-  
-  The methods of a class should be interested in the variables and functions of the class they belong to, and not the variables and functions of other classes
-  <==========>
-- Your Highlight on page 325-325 | Added on Tuesday, July 4, 2023 5:56:50 PM
-  
-  G15: Selector Arguments
-  <==========>
-- Your Highlight on page 326-326 | Added on Tuesday, July 4, 2023 6:01:03 PM
-  
-  They can be enums, integers, or any other type of argument that is used to select the behavior of the function. In general it is better to have many functions than to pass some code into a function to select the behavior
-  <==========>
+		- G13: Artifcial Coupling
+			- Take the time to fgure out where functions, constants, and variables ought to be declared. Don’t just toss them in the most convenient place at hand and then leave them there.
+		- G14: Feature Envy
+			- The methods of a class should be interested in the variables and functions of the class they belong to, and not the variables and functions of other classes.
+		- G15: Selector Arguments
+			- They can be enums, integers, or any other type of argument that is used to select the behavior of the function. In general it is better to have many functions than to pass some code into a function to select the behavior
 - Your Highlight on page 326-326 | Added on Tuesday, July 4, 2023 6:01:15 PM
   
   G16: Obscured Intent
