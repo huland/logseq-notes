@@ -585,17 +585,12 @@ collapsed:: true
 		- C3: Redundant Comment
 			- A comment is redundant if it describes something that adequately describes itself.
 				- For example:
-					-
-					- i++; // increment i
-					  <==========>
-- Your Highlight on page 317-317 | Added on Monday, July 3, 2023 9:01:54 AM
-  
-  Comments should say things that the code cannot say for itself
-  <==========>
-- Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:04 AM
-  
-  : Poorly Written Comment
-  <==========>
+					- ```java
+					  i++; // increment i
+					  ```
+			- Comments should say things that the code cannot say for itself.
+		- Poorly Written Comment
+		  <==========>
 - Your Highlight on page 318-318 | Added on Monday, July 3, 2023 9:02:27 AM
   
   A comment worth writing is worth writing well. If you are going to write a comment, take the time to make sure it is the best comment you can write. Choose your words carefully.
