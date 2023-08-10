@@ -42,7 +42,7 @@
 				- ```plantuml
 				  @startuml
 				  allowmixing
-				  
+				  left to right direction
 				  actor CFO
 				  actor COO
 				  actor CTO
