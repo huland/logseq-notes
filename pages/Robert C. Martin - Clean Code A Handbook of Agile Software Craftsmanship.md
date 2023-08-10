@@ -704,28 +704,15 @@ collapsed:: true
 			- Don’t pick names that communicate implementation; choose names the refect the level of abstraction of the class or function you are working in
 			- Each time you make a pass over your code, you will likely fnd some variable that is named at too low a level. You should take the opportunity to change those names when you fnd them. Making code readable requires a dedication to continuous improvement
 		- N3: Use Standard Nomenclature Where Possible
-			- Names are easier to understand if they are based on existing convention or usage
-			- Patterns are just one kind of standard
-			- It is better to follow conventions like these than to invent your own.
-- Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:15:04 PM
-  
-  N4: Unambiguous Names
+			- names are easier to understand if they are based on existing convention or usage
+			- patterns are just one kind of standard
+			- it is better to follow conventions than to invent your own
+		- N4: Unambiguous Names
+		- N5: Use Long Names for Long Scopes
+			- The length of a name should be related to the length of the scope. You can use very short variable names for tiny scopes, but for big scopes you should use longer names
+- name should be. N6
   <==========>
-- Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:16:19 PM
-  
-  N5: Use Long Names for Long Scopes
-  <==========>
-- Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:17:50 PM
-  
-  The length of a name should be related to the length of the scope. You can use very short variable names for tiny scopes, but for big scopes you should use longer names
-  <==========>
-- Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:17:55 PM
-  
-  name should be. N6
-  <==========>
-- Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:18:01 PM
-  
-  N6: Avoid Encodings
+- N6: Avoid Encodings
   <==========>
 - Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:24:03 PM
   
