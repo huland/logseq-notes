@@ -622,30 +622,13 @@ collapsed:: true
 			- It is risky to override safeties
 			- Turning off failing tests and telling yourself you’ll get them to pass later is as bad as pretending your credit cards are free money.
 		- G5: Duplication
-- Your Highlight on page 320-320 | Added on Tuesday, July 4, 2023 8:56:22 AM
-  
-  Every time you see duplication in the code, it represents a missed opportunity for abstraction
-  <==========>
-- Your Highlight on page 321-321 | Added on Tuesday, July 4, 2023 8:59:31 AM
-  
-  most of the design patterns that have appeared in the last ffteen years are simply well-known ways to eliminate duplication
-  <==========>
-- Your Highlight on page 321-321 | Added on Tuesday, July 4, 2023 8:59:49 AM
-  
-  G6: Code at Wrong Level of Abstraction
-  <==========>
-- Your Highlight on page 322-322 | Added on Tuesday, July 4, 2023 9:04:51 AM
-  
-  G7: Base Classes Depending on Their Derivatives
-  <==========>
-- Your Highlight on page 322-322 | Added on Tuesday, July 4, 2023 9:07:22 AM
-  
-  G8: Too Much Information
-  <==========>
-- Your Highlight on page 322-322 | Added on Tuesday, July 4, 2023 9:08:02 AM
-  
-  Well-defned modules have very small interfaces that allow you to do a lot with a little. Poorly defned modules have wide and deep interfaces that force you to use many different gestures to get simple things done. A well-defned interface does not offer very many functions to depend upon, so coupling is low. A poorly defned interface provides lots of functions that you must call, so coupling is high
-  <==========>
+			- Every time you see duplication in the code, it represents a missed opportunity for abstraction
+			- most of the design patterns that have appeared in the last ffteen years are simply well-known ways to eliminate duplication
+		- G6: Code at Wrong Level of Abstraction
+		- G7: Base Classes Depending on Their Derivatives
+		- G8: Too Much Information
+			- Well-defned modules have very small interfaces that allow you to do a lot with a little. Poorly defned modules have wide and deep interfaces that force you to use many different gestures to get simple things done. A well-defned interface does not offer very many functions to depend upon, so coupling is low. A poorly defned interface provides lots of functions that you must call, so coupling is high
+			  <==========>
 - Your Highlight on page 323-323 | Added on Tuesday, July 4, 2023 9:09:10 AM
   
   keep coupling low by limiting information
