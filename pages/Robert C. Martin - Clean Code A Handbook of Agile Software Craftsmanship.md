@@ -739,7 +739,6 @@ collapsed:: true
 		- This list of heuristics and smells could hardly be said to be complete. Indeed, I’m not sure that such a list can ever be complete. But perhaps completeness should not be the goal, because what this list does do is imply a value system.
 		- Indeed, that value system has been the goal, and the topic, of this book. Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines.
 - ## Testing multithreaded code
-  collapsed:: true
 	- Monte Carlo Testing
 		- Make tests fexible, so they can be tuned.
 		- Then run the test over and over -say on a test server- randomly changing the tuning values.
