@@ -146,33 +146,11 @@
 		- ### CONCLUSION
 			- The Single Responsibility Principle is about functions and classes - but it reappears in a different form at two more levels. At the level of components, it becomes the Common Closure Principle. At the architectural level, it becomes the Axis of Change responsible for the creation of Architectural Boundaries.
 	- ## OCP: THE OPEN-CLOSED PRINCIPLE
-	  =-=-=-=-=-=-=-=-=-=
-	  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1165-1166 | Added on Monday, August 7, 2023 6:19:48 PM
-  
-  OCP: THE OPEN-CLOSED PRINCIPLE
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1169-1169 | Added on Monday, August 7, 2023 6:21:12 PM
-  
-  A software artifact should be open for extension but closed for modification.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1170-1171 | Added on Monday, August 7, 2023 6:21:17 PM
-  
-  In other words, the behavior of a software artifact ought to be extendible, without having to modify that artifact.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Note on Location 1176 | Added on Monday, August 7, 2023 7:27:24 PM
-  
-  Make notes with the image when i take notes on this part.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1176-1176 | Added on Monday, August 7, 2023 7:27:24 PM
-  
-  A THOUGHT EXPERIMENT
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+		- A software artifact should be open for extension but closed for modification.
+		- In other words, the behavior of a software artifact ought to be extendible, without having to modify that artifact.
+		- ### A THOUGHT EXPERIMENT
+		  =-=-=-=-=-=-=-=-=-=
+		  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
