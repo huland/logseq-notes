@@ -675,62 +675,20 @@ collapsed:: true
 		- G31: Hidden Temporal Couplings
 		- G32: Don’t Be Arbitrary
 			- Each function produces a result that the next function needs, so there is no reasonable way to call them out of order
-- Your Highlight on page 334-334 | Added on Thursday, July 6, 2023 9:03:32 AM
-  
-  G32: Don’t Be Arbitrary
-  <==========>
-- Your Highlight on page 334-334 | Added on Thursday, July 6, 2023 9:06:17 AM
-  
-  . If a structure appears arbitrary, others will feel empowered to change it. If a structure appears consistently throughout the system, others will use it and preserve the convention
-  <==========>
-- Your Highlight on page 335-335 | Added on Thursday, July 6, 2023 9:06:26 AM
-  
-  G33: Encapsulate Boundary Conditions
-  <==========>
-- Your Highlight on page 335-335 | Added on Thursday, July 6, 2023 9:07:56 AM
-  
-  boundary condition that should be encapsulated within a variable
-  <==========>
-- Your Highlight on page 335-335 | Added on Thursday, July 6, 2023 9:08:01 AM
-  
-  G34: Functions Should Descend Only One Level of Abstraction
-  <==========>
-- Your Highlight on page 335-335 | Added on Thursday, July 6, 2023 9:08:49 AM
-  
-  The statements within a function should all be written at the same level of abstraction, which should be one level below the operation described by the name of the function. This may be the hardest of these heuristics to interpret and follow
-  <==========>
-- Your Highlight on page 336-336 | Added on Thursday, July 6, 2023 9:12:59 AM
-  
-  Separating levels of abstraction is one of the most important functions of refactoring, and it’s one of the hardest to do well
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:14:28 AM
-  
-  G35: Keep Confgurable Data at High Levels
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:16:37 AM
-  
-  do not bury it in a low-level function
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:16:47 AM
-  
-  Expose it as an argument to that low-level function called from the high-level function
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:21:45 AM
-  
-  The confguration constants reside at a very high level and are easy to change. They get passed down to the rest of the application. The lower levels of the application do not own the values of these constants
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:21:49 AM
-  
-  G36: Avoid Transitive Navigation
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:22:30 AM
-  
-  In general we don’t want a single module to know much about its collaborators. More specifcally, if A collaborates with B, and B collaborates with C, we don’t want modules that use A to know about C. (For example, we don’t want a.getB().getC().doSomething()
-  <==========>
-- Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 9:23:38 AM
-  
-  making sure that modules know only about their immediate collaborators and do not know the navigation map of the whole system.
-  <==========>
+		- G32: Don’t Be Arbitrary
+			- if a structure appears arbitrary, others will feel empowered to change it. If a structure appears consistently throughout the system, others will use it and preserve the convention
+		- G33: Encapsulate Boundary Conditions
+			- boundary condition that should be encapsulated within a variable
+		- G34: Functions Should Descend Only One Level of Abstraction
+			- The statements within a function should all be written at the same level of abstraction, which should be one level below the operation described by the name of the function. This may be the hardest of these heuristics to interpret and follow
+			- Separating levels of abstraction is one of the most important functions of refactoring, and it’s one of the hardest to do well
+		- G35: Keep Confgurable Data at High Levels
+			- do not bury it in a low-level function
+			- expose it as an argument to that low-level function called from the high-level function
+			- the confguration constants reside at a very high level and are easy to change. They get passed down to the rest of the application. The lower levels of the application do not own the values of these constants
+		- G36: Avoid Transitive Navigation
+			- In general we don’t want a single module to know much about its collaborators. More specifcally, if A collaborates with B, and B collaborates with C, we don’t want modules that use A to know about C. (For example, we don’t want a.getB().getC().doSomething()
+			- making sure that modules know only about their immediate collaborators and do not know the navigation map of the whole system.
 - Your Highlight on page 337-337 | Added on Thursday, July 6, 2023 11:23:35 AM
   
   If many modules used some form of the statement a.getB().getC(), then it would be diffcult to change the design and architecture to interpose a Q between B and C
