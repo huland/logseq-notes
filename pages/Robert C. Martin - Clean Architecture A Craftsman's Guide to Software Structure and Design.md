@@ -263,6 +263,8 @@
 				  PDFV -[hidden]> PrintPres
 				  PrintPres -[hidden]> Controller
 				  ScreenPres -[hidden]> Controller
+				  Controller -[hidden]> Interactor
+				  Interactor -[hidden]> Database
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
