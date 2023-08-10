@@ -709,27 +709,13 @@ collapsed:: true
 			- it is better to follow conventions than to invent your own
 		- N4: Unambiguous Names
 		- N5: Use Long Names for Long Scopes
-			- The length of a name should be related to the length of the scope. You can use very short variable names for tiny scopes, but for big scopes you should use longer names
-- name should be. N6
-  <==========>
-- N6: Avoid Encodings
-  <==========>
-- Your Highlight on page 343-343 | Added on Thursday, July 6, 2023 6:24:03 PM
-  
-  Names should not be encoded with type or scope information
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:24:10 PM
-  
-  N7: Names Should Describe Side-Effects
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:24:56 PM
-  
-  Names should describe everything that a function, variable, or class is or does
-  <==========>
-- Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:25:02 PM
-  
-  Don’t use a simple verb to describe a function that does more than just that simple action
-  <==========>
+			- The length of a name should be related to the length of the scope. You can use very short variable names for tiny scopes, but for big scopes you should use longer names.
+			- So the longer the scope of the name, the longer and more precise the name should be.
+		- N6: Avoid Encodings
+			- Names should not be encoded with type or scope information
+		- N7: Names Should Describe Side-Effects
+			- Names should describe everything that a function, variable, or class is or does
+			- Don’t use a simple verb to describe a function that does more than just that simple action
 - Your Highlight on page 344-344 | Added on Thursday, July 6, 2023 6:25:27 PM
   
   T1: Insuffcient Tests
