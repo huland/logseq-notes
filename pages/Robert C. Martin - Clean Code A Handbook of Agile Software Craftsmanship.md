@@ -551,18 +551,11 @@ collapsed:: true
 				- Instrument your code to try and force failures
 			- ### Treat Spurious Failures as Candidate Threading Issues
 				- Bugs in threaded code might exhibit their symptoms once in a thousand, or a million, executions.
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:13:23 AM
-  
-  Do not ignore system failures as one-offs
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:13:30 AM
-  
-  Get Your Nonthreaded Code Working First
-  <==========>
-- Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:14:09 AM
-  
-  Make sure code works outside of its use in threads
-  <==========>
+				- Do not ignore system failures as one-offs
+			- ### Get Your Nonthreaded Code Working First
+				- Do not try to chase down nonthreading bugs and threading bugs
+				  at the same time.
+				- Make sure code works outside of its use in threads
 - Your Highlight on page 218-218 | Added on Friday, June 23, 2023 11:14:29 AM
   
   Do not try to chase down nonthreading bugs and threading bugs at the same time. Make sure your code works outside of threads
