@@ -39,36 +39,14 @@
 	- the best way to understand this principle is by looking at the symptoms of violating it
 		- SYMPTOM 1: ACCIDENTAL DUPLICATION
 			- My favorite example is the Employee class from a payroll application. It has three methods: calculatePay(), reportHours(), and save()
-- Your Highlight on Location 1102-1103 | Added on Monday, August 7, 2023 8:52:27 AM
-  
-  This class violates the SRP because those three methods are responsible to three very different actors.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1103-1104 | Added on Monday, August 7, 2023 8:52:33 AM
-  
-  The calculatePay() method is specified by the accounting department, which reports to the CFO.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1105-1108 | Added on Monday, August 7, 2023 8:53:17 AM
-  
-  The reportHours() method is specified and used by the human resources department, which reports to the COO. • The save() method is specified by the database administrators (DBAs), who report to the CTO.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1108-1109 | Added on Monday, August 7, 2023 9:12:33 AM
-  
-  By putting the source code for these three methods into a single Employee class, the developers have coupled each of these actors to the others.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1111-1112 | Added on Monday, August 7, 2023 9:12:58 AM
-  
-  For example, suppose that the calculatePay() function and the reportHours() function share a common algorithm for calculating non-overtime hours.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1113-1113 | Added on Monday, August 7, 2023 9:13:12 AM
-  
-  into a function named regularHours()
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+			- This class violates the SRP because those three methods are responsible to three very different actors.
+			- The calculatePay() method is specified by the accounting department, which reports to the CFO.
+			- The reportHours() method is specified and used by the human resources department, which reports to the COO. • The save() method is specified by the database administrators (DBAs), who report to the CTO.
+			- By putting the source code for these three methods into a single Employee class, the developers have coupled each of these actors to the others.
+			- For example, suppose that the calculatePay() function and the reportHours() function share a common algorithm for calculating non-overtime hours.
+			- into a function named regularHours()
+			  =-=-=-=-=-=-=-=-=-=
+			  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
 - Your Highlight on Location 1116-1117 | Added on Monday, August 7, 2023 9:13:26 AM
   
   Now suppose that the CFO’s team decides that the way non-overtime hours are calculated needs to be tweaked. In contrast, the COO’s team in HR does not want that particular tweak because they use non-overtime hours for a different purpose.
