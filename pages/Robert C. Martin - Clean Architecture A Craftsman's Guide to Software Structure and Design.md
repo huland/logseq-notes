@@ -287,9 +287,8 @@
 			- Closed arrowheads are *implements* or *inheritance* relationships
 		- Notice:
 			- All the dependencies are source code dependencies.
-			- An arrow pointing from class A to
-			  class B means that the source code of class A mentions the
-			  name of class B, but class B mentions nothing about class A.
+			- An arrow pointing from class A to class B means that the source code of class A mentions the name of class B, but class B mentions nothing about class A.
+			- `FinancialDataMapper` knows about `FinancialDataGateway`
 		-
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
