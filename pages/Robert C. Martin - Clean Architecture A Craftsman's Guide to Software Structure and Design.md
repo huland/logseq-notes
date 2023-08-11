@@ -203,15 +203,18 @@
 				  @startuml
 				  skinparam linetype ortho
 				  package Interactor <<Rectangle>> {
-				    together {
-				    	object FinancialReportRequest
-				    	interface FinancialReportRequester
-				    	object FinancialReportResponse
-				    }
+				    object FinancialReportRequest
+				    interface FinancialReportRequester
+				    object FinancialReportResponse
 				    class FinancialReportGenerator
 				    interface FinancialDataGateway
 				    object "Financial entities" as FinancialEntities
 				  }
+				  
+				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
+				  FinancialReportRequester
+				  FinancialReportResponse
+				  
 				  package Controller <<Rectangle>> {
 				    class FinancialReportController 
 				    interface FinancialReportPresenter
