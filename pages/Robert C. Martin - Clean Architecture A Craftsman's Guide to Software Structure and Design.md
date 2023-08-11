@@ -202,13 +202,14 @@
 				- ```plantuml
 				  @startuml
 				  skinparam linetype ortho
+				  
 				  package Interactor <<Rectangle>> {
 				    object FinancialReportRequest
 				    interface FinancialReportRequester
 				    object FinancialReportResponse
 				    class FinancialReportGenerator
 				    interface FinancialDataGateway
-				    object "Financial entities" as FinancialEntities
+				    object FinancialEntities
 				  }
 				  
 				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
