@@ -217,34 +217,34 @@
 				      interface "Financial \nData \nGateway" as financial_data_gateway
 				  }
 				  
-				  package Controller {
+				  package Controller <<Rectangle>> {
 				      class "Financial \nReport \nController" as financial_report_controller
 				      interface "Financial \nReport \nPresenter" as financial_report_presenter
 				  }
 				  
-				  package Database {
+				  package Database <<Database>> {
 				      class "Financial \nData \nMapper" as financial_data_mapper
 				      class "Financial \nDatabase" as financial_database
 				  }
 				  
-				  package "Screen Presenter" {
+				  package "Screen Presenter" <<Rectangle>> {
 				      class "Screen \nPresenter" as screen_presenter
 				      class "Screen \nView \nModel" as screen_view_model 
 				      interface "Screen \nView" as screen_view
 				      
 				  }
 				  
-				  package "Web View" {
+				  package "Web View" <<Rectangle>> {
 				      class "Web \nView " as web_view
 				  }
 				  
-				  package "Print Presenter" {
+				  package "Print Presenter" <<Rectangle>> {
 				      class "Print \nPresenter" as print_presenter
 				      object "Print \nView \nModel\n<DS>" as print_view_model
 				      interface "Print \nView" as print_view
 				  }
 				  
-				  package "PDF View" {
+				  package "PDF View" <<Rectangle>> {
 				      class "PDF \nView " as pdf_view
 				  }
 				  
