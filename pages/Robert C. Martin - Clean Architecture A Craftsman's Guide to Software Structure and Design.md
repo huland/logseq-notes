@@ -353,7 +353,7 @@
 				- It is there to protect the *FinancialReportController* from knowing too much about the internals of the *Interactor*.
 				- If that interface were not there, then the *Controller* would have transitive dependencies on the *FinancialEntities*.
 					- Transitive dependencies are a violation of the general principle that software entities should not depend on things they don’t directly use.
-			- So, even though our ﬁrst priority is to protect the *Interactor* from changes to the Controller, we also want to protect the Controller from changes to the Interactor by hiding the internals of the Interactor.
+			- So, even though our ﬁrst priority is to protect the *Interactor* from changes to the *Controller*, we also want to protect the *Controller* from changes to the *Interactor* by hiding the internals of the *Interactor*.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
