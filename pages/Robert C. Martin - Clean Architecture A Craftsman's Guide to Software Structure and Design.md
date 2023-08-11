@@ -294,16 +294,15 @@
 				- This means that all component relationships are unidirectional, as shown in the component graph.
 				- These arrows point toward the components that we want to protect from change.
 				- {{renderer code_diagram,plantuml}}
+				  collapsed:: true
 					- ```plantuml
 					  @startuml
 					  
 					  component "Financial \nReport \nController" as financial_report_controller
 					  component "Financial \nReport \nInteractor" as financial_report_interactor
 					  component "Financial \nDatabase" as financial_database
-					  together {
-					  	component "Screen \nPresenter" as screen_presenter
-					  	component "Print \nPresenter" as print_presenter
-					  }
+					  component "Screen \nPresenter" as screen_presenter
+					  component "Print \nPresenter" as print_presenter
 					  component "Web \nView" as web_view
 					  component "PDF \nView" as pdf_view
 					   
@@ -313,9 +312,10 @@
 					  print_presenter -u-> financial_report_controller
 					  financial_report_controller -r-> financial_report_interactor
 					  financial_database -u-> financial_report_interactor
+					  
 					  @enduml
 					  ```
-		-
+			- If component A should be protected from changes in component B
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
