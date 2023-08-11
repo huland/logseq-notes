@@ -345,6 +345,9 @@
 				- For example:
 					- the *FinancialDataGateway* interface between the *FinancialReportGenerator* and the *FinancialDataMapper* exists to invert the dependency that would otherwise have pointed from the *Interactor* component to the *Database* component.
 					- The same is true of the *FinancialReportPresenter* interface, and the two *View* interfaces.
+			- For example:
+				- the *FinancialDataGateway* interface between the *FinancialReportGenerator* and the *FinancialDataMapper* exists to invert the dependency that would otherwise have pointed from the Interactor component to the Database component.
+				- The same is true of the FinancialReportPresenter interface, and the two View interfaces.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
