@@ -284,7 +284,7 @@
 		- Classes marked with
 			- <I> are interfaces
 			- <DS> are data structures
-			- Open arrowheads are using relationships
+			- Open arrowheads are *using* relationships
 			- Closed arrowheads are *implements* or *inheritance* relationships
 		- Notice:
 			- All the dependencies are source code dependencies.
