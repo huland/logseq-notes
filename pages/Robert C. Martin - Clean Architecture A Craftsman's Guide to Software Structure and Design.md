@@ -328,11 +328,11 @@
 				- It contains the business rules
 				- It contains the highest-level policies of the application
 			- Even though the Controller is
-				- peripheral to the Interactor, it
-				  is nevertheless central to the Presenters and Views. And
-				  while the Presenters might be peripheral to the Controller,
-				  they are central to the Views.
-				-
+				- peripheral to the Interactor,
+				- it is nevertheless central to the Presenters and Views.
+			- And while the Presenters might be
+				- peripheral to the Controller,
+				- they are central to the Views.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
