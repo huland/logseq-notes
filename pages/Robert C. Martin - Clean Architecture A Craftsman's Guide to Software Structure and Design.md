@@ -213,7 +213,11 @@
 				  
 				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
 				  FinancialReportRequester -[hidden]d-> FinancialReportResponse
-				  FinancialReportGenerator -[hidden]l-> FinancialReportRequest
+				  FinancialReportResponse -[hidden]u-> FinancialReportRequester
+				  
+				  FinancialReportGenerator -[hidden]r-> FinancialReportRequest
+				  FinancialReportGenerator -[hidden]r-> FinancialReportRequester
+				  FinancialReportGenerator -[hidden]r-> FinancialReportResponse
 				  FinancialReportGenerator -[hidden]d-> FinancialDataGateway
 				  FinancialReportGenerator -[hidden]r-> FinancialEntities
 				  
