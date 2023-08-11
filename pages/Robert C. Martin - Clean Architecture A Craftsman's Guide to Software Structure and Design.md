@@ -208,7 +208,7 @@
 				      interface "Financial \nReport \nRequester" as financial_report_requester
 				      object "Financial \nReport \nResponse" as financial_report_response
 				      class "Financial \nReport \nGenerator" as financial_report_generator
-				      object "Financial \nentities" as financial_entities
+				      entity "Financial \nentities" as financial_entities
 				      interface "Financial \nData \nGateway" as financial_data_gateway
 				  }
 				  
