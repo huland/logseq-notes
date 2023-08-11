@@ -339,11 +339,11 @@
 				- Presenters are higher level than Views, but lower level than the Controller or the Interactor.
 			- This is how the OCP works at the architectural level. Architects separate functionality based on how, why, and when it changes, and then organize that separated functionality into a hierarchy of components.
 				- Higher-level components in that hierarchy are protected from the changes made to lower-level components.
-			- ### Directional Control
-				- Much of the complexity in the diagram was intended to make sure that the dependencies between the components pointed in the correct direction.
-					- For example:
-						- the *FinancialDataGateway* interface between the *FinancialReportGenerator* and the *FinancialDataMapper* exists to invert the dependency that would otherwise have pointed from the *Interactor* component to the *Database* component.
-						- The same is true of the *FinancialReportPresenter* interface, and the two *View* interfaces.
+		- ### Directional Control
+			- Much of the complexity in the diagram was intended to make sure that the dependencies between the components pointed in the correct direction.
+				- For example:
+					- the *FinancialDataGateway* interface between the *FinancialReportGenerator* and the *FinancialDataMapper* exists to invert the dependency that would otherwise have pointed from the *Interactor* component to the *Database* component.
+					- The same is true of the *FinancialReportPresenter* interface, and the two *View* interfaces.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
