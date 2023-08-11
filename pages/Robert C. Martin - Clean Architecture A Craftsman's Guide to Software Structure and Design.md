@@ -321,7 +321,7 @@
 				- Presenters fro mchanges in the Views
 				- Interactor from changes in - anything
 			- The Iteractor is in the position that best conforms the OCP.
-				- Changes to the Database,
+				- Changes to the Database, Controller, Presenters or the Views will have no impact on the Interactor
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
