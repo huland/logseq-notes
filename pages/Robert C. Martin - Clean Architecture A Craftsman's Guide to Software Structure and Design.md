@@ -203,6 +203,7 @@
 			- {{renderer code_diagram,plantuml}}
 				- ```plantuml
 				  @startuml
+				  
 				  skinparam linetype ortho
 				  
 				  package Interactor {
@@ -247,7 +248,6 @@
 				      class "PDF \nView " as pdf_view
 				  }
 				  
-				  
 				  web_view -u-|> screen_view
 				  screen_view -u-> screen_view_model
 				  screen_view_model <-u- screen_presenter
@@ -277,6 +277,7 @@
 				  financial_report_requester -[hidden]d-> financial_report_response
 				  financial_report_generator -r-> financial_entities
 				  financial_report_generator -d-> financial_data_gateway
+				  
 				  @enduml
 				  ```
 		- Classes marked with
