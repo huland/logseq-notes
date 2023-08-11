@@ -204,11 +204,9 @@
 				  skinparam linetype ortho
 				  
 				  package Interactor {
-				      together {
-				          object "Financial \nReport \nRequest" as financial_report_request
-				          interface "Financial \nReport \nRequester" as financial_report_requester
-				          object "Financial \nReport \nResponse" as financial_report_response
-				      }   
+				      object "Financial \nReport \nRequest" as financial_report_request
+				      interface "Financial \nReport \nRequester" as financial_report_requester
+				      object "Financial \nReport \nResponse" as financial_report_response
 				      class "Financial \nReport \nGenerator" as financial_report_generator
 				      object "Financial \nentities" as financial_entities
 				      interface "Financial \nData \nGateway" as financial_data_gateway
