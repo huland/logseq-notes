@@ -278,8 +278,8 @@
 				  PrintView -d-> PrintViewModel
 				  PrintPresenter -d-> PrintViewModel
 				  PrintPresenter -u-|> FinancialReportPresenter
-				  WebView -u-|> ScreenView
-				  PDFView -u-|> PrintView
+				  WebView -up-|> ScreenView
+				  PDFView -up-|> PrintView
 				  
 				  @enduml
 				  ```
