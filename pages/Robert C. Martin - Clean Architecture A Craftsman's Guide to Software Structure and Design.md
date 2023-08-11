@@ -203,7 +203,6 @@
 				  @startuml
 				  skinparam linetype ortho
 				  
-				  
 				  package Interactor {
 				      together {
 				          object "Financial \nReport \nRequest" as financial_report_request
@@ -215,8 +214,6 @@
 				      interface "Financial \nData \nGateway" as financial_data_gateway
 				  }
 				  
-				  
-				  
 				  package Controller {
 				      class "Financial \nReport \nController" as financial_report_controller
 				      interface "Financial \nReport \nPresenter" as financial_report_presenter
@@ -226,8 +223,6 @@
 				      class "Financial \nData \nMapper" as financial_data_mapper
 				      class "Financial \nDatabase" as financial_database
 				  }
-				  
-				  
 				  
 				  package "Screen Presenter" {
 				      class "Screen \nPresenter" as screen_presenter
@@ -249,7 +244,6 @@
 				      class "PDF \nView " as pdf_view
 				  }
 				  
-				  
 				  web_view -u-|> screen_view
 				  screen_view -u-> screen_view_model
 				  screen_view_model <-u- screen_presenter
@@ -267,6 +261,7 @@
 				  financial_report_controller -r-> financial_report_requester
 				  financial_report_controller -r-> financial_report_response
 				  financial_report_presenter -r-> financial_report_response
+				  
 				  financial_data_mapper -r-> financial_database
 				  financial_data_mapper -u-> financial_data_gateway
 				  financial_data_mapper -u-> financial_entities
