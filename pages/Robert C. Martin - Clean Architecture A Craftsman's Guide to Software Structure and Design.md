@@ -306,8 +306,9 @@
 					   component "PDF \nView" as pdf_view
 					   
 					  web_view -u-> screen_presenter
-					  
-					  
+					  pdf_view -u-> print_presenter
+					  screen_presenter -u-> financial_report_controller
+					  print_presenter -u-> financial_report_controller
 					  @enduml
 					  ```
 		-
