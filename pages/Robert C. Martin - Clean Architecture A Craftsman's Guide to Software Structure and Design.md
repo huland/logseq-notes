@@ -287,7 +287,7 @@
 		- Notice:
 			- All the dependencies are source code dependencies.
 			- An arrow pointing from class A to class B means that the source code of class A mentions the name of class B, but class B mentions nothing about class A.
-			- `FinancialDataMapper` knows about `FinancialDataGateway` through an implements relationship, but `FinancialGateway` knows nothing at all about `FinancialDataMapper`.
+			- *FinancialDataMapper* knows about *FinancialDataGateway* through an implements relationship, but *FinancialGateway* knows nothing at all about *FinancialDataMapper*.
 			- Each module is crossed in one direction only.
 				- This means that all component relationships are unidirectional, as shown in the component graph.
 				- These arrows point toward the components that we want to protect from change.
