@@ -201,17 +201,16 @@
 			- Having made this separation, we need to organize the source code dependencies to ensure that changes to one of those responsibilities do not cause changes in the other. Also, the new organization should ensure that the behavior can be extended without undo modiﬁcation.
 			- We accomplish this by partitioning the processes into classes, and separating those classes into components, as shown by the double lines in the diagram in
 			- {{renderer code_diagram,plantuml}}
+			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  
 				  skinparam linetype ortho
 				  
 				  package Interactor <<Rectangle>> {
-				      together {
-				          object "Financial \nReport \nRequest\n<DS>" as financial_report_request
-				          interface "Financial \nReport \nRequester" as financial_report_requester
-				          object "Financial \nReport \nResponse\n<DS>" as financial_report_response
-				      }
+				      object "Financial \nReport \nRequest\n<DS>" as financial_report_request
+				      interface "Financial \nReport \nRequester" as financial_report_requester
+				      object "Financial \nReport \nResponse\n<DS>" as financial_report_response
 				      class "Financial \nReport \nGenerator" as financial_report_generator
 				      entity "Financial \nentities" as financial_entities
 				      interface "Financial \nData \nGateway" as financial_data_gateway
