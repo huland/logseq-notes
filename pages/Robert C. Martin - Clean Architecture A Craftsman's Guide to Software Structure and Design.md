@@ -298,6 +298,12 @@
 					  @startuml
 					  
 					  component "Financial Report Controller" as financial_report_controller
+					   component "Financial Report Interactor" as financial_report_controller
+					   component "Financial Report Database" as financial_report_controller
+					   component "Screen Presenter" as screen_presenter
+					   component "Print Presenter" as print_presenter
+					   component "Web View" as web_view
+					   component "PDF View" as pdf_view
 					   
 					  
 					  
