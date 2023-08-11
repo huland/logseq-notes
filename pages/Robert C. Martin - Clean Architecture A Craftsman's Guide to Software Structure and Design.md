@@ -316,6 +316,9 @@
 					  @enduml
 					  ```
 			- If component A should be protected from changes in component B, then component B should depend on component A.
+			- We want to protect
+				- Controller from changes in the Presenters
+				- Presenter
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
