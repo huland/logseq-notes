@@ -349,7 +349,9 @@
 				- the *FinancialDataGateway* interface between the *FinancialReportGenerator* and the *FinancialDataMapper* exists to invert the dependency that would otherwise have pointed from the *Interactor* component to the *Database* component.
 				- The same is true of the *FinancialReportPresenter* interface, and the two *View* interfaces.
 		- ### Information Hiding
-			-
+			- The *FinancialReportRequester* interface serves a diﬀerent purpose.
+				- It is there to protect the *FinancialReportController* from knowing too much about the internals of the *Interactor*.
+				- If that interface were not there, then the *Controller* would have transitive dependencies on the *FinancialEntities*.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
