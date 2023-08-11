@@ -324,12 +324,12 @@
 			- Why should the Interactor hold such a privileged position?
 				- It contains the business rules
 				- It contains the highest-level policies of the application
-			- Even though the Controller is
-				- peripheral to the Interactor,
-				- it is nevertheless central to the Presenters and Views.
-			- And while the Presenters might be
-				- peripheral to the Controller,
-				- they are central to the Views.
+				- Even though the Controller is
+					- peripheral to the Interactor,
+					- it is nevertheless central to the Presenters and Views.
+				- And while the Presenters might be
+					- peripheral to the Controller,
+					- they are central to the Views.
 			- Notice how this creates a hierarchy of protection based on the notion of "level."
 				- Interactors are the highest-level concept, so they are the most protected.
 				- Views are among the lowest-level concepts, so they are the least protected.
