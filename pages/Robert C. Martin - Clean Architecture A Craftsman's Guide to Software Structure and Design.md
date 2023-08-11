@@ -341,6 +341,7 @@
 				- Higher-level components in that hierarchy are protected from the changes made to lower-level components.
 		- ### Directional Control
 			- Much of the complexity in the diagram was intended to make sure that the dependencies between the components pointed in the correct direction.
+			  collapsed:: true
 				- For example:
 					- the *FinancialDataGateway* interface between the *FinancialReportGenerator* and the *FinancialDataMapper* exists to invert the dependency that would otherwise have pointed from the *Interactor* component to the *Database* component.
 					- The same is true of the *FinancialReportPresenter* interface, and the two *View* interfaces.
