@@ -322,8 +322,11 @@
 				- Interactor from changes in - anything
 			- The Iteractor is in the position that best conforms the OCP.
 				- Changes to the Database, Controller, Presenters or the Views will have no impact on the Interactor.
+				- All the other components
 			- Why should the Interactor hold such a privileged position?
-				- Because it contains the business rules
+				- It contains the business rules
+				- It contains the highest-level policies of the application
+				-
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
