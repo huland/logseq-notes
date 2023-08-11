@@ -262,7 +262,7 @@
 				  financial_report_controller -r-> financial_report_response
 				  financial_report_presenter -r-> financial_report_response
 				  financial_data_mapper -r-> financial_database
-				  financial_data_mapper -u-> financial_data_gateway
+				  financial_data_mapper -u-|> financial_data_gateway
 				  financial_data_mapper -u-> financial_entities
 				  
 				  financial_report_generator -l-> financial_report_request
