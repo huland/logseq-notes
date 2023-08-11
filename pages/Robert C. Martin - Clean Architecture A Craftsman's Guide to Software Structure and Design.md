@@ -248,16 +248,16 @@
 				  FinancialReportController -r-> FinancialReportRequest
 				  FinancialReportController -r-> FinancialReportRequester
 				  FinancialReportController -r-> FinancialReportResponse
-				  ScreenPresenter --> ScreenView
-				  ScreenView --> ScreenViewModel
-				  ScreenPresenter --> ScreenViewModel
-				  ScreenPresenter --|> FinancialReportPresenter
-				  PrintPresenter --> PrintView
-				  PrintView --> PrintViewModel
-				  PrintPresenter --> PrintViewModel
-				  PrintPresenter --|> FinancialReportPresenter
-				  WebView --|> ScreenView
-				  PDFView --|> PrintView
+				  ScreenPresenter -d-> ScreenView
+				  ScreenView -d-> ScreenViewModel
+				  ScreenPresenter -d-> ScreenViewModel
+				  ScreenPresenter -u-|> FinancialReportPresenter
+				  PrintPresenter -d-> PrintView
+				  PrintView -d-> PrintViewModel
+				  PrintPresenter -d-> PrintViewModel
+				  PrintPresenter -u-|> FinancialReportPresenter
+				  WebView -u-|> ScreenView
+				  PDFView -u-|> PrintView
 				  
 				  @enduml
 				  ```
