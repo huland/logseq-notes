@@ -212,8 +212,8 @@
 				  }
 				  
 				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
-				  FinancialReportRequester
-				  FinancialReportResponse
+				  FinancialReportRequester -[hidden]d-> FinancialReportResponse
+				  
 				  
 				  package Controller <<Rectangle>> {
 				    class FinancialReportController 
