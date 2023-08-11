@@ -6,13 +6,13 @@
 		- The ﬁrst value of software -behavior- is urgent but not always particularly important.
 		- The second value of software -architecture- is important but never particularly urgent.
 		- We can arrange these four couplets into priorities:
-			- urgent and *important*
+			- *urgent* and *important*
 			  logseq.order-list-type:: number
-			- not urgent and *important*
+			- *not urgent* and *important*
 			  logseq.order-list-type:: number
-			- urgent and not important
+			- *urgent* and *not important*
 			  logseq.order-list-type:: number
-			- not urgent and important
+			- *not urgent* and important
 			  logseq.order-list-type:: number
 		- Note that the architecture of the code -the important stuﬀ- is in the top two positions of this list, whereas the behavior of the code occupies the ﬁrst and third positions.
 	- ### Fight for the Architecture
