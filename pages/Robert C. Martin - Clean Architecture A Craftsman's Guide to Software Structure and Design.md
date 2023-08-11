@@ -205,6 +205,7 @@
 				  @startuml
 				  
 				  skinparam linetype ortho
+				  skinparam groupInheritance 2
 				  
 				  package Interactor <<Rectangle>> {
 				      together {
