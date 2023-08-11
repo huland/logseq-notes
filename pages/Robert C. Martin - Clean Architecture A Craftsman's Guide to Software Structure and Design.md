@@ -207,9 +207,11 @@
 				  
 				  
 				  package Interactor {
-				      object "Financial \nReport \nRequest\n<DS>" as financial_report_request
-				      interface "Financial \nReport \nRequester" as financial_report_requester
-				      object "Financial \nReport \nResponse\n<DS>" as financial_report_response
+				      together {
+				          object "Financial \nReport \nRequest\n<DS>" as financial_report_request
+				          interface "Financial \nReport \nRequester" as financial_report_requester
+				          object "Financial \nReport \nResponse\n<DS>" as financial_report_response
+				      }
 				      class "Financial \nReport \nGenerator" as financial_report_generator
 				      entity "Financial \nentities" as financial_entities
 				      interface "Financial \nData \nGateway" as financial_data_gateway
@@ -227,8 +229,9 @@
 				  
 				  package "Screen Presenter" {
 				      class "Screen \nPresenter" as screen_presenter
-				      object "Screen \nView \nModel\n<DS>" as screen_view_model 
+				      class "Screen \nView \nModel" as screen_view_model 
 				      interface "Screen \nView" as screen_view
+				      
 				  }
 				  
 				  package "Web View" {
@@ -264,7 +267,7 @@
 				  financial_report_controller -r-> financial_report_response
 				  financial_report_presenter -r-> financial_report_response
 				  financial_data_mapper -r-> financial_database
-				  financial_data_mapper -u-|> financial_data_gateway
+				  financial_data_mapper -u-> financial_data_gateway
 				  financial_data_mapper -u-> financial_entities
 				  
 				  financial_report_generator -l-> financial_report_request
