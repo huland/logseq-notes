@@ -354,16 +354,8 @@
 				- If that interface were not there, then the *Controller* would have transitive dependencies on the *FinancialEntities*.
 			- Transitive dependencies are a violation of the general principle that software entities should not depend on things they don’t directly use.
 			- So, even though our ﬁrst priority is to protect the *Interactor* from changes to the *Controller*, we also want to protect the *Controller* from changes to the *Interactor* by hiding the internals of the *Interactor*.
-- Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
-  
-  CONCLUSION
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
-- Your Highlight on Location 1243-1245 | Added on Tuesday, August 8, 2023 1:16:49 PM
-  
-  The OCP is one of the driving forces behind the architecture of systems. The goal is to make the system easy to extend without incurring a high impact of change. This goal is accomplished by partitioning the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
-  =-=-=-=-=-=-=-=-=-=
-  Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series) (Robert C. Martin)
+	- ### CONCLUSION
+		- The OCP is one of the driving forces behind the architecture of systems. The goal is to make the system easy to extend without incurring a high impact of change. This goal is accomplished by partitioning the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower level components.
 - Your Highlight on Location 1248-1249 | Added on Tuesday, August 8, 2023 1:16:55 PM
   
   LSP: THE LISKOV SUBSTITUTION PRINCIPLE
