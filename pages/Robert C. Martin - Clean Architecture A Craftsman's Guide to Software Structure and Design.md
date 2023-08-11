@@ -204,8 +204,8 @@
 				- ```plantuml
 				  @startuml
 				  
+				  skinparam groupInheritance 1
 				  skinparam linetype ortho
-				  skinparam groupInheritance 2
 				  
 				  package Interactor <<Rectangle>> {
 				      together {
