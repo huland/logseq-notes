@@ -203,10 +203,11 @@
 				  @startuml
 				  skinparam linetype ortho
 				  
+				  
 				  package Interactor {
-				      object "Financial \nReport \nRequest" as financial_report_request
+				      object "Financial \nReport \nRequest\n<DS>" as financial_report_request
 				      interface "Financial \nReport \nRequester" as financial_report_requester
-				      object "Financial \nReport \nResponse" as financial_report_response
+				      object "Financial \nReport \nResponse\n<DS>" as financial_report_response
 				      class "Financial \nReport \nGenerator" as financial_report_generator
 				      entity "Financial \nentities" as financial_entities
 				      interface "Financial \nData \nGateway" as financial_data_gateway
@@ -224,7 +225,7 @@
 				  
 				  package "Screen Presenter" {
 				      class "Screen \nPresenter" as screen_presenter
-				      object "Screen \nView \nModel" as screen_view_model
+				      object "Screen \nView \nModel\n<DS>" as screen_view_model 
 				      interface "Screen \nView" as screen_view
 				  }
 				  
@@ -234,13 +235,14 @@
 				  
 				  package "Print Presenter" {
 				      class "Print \nPresenter" as print_presenter
-				      object "Print \nView \nModel" as print_view_model
+				      object "Print \nView \nModel\n<DS>" as print_view_model
 				      interface "Print \nView" as print_view
 				  }
 				  
 				  package "PDF View" {
 				      class "PDF \nView " as pdf_view
 				  }
+				  
 				  
 				  web_view -u-|> screen_view
 				  screen_view -u-> screen_view_model
@@ -259,7 +261,6 @@
 				  financial_report_controller -r-> financial_report_requester
 				  financial_report_controller -r-> financial_report_response
 				  financial_report_presenter -r-> financial_report_response
-				  
 				  financial_data_mapper -r-> financial_database
 				  financial_data_mapper -u-> financial_data_gateway
 				  financial_data_mapper -u-> financial_entities
