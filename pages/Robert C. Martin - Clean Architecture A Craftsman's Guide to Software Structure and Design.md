@@ -201,6 +201,7 @@
 			- Having made this separation, we need to organize the source code dependencies to ensure that changes to one of those responsibilities do not cause changes in the other. Also, the new organization should ensure that the behavior can be extended without undo modiﬁcation.
 			- We accomplish this by partitioning the processes into classes, and separating those classes into components, as shown by the double lines in the diagram in
 			- {{renderer code_diagram,plantuml}}
+			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  
