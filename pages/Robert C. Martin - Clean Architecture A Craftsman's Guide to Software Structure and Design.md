@@ -212,15 +212,7 @@
 				    object FinancialEntities
 				  }
 				  
-				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
-				  FinancialReportRequester -[hidden]d-> FinancialReportResponse
-				  FinancialReportResponse -[hidden]u-> FinancialReportRequester
 				  
-				  FinancialReportGenerator -[hidden]r-> FinancialReportRequest
-				  FinancialReportGenerator -[hidden]r-> FinancialReportRequester
-				  FinancialReportGenerator -[hidden]r-> FinancialReportResponse
-				  FinancialReportGenerator -[hidden]d-> FinancialDataGateway
-				  FinancialReportGenerator -[hidden]r-> FinancialEntities
 				  
 				  package Controller <<Rectangle>> {
 				    class FinancialReportController 
@@ -246,6 +238,24 @@
 				  package "Web View" as WebV <<Rectangle>> {
 				    class WebView
 				  } 
+				  
+				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
+				  FinancialReportRequester -[hidden]d-> FinancialReportResponse
+				  FinancialReportResponse -[hidden]u-> FinancialReportRequester
+				  
+				  FinancialReportGenerator -[hidden]r-> FinancialReportRequest
+				  FinancialReportGenerator -[hidden]r-> FinancialReportRequester
+				  FinancialReportGenerator -[hidden]r-> FinancialReportResponse
+				  FinancialReportGenerator -[hidden]d-> FinancialDataGateway
+				  FinancialReportGenerator -[hidden]r-> FinancialEntities
+				  ScreenPresenter -[hidden]u-> FinancialReportRequest
+				  ScreenPresenter -[hidden]d-> ScreenViewModel
+				  ScreenPresenter -[hidden]d-> ScreenView
+				  
+				  PrintPresenter -[hidden]u-> FinancialReportRequest
+				  PrintPresenter -[hidden]d-> PrintViewModel
+				  PrintPresenter -[hidden]d-> PrintView
+				  
 				  
 				  FinancialReportGenerator -l-> FinancialReportRequest
 				  FinancialReportGenerator -r-> FinancialEntities
