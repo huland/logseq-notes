@@ -2,17 +2,17 @@
 	- The measure of design quality is simply the measure of the effort required to meet the needs of the customer. If that effort is low, and stays low throughout the lifetime of the system, the design is good. If that effort grows with each new release, the design is bad. It’s as simple as that.
 	- ### Eisenhower's matrix
 		- Eisenhower said:
-			- I have two kinds of problems, the `urgent` and the `important`. The `urgent` are `not important`, and the `important` are `never urgent`.
+			- I have two kinds of problems, the *urgent* and the *important*. The *urgent* are *not important*, and the *important* are *never urgent*.
 		- The ﬁrst value of software -behavior- is urgent but not always particularly important.
 		- The second value of software -architecture- is important but never particularly urgent.
 		- We can arrange these four couplets into priorities:
-			- `urgent` and `important`
+			- urgent and *important*
 			  logseq.order-list-type:: number
-			- `not urgent` and `important`
+			- not urgent and *important*
 			  logseq.order-list-type:: number
-			- `urgent` and `not important`
+			- urgent and not important
 			  logseq.order-list-type:: number
-			- `not urgent` and `important`
+			- not urgent and important
 			  logseq.order-list-type:: number
 		- Note that the architecture of the code -the important stuﬀ- is in the top two positions of this list, whereas the behavior of the code occupies the ﬁrst and third positions.
 	- ### Fight for the Architecture
