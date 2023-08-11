@@ -315,7 +315,7 @@
 					  
 					  @enduml
 					  ```
-			- If component A should be protected from changes in component B
+			- If component A should be protected from changes in component B, then component B should depend on component A.
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
   CONCLUSION
