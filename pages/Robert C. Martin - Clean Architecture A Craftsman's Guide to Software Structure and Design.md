@@ -203,84 +203,82 @@
 				  @startuml
 				  skinparam linetype ortho
 				  
-				  package Interactor <<Rectangle>> {
-				    object FinancialReportRequest
-				    interface FinancialReportRequester
-				    object FinancialReportResponse
-				    class FinancialReportGenerator
-				    interface FinancialDataGateway
-				    object FinancialEntities
+				  
+				  package Interactor {
+				      together {
+				          object "Financial \nReport \nRequest" as financial_report_request
+				          interface "Financial \nReport \nRequester" as financial_report_requester
+				          object "Financial \nReport \nResponse" as financial_report_response
+				      }   
+				      class "Financial \nReport \nGenerator" as financial_report_generator
+				      object "Financial \nentities" as financial_entities
+				      interface "Financial \nData \nGateway" as financial_data_gateway
 				  }
 				  
 				  
 				  
-				  package Controller <<Rectangle>> {
-				    class FinancialReportController 
-				    interface FinancialReportPresenter
+				  package Controller {
+				      class "Financial \nReport \nController" as financial_report_controller
+				      interface "Financial \nReport \nPresenter" as financial_report_presenter
 				  }
-				  package Database <<Database>> {
-				    class FinancialDataMapper 
-				    class FinancialDatabase
+				  
+				  package Database {
+				      class "Financial \nData \nMapper" as financial_data_mapper
+				      class "Financial \nDatabase" as financial_database
 				  }
-				  package "Screen Presenter" as ScreenPres <<Rectangle>> {
-				    class ScreenPresenter
-				    object ScreenViewModel
-				    interface ScreenView
+				  
+				  
+				  
+				  package "Screen Presenter" {
+				      class "Screen \nPresenter" as screen_presenter
+				      object "Screen \nView \nModel" as screen_view_model
+				      interface "Screen \nView" as screen_view
 				  }
-				  package "Print Presenter" as PrintPres <<Rectangle>> {
-				    class PrintPresenter
-				    object PrintViewModel
-				    interface PrintView
-				  } 
-				  package "PDF View" as PDFV <<Rectangle>> {
-				    class PDFView
-				  } 
-				  package "Web View" as WebV <<Rectangle>> {
-				    class WebView
-				  } 
 				  
-				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
-				  FinancialReportRequester -[hidden]d-> FinancialReportResponse
-				  FinancialReportResponse -[hidden]u-> FinancialReportRequester
+				  package "Web View" {
+				      class "Web \nView " as web_view
+				  }
 				  
-				  FinancialReportGenerator -[hidden]r-> FinancialReportRequest
-				  FinancialReportGenerator -[hidden]r-> FinancialReportRequester
-				  FinancialReportGenerator -[hidden]r-> FinancialReportResponse
-				  FinancialReportGenerator -[hidden]d-> FinancialDataGateway
-				  FinancialReportGenerator -[hidden]r-> FinancialEntities
-				  ScreenPresenter -[hidden]u-> FinancialReportRequest
-				  ScreenPresenter -[hidden]d-> ScreenViewModel
-				  ScreenView -[hidden]u-> ScreenViewModel
+				  package "Print Presenter" {
+				      class "Print \nPresenter" as print_presenter
+				      object "Print \nView \nModel" as print_view_model
+				      interface "Print \nView" as print_view
+				  }
 				  
-				  PrintPresenter -[hidden]u-> FinancialReportRequest
-				  PrintPresenter -[hidden]d-> PrintViewModel
-				  PrintView -[hidden]u-> PrintViewModel
+				  package "PDF View" {
+				      class "PDF \nView " as pdf_view
+				  }
 				  
 				  
-				  FinancialReportGenerator -l-> FinancialReportRequest
-				  FinancialReportGenerator -r-> FinancialEntities
-				  FinancialReportGenerator -l-> FinancialReportResponse
-				  FinancialReportGenerator -d-> FinancialDataGateway
-				  FinancialReportGenerator -l-|> FinancialReportRequester
-				  FinancialDataMapper -r-> FinancialDatabase
-				  FinancialDataMapper -u-> FinancialEntities
-				  FinancialDataMapper -u-|> FinancialDataGateway
-				  FinancialReportController -d-> FinancialReportPresenter
-				  FinancialReportPresenter -r-> FinancialReportResponse
-				  FinancialReportController -r-> FinancialReportRequest
-				  FinancialReportController -r-> FinancialReportRequester
-				  FinancialReportController -r-> FinancialReportResponse
-				  ScreenPresenter -d-> ScreenView
-				  ScreenView -d-> ScreenViewModel
-				  ScreenPresenter -d-> ScreenViewModel
-				  ScreenPresenter -u-|> FinancialReportPresenter
-				  PrintPresenter -d-> PrintView
-				  PrintView -d-> PrintViewModel
-				  PrintPresenter -d-> PrintViewModel
-				  PrintPresenter -u-|> FinancialReportPresenter
-				  WebView -up-|> ScreenView
-				  PDFView -up-|> PrintView
+				  web_view -u-|> screen_view
+				  screen_view -u-> screen_view_model
+				  screen_view_model <-u- screen_presenter
+				  screen_presenter -d-> screen_view
+				  screen_presenter -u-|> financial_report_presenter
 				  
+				  pdf_view -u-|> print_view
+				  print_view -u-> print_view_model
+				  print_view_model <-u- print_presenter
+				  print_presenter -d-> print_view
+				  print_presenter -u-|> financial_report_presenter
+				  
+				  financial_report_controller -d-> financial_report_presenter
+				  financial_report_controller -r-> financial_report_request
+				  financial_report_controller -r-> financial_report_requester
+				  financial_report_controller -r-> financial_report_response
+				  financial_report_presenter -r-> financial_report_response
+				  financial_data_mapper -r-> financial_database
+				  financial_data_mapper -u-> financial_data_gateway
+				  financial_data_mapper -u-> financial_entities
+				  
+				  financial_report_generator -l-> financial_report_request
+				  financial_report_generator -l-|> financial_report_requester
+				  financial_report_generator -l-> financial_report_response
+				  
+				  financial_report_request -[hidden]d-> financial_report_requester
+				  financial_report_requester -[hidden]d-> financial_report_response
+				  financial_report_generator -r-> financial_entities
+				  financial_report_generator -d-> financial_data_gateway
 				  @enduml
 				  ```
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
