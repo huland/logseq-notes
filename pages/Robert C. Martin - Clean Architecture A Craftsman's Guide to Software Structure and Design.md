@@ -201,7 +201,6 @@
 			- Having made this separation, we need to organize the source code dependencies to ensure that changes to one of those responsibilities do not cause changes in the other. Also, the new organization should ensure that the behavior can be extended without undo modiﬁcation.
 			- We accomplish this by partitioning the processes into classes, and separating those classes into components, as shown by the double lines in the diagram in
 			- {{renderer code_diagram,plantuml}}
-			  collapsed:: true
 				- ```plantuml
 				  @startuml
 				  skinparam linetype ortho
@@ -288,7 +287,8 @@
 		- Notice:
 			- All the dependencies are source code dependencies.
 			- An arrow pointing from class A to class B means that the source code of class A mentions the name of class B, but class B mentions nothing about class A.
-			- `FinancialDataMapper` knows about `FinancialDataGateway`
+			- `FinancialDataMapper` knows about `FinancialDataGateway` through an implements relationship, but `FinancialGateway` knows nothing at all about `FinancialDataMapper`.
+			- The next thing to
 		-
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
