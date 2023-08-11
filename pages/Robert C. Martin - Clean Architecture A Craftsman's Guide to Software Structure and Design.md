@@ -297,13 +297,13 @@
 					- ```plantuml
 					  @startuml
 					  
-					  component "Financial Report Controller" as financial_report_controller
-					   component "Financial Report Interactor" as financial_report_controller
-					   component "Financial Report Database" as financial_report_controller
-					   component "Screen Presenter" as screen_presenter
-					   component "Print Presenter" as print_presenter
-					   component "Web View" as web_view
-					   component "PDF View" as pdf_view
+					  component "Financial \nReport \nController" as financial_report_controller
+					   component "Financial \nReport \nInteractor" as financial_report_interactor
+					   component "Financial \nReport \nDatabase" as financial_report_database
+					   component "Screen \nPresenter" as screen_presenter
+					   component "Print \nPresenter" as print_presenter
+					   component "Web \nView" as web_view
+					   component "PDF \nView" as pdf_view
 					   
 					  
 					  
