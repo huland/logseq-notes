@@ -213,7 +213,9 @@
 				  
 				  FinancialReportRequest -[hidden]d-> FinancialReportRequester
 				  FinancialReportRequester -[hidden]d-> FinancialReportResponse
-				  
+				  FinancialReportGenerator -[hidden]l-> FinancialReportRequester
+				  FinancialReportGenerator -[hidden]d-> FinancialDataGateway
+				  FinancialReportGenerator -[hidden]r-> FinancialEntities
 				  
 				  package Controller <<Rectangle>> {
 				    class FinancialReportController 
