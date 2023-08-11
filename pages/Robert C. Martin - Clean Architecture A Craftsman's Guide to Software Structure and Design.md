@@ -205,7 +205,6 @@
 				  @startuml
 				  skinparam linetype ortho
 				  
-				  
 				  package Interactor {
 				      together {
 				          object "Financial \nReport \nRequest\n<DS>" as financial_report_request
