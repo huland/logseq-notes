@@ -243,11 +243,11 @@
 				  FinancialDataMapper -r-> FinancialDatabase
 				  FinancialDataMapper -u-> FinancialEntities
 				  FinancialDataMapper -u-|> FinancialDataGateway
-				  FinancialReportController --> FinancialReportPresenter
-				  FinancialReportPresenter --> FinancialReportResponse
-				  FinancialReportController --> FinancialReportRequest
-				  FinancialReportController --> FinancialReportRequester
-				  FinancialReportController --> FinancialReportResponse
+				  FinancialReportController -d-> FinancialReportPresenter
+				  FinancialReportPresenter -r-> FinancialReportResponse
+				  FinancialReportController -r-> FinancialReportRequest
+				  FinancialReportController -r-> FinancialReportRequester
+				  FinancialReportController -r-> FinancialReportResponse
 				  ScreenPresenter --> ScreenView
 				  ScreenView --> ScreenViewModel
 				  ScreenPresenter --> ScreenViewModel
