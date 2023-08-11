@@ -305,7 +305,7 @@
 					   component "Web \nView" as web_view
 					   component "PDF \nView" as pdf_view
 					   
-					  
+					  web_view -u-> screen_presenter
 					  
 					  
 					  @enduml
