@@ -334,7 +334,8 @@
 				- Interactors are the highest-level concept, so they are the most protected.
 				- Views are among the lowest-level concepts, so they are the least protected.
 				- Presenters are higher level than Views, but lower level than the Controller or the Interactor.
-			- This is how the OCP works at the architectural level. Architects separate functionality based on how, why, and when it changes, and then organize that separated functionality into a hierarchy of components.
+			- This is how the OCP works at the architectural level.
+			- Architects separate functionality based on how, why, and when it changes, and then organize that separated functionality into a hierarchy of components.
 				- Higher-level components in that hierarchy are protected from the changes made to lower-level components.
 		- ### Directional Control
 			- Much of the complexity in the diagram was intended to make sure that the dependencies between the components pointed in the correct direction.
