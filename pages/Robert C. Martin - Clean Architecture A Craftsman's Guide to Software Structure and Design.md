@@ -293,7 +293,17 @@
 			- Each module is crossed in one direction only.
 				- This means that all component relationships are unidirectional, as shown in the component graph.
 				- These arrows point toward the components that we want to protect from change.
-				-
+				- {{renderer code_diagram,plantuml}}
+					- ```plantuml
+					  @startuml
+					  
+					  component "Financial Report Controller" as financial_report_controller
+					   
+					  
+					  
+					  
+					  @enduml
+					  ```
 		-
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
