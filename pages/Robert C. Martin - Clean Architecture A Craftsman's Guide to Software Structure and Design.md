@@ -280,7 +280,11 @@
 				  financial_report_generator -d-> financial_data_gateway
 				  @enduml
 				  ```
-		- Classes marked with <I> are interfaces
+		- Classes marked with
+			- <I> are interfaces
+			- <DS> are data structures
+			- Open arrowheads are using relationships
+			- Closed arrowheads are *implements* or *inheritance* relationships
 		-
 - Your Highlight on Location 1243-1243 | Added on Tuesday, August 8, 2023 1:16:44 PM
   
