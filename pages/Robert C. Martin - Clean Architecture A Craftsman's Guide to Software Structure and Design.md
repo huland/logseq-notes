@@ -250,12 +250,10 @@
 				  FinancialReportGenerator -[hidden]r-> FinancialEntities
 				  ScreenPresenter -[hidden]u-> FinancialReportRequest
 				  ScreenPresenter -[hidden]d-> ScreenViewModel
-				  ScreenPresenter -[hidden]d-> ScreenView
 				  ScreenView -[hidden]u-> ScreenViewModel
 				  
 				  PrintPresenter -[hidden]u-> FinancialReportRequest
 				  PrintPresenter -[hidden]d-> PrintViewModel
-				  PrintPresenter -[hidden]d-> PrintView
 				  PrintView -[hidden]u-> PrintViewModel
 				  
 				  
