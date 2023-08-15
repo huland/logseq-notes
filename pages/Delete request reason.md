@@ -9,4 +9,6 @@
 		- Check my code review comment with #Dezso.Diak (30m)
 			- checking the code for the solution (20m)
 			- discussing it with #Dezso.Diak (10m)
+	- [[2023-08-15]]
+		- fixing CR comment (2h)
 - tags:: #vertis #Dezso.Diak #ticket
