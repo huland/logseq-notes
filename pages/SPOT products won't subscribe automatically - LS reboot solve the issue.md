@@ -10,4 +10,5 @@
 		- Checking the code
 		- Trying to check refinitiv's API
 		- my refinitiv secret seems not to work
+	-
 - tags:: #vertis #ticket
