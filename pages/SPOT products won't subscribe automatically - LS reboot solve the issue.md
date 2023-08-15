@@ -7,8 +7,11 @@
 	- [pull request](link.to.pull.request)
 ## Activity Summary
 	- [[2023-08-11]]
-		- Checking the code
+		- Understand the existing code
 		- Trying to check refinitiv's API
 		- my refinitiv secret seems not to work
-	-
+	- [[2023-08-14]]
+		- Understand the existing code
+		- Find API docs
+		-
 - tags:: #vertis #ticket
