@@ -15,5 +15,6 @@
 		- Find API docs
 	- [[2023-08-15]]
 		- starting up LS project locally
+			- we updated the
 		- my refinitiv secret seems to work
 - tags:: #vertis #ticket
