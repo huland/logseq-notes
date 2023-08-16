@@ -7,8 +7,7 @@
 - Notes
 	- 2023-08-16: DeleteRequest reason merge request he was a bit careless.
 		- I asked him to remove the unused imports from all the files he were touching.
-		- He removed them from 1 file only.
-		- I collected the remaining unused imports.
+		- He removed them from 1 file only and he said the comment was fixed. I collected the remaining unused imports.
 			- I think he wanted to finish this ticket asap.
 	-
 - tags:: #vertis
