@@ -5,7 +5,7 @@
 	-
 	-
 - Notes
-	- DeleteRequest reason PR he was a bit careless.
+	- 2023-08-16: DeleteRequest reason merge request he was a bit careless.
 		- I think he wanted to finish this ticket asap.
 	-
 - tags:: #vertis
