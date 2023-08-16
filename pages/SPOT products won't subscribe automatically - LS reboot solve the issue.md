@@ -13,5 +13,7 @@
 	- [[2023-08-14]]
 		- Understand the existing code
 		- Find API docs
+	- [[2023-08-15]]
+		- starting up LS
 		-
 - tags:: #vertis #ticket
