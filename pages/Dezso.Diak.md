@@ -5,6 +5,7 @@
 	-
 	-
 - Notes
-	- DeleteRequest reason PR
+	- DeleteRequest reason PR he was a bit careless.
+		- I think he wanted to finish this ticket asap.
 	-
 - tags:: #vertis
