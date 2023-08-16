@@ -14,6 +14,6 @@
 		- Understand the existing code
 		- Find API docs
 	- [[2023-08-15]]
-		- starting up LS
-		-
+		- starting up LS project locally
+		- my refinitiv secret seems to work
 - tags:: #vertis #ticket
