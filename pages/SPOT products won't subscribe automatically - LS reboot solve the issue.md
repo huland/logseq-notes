@@ -4,7 +4,6 @@
 	- Refinitiv docs:
 		- [WebSocket api protocol specification](https://developers.refinitiv.com/content/dam/devportal/refinitivrealtimeapi_pdfs/websocket_api_protocol_specification.pdf)
 		- [RRT optimized](https://developers.refinitiv.com/content/dam/devportal/refinitivrealtimeapi_pdfs/rrt_optimized.pdf)
-	-
 ## Review details
 	- [pull request](link.to.pull.request)
 ## Activity Summary
