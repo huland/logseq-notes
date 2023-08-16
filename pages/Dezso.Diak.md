@@ -6,6 +6,9 @@
 	-
 - Notes
 	- 2023-08-16: DeleteRequest reason merge request he was a bit careless.
-		- I think he wanted to finish this ticket asap.
+		- I asked him to remove the unused imports from all the files he were touching.
+		- He removed them from 1 file only.
+		- I collected the remaining unused imports.
+			- I think he wanted to finish this ticket asap.
 	-
 - tags:: #vertis
