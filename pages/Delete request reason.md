@@ -11,4 +11,6 @@
 			- discussing it with #Dezso.Diak (10m)
 	- [[2023-08-15]]
 		- fixing CR comment (2h)
+	- [[2023-08-16]]
+		- checking leftover comments and their resolution (15m)
 - tags:: #vertis #Dezso.Diak #ticket
