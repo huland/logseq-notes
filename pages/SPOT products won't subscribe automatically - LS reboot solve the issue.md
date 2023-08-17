@@ -18,4 +18,6 @@
 		- starting up LS project locally
 			- we updated the readme.md file
 		- my refinitiv secret seems to work
+	- [[2023-08-16]]
+		-
 - tags:: #vertis #ticket
