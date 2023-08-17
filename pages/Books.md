@@ -6,6 +6,7 @@
 	- Matthias Noback - Principles of Package Design: Creating Reusable Software Components
 	- Robert C. Martin - Agile Software Develpment: Principles, Patterns, and Practices
 	- Michael Feathers - Working Effectively with Legacy Code
+	- [Architecture Patterns with Python](https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/)
 	-
 - ## Book notes
 	- [[Tiago Forte - Building a second brain]]
