@@ -19,11 +19,10 @@
 		- 3. Active Offers page
 			- add filter
 			- add strict column
-			- merge strict into original
-			  
-			  ETS Unit Management
-			  hint: transferhint react table 
-			  Commodity prefix [strict]
+			- merge strict offer section into the original offer section
+		- 4. ETS Unit Management
+			- hint: transferhint react table
+			- Commodity prefix [strict]
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
