@@ -62,6 +62,7 @@
 		  :END:
 	- [[2023-08-08]]
 		- prepare presentation (4h)
-	- [ [[2023-08-17]]
+	- [ [[2023-08-17]] (basically took my whole day)
 		- demo
+		- fixing the findings
 - tags:: #vertis #ticket
