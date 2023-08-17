@@ -26,6 +26,7 @@
 			- Commodity prefix [strict]
 ## Review details
 	- [original ticket's pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
+	- [improvement ticket's pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/401)
 ## Activity Summary
 	- [[2023-07-31]]
 		- [EUA/EUAA issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793)'s [remaining](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6793#note_13405) UI updates
