@@ -5,27 +5,25 @@
 		- [part 1](https://vertiszrt-my.sharepoint.com/personal/balazs_szalma_vertis_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbalazs_szalma_vertis_com%2FDocuments%2FRecordings%2FEUA_EUAA-20230518_102035-Meeting Recording%2Emp4&ga=1)
 		- [part 2](https://vertiszrt-my.sharepoint.com/personal/balazs_szalma_vertis_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbalazs_szalma_vertis_com%2FDocuments%2FRecordings%2FEUA_EUAA _2-20230525_100847-Meeting Recording%2Emp4&ga=1)
 	- Demo notes:
-	- 1. script
-	  2. all ets contract marked as strict
-	          valid for EU
-	          except
-	              clearer
-	              aviation
-	  
-	  contract:
-	      https://test.mv2.com/react/#/contracts/edit/#contract=5077
-	      strictcheckbox visible only for
-		- ETS Trading Contract
-		- Valid For ETS Markets EU
-		  
-		  Active Offers page
-		  add filter
-		  add strict column
-		  merge strict into original
-		  
-		  ETS Unit Management
-		  hint: transferhint react table 
-		  Commodity prefix [strict]
+		- 1. script
+			- - all ets contract marked as strict
+				- -valid for EU
+				- except
+					- clearer
+					- aviation
+		- 2. contract:
+			- https://test.mv2.com/react/#/contracts/edit/#contract=5077
+				- strict checkbox visible only for
+					- ETS Trading Contract
+					- Valid For ETS Markets EU
+		- 3. Active Offers page
+			- add filter
+			- add strict column
+			- merge strict into original
+			  
+			  ETS Unit Management
+			  hint: transferhint react table 
+			  Commodity prefix [strict]
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/319)
 ## Activity Summary
