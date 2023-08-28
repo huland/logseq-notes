@@ -13,4 +13,7 @@
 		- fixing CR comment (2h)
 	- [[2023-08-16]]
 		- checking leftover comments and their resolution (15m)
+	- [[2023-08-18]] (6h)
+		- manual tested (and fixed) everything
+		- merge conflict problem with migrata
 - tags:: #vertis #ticket #Dezso.Diak
