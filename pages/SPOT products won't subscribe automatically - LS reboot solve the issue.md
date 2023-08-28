@@ -21,5 +21,7 @@
 	- [[2023-08-16]]
 		- refactore the code with tests
 	- [[2023-08-28]]
-		- reading the API docs
+		- reading the API docs again
+			- the problem occurs with ric_code ended with "c1"
+			- the issue is randomly occurs
 - tags:: #vertis #ticket
