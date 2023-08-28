@@ -15,5 +15,5 @@
 		- checking leftover comments and their resolution (15m)
 	- [[2023-08-18]] (6h)
 		- manual tested (and fixed) everything
-		- merge conflict problem with migrata
+		- merge conflict problem with migration files that remained in todo.
 - tags:: #vertis #ticket #Dezso.Diak
