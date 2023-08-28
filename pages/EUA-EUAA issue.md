@@ -66,5 +66,5 @@
 		- demo
 		- fixing the findings
 	- [[2023-08-18]] (2h)
-		-
+		- fixing the remaining findings
 - tags:: #vertis #ticket
