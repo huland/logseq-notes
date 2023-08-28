@@ -20,4 +20,6 @@
 		- my refinitiv secret seems to work
 	- [[2023-08-16]]
 		- refactore the code with tests
+	- [[2023-08-28]]
+		- reading the API docs
 - tags:: #vertis #ticket
