@@ -65,4 +65,6 @@
 	- [ [[2023-08-17]] (basically took my whole day)
 		- demo
 		- fixing the findings
+	- [[2023-08-18]] (2h)
+		-
 - tags:: #vertis #ticket
