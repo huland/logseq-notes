@@ -3,6 +3,7 @@
 - ## Code checked
 	- [Expense with multiple attachments (Invoice File)](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365) #Dezso.Diak
 	- [Sync title, department and manager to AD](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/341) #Gabor.Egyed
+	- [Delete request reason](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/259)
 - ## Tested
 	-
 - ## Approved
