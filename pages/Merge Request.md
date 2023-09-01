@@ -10,4 +10,5 @@
 	- [Use traditional true in ajax query by default](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/400) #Adam.Szandai
 - ## Waiting to be merged
 	- [Account registration number duplication check not works](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/399) #Adam.Szandai
+	- [Use regex in test to filter out fstring translations](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/387) #Janos.Gerzson
 - ## Merged
