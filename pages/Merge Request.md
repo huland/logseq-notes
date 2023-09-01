@@ -1,8 +1,7 @@
 - ## To check
 	- [ETS Market Share Account Grouping Summary](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/370) #Zsombor.Kotan
-	- [Expense with multiple attachments (Invoice File)](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365) #Dezso.Diak
 - ## Code checked
--
+	- [Expense with multiple attachments (Invoice File)](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365) #Dezso.Diak
 - ## Tested
 	-
 - ## Approved
