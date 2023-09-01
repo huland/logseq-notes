@@ -1,5 +1,6 @@
 - ## To check
-	- [ETS Market Share]
+	- [ETS Market Share Account Grouping Summary](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/370) #Zsombor.Kotan
+	- [](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365)
 - ## Checked
 	-
 - ## Approved
