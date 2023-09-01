@@ -1,6 +1,9 @@
 - ## To check
 -
 - ## Checked
-	- []
--
+	-
+- ## Approved
+	- [Use traditional true in ajax query by default](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/400)
+- ## Waiting to be merged
+	- [Account]
 - ## Merged
