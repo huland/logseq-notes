@@ -6,4 +6,4 @@
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/392)
 ## Activity Summary
 	-
-- tags::
+- tags:: #vertis #ticket #Tamas.Boros
