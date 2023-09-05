@@ -1,7 +1,7 @@
 - ## To check
 	- [ETS Market Share Account Grouping Summary](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/370) #Zsombor.Kotan
 - ## Code checked
-	- [Expense with multiple attachments (Invoice File)](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/365) #Dezso.Diak
+	- [[Expense with multiple attachments (Invoice File)]]
 	- [Sync title, department and manager to AD](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/341) #Gabor.Egyed
 	- [Delete request reason](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/259)
 - ## Tested
