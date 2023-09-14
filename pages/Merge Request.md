@@ -1,7 +1,7 @@
 - ## To check
 	- [ETS Market Share Account Grouping Summary](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/370) #Zsombor.Kotan
 	- [Create a process for downloading shipping information](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/388) #Sandor.Volgyi
-	- [Create tests for each and every offer ](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/420)
+	- [Create tests for each and every offer which is possible to add in the system](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/420) #Sandor.Volgyi
 - ## Code checked
 	-
 - ## Tested
