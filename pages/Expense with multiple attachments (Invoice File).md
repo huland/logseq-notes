@@ -28,4 +28,6 @@
 		- review the code
 	- [[2023-08-04]] (1h30m)
 		- I was manual testing the tickets.
+	- [[2023-09-14]]
+		- I w
 - tags:: #vertis #ticket #Dezso.Diak
