@@ -1,13 +1,13 @@
 - ## To check
 	- [ETS Market Share Account Grouping Summary](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/370) #Zsombor.Kotan
 - ## Code checked
-	- [[Expense with multiple attachments (Invoice File)]]
-	- [Sync title, department and manager to AD](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/341) #Gabor.Egyed
 	- [Delete request reason](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/259)
 - ## Tested
 	-
 - ## Approved
 	- [Use traditional true in ajax query by default](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/400) #Adam.Szandai
+	- [[Expense with multiple attachments (Invoice File)]]
+	- [Sync title, department and manager to AD](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/341) #Gabor.Egyed
 - ## Waiting to be merged
 	- [Account registration number duplication check not works](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/399) #Adam.Szandai
 	- [Use regex in test to filter out fstring translations](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/387) #Janos.Gerzson
