@@ -8,4 +8,6 @@
 	- [[2023-09-14]] (5h)
 		- reviewed the code ~70%
 		- run the script, downloaded and parsed the data without freezing
+	- [[2023-09-19]]
+		- discussing comments with #Sandor.Volgyi
 - tags:: #vertis #ticket #Sandor.Volgyi
