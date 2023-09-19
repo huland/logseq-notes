@@ -8,7 +8,7 @@
 	- [[2023-09-14]] (5h)
 		- reviewed the code ~70%
 		- run the script, downloaded and parsed the data without freezing
-	- [[2023-09-19]]
+	- [[2023-09-19]] (3h)
 		- discussing comments with #Sandor.Volgyi
 		- reviewed the code
 - tags:: #vertis #ticket #Sandor.Volgyi
