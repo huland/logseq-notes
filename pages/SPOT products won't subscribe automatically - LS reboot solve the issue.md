@@ -24,4 +24,5 @@
 		- reading the API docs again
 			- the problem occurs with ric_code ended with "c1"
 			- the issue is randomly occurs
+	- [[2023-09]]
 - tags:: #vertis #ticket
