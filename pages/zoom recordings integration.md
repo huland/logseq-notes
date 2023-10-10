@@ -8,4 +8,3 @@
 	- [[2023-10-10]]
 		- review the code
 - tags:: #vertis #ticket #Gabor.Egyed
--
