@@ -6,4 +6,4 @@
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/412)
 ## Activity Summary
 	-
-- tags:: #vertis #Gabor.Egyed
+- tags:: #vertis #ticket #Gabor.Egyed
