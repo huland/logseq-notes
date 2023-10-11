@@ -1,5 +1,5 @@
 - ## Ticket details
-	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6955)
+	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7014)
 ## Notes
 	-
 ## Review details
