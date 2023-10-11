@@ -3,7 +3,7 @@
 ## Notes
 	- on the VertisReactSelect component the `isMulti={false}` was sent as props,
 		- the VertisReactSelect component behavior is different in case of isMulti is `true` or `false`
-		- the code was not updated to
+		- the code was not updated to according
 	- the field name is "Related accounts" that suggest multi selection possibility
 	- we added the `isMulti={true}` back so the issue disappeared
 ## Review details
