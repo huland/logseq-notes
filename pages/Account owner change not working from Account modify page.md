@@ -9,5 +9,7 @@
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/456)
 ## Activity Summary
-	-
-- tags::
+	- [[2023-10-10]] (3h)
+		- Understanding the current code
+		- Updating the code
+- tags:: #vertis #ticket
