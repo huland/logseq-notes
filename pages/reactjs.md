@@ -1,4 +1,3 @@
 - What is React all about?
-	- Displays HTML
-	- Changes that HTML when the user does something
-- We tell react to
+	- displays HTML
+	- changes that HTML when the user does something
