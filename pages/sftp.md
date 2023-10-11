@@ -1,4 +1,9 @@
 - Connect to **sftp**
 	- normal connection:
 		- `sftp vertis_sftp@secondary-web`
-	- bandwidth limit
+	- connection with bandwidth limitation:
+		- `sftp -l 10 vertis_sftp@secondary-web`
+- Download file
+	- get <path>
+- Upload file
+	- put <path>
