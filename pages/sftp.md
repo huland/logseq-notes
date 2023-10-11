@@ -3,9 +3,15 @@
 		- `sftp vertis_sftp@secondary-web`
 	- connection with bandwidth limitation:
 		- `sftp -l 10 vertis_sftp@secondary-web`
+- Local working directory
+	- `lpwd`
+- Remote working directory
+	- `pwd`
 - Download file
-	- get <path> - downloads it to the local working directory
+	- downloads it to the local working directory
+		- get <path>
+		-
 - Upload file
-	- put <path>
-- The download/upload folder retreivable with `lpwd` (local working directory)
+	- uploads it to the remote working directory
+		- put <path>
 -
