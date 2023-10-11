@@ -11,5 +11,7 @@
 ## Activity Summary
 	- [[2023-10-10]] (3h)
 		- Understanding the current code
+		- Understand how it should work
 		- Updating the code
+		- Testing the fix
 - tags:: #vertis #ticket
