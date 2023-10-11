@@ -7,3 +7,4 @@
 	- get <path>
 - Upload file
 	- put <path>
+- The download / upload folder retreivable with `lpwd` (local working directory)
