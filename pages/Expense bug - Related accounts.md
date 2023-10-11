@@ -3,8 +3,8 @@
 ## Notes
 	-
 ## Review details
-	- [pull request](link.to.pull.request)
+	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/459)
 ## Activity Summary
 	- [[2023-10-11]]
-		- t
+		- reproduce the problem
 - tags:: #vertis #ticket
