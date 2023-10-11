@@ -14,5 +14,5 @@
 	- [[2023-10-11]]
 		- plan to review the code
 	- [[2023-10-10]]
-		- ~~review the code~~
+		- ~~review the code~~ (did not have time)
 - tags:: #vertis #ticket #Janos.Gerzson
