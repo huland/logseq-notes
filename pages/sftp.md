@@ -1,2 +1,4 @@
 - Connect to **sftp**
-	-
+	- normal connection:
+		- `sftp vertis_sftp@secondary-web`
+	- bandwidth limit
