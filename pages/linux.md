@@ -1,3 +1,3 @@
 - [[AppImage]]
--
+- [[sftp]]
 - tags:: #knowledge
