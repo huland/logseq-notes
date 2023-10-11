@@ -4,7 +4,8 @@
 	- connection with bandwidth limitation:
 		- `sftp -l 10 vertis_sftp@secondary-web`
 - Download file
-	- get <path>
+	- get <path> - downloads it to the local working directory
 - Upload file
 	- put <path>
-- The download / upload folder retreivable with `lpwd` (local working directory)
+- The download/upload folder retreivable with `lpwd` (local working directory)
+-
