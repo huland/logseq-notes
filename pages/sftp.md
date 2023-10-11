@@ -9,11 +9,11 @@
 	- `pwd`
 - Download file
 	- downloads it to the local working directory
-		- get <path>
+		- `get <path>`
 	- download as:
-		- get example_file.txt example.txt
+		- `get example_file.txt example.txt`
 - Upload file
 	- uploads it to the remote working directory
-		- put <path>
+		- `put <path>`
 	- upload as:
-		- put example.txt example_file.txt
+		- `put example.txt example_file.txt`
