@@ -11,5 +11,6 @@
 		- https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/450
 		- https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/454
 ## Activity Summary
-	-
+	- [[2023-10-11]]
+		- plan to review the code
 - tags:: #vertis #ticket #Janos.Gerzson
