@@ -59,7 +59,7 @@
 		- updates the invoice's:
 			- `invoice_number` to `transaction's slug`
 			- `status` to `NORMAL_ISSUED`
-		- creates `InvoiceItem` with
+		- update / create `InvoiceItem` with
 			- update the:
 				- `InvoiceItem's transaction` with the `invoice_number`
 				- `InvoiceItem's ledger_account_code` with `B1T_Invoice.Account`
