@@ -55,7 +55,7 @@
 		  ```
 - Background process
 	- Collects the `OUTGOING` invoices from MV2
-- SAP DB:
+- SAP DB :
 	- B1T_Invoice <--> MV2
 		- U_MVDocNum <--> InvoiceData.id
 		- DocNum <--> InvoiceData.invoice_number
