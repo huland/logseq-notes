@@ -59,5 +59,5 @@
 	- B1T_Invoice
 		- U_MVDocNum -> MV2 InvoiceData.id
 		- DocNum -> MV2 InvoiceData.invoice_number
-		- OrNumber ->
+		- OrNumber -> MV2 Transaction.slug
 - tags:: #vertis
