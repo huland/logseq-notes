@@ -10,7 +10,7 @@
 	- ### Secrets:
 		- SAP_FILE_SERVER_USER=
 		- SAP_FILE_SERVER_PASSWORD=
-- Samba wrapper
+- ## Samba wrapper
 	- `sap_smb.py`
 	  collapsed:: true
 		- ```python
@@ -54,7 +54,7 @@
 		      )
 		      ...
 		  ```
-- Background process
+- ## Background process
 	- Collects the `OUTGOING` invoices from MV2
 - ## SAP and MV2 database mappings
 	- B1T_Invoice.U_MVDocNum -> InvoiceData.id
