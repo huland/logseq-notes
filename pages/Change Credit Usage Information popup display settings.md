@@ -10,7 +10,8 @@
 			- **Delivery Delay** is **0**
 			- **Payment Delay** is **0**
 		- when a BUY deal was created
-			-
+			- **Delivery Delay** is **0**
+			- **Payment Delay** is **0**
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446)
 ## Activity Summary
