@@ -1,2 +1,9 @@
--
+- Environment variables
+	- SAP_HOST=
+	- SAP_DB_USER=
+	- SAP_FILE_PATH=
+	- SAP_INCOMING_INVOICE_FILE_PATH=
+	- SAP_SMB_PORT=445
+	- SAP_SMB_DOMAIN=VERTIS
+	- SAP_SMB_SHARE=B1_SHR
 - tags:: #vertis
