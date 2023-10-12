@@ -65,4 +65,7 @@
 		- Project <--> InvoiceItem.cost_code2
 		- Net_amount_in_LC <--> InvoiceItem.net_amount_invoicing_in_system_currency
 		- Net_amount_in_FC <--> InvoiceItem.net_amount_invoicing_in_foreign_currency
+	- B1T_PurchaseInvoice <--> MV2
+		- U_MVDocNum <--> InvoiceData.id
+		-
 - tags:: #vertis
