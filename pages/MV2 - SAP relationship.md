@@ -63,10 +63,10 @@
 			- update the:
 				- `InvoiceItem's transaction` with the `invoice_number`
 				- `InvoiceItem's ledger_account_code` with `B1T_Invoice.Account`
-				- `InvoiceItem's cost_code` with B1T_Invoice.CostCenter
-				- `InvoiceItem's cost_code2` with B1T_Invoice.Project
-				- `InvoiceItem's net_amount_invoicing_in_system_currency` with B1T_Invoice.Net_amount_in_LC
-				- `InvoiceItem's net_amount_invoicing_in_foreign_currency` with B1T_Invoice.Net_amount_in_FC
+				- `InvoiceItem's cost_code` with `B1T_Invoice.CostCenter`
+				- `InvoiceItem's cost_code2` with `B1T_Invoice.Project`
+				- `InvoiceItem's net_amount_invoicing_in_system_currency` with `B1T_Invoice.Net_amount_in_LC`
+				- `InvoiceItem's net_amount_invoicing_in_foreign_currency` with `B1T_Invoice.Net_amount_in_FC`
 	- Collects data for `INCOMING` invoices in MV2
 	- Sends email to the account owner with the:
 		- transaction's slug
