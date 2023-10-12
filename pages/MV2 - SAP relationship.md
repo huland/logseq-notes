@@ -68,6 +68,7 @@
 				- `InvoiceItem's net_amount_invoicing_in_system_currency` with `B1T_Invoice.Net_amount_in_LC`
 				- `InvoiceItem's net_amount_invoicing_in_foreign_currency` with `B1T_Invoice.Net_amount_in_FC`
 	- Collects data for `INCOMING` invoices in MV2
+		- update / create `InvoiceItem`
 	- Sends email to the account owner with the:
 		- transaction's slug
 		- invoice attachment
