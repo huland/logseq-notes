@@ -56,12 +56,13 @@
 - Background process
 	- Collects the `OUTGOING` invoices from MV2
 - SAP DB:
-	- B1T_Invoice
-		- U_MVDocNum -> MV2 InvoiceData.id
-		- DocNum -> MV2 InvoiceData.invoice_number
-		- OrNumber -> MV2 Transaction.slug
-		- Account
-		- CostCenter
-		- Project
-		- Net
+	- B1T_Invoice <--> MV2
+		- U_MVDocNum <--> InvoiceData.id
+		- DocNum <--> InvoiceData.invoice_number
+		- OrNumber <--> Transaction.slug
+		- Account <-->
+		- CostCenter <-->
+		- Project <-->
+		- Net_amount_in_LC ->
+		- Net_amount_in_FC ->
 - tags:: #vertis
