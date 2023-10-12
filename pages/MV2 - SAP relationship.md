@@ -55,4 +55,5 @@
 		  ```
 - Background process
 	- Collects the `OUTGOING` invoices from MV2
+- SAP DB
 - tags:: #vertis
