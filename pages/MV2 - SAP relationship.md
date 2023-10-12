@@ -60,9 +60,9 @@
 		- U_MVDocNum <--> InvoiceData.id
 		- DocNum <--> InvoiceData.invoice_number
 		- OrNumber <--> Transaction.slug
-		- Account <-->
-		- CostCenter <-->
-		- Project <-->
-		- Net_amount_in_LC ->
-		- Net_amount_in_FC ->
+		- Account <--> InvoiceItem.ledger_account_code
+		- CostCenter <--> InvoiceItem.cost_code
+		- Project <--> InvoiceItem.cost_code2
+		- Net_amount_in_LC <--> InvoiceItem.
+		- Net_amount_in_FC <--> InvoiceItem.
 - tags:: #vertis
