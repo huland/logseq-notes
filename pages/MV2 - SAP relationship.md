@@ -60,4 +60,8 @@
 		- U_MVDocNum -> MV2 InvoiceData.id
 		- DocNum -> MV2 InvoiceData.invoice_number
 		- OrNumber -> MV2 Transaction.slug
+		- Account
+		- CostCenter
+		- Project
+		- Net
 - tags:: #vertis
