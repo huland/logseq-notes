@@ -61,16 +61,16 @@
 	- `B1T_Invoice.DocNum` <--> `InvoiceData.invoice_number`
 	- `B1T_Invoice.OrNumber` <--> `Transaction.slug`
 	- `B1T_Invoice.Account` <--> `InvoiceItem.ledger_account_code`
-	- `B1T_Invoice.CostCenter` <--> `InvoiceItem.cost_code`
-	- `B1T_Invoice.Project` <--> `InvoiceItem.cost_code2`
+	- `B1T_Invoice.CostCenter -> InvoiceItem.cost_code`
+	- `B1T_Invoice.Project -> InvoiceItem.cost_code2`
 	- ---
-	- `B1T_Invoice.Net_amount_in_LC` <--> `InvoiceItem.net_amount_invoicing_in_system_currency`
-	- `B1T_Invoice.Net_amount_in_FC` <--> `InvoiceItem.net_amount_invoicing_in_foreign_currency`
-	- `B1T_PurchaseInvoice.U_MVDocNum` <--> `InvoiceData.id`
-	- `B1T_PurchaseInvoice.OrNumber` <--> `Transaction.slug`
-	- `B1T_PurchaseInvoice.Account` <--> `InvoiceItem.ledger_account_code`
-	- `B1T_PurchaseInvoice.CostCenter` <--> `InvoiceItem.cost_code`
-	- `B1T_PurchaseInvoice.Project` <--> `InvoiceItem.cost_code2`
-	- `B1T_PurchaseInvoice.Net_amount_in_LC` <--> `InvoiceItem.net_amount_invoicing_in_system_currency`
-	- B1T_PurchaseInvoice.Net_amount_in_FC`-> `InvoiceItem.net_amount_invoicing_in_foreign_currency`
+	- `B1T_Invoice.Net_amount_in_LC -> InvoiceItem.net_amount_invoicing_in_system_currency`
+	- `B1T_Invoice.Net_amount_in_FC -> InvoiceItem.net_amount_invoicing_in_foreign_currency`
+	- `B1T_PurchaseInvoice.U_MVDocNum -> InvoiceData.id`
+	- `B1T_PurchaseInvoice.OrNumber -> Transaction.slug`
+	- `B1T_PurchaseInvoice.Account -> InvoiceItem.ledger_account_code`
+	- `B1T_PurchaseInvoice.CostCenter -> InvoiceItem.cost_code`
+	- `B1T_PurchaseInvoice.Project -> InvoiceItem.cost_code2`
+	- B1T_PurchaseInvoice.Net_amount_in_LC -> InvoiceItem.net_amount_invoicing_in_system_currency
+	- B1T_PurchaseInvoice.Net_amount_in_FC -> InvoiceItem.net_amount_invoicing_in_foreign_currency
 - tags:: #vertis
