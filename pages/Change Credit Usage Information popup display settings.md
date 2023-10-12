@@ -2,7 +2,8 @@
 	- [ticket](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6994)
 ## Notes
 	- [[2023-10-16]] Demo the feature to Maximilian Herstatt
-	-
+	- Credit Usage Information popup appears
+		-
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446)
 ## Activity Summary
