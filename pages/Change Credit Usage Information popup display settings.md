@@ -7,8 +7,7 @@
 			- **Delivery Delay** is **0**
 			- **Payment Delay** is **0**
 		- when a SELL deal was created
-			- **Delivery Delay** is **0**
-			- **Payment Delay** is **0**
+			- **Delivery Delay** is **<=0** than **Payment Delay**
 		- when a BUY deal was created
 			- **Delivery Delay** is **>=0** than **Payment Delay**
 ## Review details
