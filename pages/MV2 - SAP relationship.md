@@ -1,14 +1,15 @@
-- Environment variables
-	- SAP_HOST=
-	- SAP_DB_USER=
-	- SAP_FILE_PATH=
-	- SAP_INCOMING_INVOICE_FILE_PATH=
-	- SAP_SMB_PORT=
-	- SAP_SMB_DOMAIN=
-	- SAP_SMB_SHARE=
-- Secrets:
-	- SAP_FILE_SERVER_USER=
-	- SAP_FILE_SERVER_PASSWORD=
+- ## Possible configuration
+	- ### Environment variables
+		- SAP_HOST=
+		- SAP_DB_USER=
+		- SAP_FILE_PATH=
+		- SAP_INCOMING_INVOICE_FILE_PATH=
+		- SAP_SMB_PORT=
+		- SAP_SMB_DOMAIN=
+		- SAP_SMB_SHARE=
+	- ### Secrets:
+		- SAP_FILE_SERVER_USER=
+		- SAP_FILE_SERVER_PASSWORD=
 - Samba wrapper
 	- `sap_smb.py`
 	  collapsed:: true
@@ -55,7 +56,7 @@
 		  ```
 - Background process
 	- Collects the `OUTGOING` invoices from MV2
-- SAP DB :
+- ## SAP DB and MV2 DB mappings
 	- B1T_Invoice <--> MV2
 		- U_MVDocNum <--> InvoiceData.id
 		- DocNum <--> InvoiceData.invoice_number
