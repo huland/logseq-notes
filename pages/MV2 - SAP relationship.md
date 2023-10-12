@@ -56,6 +56,9 @@
 		  ```
 - ## Background process
 	- Collects data for `OUTGOING` invoices in MV2
+		- updates the invoice's:
+			- `invoice_number` to `transaction's slug`
+			- `status` to `NORMAL_ISSUED`
 	- Collects data for `INCOMING` invoices in MV2
 	- Sends email to the account owner with the:
 		- transaction's slug
