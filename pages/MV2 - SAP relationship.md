@@ -10,7 +10,7 @@
 	- SAP_FILE_SERVER_USER=
 	- SAP_FILE_SERVER_PASSWORD=
 - samba
-	- ```python file: sap_smb.py
+	- ```python
 	  def smb_connect():
 	  	...
 	      server_host = os.environ.get("SAP_HOST")
