@@ -5,5 +5,6 @@
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446)
 ## Activity Summary
-	-
-- tags::
+	- [[2023-10-12]] (30m)
+		- testing the frontend
+- tags:: #vertis #ticket #Dezso.Diak
