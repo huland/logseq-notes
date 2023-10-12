@@ -63,6 +63,6 @@
 		- Account <--> InvoiceItem.ledger_account_code
 		- CostCenter <--> InvoiceItem.cost_code
 		- Project <--> InvoiceItem.cost_code2
-		- Net_amount_in_LC <--> InvoiceItem.
-		- Net_amount_in_FC <--> InvoiceItem.
+		- Net_amount_in_LC <--> InvoiceItem.net_amount_invoicing_in_system_currency
+		- Net_amount_in_FC <--> InvoiceItem.net_amount_invoicing_in_foreign_currency
 - tags:: #vertis
