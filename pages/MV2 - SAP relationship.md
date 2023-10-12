@@ -57,6 +57,7 @@
 	- Collects the `OUTGOING` invoices from MV2
 - SAP DB:
 	- B1T_Invoice
-		- U_MVDocNum -> MV2 invoice id
-		- DocNum -> MV2
+		- U_MVDocNum -> MV2 InvoiceData.id
+		- DocNum -> MV2 InvoiceData.invoice_number
+		- OrNumber ->
 - tags:: #vertis
