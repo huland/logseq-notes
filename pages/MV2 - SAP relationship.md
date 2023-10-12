@@ -57,9 +57,9 @@
 - ## Background process
 	- Collects data for `OUTGOING` invoices in MV2
 	- Collects data for `INCOMING` invoices in MV2
-	- Sends email with the:
-		- invoice details
-		- invoice attachment  the account owner.
+	- Sends email to the account owner with the:
+		- transaction's slug
+		- invoice attachment
 - ## SAP and MV2 database mappings
 	- B1T_Invoice.U_MVDocNum -> InvoiceData.id
 	- B1T_Invoice.DocNum -> InvoiceData.invoice_number
