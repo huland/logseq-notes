@@ -55,7 +55,7 @@
 		      ...
 		  ```
 - ## Background process
-	- Collects data for `OUTGOING` invoices in MV2
+	- ### Collects data for `OUTGOING` invoices in MV2
 		- updates the invoice's:
 			- `invoice_number` to `transaction's slug`
 			- `status` to `NORMAL_ISSUED`
@@ -67,14 +67,14 @@
 				- `InvoiceItem's cost_code2` with `B1T_Invoice.Project`
 				- `InvoiceItem's net_amount_invoicing_in_system_currency` with `B1T_Invoice.Net_amount_in_LC`
 				- `InvoiceItem's net_amount_invoicing_in_foreign_currency` with `B1T_Invoice.Net_amount_in_FC`
-	- Collects data for `INCOMING` invoices in MV2
+	- ### Collects data for `INCOMING` invoices in MV2
 		- update / create `InvoiceItem` with
 			- InvoiceItem's ledger_account_code with `B1T_PurchaseInvoice.Account`
 			- InvoiceItem's cost_code with `B1T_PurchaseInvoice.CostCenter`
 			- InvoiceItem's cost_code2 with `B1T_PurchaseInvoice.Project`
 			- InvoiceItem's net_amount_invoicing_in_system_currency with `B1T_PurchaseInvoice.Net_amount_in_LC`
 			- InvoiceItem's net_amount_invoicing_in_foreign_currency with `B1T_PurchaseInvoice.Net_amount_in_FC`
-	- Sends email to the account owner with the:
+	- ### Sends email to the account owner with the:
 		- transaction's slug
 		- invoice attachment
 - ## SAP and MV2 database mappings
