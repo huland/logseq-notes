@@ -3,7 +3,7 @@
 ## Notes
 	- [[2023-10-16]] Demo the feature to *Maximilian Herstatt*
 	- Credit Usage Information popup displays
-		- when a BUY or SELL deal was created
+		- when a BUY or SELL deal was created (by default at least how I test usually)
 			- **Delivery Delay** is **0**
 			- **Payment Delay** is **0**
 		- when a BUY deal was created
