@@ -6,5 +6,6 @@
 	- SAP_SMB_PORT=
 	- SAP_SMB_DOMAIN=
 	- SAP_SMB_SHARE=
--
+- samba
+	-
 - tags:: #vertis
