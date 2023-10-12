@@ -67,5 +67,10 @@
 		- Net_amount_in_FC <--> InvoiceItem.net_amount_invoicing_in_foreign_currency
 	- B1T_PurchaseInvoice <--> MV2
 		- U_MVDocNum <--> InvoiceData.id
-		-
+		- OrNumber <--> Transaction.slug
+		- Account
+		- CostCenter
+		- Project
+		- Net_amount_in_LC
+		- Net_amount
 - tags:: #vertis
