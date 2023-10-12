@@ -68,7 +68,7 @@
 	- B1T_Invoice.ESignInvoice -> Contains the file path
 		- ESignInvoice contains the filepath; the filepath is the last part
 			- `filepath = ESignInvoice.split("\\")[-1]`
-	- B1T_Invoice.
+	- B1T_Invoice.U_MV2CardCode -> Account.account_code
 	- ---
 	- B1T_PurchaseInvoice.U_MVDocNum -> InvoiceData.id
 	- B1T_PurchaseInvoice.OrNumber -> Transaction.slug
