@@ -3,14 +3,14 @@
 ## Notes
 	- [[2023-10-16]] Demo the feature to Maximilian Herstatt
 	- Credit Usage Information popup appears
-		- when a deal was created
-			- **Direction** is **BUY** or **SELL**
+		- when a BUY or SELL deal was created
 			- **Delivery Delay** is **0**
 			- **Payment Delay** is **0**
-		- when a deal was created
-			- **Direction** is **BUY** or **SELL**
+		- when a SELL deal was created
 			- **Delivery Delay** is **0**
 			- **Payment Delay** is **0**
+		- when a BUY deal was created
+			-
 ## Review details
 	- [pull request](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446)
 ## Activity Summary
