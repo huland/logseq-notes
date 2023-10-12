@@ -54,5 +54,5 @@
 		      ...
 		  ```
 - Background process
-	-
+	- Collects the `OUTGOING` invoices from MV2
 - tags:: #vertis
