@@ -59,6 +59,8 @@
 		- updates the invoice's:
 			- `invoice_number` to `transaction's slug`
 			- `status` to `NORMAL_ISSUED`
+		- creates `InvoiceItem` with
+			- update the transaction with the invoice_number
 	- Collects data for `INCOMING` invoices in MV2
 	- Sends email to the account owner with the:
 		- transaction's slug
