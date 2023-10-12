@@ -65,7 +65,8 @@
 	- B1T_Invoice.Project -> InvoiceItem.cost_code2
 	- B1T_Invoice.Net_amount_in_LC -> InvoiceItem.net_amount_invoicing_in_system_currency
 	- B1T_Invoice.Net_amount_in_FC -> InvoiceItem.net_amount_invoicing_in_foreign_currency
-	- B1T_Invoice.ESignInvoice -> Contains the file path (split )
+	- B1T_Invoice.ESignInvoice -> Contains the file path
+		- ESignInvoice contains the filepath; the filepath is the last par
 	- ---
 	- B1T_PurchaseInvoice.U_MVDocNum -> InvoiceData.id
 	- B1T_PurchaseInvoice.OrNumber -> Transaction.slug
