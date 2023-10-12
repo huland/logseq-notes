@@ -67,11 +67,11 @@
 		- `B1T_Invoice.Net_amount_in_LC` <--> InvoiceItem.net_amount_invoicing_in_system_currency
 		- `B1T_Invoice.Net_amount_in_FC` <--> InvoiceItem.net_amount_invoicing_in_foreign_currency
 	- `B1T_PurchaseInvoice` <--> MV2
-		- U_MVDocNum <--> InvoiceData.id
-		- OrNumber <--> Transaction.slug
-		- Account <--> ledger_account_code
-		- CostCenter <--> cost_code
-		- Project <--> cost_code2
-		- Net_amount_in_LC <--> net_amount_invoicing_in_system_currency
-		- Net_amount_in_FC <--> net_amount_invoicing_in_foreign_currency
+		- B1T_PurchaseInvoice.U_MVDocNum <--> InvoiceData.id
+		- B1T_PurchaseInvoice.OrNumber <--> Transaction.slug
+		- B1T_PurchaseInvoice.Account <--> InvoiceItem.ledger_account_code
+		- `B1T_PurchaseInvoice.CostCenter` <--> InvoiceItem.cost_code
+		- `B1T_PurchaseInvoice.Project` <--> InvoiceItem.cost_code2
+		- `B1T_PurchaseInvoice.Net_amount_in_LC` <--> InvoiceItem.net_amount_invoicing_in_system_currency
+		- `B1T_PurchaseInvoice.Net_amount_in_FC` <--> InvoiceItem.net_amount_invoicing_in_foreign_currency
 - tags:: #vertis
