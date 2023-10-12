@@ -8,6 +8,8 @@
 	- SAP_SMB_SHARE=
 - samba
 	- ```python
+	  def smb_connect():
+	    	
 	  def smb_retrieve_file(connection, file_path):
 	    	...
 	    	connection.retrieveFile(
