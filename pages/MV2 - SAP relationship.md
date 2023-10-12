@@ -7,5 +7,6 @@
 	- SAP_SMB_DOMAIN=
 	- SAP_SMB_SHARE=
 - samba
-	-
+	- ```python
+	  ```
 - tags:: #vertis
