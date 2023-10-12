@@ -60,9 +60,13 @@
 			- `invoice_number` to `transaction's slug`
 			- `status` to `NORMAL_ISSUED`
 		- creates `InvoiceItem` with
-			- update the `InvoiceItem's transaction` with the `invoice_number`
-			- InvoiceItem ledger_account_code to Account
-			-
+			- update the:
+				- `InvoiceItem's transaction` with the `invoice_number`
+				- `InvoiceItem's ledger_account_code` to `B1T_Invoice.Account`
+				- InvoiceItem's cost_code
+				- InvoiceItem's cost_code2
+				- InvoiceItem's net_amount_invoicing_in_system_currency
+				- InvoiceItem's net_amount_invoicing_in_foreign_currency
 	- Collects data for `INCOMING` invoices in MV2
 	- Sends email to the account owner with the:
 		- transaction's slug
