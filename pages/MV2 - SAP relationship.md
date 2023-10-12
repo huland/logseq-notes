@@ -9,8 +9,8 @@
 - Secrets:
 	- SAP_FILE_SERVER_USER=
 	- SAP_FILE_SERVER_PASSWORD=
-- samba
-	- ```python {data-filename="sap_smb.py"}
+- Samba wrapper
+	- ```python {"data-filename="sap_smb.py"}
 	  def smb_connect():
 	  	...
 	      connection = SMBConnection(
