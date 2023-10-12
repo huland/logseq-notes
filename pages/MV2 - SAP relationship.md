@@ -10,7 +10,7 @@
 	- SAP_FILE_SERVER_USER=
 	- SAP_FILE_SERVER_PASSWORD=
 - samba
-	- ```python
+	- ```python filename sap_smb.py
 	  def smb_connect():
 	  	...
 	      server_host = os.environ.get("SAP_HOST")
@@ -19,13 +19,16 @@
 	      connection = SMBConnection(
 	          read_secret('SAP_FILE_SERVER_USER'),
 	          read_secret('SAP_FILE_SERVER_PASSWORD'),
-	          my_name=os.environ.get('HOST_NAME', "mv2-smb-client"),
+	          my_name=os.environ.get('HOST_NAME'),
 	          remote_name=server_host,
-	          domain=os.environ.get('SAP_SMB_DOMAIN', "VERTIS"),
+	          domain=os.environ.get('SAP_SMB_DOMAIN'),
 	          use_ntlm_v2=True,
 	          is_direct_tcp=True,
 	      )
-	  
+	  	if connection.connect(server_host, port=server_port):
+	          return connection
+	      else:
+	          raise RuntimeError("SMB connection failed")
 	      ...
 	      
 	      
