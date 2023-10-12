@@ -12,7 +12,6 @@
 		- SAP_FILE_SERVER_PASSWORD=
 - ## Samba wrapper
 	- `sap_smb.py`
-	  collapsed:: true
 		- ```python
 		  def smb_connect():
 		  	...
