@@ -4,9 +4,6 @@
 		- **everything - Everything**
 			- Every expense visible in the system
 		- **relevant_to_me - Relevant to me**
-			- Needs a script to update 'direct' to 'relevant_to_me' where we currently have it. (data migration)
-			- Add help text to data access profile where we explain what does it means.
-			- Show the help text everywhere in the system (List & Detail pages across the system)
 			- Only those expenses are visible for the user where:
 				- she/he is the expense's owner
 				- her/his subordinates' expenses
