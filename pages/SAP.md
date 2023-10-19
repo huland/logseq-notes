@@ -98,4 +98,5 @@
 	- B1T_PurchaseInvoice.Project -> InvoiceItem.cost_code2
 	- B1T_PurchaseInvoice.Net_amount_in_LC -> InvoiceItem.net_amount_invoicing_in_system_currency
 	- B1T_PurchaseInvoice.Net_amount_in_FC -> InvoiceItem.net_amount_invoicing_in_foreign_currency
-- tags:: #vertis
+- tags:: #vertis #mv2
+-

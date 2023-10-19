@@ -1,4 +1,4 @@
 - ## Parts
-	- [[MV2 - SAP relationship]]
+	- [[SAP]]
 	- [[Expense]]
 - tags:: #vertis #mv2
