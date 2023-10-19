@@ -17,3 +17,4 @@
 	- When "Approval requested" notification is sent to:
 		- the expense owner's superior
 		- **expense owner (if not he created the expense)**
+- tags:: #vertis #mv2
