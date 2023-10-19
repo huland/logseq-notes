@@ -9,9 +9,10 @@
 				- her/his subordinates' expenses
 				- **she/he created the expense**
 - ## Expense creation
-	- Every user under MV2 able to create on behalf expenses to other colleagues (approved expense cannot be modified!!!)
+	- Every user under MV2 able to create on behalf expenses to other colleagues
+		- approved expense cannot be modified!!!
 - ## Notification
 	- When "Approval requested" notification is sent to:
 		- the expense owner's superior
-		- **expense owner (if the expense's *owner* is not the *created_by*)**
+		- **expense owner (if the expense's *owner* is not the *created_by* user)**
 - tags:: #vertis #mv2
