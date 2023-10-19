@@ -13,8 +13,7 @@
 				- **she/he created the expense**
 - ## Expense creation
 - Every user under MV2 able to create on behalf expenses to other colleagues (approved expense cannot be modified!!!)
-- ### 
-  [](#notification-1) Notification
-- When "Approval requested" notification is sent to:
-- the expense owner's superior
-- **expense owner (if not he created the expense)**
+- ## Notification
+	- When "Approval requested" notification is sent to:
+		- the expense owner's superior
+		- **expense owner (if not he created the expense)**
