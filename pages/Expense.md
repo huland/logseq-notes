@@ -16,5 +16,5 @@
 - ## Notification
 	- When "Approval requested" notification is sent to:
 		- the expense owner's superior
-		- **expense owner (if not two expense's *owner* is the *created_by* the expense)**
+		- **expense owner (if the expense's *owner* is not the *created_by*)**
 - tags:: #vertis #mv2
