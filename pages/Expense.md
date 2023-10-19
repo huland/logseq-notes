@@ -1,18 +1,17 @@
-- ### Expenses visibility
+- ## Expenses visibility
 	- The expenses visibility is defined by data access profiles.
 	- There are two data access profile setup options for the users:
-- **everything - Everything**
-- Every expense visible in the system
-- **relevant_to_me - Relevant to me**
-- Needs a script to update 'direct' to 'relevant_to_me' where we currently have it. (data migration)
-- Add help text to data access profile where we explain what does it means.
-- Show the help text everywhere in the system (List & Detail pages across the system)
-- Only those expenses are visible for the user where:
-- she/he is the expense's owner
-- her/his subordinates' expenses
-- **she/he created the expense**
-- ### 
-  [](#expense-creation-1) Expense creation
+		- **everything - Everything**
+			- Every expense visible in the system
+		- **relevant_to_me - Relevant to me**
+			- Needs a script to update 'direct' to 'relevant_to_me' where we currently have it. (data migration)
+			- Add help text to data access profile where we explain what does it means.
+			- Show the help text everywhere in the system (List & Detail pages across the system)
+			- Only those expenses are visible for the user where:
+				- she/he is the expense's owner
+				- her/his subordinates' expenses
+				- **she/he created the expense**
+- ## Expense creation
 - Every user under MV2 able to create on behalf expenses to other colleagues (approved expense cannot be modified!!!)
 - ### 
   [](#notification-1) Notification
