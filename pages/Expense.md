@@ -12,7 +12,7 @@
 				- her/his subordinates' expenses
 				- **she/he created the expense**
 - ## Expense creation
-- Every user under MV2 able to create on behalf expenses to other colleagues (approved expense cannot be modified!!!)
+	- Every user under MV2 able to create on behalf expenses to other colleagues (approved expense cannot be modified!!!)
 - ## Notification
 	- When "Approval requested" notification is sent to:
 		- the expense owner's superior
