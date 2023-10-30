@@ -1,5 +1,5 @@
 - ## 2023-11-02
 	- Mass Expense Approval gross value bug
-		- https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7085
-		-
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7085)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/471)
 -
