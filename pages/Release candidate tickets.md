@@ -3,5 +3,6 @@
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7085)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/471)
 	- Expense administration for sales supports
-		- issue
-		- PR()
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7074)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/468)
+	-
