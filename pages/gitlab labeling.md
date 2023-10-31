@@ -15,5 +15,8 @@
 			- **A_EPIC** : When projects needs to be split into smaller tasks
 		- **ASN Assignee**
 			- ASN_ANDRAS: the developer / executer
-		- CR
+		- **CR Code reviewer**
+			- Each story needs at least one CR label: the primary reviewer if needed, a secondary/senior reviewer
+		- **M Business type**
+			- Optional label to categorize stories
 - tags:: #vertis
