@@ -68,4 +68,10 @@
 	- 10. Review milestone with Ops team
 	- 11. Test documentation
 	- 12. Release
+- How to use labels as a dev to follow the process and help the PM in monitoring the team's performance?
+	- As a developer you will most probably face an issue when it's assigned to you (either as a dev or a code reviewer). Or you find a bug/have an idea. In this case please create a ticket and assign it to the IT leader with with a short description.
+		- 1. On each ticket, there should be an **estimation** (e.g.: /estimate 2d)
+		- - When working on a ticket, please administrate the **time spent** on the development including exploration, meetings, development, reviewing, fixing (e.g.: /spend 1d 2h)
+		- - Please use tagging to ping PM if you need help (e.g.: more precise specification)
+		- - Please create a merge request when starting to work on an issue (and put your CR_ label on it with your name since 'it's your move')
 - tags:: #vertis
