@@ -54,4 +54,18 @@
 		- **! So even if an issue has S_TOREVIEW label, the MR should be S_INPROGRESS.**
 		- **Once the reviewer has made all his/her/its comments, put the MR's status back to S_TODO so the original developer will know that it's his/her/its turn.**
 		- **Once the reviewer finds the development ready to release, `approve` it and put S_DONE label on the MR This will notify the person responsible for the the upcoming release that the issue can be part of it**
+- How does a typical flow look like?
+	- 1 ) Business case appears
+	- Ticket created
+	- Roadmap / Sprint planning —> Milestone
+	- Scheduled for development —> S_TODO
+	- Analysis (Exploration, specification)
+	- Development (Merge request creation at the beginning) —> S_INPROGRESS
+	- Development done —> S_TOREVIEW
+	  Merge request gets its own labels while the review process lasts (3 labels mentioned above), which indicates participants know how it goes
+	- Testing
+	- Ready to release
+	- Review milestone with Ops team
+	- Test documentation
+	- Release
 - tags:: #vertis
