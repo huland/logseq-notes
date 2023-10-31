@@ -8,6 +8,6 @@
 		- **numbers**: Complexity ( not equal to time but):
 			- **1-2-3** <= 1day
 			- 1day <= **5-8** <= 1week
-			- 1we**13-21**
+			- 1week **13-21**
 -
 - tags:: #vertis
