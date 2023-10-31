@@ -15,7 +15,7 @@
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6868)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/384/diffs)
 	- Activity - Offer
-		- issue
-		- PR
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6764)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312/diffs)
 		- notes:
 			- [clarify](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312#note_14401)
