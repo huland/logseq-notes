@@ -1,16 +1,16 @@
 - ## Milestone: 2023-11-02
 	- Mass Expense Approval gross value bug
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7085)
-		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/471)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/471/diffs)
 	- Expense administration for sales supports
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7074)
-		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/468)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/468/diffs)
 	- Contact preferred language
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6999)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/449/diffs)
 	- Change Credit Usage Information popup's display settings
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6994)
-		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446/diffs)
 	- Updating GHG account selection
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6868)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/384/diffs)
