@@ -43,5 +43,6 @@
 			- **T_CHORE**: Technical development needed, often doesn't have direct, visible impact for users
 			- **T_PUFFER**: Only a filler, cannot decide
 		- **V Business value**
-			- V_$ < V_$$ < V_$$$
+			- **V_$** < **V_$$** < **V_$$$**
+		- **X Y Other**:
 - tags:: #vertis
