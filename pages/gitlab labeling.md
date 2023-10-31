@@ -6,7 +6,8 @@
 - Naming and list of labels
 	- `issues`
 		- **numbers**: Complexity ( not equal to time but):
-			- **1-2-3**
+			- **1-2-3** <= 1day
+			- 1day <= **5-8** <= 1week
 			-
 -
 - tags:: #vertis
