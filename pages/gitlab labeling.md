@@ -44,5 +44,6 @@
 			- **T_PUFFER**: Only a filler, cannot decide
 		- **V Business value**
 			- **V_$** < **V_$$** < **V_$$$**
-		- **X Y Other**:
+		- **X Y Other**: Short comments can be here like an estimation or time spent needed
+		-
 - tags:: #vertis
