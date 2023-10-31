@@ -1,4 +1,7 @@
 - ## Milestone: 2023-11-02
+	- Reordering and categorizing bank accounts in mv2
+		- issue
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/222/diffs)
 	- Mass Expense Approval gross value bug
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7085)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/471/diffs)
