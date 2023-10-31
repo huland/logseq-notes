@@ -5,9 +5,14 @@
 	  We work in approx. one-month-long sprints where we set a release target date which call a milestone.
 - Naming and list of labels
 	- `issues`
-		- **numbers**: Complexity ( not equal to time but):
+		- **Numbers**: Complexity ( not equal to time but):
 			- **1-2-3** <= 1day
 			- 1day <= **5-8** <= 1week
-			- 1week **13-21**
+			- 1week <= **13-21**
+		- **Product backlog**
+			- -
+			- **A_CURRENT_ITERATION** : When project is likely to be released in the upcoming milestone
+			- **A_BACKLOG** : When project is likely to be released after the next milestone
+			- **A_EPIC** : When projects needs to be split into smaller tasks
 -
 - tags:: #vertis
