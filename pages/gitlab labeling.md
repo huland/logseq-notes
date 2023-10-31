@@ -63,9 +63,9 @@
 	- 6. Development (Merge request creation at the beginning) —> S_INPROGRESS
 	- 7. Development done —> S_TOREVIEW
 	  Merge request gets its own labels while the review process lasts (3 labels mentioned above), which indicates participants know how it goes
-	- 8) Testing
-	- 9) Ready to release
-	- 10) Review milestone with Ops team
-	- 11) Test documentation
-	- 12) Release
+	- 8. Testing
+	- 9. Ready to release
+	- 10. Review milestone with Ops team
+	- 11. Test documentation
+	- 12. Release
 - tags:: #vertis
