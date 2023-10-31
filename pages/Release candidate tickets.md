@@ -41,3 +41,5 @@
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/245)
 		- notes:
 			- I would not merge on my own (check with #Zoltan.Egyed).
+			- AML only for EU
+			-
