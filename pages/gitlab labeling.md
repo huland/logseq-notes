@@ -55,13 +55,13 @@
 		- **Once the reviewer has made all his/her/its comments, put the MR's status back to S_TODO so the original developer will know that it's his/her/its turn.**
 		- **Once the reviewer finds the development ready to release, `approve` it and put S_DONE label on the MR This will notify the person responsible for the the upcoming release that the issue can be part of it**
 - How does a typical flow look like?
-	- 1 ) Business case appears
-	- 2) Ticket created
-	- 3) Roadmap / Sprint planning —> Milestone
-	- 4) Scheduled for development —> S_TODO
-	- 5) Analysis (Exploration, specification)
-	- 6) Development (Merge request creation at the beginning) —> S_INPROGRESS
-	- 7) Development done —> S_TOREVIEW
+	- 1 . Business case appears
+	- 2. Ticket created
+	- 3. Roadmap / Sprint planning —> Milestone
+	- 4. Scheduled for development —> S_TODO
+	- 5. Analysis (Exploration, specification)
+	- 6. Development (Merge request creation at the beginning) —> S_INPROGRESS
+	- 7. Development done —> S_TOREVIEW
 	  Merge request gets its own labels while the review process lasts (3 labels mentioned above), which indicates participants know how it goes
 	- 8) Testing
 	- 9) Ready to release
