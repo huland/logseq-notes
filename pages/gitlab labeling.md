@@ -30,12 +30,18 @@
 			- **P_4_Neutral:** No direct impact but might be essential
 			- **P_5_Unknown:** Controversial
 		- **R Requestor team**: The departments of the organization
-		- **S Sprint status**:
+		- **S Sprint status**
 			- **S_TODO**: Can start work on it
 			- **S_INPROGRESS**: In development
 			- **S_TOREVIEW**: When the story is handed to a reviewer, during the ping-pong process, it can remain in this state
 			- **S_APPROVED**: When the primary reviewer approves the development
 			- **S_DONE**: When the issue is closed (doesn't necessarily means the release is over)
 			- **S_BLOCKED**: Found a dependency that needs to be solved beforehand
-		- *T Type of story*
+		- **T Type of story**
+			- **T_FEATURE**: Improving the system, not exclusively functionality
+			- **T_BUG**: An error
+			- **T_CHORE**: Technical development needed, often doesn't have direct, visible impact for users
+			- **T_PUFFER**: Only a filler, cannot decide
+		- **V Business value**
+			- V_$
 - tags:: #vertis
