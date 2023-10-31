@@ -5,6 +5,7 @@
 	  We work in approx. one-month-long sprints where we set a release target date which call a milestone.
 - Naming and list of labels
 	- issues
-		- numbers: Complexity ( not e)
+		- numbers: Complexity ( not equal to time but):
+			- 1 - 2 - 3 -> 1 day
 -
 - tags:: #vertis
