@@ -34,7 +34,9 @@
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312/diffs)
 		- notes:
 			- [This](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312#note_14401) PR comment needs clarification.
-			- I would not merge on my own (check with #Zoltan.Egyed ).
+			- I would not merge on my own (check with #Zoltan.Egyed).
 	- ETS - KYC valid for EU, UK, GB - Product Limitation Phase 2
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6525)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/245)
+		- notes:
+			- I would not merge on my own (check with #Zoltan.Egyed).
