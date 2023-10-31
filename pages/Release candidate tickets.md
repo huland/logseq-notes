@@ -1,10 +1,14 @@
 - ## Milestone: 2023-11-02
 	- Reordering and categorizing bank accounts in mv2
-		- issue
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6674)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/222/diffs)
+		- notes:
+			- #Daniel.Tatrai reviewing / working on it
 	- Mass Expense Approval gross value bug
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7085)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/471/diffs)
+		- notes:
+			- I would merge on my own.
 	- Expense administration for sales supports
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7074)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/468/diffs)
