@@ -12,20 +12,29 @@
 	- Expense administration for sales supports
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7074)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/468/diffs)
+		- notes:
+			- I would merge on my own.
 	- Contact preferred language
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6999)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/449/diffs)
+		- notes:
+			- I would merge on my own.
 	- Change Credit Usage Information popup's display settings
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6994)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446/diffs)
+		- notes:
+			- I would merge on my own.
 	- Updating GHG account selection
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6868)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/384/diffs)
+		- notes:
+			- I would merge on my own.
 	- Activity - Offer
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6764)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312/diffs)
 		- notes:
-			- [clarify](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312#note_14401)
+			- [This](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312#note_14401) PR comment needs clarification.
+			- I would not merge on my own (check with #Zoltan.Egyed ).
 	- ETS - KYC valid for EU, UK, GB - Product Limitation Phase 2
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6525)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/245)
