@@ -23,4 +23,11 @@
 			- **M_PERFORMANCE_IMPROVEMENT**: Business as usual requirements, typically coming from BO, Finance, Sales, improving procedures or the application itself
 			- **M_TECHNICAL**: Typically coming from Dev or Ops, technical improvements to make the code base better
 		- **OPS**: Ops interactions needed
+		- **P Priority**
+			- **P_1_Expected:** Must have
+			- **P_2_Performance:** Impacts satisfaction
+			- **P_3_Exciter:** Interesting
+			- **P_4_Neutral:** No direct impact but might be essential
+			- **P_5_Unknown:** Controversial
+		- **R Requestor team**:
 - tags:: #vertis
