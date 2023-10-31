@@ -5,6 +5,7 @@
 	  We work in approx. one-month-long sprints where we set a release target date which call a milestone.
 - Naming and list of labels
 	- `issues`
+	  collapsed:: true
 		- **Numbers**: Complexity ( not equal to time but):
 			- **1-2-3** <= 1day
 			- 1day <= **5-8** <= 1week
@@ -46,4 +47,8 @@
 			- **V_$** < **V_$$** < **V_$$$**
 		- **X Y Other**: Short comments can be here like an estimation or time spent needed
 		-
+	- `merge requests`
+		- **CR_xx:** Interaction needed by xx (It is good to use tagging in comments to receive notifications)
+		- **P_xx:** Priority (Similar to the related issue's P label)
+		- **S_xx:** Status It shows how the review is going
 - tags:: #vertis
