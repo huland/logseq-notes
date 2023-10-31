@@ -11,4 +11,6 @@
 	- Change Credit Usage Information popup's display settings
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6994)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/446)
--
+	- Updating GHG account selection
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6868)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/384/diffs)
