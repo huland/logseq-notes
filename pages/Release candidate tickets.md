@@ -29,7 +29,7 @@
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/384/diffs)
 		- notes:
 			- I would merge on my own.
-			- on hold lap
+			- [check on hold page](https://dev.mv2.com/react/#/transfer/ets_unit/management/#tab=on_hold#due_date__lte=2023-11-30)
 	- Activity - Offer
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6764)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312/diffs)
