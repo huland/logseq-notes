@@ -19,4 +19,6 @@
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312/diffs)
 		- notes:
 			- [clarify](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312#note_14401)
-	- # ETS - KYC valid for EU, UK, GB - Product Limitation Phase 2
+	- ETS - KYC valid for EU, UK, GB - Product Limitation Phase 2
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6525)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/245)
