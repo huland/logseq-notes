@@ -18,4 +18,4 @@
 		- issue
 		- PR
 		- notes:
-			-
+			- [clarify](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/312#note_14401)
