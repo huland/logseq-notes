@@ -17,6 +17,10 @@
 			- ASN_ANDRAS: the developer / executer
 		- **CR Code reviewer**
 			- Each story needs at least one CR label: the primary reviewer if needed, a secondary/senior reviewer
-		- **M Business type**
-			- Optional label to categorize stories
+		- **M Business type**: Optional label to categorize stories
+			- **M_BUSINESS_CRITICAL**: Bugfixing, obligatory or legal requests
+			- **M_BUSINESS_DEVELOPMENT**: Stories that has direct or indirect impact on revenue generation / cost reduction
+			- **M_PERFORMANCE_IMPROVEMENT**: Business as usual requirements, typically coming from BO, Finance, Sales, improving procedures or the application itself
+			- **M_TECHNICAL**: Typically coming from Dev or Ops, technical improvements to make the code base better
+		- **OPS**: Ops interactions needed
 - tags:: #vertis
