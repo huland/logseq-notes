@@ -5,4 +5,7 @@
 	- Expense administration for sales supports
 		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/7074)
 		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/468)
-	-
+	- Contact preferred language
+		- [issue](https://gitlab.vertis.com:8443/vertis/mv2/-/issues/6999)
+		- [PR](https://gitlab.vertis.com:8443/vertis/mv2/-/merge_requests/449/diffs)
+		-
