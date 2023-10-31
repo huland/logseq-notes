@@ -53,5 +53,5 @@
 		- **S_xx:** Status It shows how the review is going
 		- **! So even if an issue has S_TOREVIEW label, the MR should be S_INPROGRESS.**
 		- **Once the reviewer has made all his/her/its comments, put the MR's status back to S_TODO so the original developer will know that it's his/her/its turn.**
-		- **Once the reviewer finds the development ready to release, `*approve*` it and put S_DONE label on the MR This will notify the person responsible for the the upcoming release that the issue can be part of it**
+		- **Once the reviewer finds the development ready to release, *`approve`* it and put S_DONE label on the MR This will notify the person responsible for the the upcoming release that the issue can be part of it**
 - tags:: #vertis
