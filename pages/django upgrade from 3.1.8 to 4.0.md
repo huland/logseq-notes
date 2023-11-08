@@ -694,7 +694,7 @@
 	- from django.core.cache import cache
 		- check changes in version(s):
 			- 3.2
-			-
+			- 4.0
 	- from django.core.exceptions import DisallowedHost
 	- from django.core.exceptions import FieldError
 	- from django.core.exceptions import ObjectDoesNotExist
