@@ -5,3 +5,10 @@
 		- ## CVE-2021-31542: Potential directory-traversal via uploaded files [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.9/#cve-2021-31542-potential-directory-traversal-via-uploaded-files)
 		- MultiPartParser, UploadedFile, and FieldFile allowed directory-traversal via uploaded files with suitably crafted file names.
 		- In order to mitigate this risk, stricter basename and path sanitation is now applied.
+	- 3.1.10
+		- *May 6, 2021*
+		- Django 3.1.10 fixes a security issue in 3.1.9.
+		- ## CVE-2021-32052: Header injection possibility since   URLValidator   accepted newlines in input on Python 3.9.5+ [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.10/#cve-2021-32052-header-injection-possibility-since-urlvalidator-accepted-newlines-in-input-on-python-3-9-5)
+		- On Python 3.9.5+, [URLValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.URLValidator) didn’t prohibit newlines and tabs. If you used values with newlines in HTTP response, you could suffer from header injection attacks. Django itself wasn’t vulnerable because [HttpResponse](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponse) prohibits newlines in HTTP headers.
+		- Moreover, the URLField form field which uses URLValidator silently removes newlines and tabs on Python 3.9.5+, so the possibility of newlines entering your data only existed if you are using this validator outside of the form fields.
+		- This issue was introduced by the [bpo-43882](https://bugs.python.org/issue?@action=redirect&bpo=43882) fix.
