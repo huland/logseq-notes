@@ -658,6 +658,8 @@
 	- check settings for django modules
 	- from django import forms
 	- from django.apps import AppConfig
+		- check changes in version(s):
+			- 3.2
 	- from django.conf import settings
 	- from django.contrib import admin
 	- from django.contrib import messages
@@ -701,6 +703,7 @@
 	- from django.core.validators import MinValueValidator
 	- from django.core.validators import URLValidator
 		- check changes in:
+		-
 			- 3.1.10
 			- 3.1.12
 			- 3.2.2
