@@ -40,7 +40,6 @@
 		- ## Python compatibility [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#python-compatibility)
 			- Django 3.2 supports Python 3.6, 3.7, 3.8, 3.9, and 3.10 (as of 3.2.9). We **highly recommend** and only officially support the latest release of each series.
 		- ## What’s new in Django 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#what-s-new-in-django-3-2)
-		  collapsed:: true
 			- ### Automatic   [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig)   discovery [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#automatic-appconfig-discovery)
 				- Most pluggable applications define an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule. Many define a default_app_config variable pointing to this class in their __init__.py.
 				- When the apps.py submodule exists and defines a single [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass, Django now uses that configuration automatically, so you can remove default_app_config.
@@ -208,7 +207,6 @@
 				- Built-in validators now include the provided value in the params argument of a raised [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError). This allows custom error messages to use the %(value)s placeholder.
 				- The [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError) equality operator now ignores messages and params ordering.
 		- ## Backwards incompatible changes in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#backwards-incompatible-changes-in-3-2)
-		  collapsed:: true
 			- ### Database backend API [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#database-backend-api)
 				- This section describes changes that may be needed in third-party database backends.
 					- The new DatabaseFeatures.introspected_field_types property replaces these features:
@@ -267,7 +265,6 @@
 				- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
 				- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
 		- ## Features deprecated in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#features-deprecated-in-3-2)
-		  collapsed:: true
 			- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id3)
 				- Assigning objects which don’t support creating deep copies with [copy.deepcopy()](https://docs.python.org/3/library/copy.html#copy.deepcopy) to class attributes in [TestCase.setUpTestData()](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.setUpTestData) is deprecated.
 				- Using a boolean value in [BaseCommand.requires_system_checks](https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/#django.core.management.BaseCommand.requires_system_checks) is deprecated. Use '__all__' instead of True, and [] (an empty list) instead of False.
@@ -449,7 +446,6 @@
 			- Django 4.0 supports Python 3.8, 3.9, and 3.10. We **highly recommend** and only officially support the latest release of each series.
 			- The Django 3.2.x series is the last to support Python 3.6 and 3.7.
 		- ## What’s new in Django 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#what-s-new-in-django-4-0)
-		  collapsed:: true
 			- ### zoneinfo   default timezone implementation [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#zoneinfo-default-timezone-implementation)
 				- The Python standard library’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is now the default timezone implementation in Django.
 				- This is the next step in the migration from using pytz to using [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo). Django 3.2 allowed the use of non-pytz time zones. Django 4.0 makes zoneinfo the default implementation. Support for pytz is now deprecated and will be removed in Django 5.0.
@@ -561,7 +557,6 @@
 					- The [test --parallel](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-test-parallel) option now supports the value auto to run one test process for each processor core.
 					- [TestCase.captureOnCommitCallbacks()](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.captureOnCommitCallbacks) now captures new callbacks added while executing [transaction.on_commit()](https://docs.djangoproject.com/en/4.2/topics/db/transactions/#django.db.transaction.on_commit) callbacks.
 		- ## Backwards incompatible changes in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#backwards-incompatible-changes-in-4-0)
-		  collapsed:: true
 			- ### Database backend API [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#database-backend-api)
 			- This section describes changes that may be needed in third-party database backends.
 				- DatabaseOperations.year_lookup_bounds_for_date_field() and year_lookup_bounds_for_datetime_field() methods now take the optional iso_year argument in order to support bounds for ISO-8601 week-numbering years.
@@ -621,7 +616,6 @@
 				- As part of the [move to zoneinfo](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), [django.utils.timezone.utc](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.timezone.utc) is changed to alias [datetime.timezone.utc](https://docs.python.org/3/library/datetime.html#datetime.timezone.utc).
 				- The minimum supported version of asgiref is increased from 3.3.2 to 3.4.1.
 		- ## Features deprecated in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#features-deprecated-in-4-0)
-		  collapsed:: true
 			- ### Use of   pytz   time zones [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#use-of-pytz-time-zones)
 				- As part of the [move to zoneinfo](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), use of pytz time zones is deprecated.
 				- Accordingly, the is_dst arguments to the following are also deprecated:
