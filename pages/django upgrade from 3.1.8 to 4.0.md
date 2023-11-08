@@ -397,11 +397,17 @@
 		- [Trunc()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Trunc) and [Extract()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Extract) database functions were subject to SQL injection if untrusted data was used as a kind/lookup_name value.
 		- Applications that constrain the lookup name and kind choice to a known safe list are unaffected.
 	- Django 3.2.15 fixes a security issue with severity “high” in 3.2.14.
+	  collapsed:: true
 		- ## CVE-2022-36359: Potential reflected file download vulnerability in   FileResponse [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.15/#cve-2022-36359-potential-reflected-file-download-vulnerability-in-fileresponse)
 		- An application may have been vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a [FileResponse](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.FileResponse) when the filename was derived from user-supplied input. The filename is now escaped to avoid this possibility.
 	- Django 3.2.16 fixes a security issue with severity “medium” in 3.2.15.
+	  collapsed:: true
 		- ## CVE-2022-41323: Potential denial-of-service vulnerability in internationalized URLs [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.16/#cve-2022-41323-potential-denial-of-service-vulnerability-in-internationalized-urls)
 		- Internationalized URLs were subject to potential denial of service attack via the locale parameter.
--
+- Django 3.2.17 fixes a security issue with severity “moderate” in 3.2.16.
+- ## CVE-2023-23969: Potential denial-of-service via   Accept-Language   headers [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.17/#cve-2023-23969-potential-denial-of-service-via-accept-language-headers)
+- The parsed values of Accept-Language headers are cached in order to avoid repetitive parsing. This leads to a potential denial-of-service vector via excessive memory usage if large header values are sent.
+- In order to avoid this vulnerability, the Accept-Language header is now parsed up to a maximum length.
+- [](https://docs.djangoproject.com/en/4.2/releases/3.2.18/)
 -
 -
