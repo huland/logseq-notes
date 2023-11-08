@@ -18,12 +18,14 @@
 		- ## CVE-2021-33571: Possible indeterminate SSRF, RFI, and LFI attacks since validators accepted leading zeros in IPv4 addresses [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.12/#cve-2021-33571-possible-indeterminate-ssrf-rfi-and-lfi-attacks-since-validators-accepted-leading-zeros-in-ipv4-addresses)
 		- [URLValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.URLValidator), [validate_ipv4_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv4_address), and [validate_ipv46_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv46_address) didn’t prohibit leading zeros in octal literals. If you used such values you could suffer from indeterminate SSRF, RFI, and LFI attacks.
 		- [validate_ipv4_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv4_address) and [validate_ipv46_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv46_address) validators were not affected on Python 3.9.5+.
-- Django 3.1.13 fixes a security issue with severity “high” in 3.1.12.
-- ## CVE-2021-35042: Potential SQL injection via unsanitized   QuerySet.order_by()   input [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.13/#cve-2021-35042-potential-sql-injection-via-unsanitized-queryset-order-by-input)
-- Unsanitized user input passed to QuerySet.order_by() could bypass intended column reference validation in path marked for deprecation resulting in a potential SQL injection even if a deprecation warning is emitted.
-- As a mitigation the strict column reference validation was restored for the duration of the deprecation period. This regression appeared in 3.1 as a side effect of fixing [#31426](https://code.djangoproject.com/ticket/31426).
-- The issue is not present in the main branch as the deprecated path has been removed.
--
+	- Django **3.1.13** fixes a security issue with severity “high” in 3.1.12.
+		- ## CVE-2021-35042: Potential SQL injection via unsanitized   QuerySet.order_by()   input [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.13/#cve-2021-35042-potential-sql-injection-via-unsanitized-queryset-order-by-input)
+		- Unsanitized user input passed to QuerySet.order_by() could bypass intended column reference validation in path marked for deprecation resulting in a potential SQL injection even if a deprecation warning is emitted.
+		- As a mitigation the strict column reference validation was restored for the duration of the deprecation period. This regression appeared in 3.1 as a side effect of fixing [#31426](https://code.djangoproject.com/ticket/31426).
+		- The issue is not present in the main branch as the deprecated path has been removed.
+	- Django **3.1.14** fixes a security issue with severity “low” in 3.1.13.
+		- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.14/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
+		- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
 -
 -
 -
