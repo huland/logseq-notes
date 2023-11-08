@@ -700,6 +700,8 @@
 	- from django.core.exceptions import ObjectDoesNotExist
 	- from django.core.exceptions import PermissionDenied
 	- from django.core.exceptions import ValidationError
+		- check changes in version(s):
+			- 3.2
 	- from django.core.files import File
 	- from django.core.files.base import ContentFile
 	- from django.core.mail.backends.base import BaseEmailBackend
