@@ -632,58 +632,58 @@
 				- [django.db.models.functions.TruncYear()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncYear)
 				- [django.utils.timezone.make_aware()](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.timezone.make_aware)
 				- Support for use of pytz will be removed in Django 5.0.
-		- ### Time zone support [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#time-zone-support)
-		- In order to follow good practice, the default value of the [USE_TZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_TZ) setting will change from False to True, and time zone support will be enabled by default, in Django 5.0.
-		- Note that the default settings.py file created by [django-admin startproject](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-startproject) includes [USE_TZ = True](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_TZ) since Django 1.4.
-		- You can set USE_TZ to False in your project settings before then to opt-out.
-		- ### Localization [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#localization)
-		- In order to follow good practice, the default value of the USE_L10N setting is changed from False to True.
-		- Moreover USE_L10N is deprecated as of this release. Starting with Django 5.0, by default, any date or number displayed by Django will be localized.
-		- The [{% localize %}](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatetag-localize) tag and the [localize](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatefilter-localize)/ [unlocalize](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatefilter-unlocalize) filters will still be honored by Django.
-		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#id2)
-		- SERIALIZE test setting is deprecated as it can be inferred from the [databases](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.databases) with the [serialized_rollback](https://docs.djangoproject.com/en/4.2/topics/testing/overview/#test-case-serialized-rollback) option enabled.
-		- The undocumented django.utils.baseconv module is deprecated.
-		- The undocumented django.utils.datetime_safe module is deprecated.
-		- The default sitemap protocol for sitemaps built outside the context of a request will change from 'http' to 'https' in Django 5.0.
-		- The extra_tests argument for [DiscoverRunner.build_suite()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.build_suite) and [DiscoverRunner.run_tests()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.run_tests) is deprecated.
-		- The [ArrayAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.ArrayAgg), [JSONBAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg), and [StringAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.StringAgg) aggregates will return None when there are no rows instead of [], [], and '' respectively in Django 5.0. If you need the previous behavior, explicitly set default to Value([]), Value('[]'), or Value('').
-		- The django.contrib.gis.admin.GeoModelAdmin and OSMGeoAdmin classes are deprecated. Use [ModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin) and [GISModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/admin/#django.contrib.gis.admin.GISModelAdmin) instead.
-		- Since form rendering now uses the template engine, the undocumented BaseForm._html_output() helper method is deprecated.
-		- The ability to return a str from ErrorList and ErrorDict is deprecated. It is expected these methods return a SafeString.
-		- ## Features removed in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#features-removed-in-4-0)
-		- These features have reached the end of their deprecation cycle and are removed in Django 4.0.
-		- See [Features deprecated in 3.0](https://docs.djangoproject.com/en/4.2/releases/3.0/#deprecated-features-3-0) for details on these changes, including how to remove usage of these features.
-		- django.utils.http.urlquote(), urlquote_plus(), urlunquote(), and urlunquote_plus() are removed.
-		- django.utils.encoding.force_text() and smart_text() are removed.
-		- django.utils.translation.ugettext(), ugettext_lazy(), ugettext_noop(), ungettext(), and ungettext_lazy() are removed.
-		- django.views.i18n.set_language() doesn’t set the user language in request.session (key _language).
-		- alias=None is required in the signature of django.db.models.Expression.get_group_by_cols() subclasses.
-		- django.utils.text.unescape_entities() is removed.
-		- django.utils.http.is_safe_url() is removed.
-		- See [Features deprecated in 3.1](https://docs.djangoproject.com/en/4.2/releases/3.1/#deprecated-features-3-1) for details on these changes, including how to remove usage of these features.
-		- The PASSWORD_RESET_TIMEOUT_DAYS setting is removed.
-		- The [isnull](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#std-fieldlookup-isnull) lookup no longer allows using non-boolean values as the right-hand side.
-		- The django.db.models.query_utils.InvalidQuery exception class is removed.
-		- The django-admin.py entry point is removed.
-		- The HttpRequest.is_ajax() method is removed.
-		- Support for the pre-Django 3.1 encoding format of cookies values used by django.contrib.messages.storage.cookie.CookieStorage is removed.
-		- Support for the pre-Django 3.1 password reset tokens in the admin site (that use the SHA-1 hashing algorithm) is removed.
-		- Support for the pre-Django 3.1 encoding format of sessions is removed.
-		- Support for the pre-Django 3.1 django.core.signing.Signer signatures (encoded with the SHA-1 algorithm) is removed.
-		- Support for the pre-Django 3.1 django.core.signing.dumps() signatures (encoded with the SHA-1 algorithm) in django.core.signing.loads() is removed.
-		- Support for the pre-Django 3.1 user sessions (that use the SHA-1 algorithm) is removed.
-		- The get_response argument for django.utils.deprecation.MiddlewareMixin.__init__() is required and doesn’t accept None.
-		- The providing_args argument for django.dispatch.Signal is removed.
-		- The length argument for django.utils.crypto.get_random_string() is required.
-		- The list message for ModelMultipleChoiceField is removed.
-		- Support for passing raw column aliases to QuerySet.order_by() is removed.
-		- The NullBooleanField model field is removed, except for support in historical migrations.
-		- django.conf.urls.url() is removed.
-		- The django.contrib.postgres.fields.JSONField model field is removed, except for support in historical migrations.
-		- django.contrib.postgres.fields.jsonb.KeyTransform and django.contrib.postgres.fields.jsonb.KeyTextTransform are removed.
-		- django.contrib.postgres.forms.JSONField is removed.
-		- The {% ifequal %} and {% ifnotequal %} template tags are removed.
-		- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
+			- ### Time zone support [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#time-zone-support)
+				- In order to follow good practice, the default value of the [USE_TZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_TZ) setting will change from False to True, and time zone support will be enabled by default, in Django 5.0.
+				- Note that the default settings.py file created by [django-admin startproject](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-startproject) includes [USE_TZ = True](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_TZ) since Django 1.4.
+				- You can set USE_TZ to False in your project settings before then to opt-out.
+			- ### Localization [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#localization)
+				- In order to follow good practice, the default value of the USE_L10N setting is changed from False to True.
+				- Moreover USE_L10N is deprecated as of this release. Starting with Django 5.0, by default, any date or number displayed by Django will be localized.
+				- The [{% localize %}](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatetag-localize) tag and the [localize](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatefilter-localize)/ [unlocalize](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatefilter-unlocalize) filters will still be honored by Django.
+			- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#id2)
+				- SERIALIZE test setting is deprecated as it can be inferred from the [databases](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.databases) with the [serialized_rollback](https://docs.djangoproject.com/en/4.2/topics/testing/overview/#test-case-serialized-rollback) option enabled.
+				- The undocumented django.utils.baseconv module is deprecated.
+				- The undocumented django.utils.datetime_safe module is deprecated.
+				- The default sitemap protocol for sitemaps built outside the context of a request will change from 'http' to 'https' in Django 5.0.
+				- The extra_tests argument for [DiscoverRunner.build_suite()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.build_suite) and [DiscoverRunner.run_tests()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.run_tests) is deprecated.
+				- The [ArrayAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.ArrayAgg), [JSONBAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg), and [StringAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.StringAgg) aggregates will return None when there are no rows instead of [], [], and '' respectively in Django 5.0. If you need the previous behavior, explicitly set default to Value([]), Value('[]'), or Value('').
+				- The django.contrib.gis.admin.GeoModelAdmin and OSMGeoAdmin classes are deprecated. Use [ModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin) and [GISModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/admin/#django.contrib.gis.admin.GISModelAdmin) instead.
+				- Since form rendering now uses the template engine, the undocumented BaseForm._html_output() helper method is deprecated.
+				- The ability to return a str from ErrorList and ErrorDict is deprecated. It is expected these methods return a SafeString.
+			- ## Features removed in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#features-removed-in-4-0)
+				- These features have reached the end of their deprecation cycle and are removed in Django 4.0.
+				- See [Features deprecated in 3.0](https://docs.djangoproject.com/en/4.2/releases/3.0/#deprecated-features-3-0) for details on these changes, including how to remove usage of these features.
+				- django.utils.http.urlquote(), urlquote_plus(), urlunquote(), and urlunquote_plus() are removed.
+				- django.utils.encoding.force_text() and smart_text() are removed.
+				- django.utils.translation.ugettext(), ugettext_lazy(), ugettext_noop(), ungettext(), and ungettext_lazy() are removed.
+				- django.views.i18n.set_language() doesn’t set the user language in request.session (key _language).
+				- alias=None is required in the signature of django.db.models.Expression.get_group_by_cols() subclasses.
+				- django.utils.text.unescape_entities() is removed.
+				- django.utils.http.is_safe_url() is removed.
+				- See [Features deprecated in 3.1](https://docs.djangoproject.com/en/4.2/releases/3.1/#deprecated-features-3-1) for details on these changes, including how to remove usage of these features.
+				- The PASSWORD_RESET_TIMEOUT_DAYS setting is removed.
+				- The [isnull](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#std-fieldlookup-isnull) lookup no longer allows using non-boolean values as the right-hand side.
+				- The django.db.models.query_utils.InvalidQuery exception class is removed.
+				- The django-admin.py entry point is removed.
+				- The HttpRequest.is_ajax() method is removed.
+				- Support for the pre-Django 3.1 encoding format of cookies values used by django.contrib.messages.storage.cookie.CookieStorage is removed.
+				- Support for the pre-Django 3.1 password reset tokens in the admin site (that use the SHA-1 hashing algorithm) is removed.
+				- Support for the pre-Django 3.1 encoding format of sessions is removed.
+				- Support for the pre-Django 3.1 django.core.signing.Signer signatures (encoded with the SHA-1 algorithm) is removed.
+				- Support for the pre-Django 3.1 django.core.signing.dumps() signatures (encoded with the SHA-1 algorithm) in django.core.signing.loads() is removed.
+				- Support for the pre-Django 3.1 user sessions (that use the SHA-1 algorithm) is removed.
+				- The get_response argument for django.utils.deprecation.MiddlewareMixin.__init__() is required and doesn’t accept None.
+				- The providing_args argument for django.dispatch.Signal is removed.
+				- The length argument for django.utils.crypto.get_random_string() is required.
+				- The list message for ModelMultipleChoiceField is removed.
+				- Support for passing raw column aliases to QuerySet.order_by() is removed.
+				- The NullBooleanField model field is removed, except for support in historical migrations.
+				- django.conf.urls.url() is removed.
+				- The django.contrib.postgres.fields.JSONField model field is removed, except for support in historical migrations.
+				- django.contrib.postgres.fields.jsonb.KeyTransform and django.contrib.postgres.fields.jsonb.KeyTextTransform are removed.
+				- django.contrib.postgres.forms.JSONField is removed.
+				- The {% ifequal %} and {% ifnotequal %} template tags are removed.
+				- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
 -
 -
 -
