@@ -40,6 +40,7 @@
 		- ## Python compatibility [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#python-compatibility)
 			- Django 3.2 supports Python 3.6, 3.7, 3.8, 3.9, and 3.10 (as of 3.2.9). We **highly recommend** and only officially support the latest release of each series.
 		- ## What’s new in Django 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#what-s-new-in-django-3-2)
+		  collapsed:: true
 			- ### Automatic   [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig)   discovery [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#automatic-appconfig-discovery)
 				- Most pluggable applications define an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule. Many define a default_app_config variable pointing to this class in their __init__.py.
 				- When the apps.py submodule exists and defines a single [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass, Django now uses that configuration automatically, so you can remove default_app_config.
@@ -207,8 +208,8 @@
 				- Built-in validators now include the provided value in the params argument of a raised [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError). This allows custom error messages to use the %(value)s placeholder.
 				- The [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError) equality operator now ignores messages and params ordering.
 		- ## Backwards incompatible changes in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#backwards-incompatible-changes-in-3-2)
+		  collapsed:: true
 			- ### Database backend API [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#database-backend-api)
-			  collapsed:: true
 				- This section describes changes that may be needed in third-party database backends.
 					- The new DatabaseFeatures.introspected_field_types property replaces these features:
 						- can_introspect_autofield
@@ -230,7 +231,6 @@
 				- DatabaseClient.runshell() now gets arguments and an optional dictionary with environment variables to the underlying command-line client from DatabaseClient.settings_to_cmd_args_env() method. Third-party database backends must implement DatabaseClient.settings_to_cmd_args_env() or override DatabaseClient.runshell().
 				- Third-party database backends must implement support for functional indexes ([Index.expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions)) or set DatabaseFeatures.supports_expression_indexes to False. If COLLATE is not a part of the CREATE INDEX statement, set DatabaseFeatures.collate_as_index_expression to True.
 			- ### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id1)
-			  collapsed:: true
 				- Pagination links in the admin are now 1-indexed instead of 0-indexed, i.e. the query string for the first page is ?p=1 instead of ?p=0.
 				- The new admin catch-all view will break URL patterns routed after the admin URLs and matching the admin URL prefix. You can either adjust your URL ordering or, if necessary, set [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False, disabling the catch-all view. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
 				- Minified JavaScript files are no longer included with the admin. If you require these files to be minified, consider using a third party app or external build tool. The minified vendored JavaScript files packaged with the admin (e.g. [jquery.min.js](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#contrib-admin-jquery)) are still included.
@@ -240,32 +240,32 @@
 				- The Oracle backend now clones polygons (and geometry collections containing polygons) before reorienting them and saving them to the database. They are no longer mutated in place. You might notice this if you use the polygons after a model is saved.
 			- ### Dropped support for PostgreSQL 9.5 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#dropped-support-for-postgresql-9-5)
 				- Upstream support for PostgreSQL 9.5 ends in February 2021. Django 3.2 supports PostgreSQL 9.6 and higher.
-		- ### Dropped support for MySQL 5.6 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#dropped-support-for-mysql-5-6)
-			- The end of upstream support for MySQL 5.6 is April 2021. Django 3.2 supports MySQL 5.7 and higher.
-		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#miscellaneous)
-			- Django now supports non-pytz time zones, such as Python 3.9+’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) module and its backport.
-			- The undocumented SpatiaLiteOperations.proj4_version() method is renamed to proj_version().
-			- [slugify()](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.text.slugify) now removes leading and trailing dashes and underscores.
-			- The [intcomma](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intcomma) and [intword](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intword) template filters no longer depend on the USE_L10N setting.
-			- Support for argon2-cffi < 19.1.0 is removed.
-			- The cache keys no longer includes the language when internationalization is disabled (USE_I18N = False) and localization is enabled (USE_L10N = True). After upgrading to Django 3.2 in such configurations, the first request to any previously cached value will be a cache miss.
-			- ForeignKey.validate() now uses [_base_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._base_manager) rather than [_default_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._default_manager) to check that related instances exist.
-			- When an application defines an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule, Django now uses this configuration automatically, even if it isn’t enabled with default_app_config. Set default = False in the [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass if you need to prevent this behavior. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
-			- Instantiating an abstract model now raises TypeError.
-			- Keyword arguments to [setup_databases()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.utils.setup_databases) are now keyword-only.
-			- The undocumented django.utils.http.limited_parse_qsl() function is removed. Please use [urllib.parse.parse_qsl()](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.parse_qsl) instead.
-			- django.test.utils.TestContextDecorator now uses [addCleanup()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addCleanup) so that cleanups registered in the [setUp()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) method are called before TestContextDecorator.disable().
-			- SessionMiddleware now raises a [SessionInterrupted](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.contrib.sessions.exceptions.SessionInterrupted) exception instead of [SuspiciousOperation](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.SuspiciousOperation) when a session is destroyed in a concurrent request.
-			- The [django.db.models.Field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.Field) equality operator now correctly distinguishes inherited field instances across models. Additionally, the ordering of such fields is now defined.
-			- The undocumented django.core.files.locks.lock() function now returns False if the file cannot be locked, instead of raising [BlockingIOError](https://docs.python.org/3/library/exceptions.html#BlockingIOError).
-			- The password reset mechanism now invalidates tokens when the user email is changed.
-			- [makemessages](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-makemessages) command no longer processes invalid locales specified using [makemessages --locale](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-makemessages-locale) option, when they contain hyphens ('-').
-			- The django.contrib.auth.forms.ReadOnlyPasswordHashField form field is now [disabled](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.Field.disabled) by default. Therefore UserChangeForm.clean_password() is no longer required to return the initial value.
-			- The cache.get_many(), get_or_set(), has_key(), incr(), decr(), incr_version(), and decr_version() cache operations now correctly handle None stored in the cache, in the same way as any other value, instead of behaving as though the key didn’t exist.
-			- Due to a python-memcached limitation, the previous behavior is kept for the deprecated MemcachedCache backend.
-			- The minimum supported version of SQLite is increased from 3.8.3 to 3.9.0.
-			- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
-			- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
+			- ### Dropped support for MySQL 5.6 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#dropped-support-for-mysql-5-6)
+				- The end of upstream support for MySQL 5.6 is April 2021. Django 3.2 supports MySQL 5.7 and higher.
+			- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#miscellaneous)
+				- Django now supports non-pytz time zones, such as Python 3.9+’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) module and its backport.
+				- The undocumented SpatiaLiteOperations.proj4_version() method is renamed to proj_version().
+				- [slugify()](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.text.slugify) now removes leading and trailing dashes and underscores.
+				- The [intcomma](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intcomma) and [intword](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intword) template filters no longer depend on the USE_L10N setting.
+				- Support for argon2-cffi < 19.1.0 is removed.
+				- The cache keys no longer includes the language when internationalization is disabled (USE_I18N = False) and localization is enabled (USE_L10N = True). After upgrading to Django 3.2 in such configurations, the first request to any previously cached value will be a cache miss.
+				- ForeignKey.validate() now uses [_base_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._base_manager) rather than [_default_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._default_manager) to check that related instances exist.
+				- When an application defines an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule, Django now uses this configuration automatically, even if it isn’t enabled with default_app_config. Set default = False in the [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass if you need to prevent this behavior. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
+				- Instantiating an abstract model now raises TypeError.
+				- Keyword arguments to [setup_databases()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.utils.setup_databases) are now keyword-only.
+				- The undocumented django.utils.http.limited_parse_qsl() function is removed. Please use [urllib.parse.parse_qsl()](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.parse_qsl) instead.
+				- django.test.utils.TestContextDecorator now uses [addCleanup()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addCleanup) so that cleanups registered in the [setUp()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) method are called before TestContextDecorator.disable().
+				- SessionMiddleware now raises a [SessionInterrupted](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.contrib.sessions.exceptions.SessionInterrupted) exception instead of [SuspiciousOperation](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.SuspiciousOperation) when a session is destroyed in a concurrent request.
+				- The [django.db.models.Field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.Field) equality operator now correctly distinguishes inherited field instances across models. Additionally, the ordering of such fields is now defined.
+				- The undocumented django.core.files.locks.lock() function now returns False if the file cannot be locked, instead of raising [BlockingIOError](https://docs.python.org/3/library/exceptions.html#BlockingIOError).
+				- The password reset mechanism now invalidates tokens when the user email is changed.
+				- [makemessages](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-makemessages) command no longer processes invalid locales specified using [makemessages --locale](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-makemessages-locale) option, when they contain hyphens ('-').
+				- The django.contrib.auth.forms.ReadOnlyPasswordHashField form field is now [disabled](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.Field.disabled) by default. Therefore UserChangeForm.clean_password() is no longer required to return the initial value.
+				- The cache.get_many(), get_or_set(), has_key(), incr(), decr(), incr_version(), and decr_version() cache operations now correctly handle None stored in the cache, in the same way as any other value, instead of behaving as though the key didn’t exist.
+				- Due to a python-memcached limitation, the previous behavior is kept for the deprecated MemcachedCache backend.
+				- The minimum supported version of SQLite is increased from 3.8.3 to 3.9.0.
+				- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
+				- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
 		- ## Features deprecated in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#features-deprecated-in-3-2)
 		  collapsed:: true
 			- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id3)
@@ -442,13 +442,12 @@
 		- The [NFKC normalization](https://docs.python.org/3/library/unicodedata.html#unicodedata.normalize) is slow on Windows. As a consequence, django.contrib.auth.forms.UsernameField was subject to a potential denial of service attack via certain inputs with a very large number of Unicode characters.
 		- In order to avoid the vulnerability, invalid values longer than UsernameField.max_length are no longer normalized, since they cannot pass validation anyway.
 	- ## Django 4.0 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-4-0-release-notes)
-	  collapsed:: true
 		- Welcome to Django 4.0!
 		- These release notes cover the [new features](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), as well as some [backwards incompatible changes](https://docs.djangoproject.com/en/4.2/releases/4.0/#backwards-incompatible-4-0) you’ll want to be aware of when upgrading from Django 3.2 or earlier. We’ve [begun the deprecation process for some features](https://docs.djangoproject.com/en/4.2/releases/4.0/#deprecated-features-4-0).
 		- See the [How to upgrade Django to a newer version](https://docs.djangoproject.com/en/4.2/howto/upgrade-version/) guide if you’re updating an existing project.
 		- ## Python compatibility [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#python-compatibility)
-		- Django 4.0 supports Python 3.8, 3.9, and 3.10. We **highly recommend** and only officially support the latest release of each series.
-		- The Django 3.2.x series is the last to support Python 3.6 and 3.7.
+			- Django 4.0 supports Python 3.8, 3.9, and 3.10. We **highly recommend** and only officially support the latest release of each series.
+			- The Django 3.2.x series is the last to support Python 3.6 and 3.7.
 		- ## What’s new in Django 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#what-s-new-in-django-4-0)
 		  collapsed:: true
 			- ### zoneinfo   default timezone implementation [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#zoneinfo-default-timezone-implementation)
