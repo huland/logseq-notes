@@ -675,6 +675,8 @@
 	- from django.contrib.contenttypes.fields import GenericForeignKey
 	- from django.contrib.contenttypes.fields import GenericRelation
 	- from django.contrib.contenttypes.models import ContentType
+		- check changes in version(s):
+			- 3.2
 	- from django.contrib.humanize.templatetags.humanize import intcomma
 	- from django.contrib.postgres.aggregates import ArrayAgg
 	- from django.contrib.postgres.fields import ArrayField
