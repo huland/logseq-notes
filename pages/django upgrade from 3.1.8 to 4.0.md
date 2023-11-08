@@ -72,69 +72,69 @@
 				- When changing the value of [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD), migrations for the primary key of existing auto-created through tables cannot be generated currently. See the [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) docs for details on migrating such tables.
 			- ### Functional indexes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#functional-indexes)
 				- The new [*expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions) positional argument of [Index()](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index) enables creating functional indexes on expressions and database functions. For example:
-		- ```python
-		  from django.db import models
-		  from django.db.models import F, Index, Value
-		  from django.db.models.functions import Lower, Upper
-		  
-		  class MyModel(models.Model):
-		      first_name = models.CharField(max_length=255)
-		      last_name = models.CharField(max_length=255)
-		      height = models.IntegerField()
-		      weight = models.IntegerField()
-		  
-		  class Meta:
-		      indexes = [
-		          Index(
-		              Lower("first_name"),
-		              Upper("last_name").desc(),
-		              name="first_last_name_idx",
-		          ),
-		          Index(
-		              F("height") / (F("weight") + Value(5)),
-		              name="calc_idx",
-		          ),
-		      ]
-		  ```
-		- Functional indexes are added to models using the [Meta.indexes](https://docs.djangoproject.com/en/4.2/ref/models/options/#django.db.models.Options.indexes) option.
-		- ### pymemcache   support [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#pymemcache-support)
-			- The new django.core.cache.backends.memcached.PyMemcacheCache cache backend allows using the [pymemcache](https://pypi.org/project/pymemcache/) library for memcached. pymemcache 3.4.0 or higher is required. For more details, see the [documentation on caching in Django](https://docs.djangoproject.com/en/4.2/topics/cache/).
-		- ### New decorators for the admin site [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#new-decorators-for-the-admin-site)
-			- The new [display()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.display) decorator allows for easily adding options to custom display functions that can be used with [list_display](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display) or [readonly_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.readonly_fields).
-			- Likewise, the new [action()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/#django.contrib.admin.action) decorator allows for easily adding options to action functions that can be used with [actions](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.actions).
-			- Using the @display decorator has the advantage that it is now possible to use the @property decorator when needing to specify attributes on the custom method. Prior to this it was necessary to use the property() function instead after assigning the required attributes to the method.
-			- Using decorators has the advantage that these options are more discoverable as they can be suggested by completion utilities in code editors. They are merely a convenience and still set the same attributes on the functions under the hood.
-		- ### Minor features [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#minor-features)
-		- #### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-admin)
-			- [ModelAdmin.search_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields) now allows searching against quoted phrases with spaces.
-			- Read-only related fields are now rendered as navigable links if target models are registered in the admin.
-			- The admin now supports theming, and includes a dark theme that is enabled according to browser settings. See [Theming support](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#admin-theming) for more details.
-			- [ModelAdmin.autocomplete_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.autocomplete_fields) now respects [ForeignKey.to_field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.to_field) and [ForeignKey.limit_choices_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.limit_choices_to) when searching a related model.
-			- The admin now installs a final catch-all view that redirects unauthenticated users to the login page, regardless of whether the URL is otherwise valid. This protects against a potential model enumeration privacy issue.
-		- Although not recommended, you may set the new [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False to disable the catch-all view.
-		- #### [django.contrib.auth](https://docs.djangoproject.com/en/4.2/topics/auth/#module-django.contrib.auth) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-auth)
-			- The default iteration count for the PBKDF2 password hasher is increased from 216,000 to 260,000.
-			- The default variant for the Argon2 password hasher is changed to Argon2id. memory_cost and parallelism are increased to 102,400 and 8 respectively to match the argon2-cffi defaults.
-			- Increasing the memory_cost pushes the required memory from 512 KB to 100 MB. This is still rather conservative but can lead to problems in memory constrained environments. If this is the case, the existing hasher can be subclassed to override the defaults.
-			- The default salt entropy for the Argon2, MD5, PBKDF2, SHA-1 password hashers is increased from 71 to 128 bits.
-		- #### [django.contrib.contenttypes](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#module-django.contrib.contenttypes) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-contenttypes)
-			- The new absolute_max argument for [generic_inlineformset_factory()](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#django.contrib.contenttypes.forms.generic_inlineformset_factory) allows customizing the maximum number of forms that can be instantiated when supplying POST data. See [Limiting the maximum number of instantiated forms](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#formsets-absolute-max) for more details.
-			- The new can_delete_extra argument for [generic_inlineformset_factory()](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#django.contrib.contenttypes.forms.generic_inlineformset_factory) allows removal of the option to delete extra forms. See [can_delete_extra](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet.can_delete_extra) for more information.
-		- #### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-gis)
-			- The [GDALRaster.transform()](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.GDALRaster.transform) method now supports [SpatialReference](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.SpatialReference).
-			- The [DataSource](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.DataSource) class now supports [pathlib.Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path).
-			- The [LayerMapping](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/layermapping/#django.contrib.gis.utils.LayerMapping) class now supports [pathlib.Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path).
-		- #### [django.contrib.postgres](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/#module-django.contrib.postgres) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-postgres)
-			- The new [ExclusionConstraint.include](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/constraints/#django.contrib.postgres.constraints.ExclusionConstraint.include) attribute allows creating covering exclusion constraints on PostgreSQL 12+.
-			- The new [ExclusionConstraint.opclasses](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/constraints/#django.contrib.postgres.constraints.ExclusionConstraint.opclasses) attribute allows setting PostgreSQL operator classes.
-			- The new [JSONBAgg.ordering](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg.ordering) attribute determines the ordering of the aggregated elements.
-			- The new [JSONBAgg.distinct](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg.distinct) attribute determines if aggregated values will be distinct.
-			- The [CreateExtension](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.CreateExtension) operation now checks that the extension already exists in the database and skips the migration if so.
-			- The new [CreateCollation](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.CreateCollation) and [RemoveCollation](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.RemoveCollation) operations allow creating and dropping collations on PostgreSQL. See [Managing collations using migrations](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#manage-postgresql-collations) for more details.
-			- Lookups for [ArrayField](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/fields/#django.contrib.postgres.fields.ArrayField) now allow (non-nested) arrays containing expressions as right-hand sides.
-			- The new [OpClass()](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/indexes/#django.contrib.postgres.indexes.OpClass) expression allows creating functional indexes on expressions with a custom operator class. See [Functional indexes](https://docs.djangoproject.com/en/4.2/releases/3.2/#new-functional-indexes) for more details.
-		- #### [django.contrib.sitemaps](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#module-django.contrib.sitemaps) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-sitemaps)
-			- The new [Sitemap](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap) attributes [alternates](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap.alternates), [languages](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap.languages) and [x_default](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap.x_default) allow generating sitemap *alternates* to localized versions of your pages.
+				- ```python
+				  from django.db import models
+				  from django.db.models import F, Index, Value
+				  from django.db.models.functions import Lower, Upper
+				  
+				  class MyModel(models.Model):
+				      first_name = models.CharField(max_length=255)
+				      last_name = models.CharField(max_length=255)
+				      height = models.IntegerField()
+				      weight = models.IntegerField()
+				  
+				  class Meta:
+				      indexes = [
+				          Index(
+				              Lower("first_name"),
+				              Upper("last_name").desc(),
+				              name="first_last_name_idx",
+				          ),
+				          Index(
+				              F("height") / (F("weight") + Value(5)),
+				              name="calc_idx",
+				          ),
+				      ]
+				  ```
+				- Functional indexes are added to models using the [Meta.indexes](https://docs.djangoproject.com/en/4.2/ref/models/options/#django.db.models.Options.indexes) option.
+			- ### pymemcache   support [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#pymemcache-support)
+				- The new django.core.cache.backends.memcached.PyMemcacheCache cache backend allows using the [pymemcache](https://pypi.org/project/pymemcache/) library for memcached. pymemcache 3.4.0 or higher is required. For more details, see the [documentation on caching in Django](https://docs.djangoproject.com/en/4.2/topics/cache/).
+			- ### New decorators for the admin site [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#new-decorators-for-the-admin-site)
+				- The new [display()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.display) decorator allows for easily adding options to custom display functions that can be used with [list_display](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display) or [readonly_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.readonly_fields).
+				- Likewise, the new [action()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/#django.contrib.admin.action) decorator allows for easily adding options to action functions that can be used with [actions](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.actions).
+				- Using the @display decorator has the advantage that it is now possible to use the @property decorator when needing to specify attributes on the custom method. Prior to this it was necessary to use the property() function instead after assigning the required attributes to the method.
+				- Using decorators has the advantage that these options are more discoverable as they can be suggested by completion utilities in code editors. They are merely a convenience and still set the same attributes on the functions under the hood.
+			- ### Minor features [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#minor-features)
+				- #### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-admin)
+					- [ModelAdmin.search_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields) now allows searching against quoted phrases with spaces.
+					- Read-only related fields are now rendered as navigable links if target models are registered in the admin.
+					- The admin now supports theming, and includes a dark theme that is enabled according to browser settings. See [Theming support](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#admin-theming) for more details.
+					- [ModelAdmin.autocomplete_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.autocomplete_fields) now respects [ForeignKey.to_field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.to_field) and [ForeignKey.limit_choices_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.limit_choices_to) when searching a related model.
+					- The admin now installs a final catch-all view that redirects unauthenticated users to the login page, regardless of whether the URL is otherwise valid. This protects against a potential model enumeration privacy issue.
+					- Although not recommended, you may set the new [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False to disable the catch-all view.
+				- #### [django.contrib.auth](https://docs.djangoproject.com/en/4.2/topics/auth/#module-django.contrib.auth) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-auth)
+					- The default iteration count for the PBKDF2 password hasher is increased from 216,000 to 260,000.
+					- The default variant for the Argon2 password hasher is changed to Argon2id. memory_cost and parallelism are increased to 102,400 and 8 respectively to match the argon2-cffi defaults.
+					- Increasing the memory_cost pushes the required memory from 512 KB to 100 MB. This is still rather conservative but can lead to problems in memory constrained environments. If this is the case, the existing hasher can be subclassed to override the defaults.
+					- The default salt entropy for the Argon2, MD5, PBKDF2, SHA-1 password hashers is increased from 71 to 128 bits.
+				- #### [django.contrib.contenttypes](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#module-django.contrib.contenttypes) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-contenttypes)
+					- The new absolute_max argument for [generic_inlineformset_factory()](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#django.contrib.contenttypes.forms.generic_inlineformset_factory) allows customizing the maximum number of forms that can be instantiated when supplying POST data. See [Limiting the maximum number of instantiated forms](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#formsets-absolute-max) for more details.
+					- The new can_delete_extra argument for [generic_inlineformset_factory()](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#django.contrib.contenttypes.forms.generic_inlineformset_factory) allows removal of the option to delete extra forms. See [can_delete_extra](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet.can_delete_extra) for more information.
+				- #### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-gis)
+					- The [GDALRaster.transform()](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.GDALRaster.transform) method now supports [SpatialReference](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.SpatialReference).
+					- The [DataSource](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.DataSource) class now supports [pathlib.Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path).
+					- The [LayerMapping](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/layermapping/#django.contrib.gis.utils.LayerMapping) class now supports [pathlib.Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path).
+				- #### [django.contrib.postgres](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/#module-django.contrib.postgres) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-postgres)
+					- The new [ExclusionConstraint.include](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/constraints/#django.contrib.postgres.constraints.ExclusionConstraint.include) attribute allows creating covering exclusion constraints on PostgreSQL 12+.
+					- The new [ExclusionConstraint.opclasses](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/constraints/#django.contrib.postgres.constraints.ExclusionConstraint.opclasses) attribute allows setting PostgreSQL operator classes.
+					- The new [JSONBAgg.ordering](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg.ordering) attribute determines the ordering of the aggregated elements.
+					- The new [JSONBAgg.distinct](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg.distinct) attribute determines if aggregated values will be distinct.
+					- The [CreateExtension](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.CreateExtension) operation now checks that the extension already exists in the database and skips the migration if so.
+					- The new [CreateCollation](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.CreateCollation) and [RemoveCollation](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.RemoveCollation) operations allow creating and dropping collations on PostgreSQL. See [Managing collations using migrations](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#manage-postgresql-collations) for more details.
+					- Lookups for [ArrayField](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/fields/#django.contrib.postgres.fields.ArrayField) now allow (non-nested) arrays containing expressions as right-hand sides.
+					- The new [OpClass()](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/indexes/#django.contrib.postgres.indexes.OpClass) expression allows creating functional indexes on expressions with a custom operator class. See [Functional indexes](https://docs.djangoproject.com/en/4.2/releases/3.2/#new-functional-indexes) for more details.
+				- #### [django.contrib.sitemaps](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#module-django.contrib.sitemaps) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-sitemaps)
+					- The new [Sitemap](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap) attributes [alternates](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap.alternates), [languages](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap.languages) and [x_default](https://docs.djangoproject.com/en/4.2/ref/contrib/sitemaps/#django.contrib.sitemaps.Sitemap.x_default) allow generating sitemap *alternates* to localized versions of your pages.
 		- #### [django.contrib.syndication](https://docs.djangoproject.com/en/4.2/ref/contrib/syndication/#module-django.contrib.syndication) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-syndication)
 			- The new item_comments hook allows specifying a comments URL per feed item.
 		- #### Database backends [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#database-backends)
