@@ -655,7 +655,7 @@
 				- The {% ifequal %} and {% ifnotequal %} template tags are removed.
 				- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
 - **django** imports in mv2
-	- check settings for django modules
+	- TODO: check settings for django modules
 	- from django import forms
 	- from django.apps import AppConfig
 		- check changes in version(s):
@@ -702,8 +702,7 @@
 	- from django.core.validators import MinLengthValidator
 	- from django.core.validators import MinValueValidator
 	- from django.core.validators import URLValidator
-		- check changes in:
-		-
+		- check changes in version(s):
 			- 3.1.10
 			- 3.1.12
 			- 3.2.2
