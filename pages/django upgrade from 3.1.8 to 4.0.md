@@ -396,7 +396,12 @@
 		- ## CVE-2022-34265: Potential SQL injection via   Trunc(kind)   and   Extract(lookup_name)   arguments [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.14/#cve-2022-34265-potential-sql-injection-via-trunc-kind-and-extract-lookup-name-arguments)
 		- [Trunc()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Trunc) and [Extract()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Extract) database functions were subject to SQL injection if untrusted data was used as a kind/lookup_name value.
 		- Applications that constrain the lookup name and kind choice to a known safe list are unaffected.
-- [](https://docs.djangoproject.com/en/4.2/releases/3.2.15/)
+	- Django 3.2.15 fixes a security issue with severity “high” in 3.2.14.
+		- ## CVE-2022-36359: Potential reflected file download vulnerability in   FileResponse [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.15/#cve-2022-36359-potential-reflected-file-download-vulnerability-in-fileresponse)
+		- An application may have been vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a [FileResponse](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.FileResponse) when the filename was derived from user-supplied input. The filename is now escaped to avoid this possibility.
+	- Django 3.2.16 fixes a security issue with severity “medium” in 3.2.15.
+		- ## CVE-2022-41323: Potential denial-of-service vulnerability in internationalized URLs [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.16/#cve-2022-41323-potential-denial-of-service-vulnerability-in-internationalized-urls)
+		- Internationalized URLs were subject to potential denial of service attack via the locale parameter.
 -
 -
 -
