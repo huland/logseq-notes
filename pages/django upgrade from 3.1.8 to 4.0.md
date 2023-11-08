@@ -26,6 +26,6 @@
 	- Django **3.1.14** fixes a security issue with severity “low” in 3.1.13.
 		- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.14/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
 		- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
--
+	- # Django 3.2 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-3-2-release-notes)
 -
 -
