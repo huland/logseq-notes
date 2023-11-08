@@ -692,6 +692,9 @@
 	- from django.contrib.staticfiles import finders
 	- from django.core.asgi import get_asgi_application
 	- from django.core.cache import cache
+		- check changes in version(s):
+			- 3.2
+			-
 	- from django.core.exceptions import DisallowedHost
 	- from django.core.exceptions import FieldError
 	- from django.core.exceptions import ObjectDoesNotExist
