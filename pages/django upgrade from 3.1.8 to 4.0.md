@@ -353,8 +353,14 @@
 			- Fixed a bug in Django 3.2 that caused incorrect links on read-only fields in the admin ([#33077](https://code.djangoproject.com/ticket/33077)).
 			- Fixed a regression in Django 3.2 that caused incorrect selection of items across all pages when actions were placed both on the top and bottom of the admin change-list view ([#33083](https://code.djangoproject.com/ticket/33083)).
 	- Django 3.2.9 fixes a bug in 3.2.8 and adds compatibility with Python 3.10.
+	  collapsed:: true
 		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.9/#bugfixes)
 			- Fixed a bug in Django 3.2 that caused a migration crash on SQLite when altering a field with a functional index ([#33194](https://code.djangoproject.com/ticket/33194)).
+- Django 3.2.10 fixes a security issue with severity “low” and a bug in 3.2.9.
+	- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.10/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
+- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
+	- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.10/#bugfixes)
+		- Fixed a regression in Django 3.2 that caused a crash of setUpTestData() with BinaryField on PostgreSQL, which is memoryview-backed ([#33333](https://code.djangoproject.com/ticket/33333)).
 -
 -
 -
