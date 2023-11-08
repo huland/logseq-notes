@@ -711,6 +711,8 @@
 			- 4.0
 	- from django.core.management import execute_from_command_line
 	- from django.core.paginator import Paginator
+		- check changes in version(s):
+			- 3.2
 	- from django.core.validators import FileExtensionValidator
 	- from django.core.validators import MaxLengthValidator
 	- from django.core.validators import MaxValueValidator
