@@ -684,7 +684,8 @@
 		- check changes in version(s):
 			- 4.0
 	- from django.contrib.postgres.fields import ArrayField
-	-
+		- check changes in version(s):
+			- 3.2
 	- from django.contrib.postgres.lookups import Unaccent
 	- from django.contrib.postgres.search import SearchVector
 	- from django.contrib.sessions.models import Session
