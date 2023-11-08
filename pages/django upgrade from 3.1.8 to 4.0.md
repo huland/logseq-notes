@@ -339,6 +339,22 @@
 			- Fixed a regression in Django 3.2 that caused a migration crash on MySQL 8.0.13+ when adding nullable BinaryField, JSONField, or TextField with a default value ([#32832](https://code.djangoproject.com/ticket/32832)).
 			- Fixed a bug in Django 3.2 where a system check would crash on a model with an invalid app_label ([#32863](https://code.djangoproject.com/ticket/32863)).
 	- Django 3.2.6 fixes several bugs in 3.2.5.
+	  collapsed:: true
 		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.6/#bugfixes)
 			- Fixed a regression in Django 3.2 that caused a crash validating "NaN" input with a forms.DecimalField when additional constraints, e.g. max_value, were specified ([#32949](https://code.djangoproject.com/ticket/32949)).
 			- Fixed a bug in Django 3.2 where a system check would crash on a model with a reverse many-to-many relation inherited from a parent class ([#32947](https://code.djangoproject.com/ticket/32947)).
+	- Django 3.2.7 fixes a bug in 3.2.6.
+	  collapsed:: true
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.7/#bugfixes)
+			- Fixed a regression in Django 3.2 that caused the incorrect offset extraction from fixed offset timezones ([#32992](https://code.djangoproject.com/ticket/32992)).
+	- Django 3.2.8 fixes two bugs in 3.2.7.
+	  collapsed:: true
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.8/#bugfixes)
+			- Fixed a bug in Django 3.2 that caused incorrect links on read-only fields in the admin ([#33077](https://code.djangoproject.com/ticket/33077)).
+			- Fixed a regression in Django 3.2 that caused incorrect selection of items across all pages when actions were placed both on the top and bottom of the admin change-list view ([#33083](https://code.djangoproject.com/ticket/33083)).
+-
+-
+-
+-
+-
+-
