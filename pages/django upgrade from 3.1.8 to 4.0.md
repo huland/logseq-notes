@@ -693,36 +693,36 @@
 	- from django.core.mail.backends.smtp import EmailBackend
 	- from django.core.mail.message import EmailMessage
 	- from django.core.management import execute_from_command_line
-	  from django.core.paginator import Paginator
-	  from django.core.validators import FileExtensionValidator
-	  from django.core.validators import MaxLengthValidator
-	  from django.core.validators import MaxValueValidator
-	  from django.core.validators import MinLengthValidator
-	  from django.core.validators import MinValueValidator
-	  from django.core.validators import URLValidator
-	  from django.core.validators import validate_email
-	  from django.core.wsgi import get_wsgi_application
-	  from django.db import IntegrityError
-	  from django.db import connection
-	  from django.db import connections
-	  from django.db import models
-	  from django.db import transaction
-	  from django.db.models import BooleanField
-	  from django.db.models import Case
-	  from django.db.models import CharField
-	  from django.db.models import Count
-	  from django.db.models import DateField
-	  from django.db.models import DateTimeField
-	  from django.db.models import DecimalField
-	  from django.db.models import ExpressionWrapper
-	  from django.db.models import F
-	  from django.db.models import ForeignKey
-	  from django.db.models import Func
-	  from django.db.models import IntegerField
-	  from django.db.models import Max
-	  from django.db.models import Min
-	  from django.db.models import Prefetch
-	  from django.db.models import ProtectedError
+	- from django.core.paginator import Paginator
+	- from django.core.validators import FileExtensionValidator
+	- from django.core.validators import MaxLengthValidator
+	- from django.core.validators import MaxValueValidator
+	- from django.core.validators import MinLengthValidator
+	- from django.core.validators import MinValueValidator
+	- from django.core.validators import URLValidator
+	- from django.core.validators import validate_email
+	- from django.core.wsgi import get_wsgi_application
+	- from django.db import IntegrityError
+	- from django.db import connection
+	- from django.db import connections
+	- from django.db import models
+	- from django.db import transaction
+	- from django.db.models import BooleanField
+	- from django.db.models import Case
+	- from django.db.models import CharField
+	- from django.db.models import Count
+	- from django.db.models import DateField
+	- from django.db.models import DateTimeField
+	- from django.db.models import DecimalField
+	- from django.db.models import ExpressionWrapper
+	- from django.db.models import F
+	- from django.db.models import ForeignKey
+	- from django.db.models import Func
+	- from django.db.models import IntegerField
+	- from django.db.models import Max
+	- from django.db.models import Min
+	- from django.db.models import Prefetch
+	- from django.db.models import ProtectedError
 	- from django.db.models import Q
 	- from django.db.models import Sum
 	- from django.db.models import Value
