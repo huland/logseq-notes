@@ -766,6 +766,10 @@
 	- from django.db.transaction import TransactionManagementError
 	- from django.db.utils import ProgrammingError
 	- from django.forms import ValidationError
+	  id:: 654bbdb3-8a0f-4d64-9ca2-a9c99bf33a6e
+		- check changes in version(s):
+			- 3.2
+			- 4.0
 	- from django.forms.widgets import SelectMultiple
 	- from django.http import FileResponse
 	- from django.http import HttpResponse
