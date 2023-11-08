@@ -208,6 +208,7 @@
 				- The [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError) equality operator now ignores messages and params ordering.
 		- ## Backwards incompatible changes in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#backwards-incompatible-changes-in-3-2)
 			- ### Database backend API [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#database-backend-api)
+			  collapsed:: true
 				- This section describes changes that may be needed in third-party database backends.
 					- The new DatabaseFeatures.introspected_field_types property replaces these features:
 						- can_introspect_autofield
@@ -228,16 +229,17 @@
 				- DatabaseOperations.date_trunc_sql() and DatabaseOperations.time_trunc_sql() now take the optional tzname argument in order to truncate in a specific timezone.
 				- DatabaseClient.runshell() now gets arguments and an optional dictionary with environment variables to the underlying command-line client from DatabaseClient.settings_to_cmd_args_env() method. Third-party database backends must implement DatabaseClient.settings_to_cmd_args_env() or override DatabaseClient.runshell().
 				- Third-party database backends must implement support for functional indexes ([Index.expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions)) or set DatabaseFeatures.supports_expression_indexes to False. If COLLATE is not a part of the CREATE INDEX statement, set DatabaseFeatures.collate_as_index_expression to True.
-		- ### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id1)
-			- Pagination links in the admin are now 1-indexed instead of 0-indexed, i.e. the query string for the first page is ?p=1 instead of ?p=0.
-			- The new admin catch-all view will break URL patterns routed after the admin URLs and matching the admin URL prefix. You can either adjust your URL ordering or, if necessary, set [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False, disabling the catch-all view. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
-			- Minified JavaScript files are no longer included with the admin. If you require these files to be minified, consider using a third party app or external build tool. The minified vendored JavaScript files packaged with the admin (e.g. [jquery.min.js](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#contrib-admin-jquery)) are still included.
-			- [ModelAdmin.prepopulated_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.prepopulated_fields) no longer strips English stop words, such as 'a' or 'an'.
-		- ### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id2)
-			- Support for PostGIS 2.2 is removed.
-			- The Oracle backend now clones polygons (and geometry collections containing polygons) before reorienting them and saving them to the database. They are no longer mutated in place. You might notice this if you use the polygons after a model is saved.
-		- ### Dropped support for PostgreSQL 9.5 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#dropped-support-for-postgresql-9-5)
-			- Upstream support for PostgreSQL 9.5 ends in February 2021. Django 3.2 supports PostgreSQL 9.6 and higher.
+			- ### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id1)
+			  collapsed:: true
+				- Pagination links in the admin are now 1-indexed instead of 0-indexed, i.e. the query string for the first page is ?p=1 instead of ?p=0.
+				- The new admin catch-all view will break URL patterns routed after the admin URLs and matching the admin URL prefix. You can either adjust your URL ordering or, if necessary, set [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False, disabling the catch-all view. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
+				- Minified JavaScript files are no longer included with the admin. If you require these files to be minified, consider using a third party app or external build tool. The minified vendored JavaScript files packaged with the admin (e.g. [jquery.min.js](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#contrib-admin-jquery)) are still included.
+				- [ModelAdmin.prepopulated_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.prepopulated_fields) no longer strips English stop words, such as 'a' or 'an'.
+			- ### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id2)
+				- Support for PostGIS 2.2 is removed.
+				- The Oracle backend now clones polygons (and geometry collections containing polygons) before reorienting them and saving them to the database. They are no longer mutated in place. You might notice this if you use the polygons after a model is saved.
+			- ### Dropped support for PostgreSQL 9.5 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#dropped-support-for-postgresql-9-5)
+				- Upstream support for PostgreSQL 9.5 ends in February 2021. Django 3.2 supports PostgreSQL 9.6 and higher.
 		- ### Dropped support for MySQL 5.6 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#dropped-support-for-mysql-5-6)
 			- The end of upstream support for MySQL 5.6 is April 2021. Django 3.2 supports MySQL 5.7 and higher.
 		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#miscellaneous)
