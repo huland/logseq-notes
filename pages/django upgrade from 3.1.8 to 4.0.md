@@ -52,15 +52,15 @@
 		  from django.apps import AppConfig
 		  
 		  class MyAppConfig(AppConfig):
-		    default_auto_field = "django.db.models.AutoField"
-		    name = "my_app"
+		      default_auto_field = "django.db.models.AutoField"
+		      name = "my_app"
 		  ```
 		- or on a per-model basis:
 		- ```python
 		  from django.db import models
 		  
 		  class MyModel(models.Model):
-		    id = models.AutoField(primary_key=True)
+		      id = models.AutoField(primary_key=True)
 		  ```
 		- In anticipation of the changing default, a system check will provide a warning if you do not have an explicit setting for [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD).
 		- When changing the value of [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD), migrations for the primary key of existing auto-created through tables cannot be generated currently. See the [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) docs for details on migrating such tables.
@@ -72,10 +72,10 @@
 		  from django.db.models.functions import Lower, Upper
 		  
 		  class MyModel(models.Model):
-		    first_name = models.CharField(max_length=255)
-		    last_name = models.CharField(max_length=255)
-		    height = models.IntegerField()
-		    weight = models.IntegerField()
+		      first_name = models.CharField(max_length=255)
+		      last_name = models.CharField(max_length=255)
+		      height = models.IntegerField()
+		      weight = models.IntegerField()
 		  class Meta:
 		        indexes = [
 		            Index(
@@ -84,8 +84,8 @@
 		                name="first_last_name_idx",
 		            ),
 		            Index(
-		                F("height") **/** (F("weight") **+** Value(5)),
-		                name**=**"calc_idx",
+		                F("height") / (F("weight") + Value(5)),
+		                name="calc_idx",
 		            ),
 		        ]
 		  ```
