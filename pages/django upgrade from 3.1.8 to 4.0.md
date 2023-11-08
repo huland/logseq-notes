@@ -795,7 +795,8 @@
 	- from django.urls import reverse
 	- from django.utils import translation
 	- from django.utils.deprecation import MiddlewareMixin
-	-
+		- check changes in version(s):
+			- 4.0
 	- from django.utils.encoding import force_str
 	- from django.utils.functional import lazy
 	- from django.utils.html import strip_tags
