@@ -678,6 +678,8 @@
 		- check changes in version(s):
 			- 3.2
 	- from django.contrib.humanize.templatetags.humanize import intcomma
+		- check changes in version(s):
+			- 3.2
 	- from django.contrib.postgres.aggregates import ArrayAgg
 	- from django.contrib.postgres.fields import ArrayField
 	- from django.contrib.postgres.lookups import Unaccent
