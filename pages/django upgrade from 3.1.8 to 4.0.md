@@ -33,6 +33,7 @@
 		- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.14/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
 		- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
 	- ## Django 3.2 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-3-2-release-notes)
+	  collapsed:: true
 		- Welcome to Django 3.2!
 		- These release notes cover the [new features](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2), as well as some [backwards incompatible changes](https://docs.djangoproject.com/en/4.2/releases/3.2/#backwards-incompatible-3-2) you’ll want to be aware of when upgrading from Django 3.1 or earlier. We’ve [begun the deprecation process for some features](https://docs.djangoproject.com/en/4.2/releases/3.2/#deprecated-features-3-2).
 		- See the [How to upgrade Django to a newer version](https://docs.djangoproject.com/en/4.2/howto/upgrade-version/) guide if you’re updating an existing project.
@@ -439,6 +440,7 @@
 		- The [NFKC normalization](https://docs.python.org/3/library/unicodedata.html#unicodedata.normalize) is slow on Windows. As a consequence, django.contrib.auth.forms.UsernameField was subject to a potential denial of service attack via certain inputs with a very large number of Unicode characters.
 		- In order to avoid the vulnerability, invalid values longer than UsernameField.max_length are no longer normalized, since they cannot pass validation anyway.
 	- ## Django 4.0 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-4-0-release-notes)
+	  collapsed:: true
 		- Welcome to Django 4.0!
 		- These release notes cover the [new features](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), as well as some [backwards incompatible changes](https://docs.djangoproject.com/en/4.2/releases/4.0/#backwards-incompatible-4-0) you’ll want to be aware of when upgrading from Django 3.2 or earlier. We’ve [begun the deprecation process for some features](https://docs.djangoproject.com/en/4.2/releases/4.0/#deprecated-features-4-0).
 		- See the [How to upgrade Django to a newer version](https://docs.djangoproject.com/en/4.2/howto/upgrade-version/) guide if you’re updating an existing project.
@@ -683,3 +685,4 @@
 				- django.contrib.postgres.forms.JSONField is removed.
 				- The {% ifequal %} and {% ifnotequal %} template tags are removed.
 				- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
+-
