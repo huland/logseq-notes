@@ -383,7 +383,14 @@
 		- In order to avoid this vulnerability, {% debug %} no longer outputs information when the DEBUG setting is False, and it ensures all context variables are correctly escaped when the DEBUG setting is True.
 		- ## CVE-2022-23833: Denial-of-service possibility in file uploads [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.12/#cve-2022-23833-denial-of-service-possibility-in-file-uploads)
 		- Passing certain inputs to multipart forms could result in an infinite loop when parsing files.
-- [](https://docs.djangoproject.com/en/4.2/releases/3.2.13/)
+	- Django 3.2.13 fixes two security issues with severity “high” in 3.2.12 and a regression in 3.2.4.
+		- ## CVE-2022-28346: Potential SQL injection in   QuerySet.annotate() ,   aggregate() , and   extra() [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.13/#cve-2022-28346-potential-sql-injection-in-queryset-annotate-aggregate-and-extra)
+		- [QuerySet.annotate()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.annotate), [aggregate()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.aggregate), and [extra()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.extra) methods were subject to SQL injection in column aliases, using a suitably crafted dictionary, with dictionary expansion, as the **kwargs passed to these methods.
+		- ## CVE-2022-28347: Potential SQL injection via   QuerySet.explain(**options)   on PostgreSQL [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.13/#cve-2022-28347-potential-sql-injection-via-queryset-explain-options-on-postgresql)
+		- [QuerySet.explain()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.explain) method was subject to SQL injection in option names, using a suitably crafted dictionary, with dictionary expansion, as the **options argument.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.13/#bugfixes)
+			- Fixed a regression in Django 3.2.4 that caused the auto-reloader to no longer detect changes when the DIRS option of the TEMPLATES setting contained an empty string ([#33628](https://code.djangoproject.com/ticket/33628)).
+-
 -
 -
 -
