@@ -707,6 +707,8 @@
 	- from django.core.mail.backends.base import BaseEmailBackend
 	- from django.core.mail.backends.smtp import EmailBackend
 	- from django.core.mail.message import EmailMessage
+		- check changes in version(s):
+			- 4.0
 	- from django.core.management import execute_from_command_line
 	- from django.core.paginator import Paginator
 	- from django.core.validators import FileExtensionValidator
