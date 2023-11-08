@@ -328,6 +328,7 @@
 			- Fixed a regression in Django 3.2 that caused a crash of auto-reloader with AttributeError, e.g. inside a Conda environment ([#32783](https://code.djangoproject.com/ticket/32783)).
 			- Fixed a regression in Django 3.2 that caused a loss of precision for operations with DecimalField on MySQL ([#32793](https://code.djangoproject.com/ticket/32793)).
 	- Django 3.2.5 fixes a security issue with severity “high” and several bugs in 3.2.4. Also, the latest string translations from Transifex are incorporated.
+	  collapsed:: true
 		- ## CVE-2021-35042: Potential SQL injection via unsanitized   QuerySet.order_by()   input [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.5/#cve-2021-35042-potential-sql-injection-via-unsanitized-queryset-order-by-input)
 		- Unsanitized user input passed to QuerySet.order_by() could bypass intended column reference validation in path marked for deprecation resulting in a potential SQL injection even if a deprecation warning is emitted.
 		- As a mitigation the strict column reference validation was restored for the duration of the deprecation period. This regression appeared in 3.1 as a side effect of fixing [#31426](https://code.djangoproject.com/ticket/31426).
@@ -337,4 +338,7 @@
 			- Fixed a bug in Django 3.2 that caused a migration crash on MySQL 8.0.13+ when altering BinaryField, JSONField, or TextField to non-nullable ([#32503](https://code.djangoproject.com/ticket/32503)).
 			- Fixed a regression in Django 3.2 that caused a migration crash on MySQL 8.0.13+ when adding nullable BinaryField, JSONField, or TextField with a default value ([#32832](https://code.djangoproject.com/ticket/32832)).
 			- Fixed a bug in Django 3.2 where a system check would crash on a model with an invalid app_label ([#32863](https://code.djangoproject.com/ticket/32863)).
--
+	- Django 3.2.6 fixes several bugs in 3.2.5.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.6/#bugfixes)
+			- Fixed a regression in Django 3.2 that caused a crash validating "NaN" input with a forms.DecimalField when additional constraints, e.g. max_value, were specified ([#32949](https://code.djangoproject.com/ticket/32949)).
+			- Fixed a bug in Django 3.2 where a system check would crash on a model with a reverse many-to-many relation inherited from a parent class ([#32947](https://code.djangoproject.com/ticket/32947)).
