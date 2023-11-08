@@ -439,7 +439,252 @@
 		- ## CVE-2023-46695: Potential denial of service vulnerability in   UsernameField   on Windows [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.23/#cve-2023-46695-potential-denial-of-service-vulnerability-in-usernamefield-on-windows)
 		- The [NFKC normalization](https://docs.python.org/3/library/unicodedata.html#unicodedata.normalize) is slow on Windows. As a consequence, django.contrib.auth.forms.UsernameField was subject to a potential denial of service attack via certain inputs with a very large number of Unicode characters.
 		- In order to avoid the vulnerability, invalid values longer than UsernameField.max_length are no longer normalized, since they cannot pass validation anyway.
-- # Django 4.0 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-4-0-release-notes)
+	- ## Django 4.0 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-4-0-release-notes)
+		- Welcome to Django 4.0!
+		- These release notes cover the [new features](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), as well as some [backwards incompatible changes](https://docs.djangoproject.com/en/4.2/releases/4.0/#backwards-incompatible-4-0) you’ll want to be aware of when upgrading from Django 3.2 or earlier. We’ve [begun the deprecation process for some features](https://docs.djangoproject.com/en/4.2/releases/4.0/#deprecated-features-4-0).
+		- See the [How to upgrade Django to a newer version](https://docs.djangoproject.com/en/4.2/howto/upgrade-version/) guide if you’re updating an existing project.
+		- ## Python compatibility [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#python-compatibility)
+		- Django 4.0 supports Python 3.8, 3.9, and 3.10. We **highly recommend** and only officially support the latest release of each series.
+		- The Django 3.2.x series is the last to support Python 3.6 and 3.7.
+		- ## What’s new in Django 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#what-s-new-in-django-4-0)
+		- ### zoneinfo   default timezone implementation [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#zoneinfo-default-timezone-implementation)
+		- The Python standard library’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is now the default timezone implementation in Django.
+		- This is the next step in the migration from using pytz to using [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo). Django 3.2 allowed the use of non-pytz time zones. Django 4.0 makes zoneinfo the default implementation. Support for pytz is now deprecated and will be removed in Django 5.0.
+		- [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is part of the Python standard library from Python 3.9. The backports.zoneinfo package is automatically installed alongside Django if you are using Python 3.8.
+		- The move to zoneinfo should be largely transparent. Selection of the current timezone, conversion of datetime instances to the current timezone in forms and templates, as well as operations on aware datetimes in UTC are unaffected.
+		- However, if you are working with non-UTC time zones, and using the pytz normalize() and localize() APIs, possibly with the [TIME_ZONE](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATABASE-TIME_ZONE) setting, you will need to audit your code, since pytz and zoneinfo are not entirely equivalent.
+		- To give time for such an audit, the transitional [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) setting allows continued use of pytz during the 4.x release cycle. This setting will be removed in Django 5.0.
+		- In addition, a [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) package, created by the zoneinfo author, can be used to assist with the migration from pytz. This package provides shims to help you safely remove pytz, and has a detailed [migration guide](https://pytz-deprecation-shim.readthedocs.io/en/latest/migration.html) showing how to move to the new zoneinfo APIs.
+		- Using [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) and the [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) transitional setting is recommended if you need a gradual update path.
+		- ### Functional unique constraints [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#functional-unique-constraints)
+		- The new [*expressions](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint.expressions) positional argument of [UniqueConstraint()](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint) enables creating functional unique constraints on expressions and database functions. For example:
+		- ```
+		  **from** **django.db** **import** models
+		  **from** **django.db.models** **import** UniqueConstraint
+		  **from** **django.db.models.functions** **import** Lower
+		  - **class** **MyModel**(models**.**Model):
+		    first_name **=** models**.**CharField(max_length**=**255)
+		    last_name **=** models**.**CharField(max_length**=**255)
+		  - **class** **Meta**:
+		        constraints **=** [
+		            UniqueConstraint(
+		                Lower("first_name"),
+		                Lower("last_name")**.**desc(),
+		                name**=**"first_last_name_unique",
+		            ),
+		        ]
+		  ```
+		- Functional unique constraints are added to models using the [Meta.constraints](https://docs.djangoproject.com/en/4.2/ref/models/options/#django.db.models.Options.constraints) option.
+		- ### scrypt   password hasher [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#scrypt-password-hasher)
+		- The new [scrypt password hasher](https://docs.djangoproject.com/en/4.2/topics/auth/passwords/#scrypt-usage) is more secure and recommended over PBKDF2. However, it’s not the default as it requires OpenSSL 1.1+ and more memory.
+		- ### Redis cache backend [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#redis-cache-backend)
+		- The new django.core.cache.backends.redis.RedisCache cache backend provides built-in support for caching with Redis. [redis-py](https://pypi.org/project/redis/) 3.0.0 or higher is required. For more details, see the [documentation on caching with Redis in Django](https://docs.djangoproject.com/en/4.2/topics/cache/#redis).
+		- ### Template based form rendering [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#template-based-form-rendering)
+		- [Forms](https://docs.djangoproject.com/en/4.2/ref/forms/api/#django.forms.Form), [Formsets](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/), and [ErrorList](https://docs.djangoproject.com/en/4.2/ref/forms/api/#django.forms.ErrorList) are now rendered using the template engine to enhance customization. See the new [render()](https://docs.djangoproject.com/en/4.2/ref/forms/api/#django.forms.Form.render), [get_context()](https://docs.djangoproject.com/en/4.2/ref/forms/api/#django.forms.Form.get_context), and [template_name](https://docs.djangoproject.com/en/4.2/ref/forms/api/#django.forms.Form.template_name) for Form and [formset rendering](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#formset-rendering) for Formset.
+		- ### Minor features [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#minor-features)
+		- #### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-contrib-admin)
+		- The admin/base.html template now has a new block header which contains the admin site header.
+		- The new [ModelAdmin.get_formset_kwargs()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.get_formset_kwargs) method allows customizing the keyword arguments passed to the constructor of a formset.
+		- The navigation sidebar now has a quick filter toolbar.
+		- The new context variable model which contains the model class for each model is added to the [AdminSite.each_context()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.each_context) method.
+		- The new [ModelAdmin.search_help_text](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_help_text) attribute allows specifying a descriptive text for the search box.
+		- The [InlineModelAdmin.verbose_name_plural](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.InlineModelAdmin.verbose_name_plural) attribute now fallbacks to the [InlineModelAdmin.verbose_name](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.InlineModelAdmin.verbose_name) + 's'.
+		- jQuery is upgraded from version 3.5.1 to 3.6.0.
+		- #### [django.contrib.admindocs](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-contrib-admindocs)
+		- The admindocs now allows esoteric setups where [ROOT_URLCONF](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-ROOT_URLCONF) is not a string.
+		- The model section of the admindocs now shows cached properties.
+		- #### [django.contrib.auth](https://docs.djangoproject.com/en/4.2/topics/auth/#module-django.contrib.auth) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-contrib-auth)
+		- The default iteration count for the PBKDF2 password hasher is increased from 260,000 to 320,000.
+		- The new [LoginView.next_page](https://docs.djangoproject.com/en/4.2/topics/auth/default/#django.contrib.auth.views.LoginView.next_page) attribute and [get_default_redirect_url()](https://docs.djangoproject.com/en/4.2/topics/auth/default/#django.contrib.auth.views.LoginView.get_default_redirect_url) method allow customizing the redirect after login.
+		- #### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-contrib-gis)
+		- Added support for SpatiaLite 5.
+		- [GDALRaster](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/gdal/#django.contrib.gis.gdal.GDALRaster) now allows creating rasters in any GDAL virtual filesystem.
+		- The new [GISModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/admin/#django.contrib.gis.admin.GISModelAdmin) class allows customizing the widget used for GeometryField. This is encouraged instead of deprecated GeoModelAdmin and OSMGeoAdmin.
+		- #### [django.contrib.postgres](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/#module-django.contrib.postgres) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-contrib-postgres)
+		- The PostgreSQL backend now supports connecting by a service name. See [PostgreSQL connection settings](https://docs.djangoproject.com/en/4.2/ref/databases/#postgresql-connection-settings) for more details.
+		- The new [AddConstraintNotValid](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.AddConstraintNotValid) operation allows creating check constraints on PostgreSQL without verifying that all existing rows satisfy the new constraint.
+		- The new [ValidateConstraint](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.ValidateConstraint) operation allows validating check constraints which were created using [AddConstraintNotValid](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/operations/#django.contrib.postgres.operations.AddConstraintNotValid) on PostgreSQL.
+		- The new [ArraySubquery()](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/expressions/#django.contrib.postgres.expressions.ArraySubquery) expression allows using subqueries to construct lists of values on PostgreSQL.
+		- The new [trigram_word_similar](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/lookups/#std-fieldlookup-trigram_word_similar) lookup, and the [TrigramWordDistance()](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/search/#django.contrib.postgres.search.TrigramWordDistance) and [TrigramWordSimilarity()](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/search/#django.contrib.postgres.search.TrigramWordSimilarity) expressions allow using trigram word similarity.
+		- #### [django.contrib.staticfiles](https://docs.djangoproject.com/en/4.2/ref/contrib/staticfiles/#module-django.contrib.staticfiles) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-contrib-staticfiles)
+		- [ManifestStaticFilesStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/staticfiles/#django.contrib.staticfiles.storage.ManifestStaticFilesStorage) now replaces paths to JavaScript source map references with their hashed counterparts.
+		- The new manifest_storage argument of [ManifestFilesMixin](https://docs.djangoproject.com/en/4.2/ref/contrib/staticfiles/#django.contrib.staticfiles.storage.ManifestFilesMixin) and [ManifestStaticFilesStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/staticfiles/#django.contrib.staticfiles.storage.ManifestStaticFilesStorage) allows customizing the manifest file storage.
+		- #### Cache [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#cache)
+		- -
+		- The new async API for django.core.cache.backends.base.BaseCache begins the process of making cache backends async-compatible. The new async methods all have a prefixed names, e.g. aadd(), aget(), aset(), aget_or_set(), or adelete_many().
+		- Going forward, the a prefix will be used for async variants of methods generally.
+		- #### CSRF [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#csrf)
+		- CSRF protection now consults the Origin header, if present. To facilitate this, [some changes](https://docs.djangoproject.com/en/4.2/releases/4.0/#csrf-trusted-origins-changes-4-0) to the [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS) setting are required.
+		- #### Forms [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#forms)
+		- [ModelChoiceField](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.ModelChoiceField) now includes the provided value in the params argument of a raised [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError) for the invalid_choice error message. This allows custom error messages to use the %(value)s placeholder.
+		- [BaseFormSet](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet) now renders non-form errors with an additional class of nonform to help distinguish them from form-specific errors.
+		- [BaseFormSet](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet) now allows customizing the widget used when deleting forms via [can_delete](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet.can_delete) by setting the [deletion_widget](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet.deletion_widget) attribute or overriding [get_deletion_widget()](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet.get_deletion_widget) method.
+		- #### Internationalization [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#internationalization)
+		- Added support and translations for the Malay language.
+		- #### Generic Views [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#generic-views)
+		- -
+		- [DeleteView](https://docs.djangoproject.com/en/4.2/ref/class-based-views/generic-editing/#django.views.generic.edit.DeleteView) now uses [FormMixin](https://docs.djangoproject.com/en/4.2/ref/class-based-views/mixins-editing/#django.views.generic.edit.FormMixin), allowing you to provide a [Form](https://docs.djangoproject.com/en/4.2/ref/forms/api/#django.forms.Form) subclass, with a checkbox for example, to confirm deletion. In addition, this allows DeleteView to function with [django.contrib.messages.views.SuccessMessageMixin](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.views.SuccessMessageMixin).
+		- In accordance with FormMixin, object deletion for POST requests is handled in form_valid(). Custom delete logic in delete() handlers should be moved to form_valid(), or a shared helper method, as needed.
+		- #### Logging [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#logging)
+		- The alias of the database used in an SQL call is now passed as extra context along with each message to the [django.db.backends](https://docs.djangoproject.com/en/4.2/ref/logging/#django-db-logger) logger.
+		- #### Management Commands [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#management-commands)
+		- The [runserver](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-runserver) management command now supports the [--skip-checks](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-skip-checks) option.
+		- On PostgreSQL, [dbshell](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-dbshell) now supports specifying a password file.
+		- The [shell](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-shell) command now respects [sys.__interactivehook__](https://docs.python.org/3/library/sys.html#sys.__interactivehook__) at startup. This allows loading shell history between interactive sessions. As a consequence, readline is no longer loaded if running in *isolated* mode.
+		- The new [BaseCommand.suppressed_base_arguments](https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/#django.core.management.BaseCommand.suppressed_base_arguments) attribute allows suppressing unsupported default command options in the help output.
+		- The new [startapp --exclude](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-startapp-exclude) and [startproject --exclude](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-startproject-exclude) options allow excluding directories from the template.
+		- #### Models [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#models)
+		- New [QuerySet.contains(obj)](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.contains) method returns whether the queryset contains the given object. This tries to perform the query in the simplest and fastest way possible.
+		- The new precision argument of the [Round()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Round) database function allows specifying the number of decimal places after rounding.
+		- [QuerySet.bulk_create()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.bulk_create) now sets the primary key on objects when using SQLite 3.35+.
+		- [DurationField](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.DurationField) now supports multiplying and dividing by scalar values on SQLite.
+		- [QuerySet.bulk_update()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.bulk_update) now returns the number of objects updated.
+		- The new [Expression.empty_result_set_value](https://docs.djangoproject.com/en/4.2/ref/models/expressions/#django.db.models.Expression.empty_result_set_value) attribute allows specifying a value to return when the function is used over an empty result set.
+		- The skip_locked argument of [QuerySet.select_for_update()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.select_for_update) is now allowed on MariaDB 10.6+.
+		- [Lookup](https://docs.djangoproject.com/en/4.2/ref/models/lookups/#django.db.models.Lookup) expressions may now be used in QuerySet annotations, aggregations, and directly in filters.
+		- The new [default](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#aggregate-default) argument for built-in aggregates allows specifying a value to be returned when the queryset (or grouping) contains no entries, rather than None.
+		- #### Requests and Responses [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#requests-and-responses)
+		- The [SecurityMiddleware](https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware) now adds the [Cross-Origin Opener Policy](https://docs.djangoproject.com/en/4.2/ref/middleware/#cross-origin-opener-policy) header with a value of 'same-origin' to prevent cross-origin popups from sharing the same browsing context. You can prevent this header from being added by setting the [SECURE_CROSS_ORIGIN_OPENER_POLICY](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-SECURE_CROSS_ORIGIN_OPENER_POLICY) setting to None.
+		- #### Signals [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#signals)
+		- The new stdout argument for [pre_migrate()](https://docs.djangoproject.com/en/4.2/ref/signals/#django.db.models.signals.pre_migrate) and [post_migrate()](https://docs.djangoproject.com/en/4.2/ref/signals/#django.db.models.signals.post_migrate) signals allows redirecting output to a stream-like object. It should be preferred over [sys.stdout](https://docs.python.org/3/library/sys.html#sys.stdout) and [print()](https://docs.python.org/3/library/functions.html#print) when emitting verbose output in order to allow proper capture when testing.
+		- #### Templates [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#templates)
+		- [floatformat](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#std-templatefilter-floatformat) template filter now allows using the u suffix to force disabling localization.
+		- #### Tests [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#tests)
+		- The new serialized_aliases argument of [django.test.utils.setup_databases()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.utils.setup_databases) determines which [DATABASES](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATABASES) aliases test databases should have their state serialized to allow usage of the [serialized_rollback](https://docs.djangoproject.com/en/4.2/topics/testing/overview/#test-case-serialized-rollback) feature.
+		- Django test runner now supports a [--buffer](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-test-buffer) option with parallel tests.
+		- The new logger argument to [DiscoverRunner](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner) allows a Python [logger](https://docs.python.org/3/library/logging.html#logger) to be used for logging.
+		- The new [DiscoverRunner.log()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.log) method provides a way to log messages that uses the DiscoverRunner.logger, or prints to the console if not set.
+		- Django test runner now supports a [--shuffle](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-test-shuffle) option to execute tests in a random order.
+		- The [test --parallel](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-test-parallel) option now supports the value auto to run one test process for each processor core.
+		- [TestCase.captureOnCommitCallbacks()](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.captureOnCommitCallbacks) now captures new callbacks added while executing [transaction.on_commit()](https://docs.djangoproject.com/en/4.2/topics/db/transactions/#django.db.transaction.on_commit) callbacks.
+		- ## Backwards incompatible changes in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#backwards-incompatible-changes-in-4-0)
+		- ### Database backend API [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#database-backend-api)
+		- This section describes changes that may be needed in third-party database backends.
+		- DatabaseOperations.year_lookup_bounds_for_date_field() and year_lookup_bounds_for_datetime_field() methods now take the optional iso_year argument in order to support bounds for ISO-8601 week-numbering years.
+		- The second argument of DatabaseSchemaEditor._unique_sql() and _create_unique_sql() methods is now fields instead of columns.
+		- ### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#id1)
+		- Support for PostGIS 2.3 is removed.
+		- Support for GDAL 2.0 and GEOS 3.5 is removed.
+		- ### Dropped support for PostgreSQL 9.6 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#dropped-support-for-postgresql-9-6)
+		- Upstream support for PostgreSQL 9.6 ends in November 2021. Django 4.0 supports PostgreSQL 10 and higher.
+		- Also, the minimum supported version of psycopg2 is increased from 2.5.4 to 2.8.4, as psycopg2 2.8.4 is the first release to support Python 3.8.
+		- ### Dropped support for Oracle 12.2 and 18c [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#dropped-support-for-oracle-12-2-and-18c)
+		- Upstream support for Oracle 12.2 ends in March 2022 and for Oracle 18c it ends in June 2021. Django 3.2 will be supported until April 2024. Django 4.0 officially supports Oracle 19c.
+		- ### CSRF_TRUSTED_ORIGINS   changes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#csrf-trusted-origins-changes)
+		- #### Format change [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#format-change)
+		- Values in the [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS) setting must include the scheme (e.g. 'http://' or 'https://') instead of only the hostname.
+		- Also, values that started with a dot, must now also include an asterisk before the dot. For example, change '.example.com' to 'https://*.example.com'.
+		- A system check detects any required changes.
+		- #### Configuring it may now be required [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#configuring-it-may-now-be-required)
+		- As CSRF protection now consults the Origin header, you may need to set [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS), particularly if you allow requests from subdomains by setting [CSRF_COOKIE_DOMAIN](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_COOKIE_DOMAIN) (or [SESSION_COOKIE_DOMAIN](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-SESSION_COOKIE_DOMAIN) if [CSRF_USE_SESSIONS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_USE_SESSIONS) is enabled) to a value starting with a dot.
+		- ### SecurityMiddleware   no longer sets the   X-XSS-Protection   header [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#securitymiddleware-no-longer-sets-the-x-xss-protection-header)
+		- The [SecurityMiddleware](https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware) no longer sets the X-XSS-Protection header if the SECURE_BROWSER_XSS_FILTER setting is True. The setting is removed.
+		- Most modern browsers don’t honor the X-XSS-Protection HTTP header. You can use [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) without allowing 'unsafe-inline' scripts instead.
+		- If you want to support legacy browsers and set the header, use this line in a custom middleware:
+		- ```
+		  response**.**headers**.**setdefault("X-XSS-Protection", "1; mode=block")
+		  ```
+		- ### Migrations autodetector changes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#migrations-autodetector-changes)
+		- The migrations autodetector now uses model states instead of model classes. Also, migration operations for ForeignKey and ManyToManyField fields no longer specify attributes which were not passed to the fields during initialization.
+		- As a side-effect, running makemigrations might generate no-op AlterField operations for ManyToManyField and ForeignKey fields in some cases.
+		- ### DeleteView   changes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#deleteview-changes)
+		- [DeleteView](https://docs.djangoproject.com/en/4.2/ref/class-based-views/generic-editing/#django.views.generic.edit.DeleteView) now uses [FormMixin](https://docs.djangoproject.com/en/4.2/ref/class-based-views/mixins-editing/#django.views.generic.edit.FormMixin) to handle POST requests. As a consequence, any custom deletion logic in delete() handlers should be moved to form_valid(), or a shared helper method, if required.
+		- ### Table and column naming scheme changes on Oracle [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#table-and-column-naming-scheme-changes-on-oracle)
+		- Django 4.0 inadvertently changed the table and column naming scheme on Oracle. This causes errors for models and fields with names longer than 30 characters. Unfortunately, renaming some Oracle tables and columns is required. Use the upgrade script in [33789](https://code.djangoproject.com/ticket/33789#comment:15) to generate RENAME statements to change naming scheme.
+		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#miscellaneous)
+		- Support for cx_Oracle < 7.0 is removed.
+		- To allow serving a Django site on a subpath without changing the value of [STATIC_URL](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-STATIC_URL), the leading slash is removed from that setting (now 'static/') in the default [startproject](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-startproject) template.
+		- The [AdminSite](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite) method for the admin index view is no longer decorated with never_cache when accessed directly, rather than via the recommended AdminSite.urls property, or AdminSite.get_urls() method.
+		- Unsupported operations on a sliced queryset now raise TypeError instead of AssertionError.
+		- The undocumented django.test.runner.reorder_suite() function is renamed to reorder_tests(). It now accepts an iterable of tests rather than a test suite, and returns an iterator of tests.
+		- Calling FileSystemStorage.delete() with an empty name now raises ValueError instead of AssertionError.
+		- Calling EmailMultiAlternatives.attach_alternative() or EmailMessage.attach() with an invalid content or mimetype arguments now raise ValueError instead of AssertionError.
+		- [assertHTMLEqual()](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.SimpleTestCase.assertHTMLEqual) no longer considers a non-boolean attribute without a value equal to an attribute with the same name and value.
+		- Tests that fail to load, for example due to syntax errors, now always match when using [test --tag](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-test-tag).
+		- The undocumented django.contrib.admin.utils.lookup_needs_distinct() function is renamed to lookup_spawns_duplicates().
+		- The undocumented HttpRequest.get_raw_uri() method is removed. The [HttpRequest.build_absolute_uri()](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpRequest.build_absolute_uri) method may be a suitable alternative.
+		- The object argument of undocumented ModelAdmin.log_addition(), log_change(), and log_deletion() methods is renamed to obj.
+		- [RssFeed](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.feedgenerator.RssFeed), [Atom1Feed](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.feedgenerator.Atom1Feed), and their subclasses now emit elements with no content as self-closing tags.
+		- NodeList.render() no longer casts the output of render() method for individual nodes to a string. Node.render() should always return a string as documented.
+		- The where_class property of django.db.models.sql.query.Query and the where_class argument to the private get_extra_restriction() method of ForeignObject and ForeignObjectRel are removed. If needed, initialize django.db.models.sql.where.WhereNode instead.
+		- The filter_clause argument of the undocumented Query.add_filter() method is replaced by two positional arguments filter_lhs and filter_rhs.
+		- [CsrfViewMiddleware](https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.csrf.CsrfViewMiddleware) now uses request.META['CSRF_COOKIE_NEEDS_UPDATE'] in place of request.META['CSRF_COOKIE_USED'], request.csrf_cookie_needs_reset, and response.csrf_cookie_set to track whether the CSRF cookie should be sent. This is an undocumented, private API.
+		- The undocumented TRANSLATOR_COMMENT_MARK constant is moved from django.template.base to django.utils.translation.template.
+		- The real_apps argument of the undocumented django.db.migrations.state.ProjectState.__init__() method must now be a set if provided.
+		- [RadioSelect](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/#django.forms.RadioSelect) and [CheckboxSelectMultiple](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/#django.forms.CheckboxSelectMultiple) widgets are now rendered in <div> tags so they are announced more concisely by screen readers. If you need the previous behavior, [override the widget template](https://docs.djangoproject.com/en/4.2/ref/forms/renderers/#overriding-built-in-widget-templates) with the appropriate template from Django 3.2.
+		- The [floatformat](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#std-templatefilter-floatformat) template filter no longer depends on the USE_L10N setting and always returns localized output. Use the u suffix to disable localization.
+		- The default value of the USE_L10N setting is changed to True. See the [Localization section](https://docs.djangoproject.com/en/4.2/releases/4.0/#use-l10n-deprecation) above for more details.
+		- As part of the [move to zoneinfo](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), [django.utils.timezone.utc](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.timezone.utc) is changed to alias [datetime.timezone.utc](https://docs.python.org/3/library/datetime.html#datetime.timezone.utc).
+		- The minimum supported version of asgiref is increased from 3.3.2 to 3.4.1.
+		- ## Features deprecated in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#features-deprecated-in-4-0)
+		- ### Use of   pytz   time zones [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#use-of-pytz-time-zones)
+		- As part of the [move to zoneinfo](https://docs.djangoproject.com/en/4.2/releases/4.0/#whats-new-4-0), use of pytz time zones is deprecated.
+		- Accordingly, the is_dst arguments to the following are also deprecated:
+		- [django.db.models.query.QuerySet.datetimes()](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#django.db.models.query.QuerySet.datetimes)
+		- [django.db.models.functions.Trunc()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Trunc)
+		- [django.db.models.functions.TruncSecond()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncSecond)
+		- [django.db.models.functions.TruncMinute()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncMinute)
+		- [django.db.models.functions.TruncHour()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncHour)
+		- [django.db.models.functions.TruncDay()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncDay)
+		- [django.db.models.functions.TruncWeek()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncWeek)
+		- [django.db.models.functions.TruncMonth()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncMonth)
+		- [django.db.models.functions.TruncQuarter()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncQuarter)
+		- [django.db.models.functions.TruncYear()](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.TruncYear)
+		- [django.utils.timezone.make_aware()](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.timezone.make_aware)
+		- Support for use of pytz will be removed in Django 5.0.
+		- ### Time zone support [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#time-zone-support)
+		- In order to follow good practice, the default value of the [USE_TZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_TZ) setting will change from False to True, and time zone support will be enabled by default, in Django 5.0.
+		- Note that the default settings.py file created by [django-admin startproject](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-startproject) includes [USE_TZ = True](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_TZ) since Django 1.4.
+		- You can set USE_TZ to False in your project settings before then to opt-out.
+		- ### Localization [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#localization)
+		- In order to follow good practice, the default value of the USE_L10N setting is changed from False to True.
+		- Moreover USE_L10N is deprecated as of this release. Starting with Django 5.0, by default, any date or number displayed by Django will be localized.
+		- The [{% localize %}](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatetag-localize) tag and the [localize](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatefilter-localize)/ [unlocalize](https://docs.djangoproject.com/en/4.2/topics/i18n/formatting/#std-templatefilter-unlocalize) filters will still be honored by Django.
+		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#id2)
+		- SERIALIZE test setting is deprecated as it can be inferred from the [databases](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.databases) with the [serialized_rollback](https://docs.djangoproject.com/en/4.2/topics/testing/overview/#test-case-serialized-rollback) option enabled.
+		- The undocumented django.utils.baseconv module is deprecated.
+		- The undocumented django.utils.datetime_safe module is deprecated.
+		- The default sitemap protocol for sitemaps built outside the context of a request will change from 'http' to 'https' in Django 5.0.
+		- The extra_tests argument for [DiscoverRunner.build_suite()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.build_suite) and [DiscoverRunner.run_tests()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.runner.DiscoverRunner.run_tests) is deprecated.
+		- The [ArrayAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.ArrayAgg), [JSONBAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.JSONBAgg), and [StringAgg](https://docs.djangoproject.com/en/4.2/ref/contrib/postgres/aggregates/#django.contrib.postgres.aggregates.StringAgg) aggregates will return None when there are no rows instead of [], [], and '' respectively in Django 5.0. If you need the previous behavior, explicitly set default to Value([]), Value('[]'), or Value('').
+		- The django.contrib.gis.admin.GeoModelAdmin and OSMGeoAdmin classes are deprecated. Use [ModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin) and [GISModelAdmin](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/admin/#django.contrib.gis.admin.GISModelAdmin) instead.
+		- Since form rendering now uses the template engine, the undocumented BaseForm._html_output() helper method is deprecated.
+		- The ability to return a str from ErrorList and ErrorDict is deprecated. It is expected these methods return a SafeString.
+		- ## Features removed in 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#features-removed-in-4-0)
+		- These features have reached the end of their deprecation cycle and are removed in Django 4.0.
+		- See [Features deprecated in 3.0](https://docs.djangoproject.com/en/4.2/releases/3.0/#deprecated-features-3-0) for details on these changes, including how to remove usage of these features.
+		- django.utils.http.urlquote(), urlquote_plus(), urlunquote(), and urlunquote_plus() are removed.
+		- django.utils.encoding.force_text() and smart_text() are removed.
+		- django.utils.translation.ugettext(), ugettext_lazy(), ugettext_noop(), ungettext(), and ungettext_lazy() are removed.
+		- django.views.i18n.set_language() doesn’t set the user language in request.session (key _language).
+		- alias=None is required in the signature of django.db.models.Expression.get_group_by_cols() subclasses.
+		- django.utils.text.unescape_entities() is removed.
+		- django.utils.http.is_safe_url() is removed.
+		- See [Features deprecated in 3.1](https://docs.djangoproject.com/en/4.2/releases/3.1/#deprecated-features-3-1) for details on these changes, including how to remove usage of these features.
+		- The PASSWORD_RESET_TIMEOUT_DAYS setting is removed.
+		- The [isnull](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#std-fieldlookup-isnull) lookup no longer allows using non-boolean values as the right-hand side.
+		- The django.db.models.query_utils.InvalidQuery exception class is removed.
+		- The django-admin.py entry point is removed.
+		- The HttpRequest.is_ajax() method is removed.
+		- Support for the pre-Django 3.1 encoding format of cookies values used by django.contrib.messages.storage.cookie.CookieStorage is removed.
+		- Support for the pre-Django 3.1 password reset tokens in the admin site (that use the SHA-1 hashing algorithm) is removed.
+		- Support for the pre-Django 3.1 encoding format of sessions is removed.
+		- Support for the pre-Django 3.1 django.core.signing.Signer signatures (encoded with the SHA-1 algorithm) is removed.
+		- Support for the pre-Django 3.1 django.core.signing.dumps() signatures (encoded with the SHA-1 algorithm) in django.core.signing.loads() is removed.
+		- Support for the pre-Django 3.1 user sessions (that use the SHA-1 algorithm) is removed.
+		- The get_response argument for django.utils.deprecation.MiddlewareMixin.__init__() is required and doesn’t accept None.
+		- The providing_args argument for django.dispatch.Signal is removed.
+		- The length argument for django.utils.crypto.get_random_string() is required.
+		- The list message for ModelMultipleChoiceField is removed.
+		- Support for passing raw column aliases to QuerySet.order_by() is removed.
+		- The NullBooleanField model field is removed, except for support in historical migrations.
+		- django.conf.urls.url() is removed.
+		- The django.contrib.postgres.fields.JSONField model field is removed, except for support in historical migrations.
+		- django.contrib.postgres.fields.jsonb.KeyTransform and django.contrib.postgres.fields.jsonb.KeyTextTransform are removed.
+		- django.contrib.postgres.forms.JSONField is removed.
+		- The {% ifequal %} and {% ifnotequal %} template tags are removed.
+		- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
+		- [](https://docs.djangoproject.com/en/4.2/releases/4.0.1/)
 -
 -
 -
