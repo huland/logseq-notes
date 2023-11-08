@@ -202,26 +202,26 @@
 			- The [ValidationError](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.ValidationError) equality operator now ignores messages and params ordering.
 		- ## Backwards incompatible changes in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#backwards-incompatible-changes-in-3-2)
 			- ### Database backend API [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#database-backend-api)
-			- This section describes changes that may be needed in third-party database backends.
-				- The new DatabaseFeatures.introspected_field_types property replaces these features:
-				- can_introspect_autofield
-					- can_introspect_big_integer_field
-					- can_introspect_binary_field
-					- can_introspect_decimal_field
-					- can_introspect_duration_field
-					- can_introspect_ip_address_field
-					- can_introspect_positive_integer_field
-					- can_introspect_small_integer_field
-					- can_introspect_time_field
-					- introspected_big_auto_field_type
-					- introspected_small_auto_field_type
-					- introspected_boolean_field_type
-		- To enable support for covering indexes ([Index.include](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.include)) and covering unique constraints ([UniqueConstraint.include](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint.include)), set DatabaseFeatures.supports_covering_indexes to True.
-		- Third-party database backends must implement support for column database collations on CharFields and TextFields or set DatabaseFeatures.supports_collation_on_charfield and DatabaseFeatures.supports_collation_on_textfield to False. If non-deterministic collations are not supported, set supports_non_deterministic_collations to False.
-		- DatabaseOperations.random_function_sql() is removed in favor of the new [Random](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Random) database function.
-		- DatabaseOperations.date_trunc_sql() and DatabaseOperations.time_trunc_sql() now take the optional tzname argument in order to truncate in a specific timezone.
-		- DatabaseClient.runshell() now gets arguments and an optional dictionary with environment variables to the underlying command-line client from DatabaseClient.settings_to_cmd_args_env() method. Third-party database backends must implement DatabaseClient.settings_to_cmd_args_env() or override DatabaseClient.runshell().
-		- Third-party database backends must implement support for functional indexes ([Index.expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions)) or set DatabaseFeatures.supports_expression_indexes to False. If COLLATE is not a part of the CREATE INDEX statement, set DatabaseFeatures.collate_as_index_expression to True.
+				- This section describes changes that may be needed in third-party database backends.
+					- The new DatabaseFeatures.introspected_field_types property replaces these features:
+						- can_introspect_autofield
+						- can_introspect_big_integer_field
+						- can_introspect_binary_field
+						- can_introspect_decimal_field
+						- can_introspect_duration_field
+						- can_introspect_ip_address_field
+						- can_introspect_positive_integer_field
+						- can_introspect_small_integer_field
+						- can_introspect_time_field
+						- introspected_big_auto_field_type
+						- introspected_small_auto_field_type
+						- introspected_boolean_field_type
+				- To enable support for covering indexes ([Index.include](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.include)) and covering unique constraints ([UniqueConstraint.include](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint.include)), set DatabaseFeatures.supports_covering_indexes to True.
+				- Third-party database backends must implement support for column database collations on CharFields and TextFields or set DatabaseFeatures.supports_collation_on_charfield and DatabaseFeatures.supports_collation_on_textfield to False. If non-deterministic collations are not supported, set supports_non_deterministic_collations to False.
+				- DatabaseOperations.random_function_sql() is removed in favor of the new [Random](https://docs.djangoproject.com/en/4.2/ref/models/database-functions/#django.db.models.functions.Random) database function.
+				- DatabaseOperations.date_trunc_sql() and DatabaseOperations.time_trunc_sql() now take the optional tzname argument in order to truncate in a specific timezone.
+				- DatabaseClient.runshell() now gets arguments and an optional dictionary with environment variables to the underlying command-line client from DatabaseClient.settings_to_cmd_args_env() method. Third-party database backends must implement DatabaseClient.settings_to_cmd_args_env() or override DatabaseClient.runshell().
+				- Third-party database backends must implement support for functional indexes ([Index.expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions)) or set DatabaseFeatures.supports_expression_indexes to False. If COLLATE is not a part of the CREATE INDEX statement, set DatabaseFeatures.collate_as_index_expression to True.
 		- ### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id1)
 		- Pagination links in the admin are now 1-indexed instead of 0-indexed, i.e. the query string for the first page is ?p=1 instead of ?p=0.
 		- The new admin catch-all view will break URL patterns routed after the admin URLs and matching the admin URL prefix. You can either adjust your URL ordering or, if necessary, set [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False, disabling the catch-all view. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
