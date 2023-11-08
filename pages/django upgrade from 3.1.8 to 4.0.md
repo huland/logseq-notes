@@ -265,6 +265,7 @@
 			- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
 			- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
 		- ## Features deprecated in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#features-deprecated-in-3-2)
+		  collapsed:: true
 			- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id3)
 				- Assigning objects which don’t support creating deep copies with [copy.deepcopy()](https://docs.python.org/3/library/copy.html#copy.deepcopy) to class attributes in [TestCase.setUpTestData()](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.setUpTestData) is deprecated.
 				- Using a boolean value in [BaseCommand.requires_system_checks](https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/#django.core.management.BaseCommand.requires_system_checks) is deprecated. Use '__all__' instead of True, and [] (an empty list) instead of False.
