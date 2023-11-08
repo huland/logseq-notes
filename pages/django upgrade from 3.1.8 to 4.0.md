@@ -1,28 +1,28 @@
 - release notes
-	- Django 3.1.9 fixes a security issue in 3.1.8.
-		- *May 4, 2021*
+	- Django **3.1.9** fixes a security issue in 3.1.8.
 		- ## CVE-2021-31542: Potential directory-traversal via uploaded files [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.9/#cve-2021-31542-potential-directory-traversal-via-uploaded-files)
 		- MultiPartParser, UploadedFile, and FieldFile allowed directory-traversal via uploaded files with suitably crafted file names.
 		- In order to mitigate this risk, stricter basename and path sanitation is now applied.
-	- Django 3.1.10 fixes a security issue in 3.1.9.
-		- *May 6, 2021*
+	- Django **3.1.10** fixes a security issue in 3.1.9.
 		- ## CVE-2021-32052: Header injection possibility since   URLValidator   accepted newlines in input on Python 3.9.5+ [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.10/#cve-2021-32052-header-injection-possibility-since-urlvalidator-accepted-newlines-in-input-on-python-3-9-5)
 		- On Python 3.9.5+, [URLValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.URLValidator) didn’t prohibit newlines and tabs. If you used values with newlines in HTTP response, you could suffer from header injection attacks. Django itself wasn’t vulnerable because [HttpResponse](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponse) prohibits newlines in HTTP headers.
 		- Moreover, the URLField form field which uses URLValidator silently removes newlines and tabs on Python 3.9.5+, so the possibility of newlines entering your data only existed if you are using this validator outside of the form fields.
 		- This issue was introduced by the [bpo-43882](https://bugs.python.org/issue?@action=redirect&bpo=43882) fix.
-	- Django 3.1.11 fixes a regression in 3.1.9.
-		- *May 13, 2021*
+	- Django **3.1.11** fixes a regression in 3.1.9.
 		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.11/#bugfixes)
 			- Fixed a regression in Django 3.1.9 where saving FileField would raise a SuspiciousFileOperation even when a custom [upload_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.FileField.upload_to) returns a valid file path ([#32718](https://code.djangoproject.com/ticket/32718)).
-	- Django 3.1.12 fixes two security issues in 3.1.11.
-		- *June 2, 2021*
+	- Django **3.1.12** fixes two security issues in 3.1.11.
 		- ## CVE-2021-33203: Potential directory traversal via   admindocs [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.12/#cve-2021-33203-potential-directory-traversal-via-admindocs)
 		- Staff members could use the [admindocs](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs) TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by the developers to also expose the file contents, then not only the existence but also the file contents would have been exposed.
 		- As a mitigation, path sanitation is now applied and only files within the template root directories can be loaded.
 		- ## CVE-2021-33571: Possible indeterminate SSRF, RFI, and LFI attacks since validators accepted leading zeros in IPv4 addresses [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.12/#cve-2021-33571-possible-indeterminate-ssrf-rfi-and-lfi-attacks-since-validators-accepted-leading-zeros-in-ipv4-addresses)
 		- [URLValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.URLValidator), [validate_ipv4_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv4_address), and [validate_ipv46_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv46_address) didn’t prohibit leading zeros in octal literals. If you used such values you could suffer from indeterminate SSRF, RFI, and LFI attacks.
 		- [validate_ipv4_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv4_address) and [validate_ipv46_address()](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.validate_ipv46_address) validators were not affected on Python 3.9.5+.
--
+- Django 3.1.13 fixes a security issue with severity “high” in 3.1.12.
+- ## CVE-2021-35042: Potential SQL injection via unsanitized   QuerySet.order_by()   input [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.13/#cve-2021-35042-potential-sql-injection-via-unsanitized-queryset-order-by-input)
+- Unsanitized user input passed to QuerySet.order_by() could bypass intended column reference validation in path marked for deprecation resulting in a potential SQL injection even if a deprecation warning is emitted.
+- As a mitigation the strict column reference validation was restored for the duration of the deprecation period. This regression appeared in 3.1 as a side effect of fixing [#31426](https://code.djangoproject.com/ticket/31426).
+- The issue is not present in the main branch as the deprecated path has been removed.
 -
 -
 -
