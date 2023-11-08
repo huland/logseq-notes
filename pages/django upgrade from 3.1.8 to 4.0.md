@@ -26,6 +26,11 @@
 	- Django **3.1.14** fixes a security issue with severity “low” in 3.1.13.
 		- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.14/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
 		- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
-	- # Django 3.2 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-3-2-release-notes)
--
+	- ## Django 3.2 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-3-2-release-notes)
+		- Welcome to Django 3.2!
+		- These release notes cover the [new features](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2), as well as some [backwards incompatible changes](https://docs.djangoproject.com/en/4.2/releases/3.2/#backwards-incompatible-3-2) you’ll want to be aware of when upgrading from Django 3.1 or earlier. We’ve [begun the deprecation process for some features](https://docs.djangoproject.com/en/4.2/releases/3.2/#deprecated-features-3-2).
+		- See the [How to upgrade Django to a newer version](https://docs.djangoproject.com/en/4.2/howto/upgrade-version/) guide if you’re updating an existing project.
+		- Django 3.2 is designated as a [long-term support release](https://docs.djangoproject.com/en/4.2/internals/release-process/#term-Long-term-support-release). It will receive security updates for at least three years after its release. Support for the previous LTS, Django 2.2, will end in April 2022.
+		- ## Python compatibility [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#python-compatibility)
+		- Django 3.2 supports Python 3.6, 3.7, 3.8, 3.9, and 3.10 (as of 3.2.9). We **highly recommend** and only officially support the latest release of each series.
 -
