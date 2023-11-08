@@ -53,25 +53,25 @@
 				- ```python
 				  DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 				  ```
-		- or configure it on a per-app basis:
-		- ```python
-		  from django.apps import AppConfig
-		  
-		  class MyAppConfig(AppConfig):
-		      default_auto_field = "django.db.models.AutoField"
-		      name = "my_app"
-		  ```
-		- or on a per-model basis:
-		- ```python
-		  from django.db import models
-		  
-		  class MyModel(models.Model):
-		      id = models.AutoField(primary_key=True)
-		  ```
-		- In anticipation of the changing default, a system check will provide a warning if you do not have an explicit setting for [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD).
-		- When changing the value of [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD), migrations for the primary key of existing auto-created through tables cannot be generated currently. See the [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) docs for details on migrating such tables.
-		- ### Functional indexes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#functional-indexes)
-		- The new [*expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions) positional argument of [Index()](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index) enables creating functional indexes on expressions and database functions. For example:
+				- or configure it on a per-app basis:
+				- ```python
+				  from django.apps import AppConfig
+				  
+				  class MyAppConfig(AppConfig):
+				      default_auto_field = "django.db.models.AutoField"
+				      name = "my_app"
+				  ```
+				- or on a per-model basis:
+				- ```python
+				  from django.db import models
+				  
+				  class MyModel(models.Model):
+				      id = models.AutoField(primary_key=True)
+				  ```
+				- In anticipation of the changing default, a system check will provide a warning if you do not have an explicit setting for [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD).
+				- When changing the value of [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD), migrations for the primary key of existing auto-created through tables cannot be generated currently. See the [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) docs for details on migrating such tables.
+			- ### Functional indexes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#functional-indexes)
+				- The new [*expressions](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index.expressions) positional argument of [Index()](https://docs.djangoproject.com/en/4.2/ref/models/indexes/#django.db.models.Index) enables creating functional indexes on expressions and database functions. For example:
 		- ```python
 		  from django.db import models
 		  from django.db.models import F, Index, Value
