@@ -404,10 +404,8 @@
 	  collapsed:: true
 		- ## CVE-2022-41323: Potential denial-of-service vulnerability in internationalized URLs [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.16/#cve-2022-41323-potential-denial-of-service-vulnerability-in-internationalized-urls)
 		- Internationalized URLs were subject to potential denial of service attack via the locale parameter.
-- Django 3.2.17 fixes a security issue with severity “moderate” in 3.2.16.
-- ## CVE-2023-23969: Potential denial-of-service via   Accept-Language   headers [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.17/#cve-2023-23969-potential-denial-of-service-via-accept-language-headers)
-- The parsed values of Accept-Language headers are cached in order to avoid repetitive parsing. This leads to a potential denial-of-service vector via excessive memory usage if large header values are sent.
-- In order to avoid this vulnerability, the Accept-Language header is now parsed up to a maximum length.
-- [](https://docs.djangoproject.com/en/4.2/releases/3.2.18/)
--
+	- Django 3.2.17 fixes a security issue with severity “moderate” in 3.2.16.
+		- ## CVE-2023-23969: Potential denial-of-service via   Accept-Language   headers [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.17/#cve-2023-23969-potential-denial-of-service-via-accept-language-headers)
+		- The parsed values of Accept-Language headers are cached in order to avoid repetitive parsing. This leads to a potential denial-of-service vector via excessive memory usage if large header values are sent.
+		- In order to avoid this vulnerability, the Accept-Language header is now parsed up to a maximum length.
 -
