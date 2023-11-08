@@ -655,7 +655,6 @@
 				- The {% ifequal %} and {% ifnotequal %} template tags are removed.
 				- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
 - **django** imports in mv2
-  collapsed:: true
 	- check settings for django modules
 	- from django import forms
 	- from django.apps import AppConfig
