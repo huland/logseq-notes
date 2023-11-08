@@ -415,11 +415,16 @@
 		- Passing certain inputs to multipart forms could result in too many open files or memory exhaustion, and provided a potential vector for a denial-of-service attack.
 		- The number of files parts parsed is now limited via the new [DATA_UPLOAD_MAX_NUMBER_FILES](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATA_UPLOAD_MAX_NUMBER_FILES) setting.
 	- Django 3.2.19 fixes a security issue with severity “low” in 3.2.18.
+	  collapsed:: true
 		- ## CVE-2023-31047: Potential bypass of validation when uploading multiple files using one form field [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.19/#cve-2023-31047-potential-bypass-of-validation-when-uploading-multiple-files-using-one-form-field)
 		- Uploading multiple files using one form field has never been supported by [forms.FileField](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.FileField) or [forms.ImageField](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.ImageField) as only the last uploaded file was validated. Unfortunately, [Uploading multiple files](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/#uploading-multiple-files) topic suggested otherwise.
 		- In order to avoid the vulnerability, [ClearableFileInput](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/#django.forms.ClearableFileInput) and [FileInput](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/#django.forms.FileInput) form widgets now raise ValueError when the multiple HTML attribute is set on them. To prevent the exception and keep the old behavior, set allow_multiple_selected to True.
 		- For more details on using the new attribute and handling of multiple files through a single field, see [Uploading multiple files](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/#uploading-multiple-files).
-- [](https://docs.djangoproject.com/en/4.2/releases/3.2.20/)
+	- Django 3.2.20 fixes a security issue with severity “moderate” in 3.2.19.
+	  collapsed:: true
+		- ## CVE-2023-36053: Potential regular expression denial of service vulnerability in   EmailValidator / URLValidator [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.20/#cve-2023-36053-potential-regular-expression-denial-of-service-vulnerability-in-emailvalidator-urlvalidator)
+		- EmailValidator and URLValidator were subject to potential regular expression denial of service attack via a very large number of domain name labels of emails and URLs.
+- [](https://docs.djangoproject.com/en/4.2/releases/3.2.21/)
 -
 -
 -
