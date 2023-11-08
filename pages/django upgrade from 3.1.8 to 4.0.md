@@ -76,18 +76,19 @@
 		      last_name = models.CharField(max_length=255)
 		      height = models.IntegerField()
 		      weight = models.IntegerField()
+		  
 		  class Meta:
-		        indexes = [
-		            Index(
-		                Lower("first_name"),
-		                Upper("last_name").desc(),
-		                name="first_last_name_idx",
-		            ),
-		            Index(
-		                F("height") / (F("weight") + Value(5)),
-		                name="calc_idx",
-		            ),
-		        ]
+		      indexes = [
+		          Index(
+		              Lower("first_name"),
+		              Upper("last_name").desc(),
+		              name="first_last_name_idx",
+		          ),
+		          Index(
+		              F("height") / (F("weight") + Value(5)),
+		              name="calc_idx",
+		          ),
+		      ]
 		  ```
 		- Functional indexes are added to models using the [Meta.indexes](https://docs.djangoproject.com/en/4.2/ref/models/options/#django.db.models.Options.indexes) option.
 		- ### pymemcache   support [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#pymemcache-support)
