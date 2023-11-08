@@ -562,28 +562,28 @@
 			- This section describes changes that may be needed in third-party database backends.
 				- DatabaseOperations.year_lookup_bounds_for_date_field() and year_lookup_bounds_for_datetime_field() methods now take the optional iso_year argument in order to support bounds for ISO-8601 week-numbering years.
 				- The second argument of DatabaseSchemaEditor._unique_sql() and _create_unique_sql() methods is now fields instead of columns.
-		- ### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#id1)
-			- Support for PostGIS 2.3 is removed.
-			- Support for GDAL 2.0 and GEOS 3.5 is removed.
-		- ### Dropped support for PostgreSQL 9.6 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#dropped-support-for-postgresql-9-6)
-			- Upstream support for PostgreSQL 9.6 ends in November 2021. Django 4.0 supports PostgreSQL 10 and higher.
-			- Also, the minimum supported version of psycopg2 is increased from 2.5.4 to 2.8.4, as psycopg2 2.8.4 is the first release to support Python 3.8.
-		- ### Dropped support for Oracle 12.2 and 18c [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#dropped-support-for-oracle-12-2-and-18c)
-			- Upstream support for Oracle 12.2 ends in March 2022 and for Oracle 18c it ends in June 2021. Django 3.2 will be supported until April 2024. Django 4.0 officially supports Oracle 19c.
-		- ### CSRF_TRUSTED_ORIGINS   changes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#csrf-trusted-origins-changes)
-			- #### Format change [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#format-change)
-			- Values in the [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS) setting must include the scheme (e.g. 'http://' or 'https://') instead of only the hostname.
-			- Also, values that started with a dot, must now also include an asterisk before the dot. For example, change '.example.com' to 'https://*.example.com'.
-			- A system check detects any required changes.
-		- #### Configuring it may now be required [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#configuring-it-may-now-be-required)
-			- As CSRF protection now consults the Origin header, you may need to set [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS), particularly if you allow requests from subdomains by setting [CSRF_COOKIE_DOMAIN](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_COOKIE_DOMAIN) (or [SESSION_COOKIE_DOMAIN](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-SESSION_COOKIE_DOMAIN) if [CSRF_USE_SESSIONS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_USE_SESSIONS) is enabled) to a value starting with a dot.
-		- ### SecurityMiddleware   no longer sets the   X-XSS-Protection   header [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#securitymiddleware-no-longer-sets-the-x-xss-protection-header)
-			- The [SecurityMiddleware](https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware) no longer sets the X-XSS-Protection header if the SECURE_BROWSER_XSS_FILTER setting is True. The setting is removed.
-			- Most modern browsers don’t honor the X-XSS-Protection HTTP header. You can use [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) without allowing 'unsafe-inline' scripts instead.
-			- If you want to support legacy browsers and set the header, use this line in a custom middleware:
-		- ```python
-		  response.headers.setdefault("X-XSS-Protection", "1; mode=block")
-		  ```
+			- ### [django.contrib.gis](https://docs.djangoproject.com/en/4.2/ref/contrib/gis/#module-django.contrib.gis) [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#id1)
+				- Support for PostGIS 2.3 is removed.
+				- Support for GDAL 2.0 and GEOS 3.5 is removed.
+			- ### Dropped support for PostgreSQL 9.6 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#dropped-support-for-postgresql-9-6)
+				- Upstream support for PostgreSQL 9.6 ends in November 2021. Django 4.0 supports PostgreSQL 10 and higher.
+				- Also, the minimum supported version of psycopg2 is increased from 2.5.4 to 2.8.4, as psycopg2 2.8.4 is the first release to support Python 3.8.
+			- ### Dropped support for Oracle 12.2 and 18c [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#dropped-support-for-oracle-12-2-and-18c)
+				- Upstream support for Oracle 12.2 ends in March 2022 and for Oracle 18c it ends in June 2021. Django 3.2 will be supported until April 2024. Django 4.0 officially supports Oracle 19c.
+			- ### CSRF_TRUSTED_ORIGINS   changes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#csrf-trusted-origins-changes)
+				- #### Format change [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#format-change)
+				- Values in the [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS) setting must include the scheme (e.g. 'http://' or 'https://') instead of only the hostname.
+				- Also, values that started with a dot, must now also include an asterisk before the dot. For example, change '.example.com' to 'https://*.example.com'.
+				- A system check detects any required changes.
+			- #### Configuring it may now be required [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#configuring-it-may-now-be-required)
+				- As CSRF protection now consults the Origin header, you may need to set [CSRF_TRUSTED_ORIGINS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_TRUSTED_ORIGINS), particularly if you allow requests from subdomains by setting [CSRF_COOKIE_DOMAIN](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_COOKIE_DOMAIN) (or [SESSION_COOKIE_DOMAIN](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-SESSION_COOKIE_DOMAIN) if [CSRF_USE_SESSIONS](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-CSRF_USE_SESSIONS) is enabled) to a value starting with a dot.
+			- ### SecurityMiddleware   no longer sets the   X-XSS-Protection   header [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#securitymiddleware-no-longer-sets-the-x-xss-protection-header)
+				- The [SecurityMiddleware](https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware) no longer sets the X-XSS-Protection header if the SECURE_BROWSER_XSS_FILTER setting is True. The setting is removed.
+				- Most modern browsers don’t honor the X-XSS-Protection HTTP header. You can use [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) without allowing 'unsafe-inline' scripts instead.
+				- If you want to support legacy browsers and set the header, use this line in a custom middleware:
+				- ```python
+				  response.headers.setdefault("X-XSS-Protection", "1; mode=block")
+				  ```
 		- ### Migrations autodetector changes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#migrations-autodetector-changes)
 			- The migrations autodetector now uses model states instead of model classes. Also, migration operations for ForeignKey and ManyToManyField fields no longer specify attributes which were not passed to the fields during initialization.
 			- As a side-effect, running makemigrations might generate no-op AlterField operations for ManyToManyField and ForeignKey fields in some cases.
