@@ -44,18 +44,19 @@
 		- When defining a model, if no field in a model is defined with [primary_key=True](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.Field.primary_key) an implicit primary key is added. The type of this implicit primary key can now be controlled via the [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) setting and [AppConfig.default_auto_field](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig.default_auto_field) attribute. No more needing to override primary keys in all models.
 		- Maintaining the historical behavior, the default value for [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) is [AutoField](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.AutoField). Starting with 3.2 new projects are generated with [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) set to [BigAutoField](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.BigAutoField). Also, new apps are generated with [AppConfig.default_auto_field](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig.default_auto_field) set to [BigAutoField](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.BigAutoField). In a future Django release the default value of [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) will be changed to [BigAutoField](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.BigAutoField).
 		- To avoid unwanted migrations in the future, either explicitly set [DEFAULT_AUTO_FIELD](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DEFAULT_AUTO_FIELD) to [AutoField](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.AutoField):
-		- ```
-		  DEFAULT_AUTO_FIELD **=** "django.db.models.AutoField"
+		- ```python
+		  DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 		  ```
 		- or configure it on a per-app basis:
-		- ```
-		  **from** **django.apps** **import** AppConfig
-		  - **class** **MyAppConfig**(AppConfig):
-		    default_auto_field **=** "django.db.models.AutoField"
-		    name **=** "my_app"
+		- ```python
+		  from django.apps import AppConfig
+		  
+		  class MyAppConfig(AppConfig):
+		    default_auto_field = "django.db.models.AutoField"
+		    name = "my_app"
 		  ```
 		- or on a per-model basis:
-		- ```
+		- ```python
 		  **from** **django.db** **import** models
 		  - **class** **MyModel**(models**.**Model):
 		    id **=** models**.**AutoField(primary_key**=****True**)
