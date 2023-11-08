@@ -356,12 +356,34 @@
 	  collapsed:: true
 		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.9/#bugfixes)
 			- Fixed a bug in Django 3.2 that caused a migration crash on SQLite when altering a field with a functional index ([#33194](https://code.djangoproject.com/ticket/33194)).
-- Django 3.2.10 fixes a security issue with severity “low” and a bug in 3.2.9.
-	- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.10/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
-- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
-	- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.10/#bugfixes)
-		- Fixed a regression in Django 3.2 that caused a crash of setUpTestData() with BinaryField on PostgreSQL, which is memoryview-backed ([#33333](https://code.djangoproject.com/ticket/33333)).
--
+	- Django 3.2.10 fixes a security issue with severity “low” and a bug in 3.2.9.
+	  collapsed:: true
+		- ## CVE-2021-44420: Potential bypass of an upstream access control based on URL paths [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.10/#cve-2021-44420-potential-bypass-of-an-upstream-access-control-based-on-url-paths)
+		- HTTP requests for URLs with trailing newlines could bypass an upstream access control based on URL paths.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.10/#bugfixes)
+			- Fixed a regression in Django 3.2 that caused a crash of setUpTestData() with BinaryField on PostgreSQL, which is memoryview-backed ([#33333](https://code.djangoproject.com/ticket/33333)).
+	- Django 3.2.11 fixes one security issue with severity “medium” and two security issues with severity “low” in 3.2.10.
+	  collapsed:: true
+		- ## CVE-2021-45115: Denial-of-service possibility in   UserAttributeSimilarityValidator [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.11/#cve-2021-45115-denial-of-service-possibility-in-userattributesimilarityvalidator)
+		- [UserAttributeSimilarityValidator](https://docs.djangoproject.com/en/4.2/topics/auth/passwords/#django.contrib.auth.password_validation.UserAttributeSimilarityValidator) incurred significant overhead evaluating submitted password that were artificially large in relative to the comparison values. On the assumption that access to user registration was unrestricted this provided a potential vector for a denial-of-service attack.
+		- In order to mitigate this issue, relatively long values are now ignored by UserAttributeSimilarityValidator.
+		- This issue has severity “medium” according to the [Django security policy](https://docs.djangoproject.com/en/4.2/internals/security/#security-disclosure).
+		- ## CVE-2021-45116: Potential information disclosure in   dictsort   template filter [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.11/#cve-2021-45116-potential-information-disclosure-in-dictsort-template-filter)
+		- Due to leveraging the Django Template Language’s variable resolution logic, the [dictsort](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#std-templatefilter-dictsort) template filter was potentially vulnerable to information disclosure or unintended method calls, if passed a suitably crafted key.
+		- In order to avoid this possibility, dictsort now works with a restricted resolution logic, that will not call methods, nor allow indexing on dictionaries.
+		- As a reminder, all untrusted user input should be validated before use.
+		- This issue has severity “low” according to the [Django security policy](https://docs.djangoproject.com/en/4.2/internals/security/#security-disclosure).
+		- ## CVE-2021-45452: Potential directory-traversal via   Storage.save() [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.11/#cve-2021-45452-potential-directory-traversal-via-storage-save)
+		- Storage.save() allowed directory-traversal if directly passed suitably crafted file names.
+		- This issue has severity “low” according to the [Django security policy](https://docs.djangoproject.com/en/4.2/internals/security/#security-disclosure).
+	- Django 3.2.12 fixes two security issues with severity “medium” in 3.2.11.
+	  collapsed:: true
+		- ## CVE-2022-22818: Possible XSS via   {% debug %}   template tag [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.12/#cve-2022-22818-possible-xss-via-debug-template-tag)
+		- The {% debug %} template tag didn’t properly encode the current context, posing an XSS attack vector.
+		- In order to avoid this vulnerability, {% debug %} no longer outputs information when the DEBUG setting is False, and it ensures all context variables are correctly escaped when the DEBUG setting is True.
+		- ## CVE-2022-23833: Denial-of-service possibility in file uploads [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.12/#cve-2022-23833-denial-of-service-possibility-in-file-uploads)
+		- Passing certain inputs to multipart forms could result in an infinite loop when parsing files.
+- [](https://docs.djangoproject.com/en/4.2/releases/3.2.13/)
 -
 -
 -
