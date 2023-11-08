@@ -458,19 +458,21 @@
 		- Using [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) and the [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) transitional setting is recommended if you need a gradual update path.
 		- ### Functional unique constraints [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#functional-unique-constraints)
 		- The new [*expressions](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint.expressions) positional argument of [UniqueConstraint()](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint) enables creating functional unique constraints on expressions and database functions. For example:
-		- ```
-		  **from** **django.db** **import** models
-		  **from** **django.db.models** **import** UniqueConstraint
-		  **from** **django.db.models.functions** **import** Lower
-		  - **class** **MyModel**(models**.**Model):
-		    first_name **=** models**.**CharField(max_length**=**255)
-		    last_name **=** models**.**CharField(max_length**=**255)
-		  - **class** **Meta**:
-		        constraints **=** [
+		- ```python
+		  from django.db import models
+		  from django.db.models import UniqueConstraint
+		  from django.db.models.functions import Lower
+		  
+		  class MyModel(models.Model):
+		    first_name = models.CharField(max_length=255)
+		    last_name = models.CharField(max_length=255)
+		  
+		  class Meta:
+		        constraints = [
 		            UniqueConstraint(
 		                Lower("first_name"),
-		                Lower("last_name")**.**desc(),
-		                name**=**"first_last_name_unique",
+		                Lower("last_name").desc(),
+		                name="first_last_name_unique",
 		            ),
 		        ]
 		  ```
