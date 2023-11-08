@@ -813,7 +813,8 @@
 		- check changes in version(s):
 			- 4.0
 	- from django.views.debug import ExceptionReporter
-	-
+		- check changes in version(s):
+			- 3.2
 	- from django.views.decorators.csrf import ensure_csrf_cookie
 	- from django.views.generic import TemplateView
 	- from django.views.generic import View
