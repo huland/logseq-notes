@@ -414,7 +414,12 @@
 		- ## CVE-2023-24580: Potential denial-of-service vulnerability in file uploads [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.18/#cve-2023-24580-potential-denial-of-service-vulnerability-in-file-uploads)
 		- Passing certain inputs to multipart forms could result in too many open files or memory exhaustion, and provided a potential vector for a denial-of-service attack.
 		- The number of files parts parsed is now limited via the new [DATA_UPLOAD_MAX_NUMBER_FILES](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATA_UPLOAD_MAX_NUMBER_FILES) setting.
--
+	- Django 3.2.19 fixes a security issue with severity “low” in 3.2.18.
+		- ## CVE-2023-31047: Potential bypass of validation when uploading multiple files using one form field [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.19/#cve-2023-31047-potential-bypass-of-validation-when-uploading-multiple-files-using-one-form-field)
+		- Uploading multiple files using one form field has never been supported by [forms.FileField](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.FileField) or [forms.ImageField](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.ImageField) as only the last uploaded file was validated. Unfortunately, [Uploading multiple files](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/#uploading-multiple-files) topic suggested otherwise.
+		- In order to avoid the vulnerability, [ClearableFileInput](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/#django.forms.ClearableFileInput) and [FileInput](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/#django.forms.FileInput) form widgets now raise ValueError when the multiple HTML attribute is set on them. To prevent the exception and keep the old behavior, set allow_multiple_selected to True.
+		- For more details on using the new attribute and handling of multiple files through a single field, see [Uploading multiple files](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/#uploading-multiple-files).
+- [](https://docs.djangoproject.com/en/4.2/releases/3.2.20/)
 -
 -
 -
