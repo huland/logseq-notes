@@ -1,0 +1,7 @@
+- release notes
+	- 3.1.9
+		- *May 4, 2021*
+		- Django 3.1.9 fixes a security issue in 3.1.8.
+		- ## CVE-2021-31542: Potential directory-traversal via uploaded files [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.9/#cve-2021-31542-potential-directory-traversal-via-uploaded-files)
+		- MultiPartParser, UploadedFile, and FieldFile allowed directory-traversal via uploaded files with suitably crafted file names.
+		- In order to mitigate this risk, stricter basename and path sanitation is now applied.
