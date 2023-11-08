@@ -297,4 +297,16 @@
 			- Fixed a bug in Django 3.2 where an admin changelist would crash when deleting objects filtered against multi-valued relationships ([#32682](https://code.djangoproject.com/ticket/32682)). The admin changelist now uses Exists() instead of QuerySet.distinct() because calling delete() after distinct() is not allowed in Django 3.2 to address a data loss possibility.
 			- Fixed a regression in Django 3.2 where the calling process environment would not be passed to the dbshell command on PostgreSQL ([#32687](https://code.djangoproject.com/ticket/32687)).
 			- Fixed a performance regression in Django 3.2 when building complex filters with subqueries ([#32632](https://code.djangoproject.com/ticket/32632)). As a side-effect the private API to check django.db.sql.query.Query equality is removed.
-	-
+	- Django 3.2.2 fixes a security issue and a bug in 3.2.1.
+	  collapsed:: true
+		- ## CVE-2021-32052: Header injection possibility since   URLValidator   accepted newlines in input on Python 3.9.5+ [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.2/#cve-2021-32052-header-injection-possibility-since-urlvalidator-accepted-newlines-in-input-on-python-3-9-5)
+		- On Python 3.9.5+, [URLValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.URLValidator) didn’t prohibit newlines and tabs. If you used values with newlines in HTTP response, you could suffer from header injection attacks. Django itself wasn’t vulnerable because [HttpResponse](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponse) prohibits newlines in HTTP headers.
+		- Moreover, the URLField form field which uses URLValidator silently removes newlines and tabs on Python 3.9.5+, so the possibility of newlines entering your data only existed if you are using this validator outside of the form fields.
+		- This issue was introduced by the [bpo-43882](https://bugs.python.org/issue?@action=redirect&bpo=43882) fix.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.2/#bugfixes)
+			- Prevented, following a regression in Django 3.2.1, [makemigrations](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-makemigrations) from generating infinite migrations for a model with Meta.ordering contained OrderBy expressions ([#32714](https://code.djangoproject.com/ticket/32714)).
+	- Django 3.2.3 fixes several bugs in 3.2.2.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.3/#bugfixes)
+			- Prepared for mysqlclient > 2.0.3 support ([#32732](https://code.djangoproject.com/ticket/32732)).
+			- Fixed a regression in Django 3.2 that caused the incorrect filtering of querysets combined with the | operator ([#32717](https://code.djangoproject.com/ticket/32717)).
+			- Fixed a regression in Django 3.2.1 where saving FileField would raise a SuspiciousFileOperation even when a custom [upload_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.FileField.upload_to) returns a valid file path ([#32718](https://code.djangoproject.com/ticket/32718)).
