@@ -99,12 +99,12 @@
 		  ```
 		- Functional indexes are added to models using the [Meta.indexes](https://docs.djangoproject.com/en/4.2/ref/models/options/#django.db.models.Options.indexes) option.
 		- ### pymemcache   support [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#pymemcache-support)
-		- The new django.core.cache.backends.memcached.PyMemcacheCache cache backend allows using the [pymemcache](https://pypi.org/project/pymemcache/) library for memcached. pymemcache 3.4.0 or higher is required. For more details, see the [documentation on caching in Django](https://docs.djangoproject.com/en/4.2/topics/cache/).
+			- The new django.core.cache.backends.memcached.PyMemcacheCache cache backend allows using the [pymemcache](https://pypi.org/project/pymemcache/) library for memcached. pymemcache 3.4.0 or higher is required. For more details, see the [documentation on caching in Django](https://docs.djangoproject.com/en/4.2/topics/cache/).
 		- ### New decorators for the admin site [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#new-decorators-for-the-admin-site)
-		- The new [display()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.display) decorator allows for easily adding options to custom display functions that can be used with [list_display](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display) or [readonly_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.readonly_fields).
-		- Likewise, the new [action()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/#django.contrib.admin.action) decorator allows for easily adding options to action functions that can be used with [actions](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.actions).
-		- Using the @display decorator has the advantage that it is now possible to use the @property decorator when needing to specify attributes on the custom method. Prior to this it was necessary to use the property() function instead after assigning the required attributes to the method.
-		- Using decorators has the advantage that these options are more discoverable as they can be suggested by completion utilities in code editors. They are merely a convenience and still set the same attributes on the functions under the hood.
+			- The new [display()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.display) decorator allows for easily adding options to custom display functions that can be used with [list_display](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display) or [readonly_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.readonly_fields).
+			- Likewise, the new [action()](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/#django.contrib.admin.action) decorator allows for easily adding options to action functions that can be used with [actions](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.actions).
+			- Using the @display decorator has the advantage that it is now possible to use the @property decorator when needing to specify attributes on the custom method. Prior to this it was necessary to use the property() function instead after assigning the required attributes to the method.
+			- Using decorators has the advantage that these options are more discoverable as they can be suggested by completion utilities in code editors. They are merely a convenience and still set the same attributes on the functions under the hood.
 		- ### Minor features [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#minor-features)
 		- #### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-admin)
 			- [ModelAdmin.search_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields) now allows searching against quoted phrases with spaces.
@@ -448,14 +448,14 @@
 		- The Django 3.2.x series is the last to support Python 3.6 and 3.7.
 		- ## What’s new in Django 4.0 [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#what-s-new-in-django-4-0)
 		- ### zoneinfo   default timezone implementation [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#zoneinfo-default-timezone-implementation)
-		- The Python standard library’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is now the default timezone implementation in Django.
-		- This is the next step in the migration from using pytz to using [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo). Django 3.2 allowed the use of non-pytz time zones. Django 4.0 makes zoneinfo the default implementation. Support for pytz is now deprecated and will be removed in Django 5.0.
-		- [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is part of the Python standard library from Python 3.9. The backports.zoneinfo package is automatically installed alongside Django if you are using Python 3.8.
-		- The move to zoneinfo should be largely transparent. Selection of the current timezone, conversion of datetime instances to the current timezone in forms and templates, as well as operations on aware datetimes in UTC are unaffected.
-		- However, if you are working with non-UTC time zones, and using the pytz normalize() and localize() APIs, possibly with the [TIME_ZONE](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATABASE-TIME_ZONE) setting, you will need to audit your code, since pytz and zoneinfo are not entirely equivalent.
-		- To give time for such an audit, the transitional [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) setting allows continued use of pytz during the 4.x release cycle. This setting will be removed in Django 5.0.
-		- In addition, a [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) package, created by the zoneinfo author, can be used to assist with the migration from pytz. This package provides shims to help you safely remove pytz, and has a detailed [migration guide](https://pytz-deprecation-shim.readthedocs.io/en/latest/migration.html) showing how to move to the new zoneinfo APIs.
-		- Using [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) and the [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) transitional setting is recommended if you need a gradual update path.
+			- The Python standard library’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is now the default timezone implementation in Django.
+			- This is the next step in the migration from using pytz to using [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo). Django 3.2 allowed the use of non-pytz time zones. Django 4.0 makes zoneinfo the default implementation. Support for pytz is now deprecated and will be removed in Django 5.0.
+			- [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) is part of the Python standard library from Python 3.9. The backports.zoneinfo package is automatically installed alongside Django if you are using Python 3.8.
+			- The move to zoneinfo should be largely transparent. Selection of the current timezone, conversion of datetime instances to the current timezone in forms and templates, as well as operations on aware datetimes in UTC are unaffected.
+			- However, if you are working with non-UTC time zones, and using the pytz normalize() and localize() APIs, possibly with the [TIME_ZONE](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATABASE-TIME_ZONE) setting, you will need to audit your code, since pytz and zoneinfo are not entirely equivalent.
+			- To give time for such an audit, the transitional [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) setting allows continued use of pytz during the 4.x release cycle. This setting will be removed in Django 5.0.
+			- In addition, a [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) package, created by the zoneinfo author, can be used to assist with the migration from pytz. This package provides shims to help you safely remove pytz, and has a detailed [migration guide](https://pytz-deprecation-shim.readthedocs.io/en/latest/migration.html) showing how to move to the new zoneinfo APIs.
+			- Using [pytz_deprecation_shim](https://pytz-deprecation-shim.readthedocs.io/en/latest/index.html) and the [USE_DEPRECATED_PYTZ](https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-USE_DEPRECATED_PYTZ) transitional setting is recommended if you need a gradual update path.
 		- ### Functional unique constraints [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#functional-unique-constraints)
 		- The new [*expressions](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint.expressions) positional argument of [UniqueConstraint()](https://docs.djangoproject.com/en/4.2/ref/models/constraints/#django.db.models.UniqueConstraint) enables creating functional unique constraints on expressions and database functions. For example:
 		- ```python
@@ -464,17 +464,17 @@
 		  from django.db.models.functions import Lower
 		  
 		  class MyModel(models.Model):
-		    first_name = models.CharField(max_length=255)
-		    last_name = models.CharField(max_length=255)
+		      first_name = models.CharField(max_length=255)
+		      last_name = models.CharField(max_length=255)
 		  
 		  class Meta:
-		        constraints = [
-		            UniqueConstraint(
-		                Lower("first_name"),
-		                Lower("last_name").desc(),
-		                name="first_last_name_unique",
-		            ),
-		        ]
+		      constraints = [
+		          UniqueConstraint(
+		              Lower("first_name"),
+		              Lower("last_name").desc(),
+		              name="first_last_name_unique",
+		          ),
+		      ]
 		  ```
 		- Functional unique constraints are added to models using the [Meta.constraints](https://docs.djangoproject.com/en/4.2/ref/models/options/#django.db.models.Options.constraints) option.
 		- ### scrypt   password hasher [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#scrypt-password-hasher)
