@@ -424,7 +424,9 @@
 	  collapsed:: true
 		- ## CVE-2023-36053: Potential regular expression denial of service vulnerability in   EmailValidator / URLValidator [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.20/#cve-2023-36053-potential-regular-expression-denial-of-service-vulnerability-in-emailvalidator-urlvalidator)
 		- EmailValidator and URLValidator were subject to potential regular expression denial of service attack via a very large number of domain name labels of emails and URLs.
-- [](https://docs.djangoproject.com/en/4.2/releases/3.2.21/)
+	- Django 3.2.21 fixes a security issue with severity “moderate” in 3.2.20.
+		- ## CVE-2023-41164: Potential denial of service vulnerability in   django.utils.encoding.uri_to_iri() [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.21/#cve-2023-41164-potential-denial-of-service-vulnerability-in-django-utils-encoding-uri-to-iri)
+		- django.utils.encoding.uri_to_iri() was subject to potential denial of service attack via certain inputs with a very large number of Unicode characters.
 -
 -
 -
