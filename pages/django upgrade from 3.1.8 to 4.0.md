@@ -654,5 +654,130 @@
 				- django.contrib.postgres.forms.JSONField is removed.
 				- The {% ifequal %} and {% ifnotequal %} template tags are removed.
 				- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
-- Separate **django** imports in mv2
-	-
+- **django** imports in mv2
+	- check settings for django modules
+	- from django import forms
+	- from django.apps import AppConfig
+	- from django.conf import settings
+	- from django.contrib import admin
+	- from django.contrib import messages
+	- from django.contrib.auth import get_user_model
+	- from django.contrib.auth import views as auth_viewsfrom django.contrib.auth.backends import ModelBackend
+	- from django.contrib.auth.hashers import UNUSABLE_PASSWORD_PREFIX
+	  from django.contrib.auth.mixins import LoginRequiredMixin
+	  from django.contrib.auth.models import AbstractBaseUser
+	  from django.contrib.auth.models import BaseUserManager
+	  from django.contrib.auth.models import Group
+	  from django.contrib.auth.views import LogoutView
+	  from django.contrib.contenttypes.fields import GenericForeignKey
+	  from django.contrib.contenttypes.fields import GenericRelation
+	  from django.contrib.contenttypes.models import ContentType
+	  from django.contrib.humanize.templatetags.humanize import intcomma
+	  from django.contrib.postgres.aggregates import ArrayAgg
+	  from django.contrib.postgres.fields import ArrayField
+	  from django.contrib.postgres.lookups import Unaccent
+	  from django.contrib.postgres.search import SearchVector
+	  from django.contrib.sessions.models import Session
+	  from django.contrib.staticfiles import finders
+	  from django.core.asgi import get_asgi_application
+	  from django.core.cache import cache
+	  from django.core.exceptions import DisallowedHost
+	  from django.core.exceptions import FieldError
+	  from django.core.exceptions import ObjectDoesNotExist
+	  from django.core.exceptions import PermissionDenied
+	  from django.core.exceptions import ValidationError
+	  from django.core.files import File
+	  from django.core.files.base import ContentFile
+	  from django.core.mail.backends.base import BaseEmailBackend
+	  from django.core.mail.backends.smtp import EmailBackend
+	  from django.core.mail.message import EmailMessage
+	  from django.core.management import execute_from_command_line
+	  from django.core.paginator import Paginator
+	  from django.core.validators import FileExtensionValidator
+	  from django.core.validators import MaxLengthValidator
+	  from django.core.validators import MaxValueValidator
+	  from django.core.validators import MinLengthValidator
+	  from django.core.validators import MinValueValidator
+	  from django.core.validators import URLValidator
+	  from django.core.validators import validate_email
+	  from django.core.wsgi import get_wsgi_application
+	  from django.db import IntegrityError
+	  from django.db import connection
+	  from django.db import connections
+	  from django.db import models
+	  from django.db import transaction
+	  from django.db.models import BooleanField
+	  from django.db.models import Case
+	  from django.db.models import CharField
+	  from django.db.models import Count
+	  from django.db.models import DateField
+	  from django.db.models import DateTimeField
+	  from django.db.models import DecimalField
+	  from django.db.models import ExpressionWrapper
+	  from django.db.models import F
+	  from django.db.models import ForeignKey
+	  from django.db.models import Func
+	  from django.db.models import IntegerField
+	  from django.db.models import Max
+	  from django.db.models import Min
+	  from django.db.models import Prefetch
+	  from django.db.models import ProtectedError
+	  from django.db.models import Q
+	  from django.db.models import Sum
+	  from django.db.models import Value
+	  from django.db.models import When
+	  from django.db.models.functions import Abs
+	  from django.db.models.functions import Cast
+	  from django.db.models.functions import Coalesce
+	  from django.db.models.functions import Concat
+	  from django.db.models.functions import ExtractMonth
+	  from django.db.models.functions import ExtractQuarter
+	  from django.db.models.functions import ExtractWeek
+	  from django.db.models.functions import ExtractYear
+	  from django.db.models.functions import Greatest
+	  from django.db.models.functions import LPad
+	  from django.db.models.functions import Least
+	  from django.db.models.functions import Lower
+	  from django.db.models.functions import Now
+	  from django.db.models.functions import NullIf
+	  from django.db.models.functions import Replace
+	  from django.db.models.functions import StrIndex
+	  from django.db.models.functions import Substr
+	  from django.db.transaction import TransactionManagementError
+	  from django.db.utils import ProgrammingError
+	  from django.forms import ValidationError
+	  from django.forms.widgets import SelectMultiple
+	  from django.http import FileResponse
+	  from django.http import HttpResponse
+	  from django.http import HttpResponseForbidden
+	  from django.http import HttpResponseRedirect
+	  from django.shortcuts import get_object_or_404
+	  from django.shortcuts import resolve_url
+	  from django.template import loader
+	  from django.template.defaultfilters import stringfilter
+	  from django.template.loader import get_template
+	  from django.test import TestCase
+	  from django.test.runner import DiscoverRunner
+	  from django.urls import include
+	  from django.urls import path
+	  from django.urls import reverse
+	  from django.utils import translation
+	  from django.utils.deprecation import MiddlewareMixin
+	  from django.utils.encoding import force_str
+	  from django.utils.functional import lazy
+	  from django.utils.html import strip_tags
+	  from django.utils.log import AdminEmailHandler as OrigHandler
+	  from django.utils.log import CallbackFilter
+	  from django.utils.log import RequireDebugFalse
+	  from django.utils.log import RequireDebugTrue
+	  from django.utils.log import ServerFormatter
+	  from django.utils.safestring import mark_safe
+	  from django.utils.translation import gettext
+	  from django.utils.translation import gettext as _
+	  from django.utils.translation import gettext_lazy as _
+	  from django.utils.translation import ugettext_lazy as _
+	  from django.views.debug import ExceptionReporter
+	  from django.views.decorators.csrf import ensure_csrf_cookie
+	  from django.views.generic import TemplateView
+	  from django.views.generic import View
+	  from django.views.i18n import JavaScriptCatalog
