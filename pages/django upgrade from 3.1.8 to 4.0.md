@@ -729,6 +729,8 @@
 	- from django.core.wsgi import get_wsgi_application
 	- from django.db import IntegrityError
 	- from django.db import connection
+		- check changes in version(s):
+			- 4.0
 	- from django.db import connections
 	- from django.db import models
 	- from django.db import transaction
