@@ -352,8 +352,9 @@
 		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.8/#bugfixes)
 			- Fixed a bug in Django 3.2 that caused incorrect links on read-only fields in the admin ([#33077](https://code.djangoproject.com/ticket/33077)).
 			- Fixed a regression in Django 3.2 that caused incorrect selection of items across all pages when actions were placed both on the top and bottom of the admin change-list view ([#33083](https://code.djangoproject.com/ticket/33083)).
--
--
+	- Django 3.2.9 fixes a bug in 3.2.8 and adds compatibility with Python 3.10.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.9/#bugfixes)
+			- Fixed a bug in Django 3.2 that caused a migration crash on SQLite when altering a field with a functional index ([#33194](https://code.djangoproject.com/ticket/33194)).
 -
 -
 -
