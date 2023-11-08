@@ -242,30 +242,24 @@
 			- Support for argon2-cffi < 19.1.0 is removed.
 			- The cache keys no longer includes the language when internationalization is disabled (USE_I18N = False) and localization is enabled (USE_L10N = True). After upgrading to Django 3.2 in such configurations, the first request to any previously cached value will be a cache miss.
 			- ForeignKey.validate() now uses [_base_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._base_manager) rather than [_default_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._default_manager) to check that related instances exist.
-		- -
-		- When an application defines an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule, Django now uses this configuration automatically, even if it isn’t enabled with default_app_config. Set default = False in the [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass if you need to prevent this behavior. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
-		- -
-		- Instantiating an abstract model now raises TypeError.
-		- -
-		- Keyword arguments to [setup_databases()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.utils.setup_databases) are now keyword-only.
-		- -
-		- The undocumented django.utils.http.limited_parse_qsl() function is removed. Please use [urllib.parse.parse_qsl()](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.parse_qsl) instead.
-		- -
-		- django.test.utils.TestContextDecorator now uses [addCleanup()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addCleanup) so that cleanups registered in the [setUp()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) method are called before TestContextDecorator.disable().
-		- -
-		- SessionMiddleware now raises a [SessionInterrupted](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.contrib.sessions.exceptions.SessionInterrupted) exception instead of [SuspiciousOperation](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.SuspiciousOperation) when a session is destroyed in a concurrent request.
-		- The [django.db.models.Field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.Field) equality operator now correctly distinguishes inherited field instances across models. Additionally, the ordering of such fields is now defined.
-		- The undocumented django.core.files.locks.lock() function now returns False if the file cannot be locked, instead of raising [BlockingIOError](https://docs.python.org/3/library/exceptions.html#BlockingIOError).
-		- The password reset mechanism now invalidates tokens when the user email is changed.
-		- [makemessages](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-makemessages) command no longer processes invalid locales specified using [makemessages --locale](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-makemessages-locale) option, when they contain hyphens ('-').
-		- The django.contrib.auth.forms.ReadOnlyPasswordHashField form field is now [disabled](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.Field.disabled) by default. Therefore UserChangeForm.clean_password() is no longer required to return the initial value.
-		- The cache.get_many(), get_or_set(), has_key(), incr(), decr(), incr_version(), and decr_version() cache operations now correctly handle None stored in the cache, in the same way as any other value, instead of behaving as though the key didn’t exist.
-		- Due to a python-memcached limitation, the previous behavior is kept for the deprecated MemcachedCache backend.
-		- The minimum supported version of SQLite is increased from 3.8.3 to 3.9.0.
-		- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
-		- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
+			- When an application defines an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule, Django now uses this configuration automatically, even if it isn’t enabled with default_app_config. Set default = False in the [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass if you need to prevent this behavior. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
+			- Instantiating an abstract model now raises TypeError.
+			- Keyword arguments to [setup_databases()](https://docs.djangoproject.com/en/4.2/topics/testing/advanced/#django.test.utils.setup_databases) are now keyword-only.
+			- The undocumented django.utils.http.limited_parse_qsl() function is removed. Please use [urllib.parse.parse_qsl()](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.parse_qsl) instead.
+			- django.test.utils.TestContextDecorator now uses [addCleanup()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addCleanup) so that cleanups registered in the [setUp()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) method are called before TestContextDecorator.disable().
+			- SessionMiddleware now raises a [SessionInterrupted](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.contrib.sessions.exceptions.SessionInterrupted) exception instead of [SuspiciousOperation](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.SuspiciousOperation) when a session is destroyed in a concurrent request.
+			- The [django.db.models.Field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.Field) equality operator now correctly distinguishes inherited field instances across models. Additionally, the ordering of such fields is now defined.
+			- The undocumented django.core.files.locks.lock() function now returns False if the file cannot be locked, instead of raising [BlockingIOError](https://docs.python.org/3/library/exceptions.html#BlockingIOError).
+			- The password reset mechanism now invalidates tokens when the user email is changed.
+			- [makemessages](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-makemessages) command no longer processes invalid locales specified using [makemessages --locale](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-makemessages-locale) option, when they contain hyphens ('-').
+			- The django.contrib.auth.forms.ReadOnlyPasswordHashField form field is now [disabled](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.Field.disabled) by default. Therefore UserChangeForm.clean_password() is no longer required to return the initial value.
+			- The cache.get_many(), get_or_set(), has_key(), incr(), decr(), incr_version(), and decr_version() cache operations now correctly handle None stored in the cache, in the same way as any other value, instead of behaving as though the key didn’t exist.
+			- Due to a python-memcached limitation, the previous behavior is kept for the deprecated MemcachedCache backend.
+			- The minimum supported version of SQLite is increased from 3.8.3 to 3.9.0.
+			- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
+			- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
 		- ## Features deprecated in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#features-deprecated-in-3-2)
-		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id3)
+			- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id3)
 		- Assigning objects which don’t support creating deep copies with [copy.deepcopy()](https://docs.python.org/3/library/copy.html#copy.deepcopy) to class attributes in [TestCase.setUpTestData()](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#django.test.TestCase.setUpTestData) is deprecated.
 		- Using a boolean value in [BaseCommand.requires_system_checks](https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/#django.core.management.BaseCommand.requires_system_checks) is deprecated. Use '__all__' instead of True, and [] (an empty list) instead of False.
 		- The whitelist argument and domain_whitelist attribute of [EmailValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.EmailValidator) are deprecated. Use allowlist instead of whitelist, and domain_allowlist instead of domain_whitelist. You may need to rename whitelist in existing migrations.
