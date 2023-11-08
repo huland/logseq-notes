@@ -700,7 +700,12 @@
 	- from django.core.validators import MinLengthValidator
 	- from django.core.validators import MinValueValidator
 	- from django.core.validators import URLValidator
-		- check changes in
+		- check changes in:
+			- 3.1.10
+			- 3.1.12
+			- 3.2.2
+			- 3.2.4
+			- 3.2.20
 	- from django.core.validators import validate_email
 	- from django.core.wsgi import get_wsgi_application
 	- from django.db import IntegrityError
