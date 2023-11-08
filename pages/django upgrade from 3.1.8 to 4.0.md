@@ -435,10 +435,11 @@
 		- The chars() and words() methods are used to implement the [truncatechars_html](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#std-templatefilter-truncatechars_html) and [truncatewords_html](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#std-templatefilter-truncatewords_html) template filters, which were thus also vulnerable.
 		- The input processed by Truncator, when operating in HTML mode, has been limited to the first five million characters in order to avoid potential performance and memory issues.
 	- Django 3.2.23 fixes a security issue with severity “moderate” in 3.2.22.
+	  collapsed:: true
 		- ## CVE-2023-46695: Potential denial of service vulnerability in   UsernameField   on Windows [¶](https://docs.djangoproject.com/en/4.2/releases/3.2.23/#cve-2023-46695-potential-denial-of-service-vulnerability-in-usernamefield-on-windows)
 		- The [NFKC normalization](https://docs.python.org/3/library/unicodedata.html#unicodedata.normalize) is slow on Windows. As a consequence, django.contrib.auth.forms.UsernameField was subject to a potential denial of service attack via certain inputs with a very large number of Unicode characters.
 		- In order to avoid the vulnerability, invalid values longer than UsernameField.max_length are no longer normalized, since they cannot pass validation anyway.
-- [](https://docs.djangoproject.com/en/4.2/releases/4.0/)
+- # Django 4.0 release notes [¶](https://docs.djangoproject.com/en/4.2/releases/4.0/#django-4-0-release-notes)
 -
 -
 -
