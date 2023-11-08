@@ -100,25 +100,17 @@
 		- Using decorators has the advantage that these options are more discoverable as they can be suggested by completion utilities in code editors. They are merely a convenience and still set the same attributes on the functions under the hood.
 		- ### Minor features [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#minor-features)
 		- #### [django.contrib.admin](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#module-django.contrib.admin) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-admin)
-		- -
-		- [ModelAdmin.search_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields) now allows searching against quoted phrases with spaces.
-		- -
-		- Read-only related fields are now rendered as navigable links if target models are registered in the admin.
-		- -
-		- The admin now supports theming, and includes a dark theme that is enabled according to browser settings. See [Theming support](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#admin-theming) for more details.
-		- -
-		- [ModelAdmin.autocomplete_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.autocomplete_fields) now respects [ForeignKey.to_field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.to_field) and [ForeignKey.limit_choices_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.limit_choices_to) when searching a related model.
-		- -
-		- The admin now installs a final catch-all view that redirects unauthenticated users to the login page, regardless of whether the URL is otherwise valid. This protects against a potential model enumeration privacy issue.
+			- [ModelAdmin.search_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields) now allows searching against quoted phrases with spaces.
+			- Read-only related fields are now rendered as navigable links if target models are registered in the admin.
+			- The admin now supports theming, and includes a dark theme that is enabled according to browser settings. See [Theming support](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#admin-theming) for more details.
+			- [ModelAdmin.autocomplete_fields](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.autocomplete_fields) now respects [ForeignKey.to_field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.to_field) and [ForeignKey.limit_choices_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.limit_choices_to) when searching a related model.
+			- The admin now installs a final catch-all view that redirects unauthenticated users to the login page, regardless of whether the URL is otherwise valid. This protects against a potential model enumeration privacy issue.
 		- Although not recommended, you may set the new [AdminSite.final_catch_all_view](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.AdminSite.final_catch_all_view) to False to disable the catch-all view.
 		- #### [django.contrib.auth](https://docs.djangoproject.com/en/4.2/topics/auth/#module-django.contrib.auth) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-auth)
-		- -
-		- The default iteration count for the PBKDF2 password hasher is increased from 216,000 to 260,000.
-		- -
-		- The default variant for the Argon2 password hasher is changed to Argon2id. memory_cost and parallelism are increased to 102,400 and 8 respectively to match the argon2-cffi defaults.
-		- Increasing the memory_cost pushes the required memory from 512 KB to 100 MB. This is still rather conservative but can lead to problems in memory constrained environments. If this is the case, the existing hasher can be subclassed to override the defaults.
-		- -
-		- The default salt entropy for the Argon2, MD5, PBKDF2, SHA-1 password hashers is increased from 71 to 128 bits.
+			- The default iteration count for the PBKDF2 password hasher is increased from 216,000 to 260,000.
+			- The default variant for the Argon2 password hasher is changed to Argon2id. memory_cost and parallelism are increased to 102,400 and 8 respectively to match the argon2-cffi defaults.
+			- Increasing the memory_cost pushes the required memory from 512 KB to 100 MB. This is still rather conservative but can lead to problems in memory constrained environments. If this is the case, the existing hasher can be subclassed to override the defaults.
+			- The default salt entropy for the Argon2, MD5, PBKDF2, SHA-1 password hashers is increased from 71 to 128 bits.
 		- #### [django.contrib.contenttypes](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#module-django.contrib.contenttypes) [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#django-contrib-contenttypes)
 		- The new absolute_max argument for [generic_inlineformset_factory()](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#django.contrib.contenttypes.forms.generic_inlineformset_factory) allows customizing the maximum number of forms that can be instantiated when supplying POST data. See [Limiting the maximum number of instantiated forms](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#formsets-absolute-max) for more details.
 		- The new can_delete_extra argument for [generic_inlineformset_factory()](https://docs.djangoproject.com/en/4.2/ref/contrib/contenttypes/#django.contrib.contenttypes.forms.generic_inlineformset_factory) allows removal of the option to delete extra forms. See [can_delete_extra](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/#django.forms.formsets.BaseFormSet.can_delete_extra) for more information.
