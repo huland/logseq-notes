@@ -723,32 +723,32 @@
 	  from django.db.models import Min
 	  from django.db.models import Prefetch
 	  from django.db.models import ProtectedError
-	  from django.db.models import Q
-	  from django.db.models import Sum
-	  from django.db.models import Value
-	  from django.db.models import When
-	  from django.db.models.functions import Abs
-	  from django.db.models.functions import Cast
-	  from django.db.models.functions import Coalesce
-	  from django.db.models.functions import Concat
-	  from django.db.models.functions import ExtractMonth
-	  from django.db.models.functions import ExtractQuarter
-	  from django.db.models.functions import ExtractWeek
-	  from django.db.models.functions import ExtractYear
-	  from django.db.models.functions import Greatest
-	  from django.db.models.functions import LPad
-	  from django.db.models.functions import Least
-	  from django.db.models.functions import Lower
-	  from django.db.models.functions import Now
-	  from django.db.models.functions import NullIf
-	  from django.db.models.functions import Replace
-	  from django.db.models.functions import StrIndex
-	  from django.db.models.functions import Substr
-	  from django.db.transaction import TransactionManagementError
-	  from django.db.utils import ProgrammingError
-	  from django.forms import ValidationError
-	  from django.forms.widgets import SelectMultiple
-	  from django.http import FileResponse
+	- from django.db.models import Q
+	- from django.db.models import Sum
+	- from django.db.models import Value
+	- from django.db.models import When
+	- from django.db.models.functions import Abs
+	- from django.db.models.functions import Cast
+	- from django.db.models.functions import Coalesce
+	- from django.db.models.functions import Concat
+	- from django.db.models.functions import ExtractMonth
+	- from django.db.models.functions import ExtractQuarter
+	- from django.db.models.functions import ExtractWeek
+	- from django.db.models.functions import ExtractYear
+	- from django.db.models.functions import Greatest
+	- from django.db.models.functions import LPad
+	- from django.db.models.functions import Least
+	- from django.db.models.functions import Lower
+	- from django.db.models.functions import Now
+	- from django.db.models.functions import NullIf
+	- from django.db.models.functions import Replace
+	- from django.db.models.functions import StrIndex
+	- from django.db.models.functions import Substr
+	- from django.db.transaction import TransactionManagementError
+	- from django.db.utils import ProgrammingError
+	- from django.forms import ValidationError
+	- from django.forms.widgets import SelectMultiple
+	- from django.http import FileResponse
 	- from django.http import HttpResponse
 	- from django.http import HttpResponseForbidden
 	- from django.http import HttpResponseRedirect
