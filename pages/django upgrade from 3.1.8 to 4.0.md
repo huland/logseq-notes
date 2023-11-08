@@ -236,17 +236,12 @@
 			- The end of upstream support for MySQL 5.6 is April 2021. Django 3.2 supports MySQL 5.7 and higher.
 		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#miscellaneous)
 			- Django now supports non-pytz time zones, such as Python 3.9+’s [zoneinfo](https://docs.python.org/3/library/zoneinfo.html#module-zoneinfo) module and its backport.
-		- The undocumented SpatiaLiteOperations.proj4_version() method is renamed to proj_version().
-		- -
-		- [slugify()](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.text.slugify) now removes leading and trailing dashes and underscores.
-		- -
-		- The [intcomma](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intcomma) and [intword](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intword) template filters no longer depend on the USE_L10N setting.
-		- -
-		- Support for argon2-cffi < 19.1.0 is removed.
-		- -
-		- The cache keys no longer includes the language when internationalization is disabled (USE_I18N = False) and localization is enabled (USE_L10N = True). After upgrading to Django 3.2 in such configurations, the first request to any previously cached value will be a cache miss.
-		- -
-		- ForeignKey.validate() now uses [_base_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._base_manager) rather than [_default_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._default_manager) to check that related instances exist.
+			- The undocumented SpatiaLiteOperations.proj4_version() method is renamed to proj_version().
+			- [slugify()](https://docs.djangoproject.com/en/4.2/ref/utils/#django.utils.text.slugify) now removes leading and trailing dashes and underscores.
+			- The [intcomma](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intcomma) and [intword](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/#std-templatefilter-intword) template filters no longer depend on the USE_L10N setting.
+			- Support for argon2-cffi < 19.1.0 is removed.
+			- The cache keys no longer includes the language when internationalization is disabled (USE_I18N = False) and localization is enabled (USE_L10N = True). After upgrading to Django 3.2 in such configurations, the first request to any previously cached value will be a cache miss.
+			- ForeignKey.validate() now uses [_base_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._base_manager) rather than [_default_manager](https://docs.djangoproject.com/en/4.2/topics/db/managers/#django.db.models.Model._default_manager) to check that related instances exist.
 		- -
 		- When an application defines an [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass in an apps.py submodule, Django now uses this configuration automatically, even if it isn’t enabled with default_app_config. Set default = False in the [AppConfig](https://docs.djangoproject.com/en/4.2/ref/applications/#django.apps.AppConfig) subclass if you need to prevent this behavior. See [What’s new in Django 3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/#whats-new-3-2) for more details.
 		- -
@@ -259,24 +254,15 @@
 		- django.test.utils.TestContextDecorator now uses [addCleanup()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.addCleanup) so that cleanups registered in the [setUp()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) method are called before TestContextDecorator.disable().
 		- -
 		- SessionMiddleware now raises a [SessionInterrupted](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.contrib.sessions.exceptions.SessionInterrupted) exception instead of [SuspiciousOperation](https://docs.djangoproject.com/en/4.2/ref/exceptions/#django.core.exceptions.SuspiciousOperation) when a session is destroyed in a concurrent request.
-		- -
 		- The [django.db.models.Field](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.Field) equality operator now correctly distinguishes inherited field instances across models. Additionally, the ordering of such fields is now defined.
-		- -
 		- The undocumented django.core.files.locks.lock() function now returns False if the file cannot be locked, instead of raising [BlockingIOError](https://docs.python.org/3/library/exceptions.html#BlockingIOError).
-		- -
 		- The password reset mechanism now invalidates tokens when the user email is changed.
-		- -
 		- [makemessages](https://docs.djangoproject.com/en/4.2/ref/django-admin/#django-admin-makemessages) command no longer processes invalid locales specified using [makemessages --locale](https://docs.djangoproject.com/en/4.2/ref/django-admin/#cmdoption-makemessages-locale) option, when they contain hyphens ('-').
-		- -
 		- The django.contrib.auth.forms.ReadOnlyPasswordHashField form field is now [disabled](https://docs.djangoproject.com/en/4.2/ref/forms/fields/#django.forms.Field.disabled) by default. Therefore UserChangeForm.clean_password() is no longer required to return the initial value.
-		- -
 		- The cache.get_many(), get_or_set(), has_key(), incr(), decr(), incr_version(), and decr_version() cache operations now correctly handle None stored in the cache, in the same way as any other value, instead of behaving as though the key didn’t exist.
 		- Due to a python-memcached limitation, the previous behavior is kept for the deprecated MemcachedCache backend.
-		- -
 		- The minimum supported version of SQLite is increased from 3.8.3 to 3.9.0.
-		- -
 		- [CookieStorage](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/#django.contrib.messages.storage.cookie.CookieStorage) now stores messages in the [**RFC 6265**](https://datatracker.ietf.org/doc/html/rfc6265.html) compliant format. Support for cookies that use the old format remains until Django 4.1.
-		- -
 		- The minimum supported version of asgiref is increased from 3.2.10 to 3.3.2.
 		- ## Features deprecated in 3.2 [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#features-deprecated-in-3-2)
 		- ### Miscellaneous [¶](https://docs.djangoproject.com/en/4.2/releases/3.2/#id3)
