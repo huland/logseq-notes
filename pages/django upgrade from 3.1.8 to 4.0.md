@@ -685,4 +685,5 @@
 				- django.contrib.postgres.forms.JSONField is removed.
 				- The {% ifequal %} and {% ifnotequal %} template tags are removed.
 				- The DEFAULT_HASHING_ALGORITHM transitional setting is removed.
--
+- Separate **django** imports in mv2
+	-
