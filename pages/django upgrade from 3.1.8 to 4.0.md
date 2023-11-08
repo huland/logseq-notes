@@ -12,3 +12,15 @@
 		- On Python 3.9.5+, [URLValidator](https://docs.djangoproject.com/en/4.2/ref/validators/#django.core.validators.URLValidator) didn’t prohibit newlines and tabs. If you used values with newlines in HTTP response, you could suffer from header injection attacks. Django itself wasn’t vulnerable because [HttpResponse](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponse) prohibits newlines in HTTP headers.
 		- Moreover, the URLField form field which uses URLValidator silently removes newlines and tabs on Python 3.9.5+, so the possibility of newlines entering your data only existed if you are using this validator outside of the form fields.
 		- This issue was introduced by the [bpo-43882](https://bugs.python.org/issue?@action=redirect&bpo=43882) fix.
+	- 3.1.11
+		- *May 13, 2021*
+		- Django 3.1.11 fixes a regression in 3.1.9.
+		- ## Bugfixes [¶](https://docs.djangoproject.com/en/4.2/releases/3.1.11/#bugfixes)
+			- Fixed a regression in Django 3.1.9 where saving FileField would raise a SuspiciousFileOperation even when a custom [upload_to](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.FileField.upload_to) returns a valid file path ([#32718](https://code.djangoproject.com/ticket/32718)).
+	- 3.1.12
+		-
+-
+-
+-
+-
+-
