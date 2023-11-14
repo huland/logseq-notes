@@ -2,7 +2,7 @@
 	- [[SAP]]
 	- [[Expense]]
 	- MV2's 4 pillar
-		- risk
+		- [[risk]]
 		- fifo
 		- trading -> ets, eac, voluntary etc.
 		- reporting -> accounting, emir etc.
