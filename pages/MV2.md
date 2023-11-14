@@ -1,4 +1,9 @@
 - ## Parts
 	- [[SAP]]
 	- [[Expense]]
+	- MV2's 4 pillar
+		- risk
+		- fifo
+		- trading
+		- reporting -> accounting, emir etc.
 - tags:: #vertis #mv2
