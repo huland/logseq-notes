@@ -5,6 +5,6 @@
 		- [[trading]] -> ets, eac, voluntary etc.
 		- [[reporting]] -> accounting, emir etc.
 			- [[SAP]]
-	-
-	- [[Expense]]
+	- Modules in MV2
+		- [[Expense]]
 - tags:: #vertis #mv2
