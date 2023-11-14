@@ -4,6 +4,6 @@
 	- MV2's 4 pillar
 		- [[risk]]
 		- [[fifo]]
-		- trading -> ets, eac, voluntary etc.
+		- [[trading]] -> ets, eac, voluntary etc.
 		- reporting -> accounting, emir etc.
 - tags:: #vertis #mv2
