@@ -3,7 +3,7 @@
 	- [[Expense]]
 	- MV2's 4 pillar
 		- [[risk]]
-		- fifo
+		- [[fifo]]
 		- trading -> ets, eac, voluntary etc.
 		- reporting -> accounting, emir etc.
 - tags:: #vertis #mv2
